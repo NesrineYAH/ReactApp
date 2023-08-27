@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6%;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin: 40px 30px 49px 80px;
+    }
+
+    &__fig {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        width: 7rem;
+      //  color: #450fc2;
+
+        &__logo {
+            color: #450fc2;
+            background-color: #450fc2;
+        }
+
+        .fa-duotone {
+            color: #450fc2;
+            width: 7rem;
+            height: 5rem;
+        }
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            header__logo {
+                width: 5 rem;
+                color: #450fc2;
+              
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

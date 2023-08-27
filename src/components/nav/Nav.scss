@@ -1,0 +1,82 @@
+.nav-header {
+    width: 54%;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    top: 0%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+
+    &__link-about,
+    &__link-home,
+    &__link-contact,
+    &__link-competence {
+        @include font(13px, 500);
+        width: 72px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $primary-color;
+        text-decoration: none;
+        margin-right: 18px;
+
+        &:focus {
+            font-size: 13px;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: flex;
+        // align-items: center;  
+        justify-content: flex-end;
+        margin-right: 30px;
+          position: absolute;
+        right: 0;
+         top: 0;
+        height: 70px;
+
+        &__link-home,
+        &__link-about,
+        &__link-contact,
+        &__link-competence {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: $primary-color;
+            text-decoration: none;
+            margin-right: 55px;
+            font-size: 18px;
+            font-weight: 500;
+            width: 100px;
+            text-transform: none;
+            line-height: 142.6%;
+            text-align: right;
+
+            &:focus {
+                font-size: 20px;
+                transform: scale(1.05);
+            }
+
+            &:visited {
+                font-size: 20px;
+                transform: scale(1.05);
+                text-decoration: underline;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

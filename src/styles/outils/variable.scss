@@ -1,0 +1,29 @@
+///Les variables
+
+$primary-color: #3f056b;
+$secondary-color: #f0f0f0;
+$tertiary-color: #ffff;
+$greyDark: #C4C4C4;
+$footer-color: #2b0449;
+$background-color: rgba(0, 0, 0, 0.3);
+
+
+//les images
+$about-background: $background-color url(../../assets/images/banner/aboutBanner.png);
+$about-background-mobile: $background-color url(../../assets/images/banner/backgroundbannermobile.png);
+$banner-background: $background-color url(../../assets/images/banner/homeBanner.png);
+
+$body-background: $background-color url(../../assets/images/banner/developpement-web-code-bordeaux-business.webp);
+
+
+$Mmin: 375px;
+$Mmax: 768px;
+$breakpoint-desktop: 769px;
+
+
+$small: 480px;
+$medium: 992px;
+$large: 1280px;
+
+$size: 24px;
+$collapseWidth: 80%;

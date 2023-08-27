@@ -1,0 +1,45 @@
+//01/07
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+}
+
+%flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+%flex-rowReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+%flex-rowAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+%flex-rowCenterWithSpace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-rowEnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}

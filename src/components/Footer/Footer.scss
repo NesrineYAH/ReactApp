@@ -1,0 +1,55 @@
+ .footer {
+     @include flex-center;
+     width: 100%;
+     height: 250px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin-top: auto;
+     margin-bottom: -360px;
+     background-color: $footer-color;
+
+
+     &__text-copyright {
+         display: flex;
+         align-items: flex-end;
+         justify-content: center;
+         color: $tertiary-color;
+         width: 100%;
+         margin: 4% 0 3% 0;
+     }
+
+     &__logo {
+         margin-top: 2%;
+         width: 122px;
+         height: 40px;
+     }
+
+     .footerContainer {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 20px;
+
+         &__icone {
+             width: 40px;
+             height: 40px;
+ 
+             display: block;
+            object-fit:cover;
+            line-height: 37px;
+           //  text-align: center;
+             border: 1px solid rgba(255, 255, 255, .8);
+             border-radius: 50%;
+             color: #fff;
+             background-color: #fff;
+         }
+
+     }
+
+     @media screen and (min-width: $breakpoint-desktop) {
+         margin-top: auto;
+         margin-bottom: -500px;
+     }
+ }
