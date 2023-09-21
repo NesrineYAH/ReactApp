@@ -1,10 +1,24 @@
 import React from "react";
-import Card from "./Card/Card";
+import Card from "../Card/Card";
 
-const Presentation = (title) => {
+const Presentation = () => {
   return (
-    <div>
-      <Card title={title}></Card>
+    <div className="presentationContainer">
+      <Card>
+        Lorem ipsum, dolor sit amet con architecto ipsa tempora tenetu
+      </Card>
+      <Card>
+        Lorem ipsum, dolor sit amet con architecto ipsa tempora tenetur
+      </Card>
+      <Card>
+        Lorem ipsum, dolor sit amet con architecto ipsa tempora tenetur
+      </Card>
+      <Card>
+        Lorem ipsum, dolor sit amet con architecto ipsa tempora tenetur
+      </Card>
+      <Card>
+        Lorem ipsum, dolor sit amet con architecto ipsa tempora tenetur
+      </Card>
     </div>
   );
 };

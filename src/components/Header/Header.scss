@@ -1,11 +1,21 @@
 .header {
+    width: 100%;
+    //height: calc(var(--vh, ivh) * 100);
+    height: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 6%;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
 
     @media screen and (min-width: $breakpoint-desktop) {
-        margin: 40px 30px 49px 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //align-items: center;
+        margin: 6%;
     }
 
     &__fig {
@@ -13,11 +23,16 @@
         align-items: flex-start;
         margin: 0;
         width: 7rem;
-      //  color: #450fc2;
 
+        //  color: #450fc2;
         &__logo {
             color: #450fc2;
             background-color: #450fc2;
+            width: 5rem;
+        }
+
+        img {
+            width: 100%;
         }
 
         .fa-duotone {
@@ -30,12 +45,22 @@
             header__logo {
                 width: 5 rem;
                 color: #450fc2;
-              
+
             }
 
             img {
                 width: 100%;
             }
+        }
+    }
+
+    .header__bars {
+        height: 25px;
+        position: absolute;
+        right: 8%;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            opacity: 0;
         }
     }
 }

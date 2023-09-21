@@ -1,15 +1,15 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Banner/Banner";
 import Form from "../../components/Form/Form";
-import Canvas from "../../components/Canvas/Canvas";
+//import Card from "../../components/Card/Card";
+import Presentation from "../../components/Presentation/presentation";
+
 const Home = () => {
   return (
     <div className="home">
       <Banner />
+      <Presentation />
       <Form />
-
-      <Footer />
     </div>
   );
 };
