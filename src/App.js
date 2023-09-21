@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/Error";
+import Competance from "./components/Competances/Competances";
 
 import "./App.scss";
 
@@ -16,9 +17,10 @@ const App = () => {
       <HashRouter>
         <Nav></Nav>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
+          <Route path="/Competances" element={<Competance />} />
         </Routes>
       </HashRouter>
 

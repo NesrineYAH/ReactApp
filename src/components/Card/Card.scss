@@ -56,22 +56,11 @@
 .Link {
     text-decoration: none;
 }
-
-@keyframes displyCard {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 */
 
+
 .card {
-    background-color: #fff;
+    background-color: #e7e3e3;
     border: #000;
     width: 250px;
     height: 280px;
@@ -91,4 +80,16 @@
     transition: transform 300ms;
     animation: displyCard 2s, ease-in-out;
 
+}
+
+@keyframes displyCard {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
