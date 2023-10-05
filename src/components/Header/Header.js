@@ -2,7 +2,6 @@ import logo from "../../assets/images/logo/logoCode.jpg";
 import React from "react";
 import barSolid from "../../assets/images/carrousel/bars-solid.svg";
 import { NavLink } from "react-router-dom";
-import React, { Component } from "react";
 
 export default function Header(props) {
   return (
