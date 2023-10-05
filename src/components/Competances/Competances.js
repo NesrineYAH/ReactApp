@@ -1,5 +1,5 @@
 import React from "react";
-import Presentation from "../Presentation/presentation";
+import Presentation from "../Portfolio/Portfolio";
 
 const Competance = () => {
   return (

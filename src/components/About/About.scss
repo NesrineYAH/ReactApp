@@ -1,0 +1,25 @@
+#About__container {
+    @include flex-column;
+    width: 100%;
+}
+
+.About__info {
+    min-height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //  background: rgba(0, 0, 0, 0.8) url("../../assets/images/bakground/banner_top.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+}
+
+.monImage {
+    width: 500px;
+    width: 400px;
+
+}
