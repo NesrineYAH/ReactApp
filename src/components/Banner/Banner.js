@@ -1,4 +1,4 @@
-import imageBanner from "../../assets/images/banner/developpement-web-code-bordeaux-business.webp";
+//import imageBanner from "../../assets/images/banner/developpement-web-code-bordeaux-business.webp";
 
 const Banner = ({ image, texte }) => {
   return (
@@ -6,11 +6,11 @@ const Banner = ({ image, texte }) => {
       <h1 className="BannerContainer__h1">
         Développeuse web <br /> Front-end
       </h1>
-      <img
+      {/* <img
         className="BannerContainer__img"
         src={imageBanner}
         alt="bannerDeveloppeur"
-      />
+      /> */}
       <div className="BannerContainer__shadow"></div>
     </div>
   );

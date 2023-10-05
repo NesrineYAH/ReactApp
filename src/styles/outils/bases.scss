@@ -11,7 +11,7 @@
 
 
 #root {
-  /*  display: flex;
+    /*  display: flex;
     flex-direction: column;
     justify-content: space-between;*/
     min-height: 100vh;
@@ -24,6 +24,7 @@ html {
 body {
     @include body-position;
     overflow-x: hidden;
+    background-color: #cfc9d3;
 
 
     @media (min-width: $breakpoint-desktop) {

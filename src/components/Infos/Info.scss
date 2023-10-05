@@ -1,0 +1,24 @@
+.infoPerso__Contanier {
+    @include flexCenterRow;
+    //background-color: #fff;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+
+
+    .infoPerso {
+        box-sizing: border-box;
+        display: block;
+        width: 550px;
+        color: #6911a8;
+        font-weight: bold;
+        width: 50%;
+    }
+
+    .monImage {
+        width: 500px;
+        height: 400px;
+        border-radius: 10px;
+    }
+}

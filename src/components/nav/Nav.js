@@ -14,7 +14,7 @@ export default function Nav() {
         Contact
       </Link>
       <Link to="/Competances" className="nav-header__link-about">
-        compétence
+        Compétences
       </Link>
     </nav>
   );
