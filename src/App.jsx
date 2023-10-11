@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -9,14 +9,14 @@ import { useLocation } from "react-router-dom";
 
 import "./App.scss";
 
-const App = () => {
-  const location = useLocation();
-  const handleClick = () => {
-    console.log(location);
+class App extends React.Component {
+ // const location = useLocation();
+ handleClick = () => {
+    window.location.replace("/");
   };
-
+  render() {
   return (
-    <div className="App ">
+    <>
       <BrowserRouter>
         <Header handleClick={this.handleClick} />
         <Routes>
@@ -24,13 +24,12 @@ const App = () => {
           <Route path="*" element={<Error />} />
           <Route path="/Competances" element={<Competance />} />
         </Routes>
-      </BrowserRouter>
-      <div>
-        <div className="my-class">Some content</div>
-      </div>
-      <Footer />
-    </div>
+        <Footer />
+      </BrowserRouter>  
+      </>
+
   );
-};
+}
+}
 
 export default App;

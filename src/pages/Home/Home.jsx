@@ -1,12 +1,12 @@
-import React from "react";
-import Form from "../../components/Form/Form";
+import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import Competance from "../../components/Competances/Competances";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
-import React, { Component } from "react";
 
-class Home extends Component {
+
+
+class Home extends React.Component {
   render() {
     return (
       <>
@@ -14,7 +14,7 @@ class Home extends Component {
           <About />
           <Profil />
 
-          <Form />
+ 
         </div>
       </>
     );
