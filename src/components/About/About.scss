@@ -1,6 +1,7 @@
-#About__container {
+#About {
     @include flex-column;
     width: 100%;
+    height: 700px;
 }
 
 .About__info {

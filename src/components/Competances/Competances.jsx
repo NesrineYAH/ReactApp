@@ -3,7 +3,7 @@ import Presentation from "../Portfolio/Portfolio";
 
 const Competance = () => {
   return (
-    <div>
+    <div id="Competance">
       <Presentation />
     </div>
   );
