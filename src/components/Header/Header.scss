@@ -1,13 +1,8 @@
 .header {
-    width: 100%;
-    //height: calc(var(--vh, ivh) * 100);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
+   width: 100%;
 
-    @media screen and (min-width: $breakpoint-desktop) {
+
+    /*  @media screen and (min-width: $breakpoint-desktop) {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -15,71 +10,49 @@
         flex-wrap: wrap;
         //align-items: center;
         margin: 6%;
-    }
-
-    &__fig {
-        display: flex;
-        align-items: flex-start;
-        margin: 0;
-        width: 7rem;
-
-        //  color: #450fc2;
-        &__logo {
+    }*/
+    .hearder__LogoContainer {
+        margin: 0 auto;
+        width: 20%;
+      
+ }
+     
+    .header__logo {
+        color: #450fc2;
+        background-color: #450fc2;
+        width: 5rem;   
+ }
+    /* @media screen and (min-width: $breakpoint-desktop) {
+        header__logo {
+            width: 5 rem;
             color: #450fc2;
-            background-color: #450fc2;
-            width: 5rem;
+
         }
 
         img {
             width: 100%;
         }
+    }*/
 
-        .fa-duotone {
-            color: #450fc2;
-            width: 7rem;
-            height: 5rem;
-        }
-
-        @media screen and (min-width: $breakpoint-desktop) {
-            header__logo {
-                width: 5 rem;
-                color: #450fc2;
-
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    .header__bars {
-        height: 25px;
-        position: absolute;
-        right: 8%;
-
-        @media screen and (min-width: $breakpoint-desktop) {
-            opacity: 0;
-        }
-    }
     .navbar__links {
-        width: 60%;
+        width: 80%;
+        @include flexCenterRow;
+        text-transform: uppercase;
+       
+        position: absolute;
+        left: 22%;
+    }
+
+    .navbar_item {
+        @include font(13px, 500);
+        width: 90px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-    }
-.navbar_item{
-    @include font(13px, 500);
-    width: 90px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   color: $primary-color;
-   text-decoration: none;
-   margin-right: 18px;
-   line-height: 300%;
+        justify-content: space-between;
+        color: $primary-color;
+        text-decoration: none;
+        margin-right: 18px;
+        line-height: 300%;
 
-}   
+    }
 }

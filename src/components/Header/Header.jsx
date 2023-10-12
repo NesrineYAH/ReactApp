@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo/logoCode.jpg";
 import { Component, useRef} from "react";
 import { NavLink } from "react-router-dom";
 import React from "react";
-import barSolid from "../../assets/images/carrousel/bars-solid.svg";
+//import barSolid from "../../assets/images/carrousel/bars-solid.svg";
 
 //create a class header
 class Header extends React.Component {
@@ -71,16 +71,16 @@ handleLinkClick =(event) => {
    }
 
     return (
-    <header>
+    <header className="header">
  <nav className={`navbar ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar--transparent' :
 ''} `}>
-          <div classname="hearder__LogoContainer">
+          <div classname="header__LogoContainer">
             <img
-              className="header__logo"
+       className="header__logo"       
               src={logo}
               alt="logo développeur web" onClick={handleClick}
             />
-            <img className="header__bars" src={barSolid} alt=" menu latérale" />
+            {/* <img className="header__bars" src={barSolid} alt=" menu latérale" /> */}
           </div>
           <ul className="navbar__links">
             <li className="navbar_item slide1">
