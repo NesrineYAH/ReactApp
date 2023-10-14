@@ -1,4 +1,4 @@
-.header {
+.navbar_header {
    width: 100%;
 
 
@@ -37,11 +37,10 @@
     .navbar__links {
         width: 80%;
         @include flexCenterRow;
-        text-transform: uppercase;
-       
+        text-transform: uppercase;  
         position: absolute;
         left: 22%;
-    }
+   
 
     .navbar_item {
         @include font(13px, 500);
@@ -53,6 +52,6 @@
         text-decoration: none;
         margin-right: 18px;
         line-height: 300%;
-
+ }
     }
 }

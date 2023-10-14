@@ -1,8 +1,14 @@
-import logo from "../../assets/images/logo/logoCode.jpg";
-import react, { Component} from "react";
+import logo from "../../assets/images/ logo/logoCode.jpg";
+import react, { Component, useState } from "react";
 import { NavLink } from "react-router-dom";
 import React from "react";
+import Langue from "../langue/langue";
+//import { FaBars, FaTimes } from "react-icons/fa";
 //import barSolid from "../../assets/images/carrousel/bars-solid.svg";
+
+
+
+
 
 //create a class header
 class Header extends Component {
@@ -14,22 +20,21 @@ class Header extends Component {
       isMobile: false,
       showLinks: false,
     };
-
+   // create a handling event ( grestionnaire d'évènement)
     this.handleScroll = this.handleScroll.bind(this);
     this.resizeScreen = this.resizeScreen.bind(this);
-  }
+  };
   //What I did is adding an event listener after component mount:
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
     this.resizeScreen();
     window.addEventListener("resize", this.resizeScreen);
   }
-
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
     window.removeEventListener("resize", this.resizeScreen);
   }
- 
+ // créer une fonction pour redimensionner la taille de l'écran 
   resizeScreen(){
     const isMobile =window.innerWidth<768;
     this.setState({ isMobile });
@@ -40,15 +45,16 @@ handleScroll() {
 }
 // Fonction scroll To #section au click (tempo 500ms pr rendu page avant scroll)
 handleLinkClick =(event) => {
-  const { hash } = event.currentTarget;
-  setTimeout(() => {
+ const { hash } = event.currentTarget;              // Get the element that triggered the event:
+  setTimeout(() => {                                  // excuter this event for 500s
     const element = document.querySelector(hash);
     console.log({ hash });
     console.log(element);
 
     //Scroll To ID section 
     if (element){ 
-      event.preventDefault();window.scrollTo({
+      event.preventDefault();
+      window.scrollTo({
         top: element.offsetTop,
         behavior:"smooth",
       });
@@ -56,7 +62,7 @@ handleLinkClick =(event) => {
     //fermer menu burger post click
     this.setState({ showLinks: false })
   }, 500);
-  }
+  };
 
 
 
@@ -65,14 +71,15 @@ handleLinkClick =(event) => {
     const {isTransparent, isMobile, showLinks} =this.state
     // import via propos funtion retour home 
     const {handleClick} = this.props;
+    
     //Menu ouverture et fermeture 
    const handleShowLinks =() => {
     this.setState({ showLinks: !this.state.showLinks });
    }
 
     return (
-    <header className="header">
- <nav className={`navbar ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar--transparent' :
+    <header>
+ <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar--transparent' :
 ''} `}>         
 
            <div classname="header__LogoContainer">
@@ -110,17 +117,13 @@ handleLinkClick =(event) => {
               </NavLink>
             </li>
           </ul>
+          <Langue/>
           <button className="navbar_burger" onClick={handleShowLinks}>
                         <span className="burger_bar"></span>
-          </button>
-
-          
+          </button>        
         </nav> 
     </header>
     )
-    
-
-
   }
 
 }
