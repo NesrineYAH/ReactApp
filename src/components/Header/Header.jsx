@@ -1,16 +1,11 @@
-import logo from "../../assets/images/ logo/logoCode.jpg";
 import react, { Component, useState } from "react";
 import { NavLink } from "react-router-dom";
 import React from "react";
-import Langue from "../langue/langue";
+
 //import { FaBars, FaTimes } from "react-icons/fa";
 //import barSolid from "../../assets/images/carrousel/bars-solid.svg";
 
 
-
-
-
-//create a class header
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -65,7 +60,6 @@ handleLinkClick =(event) => {
   };
 
 
-
   render() {
     // Setup menu Header with state 
     const {isTransparent, isMobile, showLinks} =this.state
@@ -82,13 +76,7 @@ handleLinkClick =(event) => {
  <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar--transparent' :
 ''} `}>         
 
-           <div classname="header__LogoContainer">
-            <img className="header__logo"       
-              src={logo}
-              alt="logo développeur web" onClick={handleClick}
-            />
-            {/* <img className="header__bars" src={barSolid} alt=" menu latérale" /> */}
-          </div>
+         
 
           <ul className="navbar__links">
             <li className="navbar_item slide1">
@@ -117,7 +105,7 @@ handleLinkClick =(event) => {
               </NavLink>
             </li>
           </ul>
-          <Langue/>
+        
           <button className="navbar_burger" onClick={handleShowLinks}>
                         <span className="burger_bar"></span>
           </button>        
