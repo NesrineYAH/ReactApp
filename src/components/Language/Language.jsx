@@ -1,11 +1,12 @@
 import React from 'react';
+import i18n from "i18next";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import '../../i18n';
 
 
-
-function  Langue() {
-const { i18n } = useTranslation();
+const  Language = () => {
+const { t, i18n } = useTranslation();
 const lang = localStorage.getItem("i18nextLng");
 const [showMenu, setShowMenu] = useState(false);
 
@@ -14,6 +15,11 @@ const handleToggleMenu = () => {
   };
     return (
         <div>
+          <div
+      style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
+      className="header"
+      id={t("home_path")}
+    ></div>
             <select
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}
@@ -27,4 +33,4 @@ const handleToggleMenu = () => {
     );
 };
 
-export default langue;
+export default Language;

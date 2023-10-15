@@ -19,10 +19,8 @@ html {
 body {
     @include body-position;
     overflow-x: hidden;
-
-    // opacity: 0.5;
-    // background: rgba(239, 241, 245, 0.8) url("../../assets/images/bakground/banner_top.jpg");
     background-color: $couleur-body;
+    background-color: var(--body_background);
 
     @media (min-width: $breakpoint-desktop) {
         max-width: 100%;

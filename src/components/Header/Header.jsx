@@ -1,9 +1,9 @@
 import react, { Component, useState } from "react";
 import { NavLink } from "react-router-dom";
 import React from "react";
-
+import Language from "../Language/Language";
 //import { FaBars, FaTimes } from "react-icons/fa";
-//import barSolid from "../../assets/images/carrousel/bars-solid.svg";
+
 
 
 class Header extends Component {
@@ -72,11 +72,9 @@ handleLinkClick =(event) => {
    }
 
     return (
-    <header>
- <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar--transparent' :
+    <header className="header">
+ <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
 ''} `}>         
-
-         
 
           <ul className="navbar__links">
             <li className="navbar_item slide1">
@@ -104,12 +102,12 @@ handleLinkClick =(event) => {
                 Contact
               </NavLink>
             </li>
-          </ul>
-        
+          </ul>       
           <button className="navbar_burger" onClick={handleShowLinks}>
-                        <span className="burger_bar"></span>
-          </button>        
+                        <span className="burger_bar">Retour</span>
+          </button>              
         </nav> 
+        < Language /> 
     </header>
     )
   }

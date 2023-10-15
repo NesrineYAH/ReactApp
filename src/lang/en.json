@@ -1,0 +1,84 @@
+{
+  "title": "Nesrine BEKKAR YAHOUM ",
+  "description": "portfolio Nesrine BEKKAR YAHOUM Front-end and Fullstack web developer.in Ile De France",
+  "photo_alt": "Nesrine BEKKAR YAHOUM",
+  "logo_alt": "Portfolio logo",
+  "home_title": "Home",
+  "home_id": "Home",
+  "home_path": "#Home",
+  "skills_title": "Skills",
+  "skills_id": "Skills",
+  "skills_path": "/#Skills",
+  "portfolio_title": "Portfolio",
+  "portfolio_id": "Portfolio",
+  "portfolio_path": "/#Portfolio",
+  "contact_title": "Contact",
+  "contact_id": "Contact",
+  "contact_path": "/#Contact",
+  "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM  ",
+  "main_heading": {
+    "hello": "Hello ",
+    "name": "I'm Imene",
+    "static_desc": "I'am a frontend web developer",
+    "dynamic_desc": "Passionate about the world of web development."
+  },
+  "description_info": {
+    "main": "Curious and passionate about new technologies, I constantly strive to improve my skills. Starting as a self-taught mobile developer, I have transitioned to web development, which has become both my passion and profession. To strengthen my expertise, I have obtained a diploma in web integration at a Bac+2 level. Additionally, my enthusiasm for backend development has led me to explore advanced technologies such as Node.js and MongoDB.\n I am always eager to learn and explore new opportunities in the field of web development.",
+    "introduction": "My name is Imene and I am a Frontend web developer passionate about the world of web development. As a self-taught individual, I am constantly learning new technologies and approaches to improve my skills and provide unique user experiences. I hold a degree in web integration at the Bac+2 level. I have worked on several personal projects to strengthen my skills as a web integrator and front-end developer. My goal is to continue learning and evolving as a web professional while offering creative and innovative solutions for any web project.As a web integrator, I have gained strong expertise in developing modern and functional websites using the latest web development technologies. I am also passionate about designing attractive and intuitive user interfaces to provide optimal user experiences. Currently looking for a position in permanent or temporary employment, I am open to new opportunities to continue developing my skills and contribute to the field of web development."
+  },
+  "Download": "Download my CV",
+  "all": "All",
+  "software": "Software",
+  "Mobile": "Mobile",
+  "Technologies_used": "Technologies used",
+  "Readmore": "Read more",
+  "Send": "Submit",
+  "Name": "Name",
+  "Email": "Email",
+  "Message": "Message",
+  "Demo": "Demo",
+  "source_code": "Source code",
+  "email_envoyer": "Your email has been successfully sent. I will get back to you as soon as possible",
+  "notFound": {
+    "message__title": "Page Not Found",
+    "message__text": " We're sorry, the page you were looking for isn't found here.",
+    "message__btn": "Return to the home page"
+  },
+
+  "projectBooki": {
+    "brief_description": "This is a website that offers the opportunity to book a hotel while allowing users to explore the various activities available in the region.",
+    "description_project": "Booki is my very first web development project that I worked on during my training as a web integrator at OpenClassrooms.\n  My main role was to take the mockups provided by the UI design team and turn them into a functional web interface using HTML and CSS.\n The project started with a careful analysis of the mockups, which were available as Figma files for different screen sizes. Following best practices in web development and adhering to established quality standards, I worked on integrating the mockups using HTML and CSS. I also ensured that the website was fully responsive, meaning it could automatically adapt to different types and sizes of screens."
+  },
+  "projectOhMyFood": {
+    "brief_description": "This is a website dedicated to gourmet restaurants, where customers have the opportunity to create their own menu before their arrival. ",
+    "description_project": "OhMyFood is a mobile-first website dedicated to presenting menus offered by gourmet restaurants. As a Front-End developer, my role was to transform the mockups provided by the design team into a functional and responsive website, suitable for various devices such as smartphones, tablets, and desktop computers.\n As part of this project, I was also tasked with integrating the animations and behaviors specified in the site's prototype to provide an optimal and attractive user experience. This professional experience allowed me to put my web integration skills into practice and deliver a quality result within the given timeframe."
+  },
+  "projectPortfolioArchitecte": {
+    "brief_description": "This is a personal website specifically designed for an interior architect, providing a platform to showcase their portfolio in a cohesive and professional manner.",
+    "description_project": "As a Front-End developer, I worked on developing the portfolio website of an interior architect.\n My mission consisted of designing the front-end part of the site.\n Using my JavaScript skills, I managed to retrieve the architect's work from the API and integrated them into a dynamic gallery. I also designed a secure login page to allow users to access the site's administration interface.\n I implemented features to allow logged-in users to delete or add works without the need to reload the page.\n My work improved the user experience and made the site more interactive."
+  },
+  "projectKasa": {
+    "brief_description": "Kasa is an application dedicated to peer-to-peer apartment rentals in France",
+    "description_project": "As a developer, I was tasked by Kasa, a leading peer-to-peer apartment rental company in France, to renovate their website.\n For this task, I used JavaScript for the client-side and opted for React as the front-end framework. I had access to 20 recent real estate listings in JSON format, which I worked on to create a functional and responsive website.\n I also used Figma to convert the designs into React components and routes, ensuring visual consistency while developing an interactive and user-friendly interface."
+  },
+  "projectNinaCarducci": {
+    "brief_description": "Website for Nina Carducci, professional photographer, with the aim of showcasing her portfolio and services",
+    "description_project": "The objective of this project was to provide Nina Carducci, a photographer, with SEO optimization services. I worked on various aspects to enhance the local search engine performance of her website.\n  This included adding appropriate metadata for social media to optimize sharing on these platforms. I also made technical optimizations in terms of code and site structure to improve its accessibility to search engines. Special attention was given to optimizing images by reducing their size without compromising quality. Ultimately, my goal was to improve Nina's website SEO to increase online visibility and attract more potential clients.\n  I provided a comprehensive optimization report along with the optimized code to enable Nina to implement the recommendations."
+  },
+  "projectArgentBankWebsite": {
+    "brief_description": "Argent Bank is a new online bank that aims to provide its users with a user-friendly dashboard",
+    "description_project": "Argent Bank is a new online bank that aims to provide its users with a user-friendly dashboard. To achieve this goal, I developed a complete web application that is responsive and compatible with all devices using technologies such as React, React Router 6, and Protected Routes. \n The application includes several essential features, including user authentication, a homepage, a login page, a profile page, and application state management with Redux. Additionally, I created a dedicated YAML file for transaction-related features.\n This will allow users to easily view their transactions and add, edit, or delete transaction information. With these developments, Argent Bank users will enjoy a smooth and convenient experience when managing their online financial transactions."
+  },
+  "projectHebergeMoi": {
+    "brief_description": "An apartment rental application that provides customers with the ability to view photos, check prices, and obtain detailed information about the location of various apartments.",
+    "description_project": "This is an apartment rental application that allows the client to view apartment photos, prices, and locations.\n The application is built using JavaScript, with React for the frontend and Node.js, Express, and MongoDB for the server side"
+  },
+  "projectAsselelmatell": {
+    "brief_description": "aThis application offers a collection of popular stories, tales, and proverbs that are often shared without people actually knowing their origin and the story behind them.",
+    "description_project": "The 'Asselelmatell'Proverbe Origin' application is a platform that offers a collection of stories and tales based on popular proverbs.\n  These narratives are often shared without people knowing their story, origin, and starting point. This offline-accessible application allows users to discover and explore these enriching stories.\n  Additionally, users have the option to easily share these stories with their friends. The application is available for free on the Play Store and has already been downloaded over 500 times."
+  },
+  "project36": {
+    "brief_description": "This game involves traversing a grid of numbered squares, starting from number 1 and aiming to reach number 36 to make progress.",
+    "description_project": "The game starts at number 1 and continues until number 36 is reached.\n  However, there are simple rules that govern the progression: you can move horizontally ↔ and vertically ↕ by two squares at a time, while a diagonal movement ⤭⤪ counts as one square. If you reach a number and all the allowed move squares are already occupied, you lose the game."
+  }
+}

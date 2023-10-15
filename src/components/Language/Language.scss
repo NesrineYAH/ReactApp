@@ -1,0 +1,17 @@
+.btn_lang {
+    border: .16em solid var(--body_color);
+    border-radius: 2em;
+    border: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 .04em .04em rgba(0, 0, 0, .55);
+    transition: all .2s;
+    width: 65px;
+    position: absolute;
+    right: 3%;
+    top: 6.5%;
+}
