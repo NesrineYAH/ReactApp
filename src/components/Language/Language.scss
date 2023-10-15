@@ -1,7 +1,7 @@
 .btn_lang {
-    border: .16em solid var(--body_color);
+    // border: .16em solid var(--body_color);
+    border: .16em solid #2e2b2b00;
     border-radius: 2em;
-    border: #000;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -13,5 +13,5 @@
     width: 65px;
     position: absolute;
     right: 3%;
-    top: 6.5%;
+    top: 6%;
 }

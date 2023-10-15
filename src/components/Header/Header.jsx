@@ -2,6 +2,7 @@ import react, { Component, useState } from "react";
 import { NavLink } from "react-router-dom";
 import React from "react";
 import Language from "../Language/Language";
+import DarkMode from "../dark/darkMode";
 //import { FaBars, FaTimes } from "react-icons/fa";
 
 
@@ -107,6 +108,7 @@ handleLinkClick =(event) => {
                         <span className="burger_bar">Retour</span>
           </button>              
         </nav> 
+        <DarkMode />
         < Language /> 
     </header>
     )
