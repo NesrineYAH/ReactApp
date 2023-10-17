@@ -11,11 +11,11 @@ class Home extends React.Component {
     return (
       <>
         <div className="home">
-          <About />
+           <About />
           <Profil />
+          </div>
+       
 
- 
-        </div>
       </>
     );
   }

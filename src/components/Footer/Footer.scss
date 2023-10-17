@@ -7,7 +7,7 @@
      left: 0;
      right: 0;
      margin-top: auto;
-     //margin-bottom: -360px;
+     margin-bottom: -660px;
      background-color: $footer-color;
 
 
@@ -50,6 +50,6 @@
 
      @media screen and (min-width: $breakpoint-desktop) {
          margin-top: auto;
-         margin-bottom: -500px;
+         margin-bottom: -800px;
      }
  }

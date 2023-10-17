@@ -1,95 +1,13 @@
-/*.card {
-    width: 100%;
-    height: 280px;
-    border-radius: 10px;
+.Profil__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    // background-blend-mode: darken;
     position: relative;
-    left: 0;
-    overflow: hidden;
-    margin-bottom: 20px;
-    transform: scale(1);
-    transition: transform 300ms;
-    animation: displyCard 2s, ease-in-out;
-
-    @media screen and (min-width: $breakpoint-desktop) {
-        height: 280px;
-    }
-
-    &__overlay {
-        position: absolute;
-        top: 0;
-        @include linear-cards;
-        height: inherit;
-        width: inherit;
-        border-radius: inherit
-    }
-
-    &__img {
-        width: inherit;
-        height: inherit;
-        object-fit: cover;
-        border-radius: inherit;
-        @include small-radius;
-        cursor: pointer;
-    }
-
-    &__title {
-        position: absolute;
-        bottom: 0;
-        @include font(18px, 500);
-        box-sizing: inherit;
-        color: $tertiary-color;
-        text-decoration: none;
-        line-height: 142.6%;
-
-
-        margin: 15px 20px;
-        overflow: hidden;
-    }
-
-    &:hover {
-        transform: scale(1.02);
-        transition: transform 300ms;
-
-    }
-}
-
-.Link {
-    text-decoration: none;
-}
-*/
-
-
-.card {
-    background-color: #e7e3e3;
-    border: #000;
-    width: 250px;
-    height: 280px;
-    border-radius: 10px;
-    opacity: 1;
-    overflow: hidden;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 280px;
-    border-radius: 10px;
-    position: relative;
-    left: 0;
-    top: 70px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    transform: scale(1);
-    transition: transform 300ms;
-    animation: displyCard 2s, ease-in-out;
-
-}
-
-@keyframes displyCard {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    min-height: 100vh;
 }
