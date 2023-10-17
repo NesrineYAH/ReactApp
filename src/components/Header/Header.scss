@@ -4,6 +4,7 @@
     @include flexCenterRow;
 
 
+
     .navbar_header {
         width: 100%;
 
@@ -46,6 +47,14 @@
             position: absolute;
             left: 22%;
 
+            font-weight: 600;
+            color: var(--link_color);
+            color: var(--body-color);
+
+            .navbar__link {
+                color: navy;
+                color: var(--body-color);
+            }
 
             .navbar_item {
                 @include font(13px, 500);
@@ -57,6 +66,10 @@
                 text-decoration: none;
                 margin-right: 18px;
                 line-height: 300%;
+                background-color: var(--body_background);
+                color: var(--link_color);
+                font-weight: var(--bs-body-font-weight);
+                line-height: var(--bs-body-line-height);
             }
         }
 
@@ -67,7 +80,7 @@
             border: none;
             color: inherit;
             cursor: pointer;
-            margin-left: 50px;
+            @include flex-start;
         }
 
         .navbar_header--transparent {

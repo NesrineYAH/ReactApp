@@ -16,6 +16,7 @@ class App extends React.Component {
   };
   render() {
   return (
+
     <>
       <BrowserRouter>
         <Header handleClick={this.handleClick} />
@@ -27,6 +28,7 @@ class App extends React.Component {
         <Footer />
       </BrowserRouter>  
       </>
+
 
   );
 }

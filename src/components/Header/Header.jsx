@@ -5,8 +5,6 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 //import { FaBars, FaTimes } from "react-icons/fa";
 
-
-
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -76,10 +74,12 @@ handleLinkClick =(event) => {
     <header className="header">
  <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
 ''} `}>         
-
+         <button className="navbar_burger" onClick={handleShowLinks}>
+         <span className="burger_bar">Retour</span>
+          </button> 
           <ul className="navbar__links">
             <li className="navbar_item slide1">
-              <NavLink to="/#About" className="navbar_link" onClick={this.handleLinkClick}>
+              <NavLink to="/#Home" className="navbar_link" onClick={this.handleLinkClick}>
                 Accueil
               </NavLink>
             </li>
@@ -104,9 +104,7 @@ handleLinkClick =(event) => {
               </NavLink>
             </li>
           </ul>       
-          <button className="navbar_burger" onClick={handleShowLinks}>
-                        <span className="burger_bar">Retour</span>
-          </button>              
+                    
         </nav> 
         <DarkMode />
         < Language /> 
