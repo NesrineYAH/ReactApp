@@ -1,9 +1,7 @@
 .header {
     width: 100%;
-    margin-top: 25px;
+    margin-bottom: 50px;
     @include flexCenterRow;
-
-
 
     .navbar_header {
         width: 100%;
@@ -41,12 +39,11 @@
     }*/
 
         .navbar__links {
-            width: 60%;
+            width: 50%;
             @include flexCenterRow;
             text-transform: uppercase;
             position: absolute;
-            left: 22%;
-
+            left: 35%;
             font-weight: 600;
             color: var(--link_color);
             color: var(--body-color);
@@ -55,10 +52,9 @@
                 color: navy;
                 color: var(--body-color);
             }
-
             .navbar_item {
                 @include font(13px, 500);
-                width: 90px;
+                width: 80px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -66,7 +62,6 @@
                 text-decoration: none;
                 margin-right: 18px;
                 line-height: 300%;
-     
             }
         }
 

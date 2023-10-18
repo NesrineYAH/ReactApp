@@ -19,7 +19,7 @@ class App extends React.Component {
 
     <>
       <BrowserRouter>
-        <Header handleClick={this.handleClick} />
+       <Header handleClick={this.handleClick} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />

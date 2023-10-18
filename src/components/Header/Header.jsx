@@ -88,14 +88,15 @@ handleLinkClick =(event) => {
                 Profil
               </NavLink>
             </li>
+      
             <li className="navbar_item slide3">
-              <NavLink to="/#Portfolio" className="navbar_link" onClick={this.handleLinkClick}>
-                Portfolio
+              <NavLink to="/#Competances" className="navbar_link" onClick={this.handleLinkClick}>
+                Compétences
               </NavLink>
             </li>
             <li className="navbar_item slide4">
-              <NavLink to="/#Competances" className="navbar_link" onClick={this.handleLinkClick}>
-                Compétences
+              <NavLink to="/#Portfolio" className="navbar_link" onClick={this.handleLinkClick}>
+                Portfolio
               </NavLink>
             </li>
             <li className="navbar_item slide5">

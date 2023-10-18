@@ -1,16 +1,16 @@
 #About {
     @include flex-column;
     width: 100%;
-    height: 700px;
+    height: 500px;
+    //background-color: rgb(199, 199, 230);
 }
 
-.About__info {
+.presentation {
     width: 80%;
     // min-height: 100vh;
     position: relative;
-    top: 8%;
+    top: 6%;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,4 +26,27 @@
     width: 500px;
     width: 400px;
 
+}
+
+.btn {
+    width: 130px;
+    height: 30px;
+    color: navy;
+    background-color: rgb(199, 199, 230);
+    border: 3px, solid, navy;
+    //  transform: scale(0);
+    // animation-delay: 5s;
+    // animation-duration: 2s;
+    // animation-name: zoomBtn;
+    // animation-fill-mode: forwards;
+    // min-width: 5vw;
+    margin: 1vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    Link {
+        color: rgb(199, 199, 230);
+    }
 }

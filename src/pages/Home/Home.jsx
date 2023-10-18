@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Competance from "../../components/Competances/Competances";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
+import Header from "../../components/Header/Header";
 
 
 

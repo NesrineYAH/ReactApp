@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 
 class TxtRotate extends Component {
     constructor(props) {
@@ -133,16 +133,16 @@ class TxtToDisplay extends Component {
   }
 }
   
-class AboutMe extends Component {
+class About extends Component {
   render() {
     return (
       <section>
-        <div id="about-me">
+        <div id="About">
           <div className="presentation">
             <p>
-              Hello{' '}
+              Bonjour {' '}
               <TxtRotate
-                toRotate='["World !", "Visiteur !", "Recruteur ?!"]'
+                toRotate='["tout le monde!", "Visiteur !", "Recruteur ?!"]'
                 period="3000"
               />
               <span className='wrap-border'>
@@ -150,7 +150,7 @@ class AboutMe extends Component {
               </span>
             </p>
             <TxtToDisplay />
-            <button className='btn btn-about-me lightblue-btn'><a href='#profil'>Plus d'info</a></button>
+            <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
           </div>
         </div>
       </section>
@@ -158,4 +158,4 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe;
+export default About;
