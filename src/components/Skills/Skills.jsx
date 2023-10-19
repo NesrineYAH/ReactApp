@@ -8,9 +8,9 @@ const Skills = () => {
     setFiltre(value);
   };
   return (
-    <div id="skills__Container">
+    <div id="skillsGrille__Container">
    <filtre onFiltreChange={handleFiltreChange} />
-    <Skills filtre={filtre} /> 
+    <SkillsGrille filtre={filtre} /> 
     </div>
   );
 };
@@ -34,7 +34,43 @@ const Filtre = ({onFiltreChange}) => {
   )
 }
 // SkillsGrille component
-const skillsGrille = ({ filtre }) => {
+const skills = ({ filtre }) => {
   const [Skills, setSkills] = useState([]);
-}
+  useEffect (() =>{
+    const fetchSkills = async () => {
+    try {
+      const skillsPersonal = await fetch("../../json/skills.json", {
+       method: "GET", 
+      });
+      if (skillsPersonal.ok) {
+        const response = await skills.json()
+        setSkills(response);
+      }
+    } catch (e) {
+      console.log(e);
+   }   
+    }; 
+    fetchSkills();   
+  }, []);
+
+  return filtre === undefined ||
+  filtre === null  ||
+  filtre === "الكل" ||
+  filtre === "ALL"  ||
+  filtre === "Tout"  ? (
+    <div className="SkillsGrille">
+      {skills
+      .filtre((skill) => skill.category === filtre)
+      .map((skill) => (
+        <div className="skillsGrille_item" key={skill.key}>
+         <div className="skillsGrille_img">
+          <img src={skill.img} alt={skill.alt}/>
+           </div>
+           <b>{skill.name}</b>
+        </div>
+      )) }
+    </div>
+  )
+
+};
 export default Skills;
