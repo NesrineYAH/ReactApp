@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/PageError/PageError";
-import Competance from "./components/Competances/Competances";
+import Competance from "./components/Skills/Skills";
 import { useLocation } from "react-router-dom";
 
 import "./App.scss";

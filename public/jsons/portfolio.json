@@ -27,10 +27,9 @@
       "../assets/projects/booki/booki-min.webp",
       "../assets/projects/booki/booki6-min.webp"
     ],
-    "site": "https://imene-yahiaoui.github.io/Booki/",
-    "github": "https://github.com/imene-yahiaoui/Booki"
+    "site": "https://nesrineyah.github.io/Booki-YAHOUM-NESRINE/",
+    "github": "https://github.com/NesrineYAH/Booki-YAHOUM-NESRINE"
   },
-
   {
     "title": "Ohmyfood",
     "image": "../assets/projects/ohmyfood/food-min.webp",
@@ -59,43 +58,42 @@
       "../assets/projects/ohmyfood/ohmyfood8-min.webp",
       "../assets/projects/ohmyfood/ohmyfood9-min.webp"
     ],
-    "site": "https://imene-yahiaoui.github.io/ohMyFood/",
-    "github": "https://github.com/imene-yahiaoui/ohMyFood"
+    "site": "https://nesrineyah.github.io/Ohmyfood-YAHOUM-NESRINE/",
+    "github": "https://github.com/NesrineYAH/Ohmyfood-YAHOUM-NESRINE.git"
   },
   {
-    "title": "Portfolio Architecte",
-    "image": "../assets/projects/portfolioArchitecte/sofi-min.webp",
-    "alt": "projet Portfolio Architecte",
+    "title": "La Panthère",
+    "image": "",
+    "alt": "projet La panthère",
     "id": "3",
-    "brief_description": "projectPortfolioArchitecte.brief_description",
-    "description_project": "projectPortfolioArchitecte.description_project",
+    "brief_description": "projectOhMyFood.brief_description",
+    "description_project": "projectOhMyFood.description_project",
     "technologyUsed": [
       {
-        "icon": "../assets/technologyIcons/html-min.webp",
-        "name": "HTML"
-      },
-      {
-        "icon": "../assets/technologyIcons/css-3-min.webp",
-        "name": "CSS"
-      },
-      {
-        "icon": "../assets/technologyIcons/js-min.webp",
-        "name": "JavaScript"
+        "icon": "../assets/technologyIcons/seo-min.webp",
+        "name": "SEO"
       }
-    ],
-    "pictures": [
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte1-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte2-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte3-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte4-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte5-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte6-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte7-min.webp",
-      "../assets/projects/portfolioArchitecte/portfolioArchitecte8-min.webp"
-    ],
-
-    "github": "https://github.com/imene-yahiaoui/Portfolio-architecte-sophie-bluel"
+      ]  
+  },
+  { 
+    "title": "Kanap",
+    "image": "../assets/projects/Kanap/kanapCover-min.webp",
+    "alt": "projet kanap",
+    "id": "1",
+    "brief_description": "projectkanap.brief_description",
+    "description_project": "projectkanap.description_project",
+    "technologyUsed": "Javascript, Node.js, Express.js, MongoDB",
+    "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
+  },
+  {
+    "title": "Picante",
+    "image": "../assets/projects/Kanap/PicanteCover-min.webp",
+    "alt": "projet Picante",
+    "id": "1",
+    "brief_description": "projectPicante.brief_description",
+    "description_project": "projectPicante.description_project",
+    "technologyUsed": "Javascript, Node.js",
+    "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
   {
     "title": "Kasa",
@@ -124,192 +122,9 @@
       "../assets/projects/kasa/kasa6-min.webp",
       "../assets/projects/kasa/kasa7-min.webp"
     ],
-    "site": "https://kasakasakasa.netlify.app/",
-    "github": "https://github.com/imene-yahiaoui/Kasa"
-  },
-  {
-    "title": "Nina Carducci",
-    "image": "../assets/projects/ninaCarducci/nina-min.webp",
-    "alt": "projet Nina Carducci",
-    "id": "5",
-    "brief_description": "projectNinaCarducci.brief_description",
-    "description_project": "projectNinaCarducci.description_project",
-    "technologyUsed": [
-      {
-        "icon": "../assets/technologyIcons/seo-min.webp",
-        "name": "Seo"
-      },
-      {
-        "icon": "../assets/technologyIcons/html-min.webp",
-        "name": "HTML"
-      },
-      {
-        "icon": "../assets/technologyIcons/css-3-min.webp",
-        "name": "CSS"
-      }
-    ],
-    "pictures": [
-      "../assets/projects/ninaCarducci/ninaCarducci-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci1-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci2-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci3-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci4-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci5-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci6-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci7-min.webp",
-      "../assets/projects/ninaCarducci/ninaCarducci8-min.webp"
-    ],
-    "site": "https://imene-yahiaoui.github.io/Nina-Carducci/",
-    "github": "https://github.com/imene-yahiaoui/Nina-Carducci"
-  },
-  {
-    "title": "ArgentBank Website",
-    "image": "../assets/projects/ArgentBankWebsite/banck-min.webp",
-    "alt": "projet ArgentBank Website",
-    "id": "6",
-    "brief_description": "projectArgentBankWebsite.brief_description",
-    "description_project": "projectArgentBankWebsite.description_project",
-    "technologyUsed": [
-      {
-        "icon": "../assets/technologyIcons/react-min.webp",
-        "name": "React"
-      },
-      {
-        "icon": "../assets/technologyIcons/redux-min.webp",
-        "name": "Redux"
-      },
-      {
-        "icon": "../assets/technologyIcons/css-3-min.webp",
-        "name": "CSS"
-      },
-      {
-        "icon": "../assets/technologyIcons/mongodb-min.webp",
-        "name": "Mongodb"
-      }
-    ],
-    "pictures": [
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite1-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite2-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite3-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite4-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite5-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite6-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite7-min.webp",
-      "../assets/projects/ArgentBankWebsite/ArgentBankWebsite8-min.webp"
-    ],
-
-    "github": "https://github.com/imene-yahiaoui/ArgentBank-website"
-  },
-  {
-    "title": "Héberge Moi",
-    "image": "../assets/projects/hebergeMoi/hebergemoiIcon-min.webp",
-    "alt": "projet Héberge Moi",
-    "id": "7",
-    "brief_description": "projectHebergeMoi.brief_description",
-    "description_project": "projectHebergeMoi.description_project",
-    "technologyUsed": [
-      {
-        "icon": "../assets/technologyIcons/react-min.webp",
-        "name": "React"
-      },
-      {
-        "icon": "../assets/technologyIcons/redux-min.webp",
-        "name": "Redux"
-      },
-      {
-        "icon": "../assets/technologyIcons/sass-min.webp",
-        "name": "Sass"
-      },
-      {
-        "icon": "../assets/technologyIcons/mongodb-min.webp",
-        "name": "Mongodb"
-      },
-      {
-        "icon": "../assets/technologyIcons/bootstrap-min.webp",
-        "name": "Bootstrap"
-      },
-      {
-        "icon": "../assets/technologyIcons/express-1-min.webp",
-        "name": "Express"
-      },
-      {
-        "icon": "../assets/technologyIcons/nodejs-min.webp",
-        "name": "Node.js"
-      }
-    ],
-    "pictures": [
-      "../assets/projects/hebergeMoi/hebergeMoi1-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi2-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi3-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi4-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi5-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi6-min.webp",
-      "../assets/projects/hebergeMoi/hebergeMoi7-min.webp"
-    ],
-
-    "github": "https://github.com/imene-yahiaoui/Heberge_Moi"
-  },
-  {
-    "title": "أصل المثل",
-    "image": "../assets/projects/asselelmatell/image-min.webp",
-    "alt": "projet Asselelmatell",
-    "id": "8",
-    "brief_description": "projectAsselelmatell.brief_description",
-    "description_project": "projectAsselelmatell.description_project",
-    "technologyUsed": [
-      {
-        "icon": "../assets/technologyIcons/kotlin-min.webp",
-        "name": "Kotlin"
-      },
-      {
-        "icon": "../assets/technologyIcons/Android_Studio-min.webp",
-        "name": "Android Studio"
-      },
-      {
-        "icon": "../assets/technologyIcons/admobe-min.webp",
-        "name": "Admob"
-      }
-    ],
-    "pictures": [
-      "../assets/projects/asselelmatell/asselelmatell-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell1-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell2-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell3-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell4-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell5-min.webp",
-      "../assets/projects/asselelmatell/asselelmatell6-min.webp"
-    ],
-    "site": "https://play.google.com/store/apps/details?id=com.bftservices.asselmatel"
-  },
-  {
-    "title": "36",
-    "image": "../assets/projects/36/icon-min.webp",
-    "alt": "projet 36",
-    "id": "9",
-    "brief_description": "project36.brief_description",
-    "description_project": "project36.description_project",
-    "technologyUsed": [
-      {
-        "icon": "../assets/technologyIcons/kotlin-min.webp",
-        "name": "Kotlin"
-      },
-      {
-        "icon": "../assets/technologyIcons/Android_Studio-min.webp",
-        "name": "Android Studio"
-      },
-      {
-        "icon": "../assets/technologyIcons/admobe-min.webp",
-        "name": "Admob"
-      }
-    ],
-    "pictures": [
-      "../assets/projects/36/361-min.webp",
-      "../assets/projects/36/362-min.webp",
-      "../assets/projects/36/363-min.webp",
-      "../assets/projects/36/364-min.webp",
-      "../assets/projects/36/365-min.webp"
-    ],
-    "site": "https://play.google.com/store/apps/details?id=com.bftservices.game36"
+    "site": "https://nesrineyah.github.io/Kasa-app-YAHOUM/",
+    "github":"https://github.com/NesrineYAH/Ohmyfood-YAHOUM-NESRINE.git"
   }
+ 
+
 ]

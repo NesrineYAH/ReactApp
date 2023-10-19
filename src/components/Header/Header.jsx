@@ -90,7 +90,7 @@ handleLinkClick =(event) => {
             </li>
       
             <li className="navbar_item slide3">
-              <NavLink to="/#Competances" className="navbar_link" onClick={this.handleLinkClick}>
+              <NavLink to="/Skills" className="navbar_link" onClick={this.handleLinkClick}>
                 Compétences
               </NavLink>
             </li>
