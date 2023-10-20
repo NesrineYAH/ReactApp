@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/PageError/PageError";
-import Competance from "./components/Skills/Skills";
 import { useLocation } from "react-router-dom";
 
 import "./App.scss";
@@ -23,7 +22,6 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />
-          <Route path="/Competances" element={<Competance />} />
         </Routes>
         <Footer />
       </BrowserRouter>  

@@ -1,7 +1,5 @@
 .Profil__container {
     margin: 0 auto;
-    display: flex;
-    height: 700px;
     gap: 60px;
     @include flexCenterRow;
     align-items: center;

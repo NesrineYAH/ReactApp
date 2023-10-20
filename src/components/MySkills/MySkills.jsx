@@ -2,8 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 
-const Skills = () => {
+const MySkills = () => {
+  
   const [filtre, setFiltre] = useState();
+
   const handleFiltreChange = (value) => {
     setFiltre(value);
   };
@@ -14,13 +16,14 @@ const Skills = () => {
     </div>
   );
 };
+
 //Filtre component
 const Filtre = ({onFiltreChange}) => {
   const {t} = useTranslation();
 
   const handleFiltreSelect = (e) => {
     onFiltreChange(e.target.value);
-  }
+  };
   return (
     <div>
       <select className="filtre" onChange={handleFiltreSelect}>
@@ -31,18 +34,20 @@ const Filtre = ({onFiltreChange}) => {
         <option value="Mobile">{t("Mobile")}</option>
       </select>
     </div>
-  )
-}
+  );
+};
+
 // SkillsGrille component
-const skills = ({ filtre }) => {
-  const [Skills, setSkills] = useState([]);
+const SkillsGrille = ({ filtre }) => {
+  const [skills, setSkills] = useState([]);
+
   useEffect (() =>{
     const fetchSkills = async () => {
     try {
-      const skillsPersonal = await fetch("../../json/skills.json", {
+      const skills = await fetch("../../jsons/skills.json", {
        method: "GET", 
       });
-      if (skillsPersonal.ok) {
+      if (skills.ok) {
         const response = await skills.json()
         setSkills(response);
       }
@@ -53,24 +58,36 @@ const skills = ({ filtre }) => {
     fetchSkills();   
   }, []);
 
-  return filtre === undefined ||
+  return  filtre === undefined ||
   filtre === null  ||
   filtre === "الكل" ||
   filtre === "ALL"  ||
   filtre === "Tout"  ? (
+  <div className="skillsGrille">
+  {skills.map((skill) => (
+    <div className="skillsGrille_item" key={skill.key}>
+      {/* <div className="skillsGrille_img">
+        <img src={skill.image} alt={skill.alt} />
+      </div> */}
+      <b>{skill.name}</b>
+    </div>
+  ))}
+</div>
+) : (
     <div className="SkillsGrille">
       {skills
-      .filtre((skill) => skill.category === filtre)
+      .filter((skill) => skill.category === filtre)
       .map((skill) => (
         <div className="skillsGrille_item" key={skill.key}>
-         <div className="skillsGrille_img">
+         {/* <div className="skillsGrille_img">
           <img src={skill.img} alt={skill.alt}/>
-           </div>
+           </div> */}
            <b>{skill.name}</b>
         </div>
       )) }
     </div>
-  )
+  );
 
 };
-export default Skills;
+
+export default MySkills;

@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
-//import Skills from "../../components/Skills/Skilles";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
-import Header from "../../components/Header/Header";
-
+import Skills from "../../Containers/Skills/Skills";
 
 
 class Home extends React.Component {
@@ -13,9 +11,9 @@ class Home extends React.Component {
       <>
         <div className="home">
            <About />
-          <Profil />
-          </div>
-       
+          <Profil />        
+          <Skills/>
+        </div>
 
       </>
     );
