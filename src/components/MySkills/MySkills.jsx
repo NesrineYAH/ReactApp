@@ -10,9 +10,9 @@ const MySkills = () => {
     setFiltre(value);
   };
   return (
-    <div id="skillsGrille__Container">
+    <div id="competance__Container">
    <filtre onFiltreChange={handleFiltreChange} />
-    <SkillsGrille filtre={filtre} /> 
+    <competance filtre={filtre} /> 
     </div>
   );
 };
@@ -38,7 +38,7 @@ const Filtre = ({onFiltreChange}) => {
 };
 
 // SkillsGrille component
-const SkillsGrille = ({ filtre }) => {
+const competance = ({ filtre }) => {
   const [skills, setSkills] = useState([]);
 
   useEffect (() =>{
@@ -63,9 +63,9 @@ const SkillsGrille = ({ filtre }) => {
   filtre === "الكل" ||
   filtre === "ALL"  ||
   filtre === "Tout"  ? (
-  <div className="skillsGrille">
+  <div className="competance">
   {skills.map((skill) => (
-    <div className="skillsGrille_item" key={skill.key}>
+    <div className="competance_item" key={skill.key}>
       {/* <div className="skillsGrille_img">
         <img src={skill.image} alt={skill.alt} />
       </div> */}
@@ -74,11 +74,11 @@ const SkillsGrille = ({ filtre }) => {
   ))}
 </div>
 ) : (
-    <div className="SkillsGrille">
+    <div className="competance">
       {skills
       .filter((skill) => skill.category === filtre)
       .map((skill) => (
-        <div className="skillsGrille_item" key={skill.key}>
+        <div className="competance_item" key={skill.key}>
          {/* <div className="skillsGrille_img">
           <img src={skill.img} alt={skill.alt}/>
            </div> */}
