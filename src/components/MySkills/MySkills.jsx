@@ -1,18 +1,17 @@
-import React from "react";
+ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 
-const MySkills = () => {
-  
+const MySkills = () => {  
   const [filtre, setFiltre] = useState();
-
+//on assigne une des valeurs du ligne 29 au ligne 33 
   const handleFiltreChange = (value) => {
     setFiltre(value);
   };
   return (
-    <div id="competance__Container">
-   <filtre onFiltreChange={handleFiltreChange} />
-    <competance filtre={filtre} /> 
+    <div className="competance__Container">
+   <Filtre onFiltreChange={handleFiltreChange} />
+    <Competance filtre={filtre} /> 
     </div>
   );
 };
@@ -38,10 +37,11 @@ const Filtre = ({onFiltreChange}) => {
 };
 
 // SkillsGrille component
-const competance = ({ filtre }) => {
+const Competance = ({ filtre }) => {
   const [skills, setSkills] = useState([]);
 
   useEffect (() =>{
+    //créer une fonction asynchrone pour récupérer tous les skills du fichier skills.json
     const fetchSkills = async () => {
     try {
       const skills = await fetch("../../jsons/skills.json", {
@@ -58,18 +58,17 @@ const competance = ({ filtre }) => {
     fetchSkills();   
   }, []);
 
-  return  filtre === undefined ||
+  return  (
+  filtre === undefined ||
   filtre === null  ||
   filtre === "الكل" ||
   filtre === "ALL"  ||
-  filtre === "Tout"  ? (
+  filtre === "Tout" ) ? (
   <div className="competance">
   {skills.map((skill) => (
     <div className="competance_item" key={skill.key}>
-      {/* <div className="skillsGrille_img">
-        <img src={skill.image} alt={skill.alt} />
-      </div> */}
-      <b>{skill.name}</b>
+                  <div className="skill-bar"></div>
+      <b className="skills__title">{skill.name}</b>
     </div>
   ))}
 </div>
@@ -79,9 +78,7 @@ const competance = ({ filtre }) => {
       .filter((skill) => skill.category === filtre)
       .map((skill) => (
         <div className="competance_item" key={skill.key}>
-         {/* <div className="skillsGrille_img">
-          <img src={skill.img} alt={skill.alt}/>
-           </div> */}
+        <div className="skill-bar"></div>
            <b>{skill.name}</b>
         </div>
       )) }
