@@ -33,7 +33,7 @@
 
 }
 
-@mixin ItemCenter {
+@mixin ItemColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -35,7 +35,7 @@ const Skills = () => {
 const slideInTop = (elem) => {
     gsap.fromTo(elem,
         {
-          y:200,
+          y:300,
           opacity:0,
         },
         {
@@ -78,15 +78,15 @@ useEffect(() => {
   
    
     return (
-        <div id="skills"> 
-       <div id={t("skills_id")}>
+        <section id="Skills"> 
+       <div id={t("skills_id")} className="SkillsBloc">
             <h1 className="titleCom">{t("skills_title")}
             <span ref={textRef}><span className='display-dots'></span></span>  
             </h1>
         <MySkills />
           
         </div>
-        </div>
+        </section>
     );
 
    

@@ -31,10 +31,12 @@ const Filtre = ({onFiltreChange}) => {
         <option value="Backend">Backend</option>
         <option value="Logiciel">{t("software")}</option>
         <option value="Mobile">{t("Mobile")}</option>
-      </select>
+      </select>    
     </div>
+
   );
 };
+
 
 // SkillsGrille component
 const Competance = ({ filtre }) => {
@@ -68,7 +70,7 @@ const Competance = ({ filtre }) => {
   {skills.map((skill) => (
     <div className="competance_item" key={skill.key}>
                   <div className="skill-bar"></div>
-      <b className="skills__title">{skill.name}</b>
+      <b>{skill.name}</b>
     </div>
   ))}
 </div>
@@ -78,7 +80,7 @@ const Competance = ({ filtre }) => {
       .filter((skill) => skill.category === filtre)
       .map((skill) => (
         <div className="competance_item" key={skill.key}>
-        <div className="skill-bar"></div>
+        <div className="competance-bar"></div>
            <b>{skill.name}</b>
         </div>
       )) }
