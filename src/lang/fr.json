@@ -19,7 +19,7 @@
 
   "main_heading": {
     "hello": "Bonjour",
-    "name": " c'est Imene",
+    "name": " c'est Nesrine",
     "static_desc": " Je suis  développeuse web frontend ",
     "dynamic_desc": "passionnée par le monde du développement web"
   },
@@ -53,32 +53,20 @@
     "brief_description": "Il s'agit d'un site web dédié aux restaurants gastronomiques, où les clients ont la possibilité de composer leur propre menu avant leur arrivée.",
     "description_project": "OhMyFood est un site web mobile-first dédié à la présentation des menus proposés par les restaurants gastronomiques.\n  Mon rôle en tant qu'intégratrice web était de transformer les maquettes fournies par l'équipe de conception en un site web fonctionnel et responsive, adapté aux différents dispositifs tels que les smartphones, tablettes et ordinateurs de bureau.\n  Dans le cadre de ce projet, j'ai également eu pour mission d'intégrer les animations et comportements spécifiés dans le prototype du site pour offrir une expérience utilisateur optimale et attrayante.\n  Cette expérience professionnelle m'a permis de mettre en pratique mes compétences en matière d'intégration web et de livrer un résultat de qualité dans les délais impartis."
   },
-  "projectPortfolioArchitecte": {
-    "brief_description": "Il s'agit d'un site personnel conçu spécifiquement pour une architecte d'intérieur, lui offrant une plateforme pour présenter ses réalisations de manière cohérente et professionnelle. ",
-    "description_project": "En tant qu'intégratrice web, j'ai travaillé sur le développement du site portfolio d'une architecte d'intérieur.\n  Ma mission a consisté à concevoir la partie front-end du site. Grâce à mes compétences en JavaScript, j'ai réussi à récupérer les travaux de l'architecte depuis l'API et les ai intégrés dans une galerie dynamique.\n  J'ai également conçu une page de connexion sécurisée pour permettre aux utilisateurs d'accéder à l'interface d'administration du site.\n  J'ai implémenté des fonctionnalités pour permettre aux utilisateurs connectés de supprimer ou ajouter des travaux sans avoir besoin de recharger la page. Mon travail a considérablement d'améliorer l'expérience utilisateur et de rendre le site plus interactif. "
-  },
+"projectLapantherre": {
+  "brief_description": "Il s'agit d'un site web d'une agence web pour faire un audit SEO,  une analyse, tests et modifications du site La Panthère pour optimisation Accessibilité et Performance en respectant les normes du W3C." ,
+  "description_project": "La Panthère Agence de web Design, est un site vitrine optimisé avec l'application du réferencement naturel"
+},
+"projectKanap": {
+  "brief_description": "Il s'agit d'un site e-commerce de vente des canapé avec javascript",
+  "description_project": "En tant que développeur, j'ai été chargée de créer un site dynamique avec javascript"
+},
+"projectPicante": {
+  "brief_description": "Picante est une application  d'évaluation en une boutique en ligne, l'entreprise souhaite que la première version soit une « galerie de sauces »",
+  "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale."
+},
   "projectKasa": {
     "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France",
-    "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale."
-  },
-  "projectNinaCarducci": {
-    "brief_description": "Site web pour Nina Carducci, photographe professionnelle, dans le but de présenter ses réalisations et ses services.",
-    "description_project": "Ce projet avait pour objectif de proposer à Nina Carducci, une photographe, un service d'optimisation SEO. J'ai travaillé sur plusieurs aspects pour améliorer les performances de référencement local de son site. Cela incluait l'ajout de métadonnées appropriées pour les réseaux sociaux afin d'optimiser le partage sur ces plateformes.\n J'ai également effectué des optimisations techniques en termes de code et de structure du site pour améliorer son accessibilité aux moteurs de recherche. Une attention particulière a été portée à l'optimisation des images pour réduire leur taille sans compromettre leur qualité. En fin de compte, mon objectif était d'améliorer le référencement du site de Nina afin d'augmenter sa visibilité en ligne et d'attirer davantage de clients potentiels.\n J'ai fourni un rapport complet d'optimisation ainsi que le code optimisé pour permettre à Nina de mettre en œuvre les recommandations."
-  },
-  "projectArgentBankWebsite": {
-    "brief_description": "Argent Bank est une nouvelle banque en ligne souhaitant fournir à ses utilisateurs un tableau de bord convivial",
-    "description_project": "Argent Bank est une nouvelle banque en ligne qui souhaite offrir à ses utilisateurs un tableau de bord convivial. Dans le but d'atteindre cet objectif, j'ai développé une application web complète, réactive et adaptée à tous les appareils en utilisant des technologies telles que React, React Router 6 et les routes protégées (Protected Routes).\n L'application comprend plusieurs fonctionnalités essentielles, notamment l'authentification de l'utilisateur, la page d'accueil, la page de connexion, la page de profil et la gestion de l'état de l'application avec Redux.\n En outre, j'ai créé un fichier YAML dédié aux fonctionnalités relatives aux transactions. Cela permettra aux utilisateurs de visualiser leurs transactions, d'ajouter, de modifier ou de supprimer des informations liées à une transaction en toute simplicité. Grâce à ces développements, les utilisateurs d'Argent Bank pourront profiter d'une expérience fluide et pratique lors de la gestion de leurs transactions financières en ligne."
-  },
-  "projectHebergeMoi": {
-    "brief_description": "une application de location d'appartements qui offre aux clients la possibilité de visualiser des photos, de consulter les prix et d'obtenir des informations détaillées sur l'emplacement des différents appartements.",
-    "description_project": "Il s'agit d'une application de location d'appartements qui offre aux clients la possibilité de visualiser des photos, le prix et l'emplacement des appartements.\n  Cette application a été développée en JavaScript, en utilisant React pour le frontend et Node.js, express et MongoDB pour le côté serveur."
-  },
-  "projectAsselelmatell": {
-    "brief_description": "Cette application propose une collection d'histoires, de contes et de proverbes populaires qui sont souvent partagés sans que les gens en connaissent réellement l'origine et l'histoire qui les entoure.",
-    "description_project": "L'application 'Asselelmatell''Proverbe Origin' est une plateforme qui offre une collection d'histoires et de contes basés sur des proverbes populaires. Ces récits sont souvent partagés sans que les gens connaissent leur histoire, leur origine et leur lieu de départ.\n  Cette application, accessible sans connexion Internet, permet aux utilisateurs de découvrir et d'explorer ces histoires enrichissantes. \n  De plus, les utilisateurs ont la possibilité de partager facilement ces histoires avec leurs amis. L'application est disponible gratuitement sur le Play Store et a déjà été téléchargée plus de 500 fois."
-  },
-  "project36": {
-    "brief_description": "Ce jeu implique de parcourir un tableau de cases numérotées, en commençant par le numéro 1 et en visant à atteindre le numéro 36 pour progresser.",
-    "description_project": "Le jeu commence au numéro 1 et se poursuit jusqu'à ce que le numéro 36 soit atteint.\n Cependant, il y a des règles simples qui régissent la progression : vous pouvez vous déplacer horizontalement ↔ et verticalement ↕ de deux cases à la fois, tandis qu'un déplacement en diagonale ⤭⤪ équivaut à une case. Si vous arrivez à un numéro et que toutes les cases de déplacement autorisées sont déjà occupées, vous perdez la partie."
-  }
+    "description_project": "En tant que développeur, j'ai été chargé par Kasa, web est de construire une API sécurisé pour cette application «HOT TAKE»."
+}
 }

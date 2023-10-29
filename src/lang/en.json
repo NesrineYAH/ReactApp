@@ -53,32 +53,8 @@
     "brief_description": "This is a website dedicated to gourmet restaurants, where customers have the opportunity to create their own menu before their arrival. ",
     "description_project": "OhMyFood is a mobile-first website dedicated to presenting menus offered by gourmet restaurants. As a Front-End developer, my role was to transform the mockups provided by the design team into a functional and responsive website, suitable for various devices such as smartphones, tablets, and desktop computers.\n As part of this project, I was also tasked with integrating the animations and behaviors specified in the site's prototype to provide an optimal and attractive user experience. This professional experience allowed me to put my web integration skills into practice and deliver a quality result within the given timeframe."
   },
-  "projectPortfolioArchitecte": {
-    "brief_description": "This is a personal website specifically designed for an interior architect, providing a platform to showcase their portfolio in a cohesive and professional manner.",
-    "description_project": "As a Front-End developer, I worked on developing the portfolio website of an interior architect.\n My mission consisted of designing the front-end part of the site.\n Using my JavaScript skills, I managed to retrieve the architect's work from the API and integrated them into a dynamic gallery. I also designed a secure login page to allow users to access the site's administration interface.\n I implemented features to allow logged-in users to delete or add works without the need to reload the page.\n My work improved the user experience and made the site more interactive."
-  },
   "projectKasa": {
     "brief_description": "Kasa is an application dedicated to peer-to-peer apartment rentals in France",
     "description_project": "As a developer, I was tasked by Kasa, a leading peer-to-peer apartment rental company in France, to renovate their website.\n For this task, I used JavaScript for the client-side and opted for React as the front-end framework. I had access to 20 recent real estate listings in JSON format, which I worked on to create a functional and responsive website.\n I also used Figma to convert the designs into React components and routes, ensuring visual consistency while developing an interactive and user-friendly interface."
-  },
-  "projectNinaCarducci": {
-    "brief_description": "Website for Nina Carducci, professional photographer, with the aim of showcasing her portfolio and services",
-    "description_project": "The objective of this project was to provide Nina Carducci, a photographer, with SEO optimization services. I worked on various aspects to enhance the local search engine performance of her website.\n  This included adding appropriate metadata for social media to optimize sharing on these platforms. I also made technical optimizations in terms of code and site structure to improve its accessibility to search engines. Special attention was given to optimizing images by reducing their size without compromising quality. Ultimately, my goal was to improve Nina's website SEO to increase online visibility and attract more potential clients.\n  I provided a comprehensive optimization report along with the optimized code to enable Nina to implement the recommendations."
-  },
-  "projectArgentBankWebsite": {
-    "brief_description": "Argent Bank is a new online bank that aims to provide its users with a user-friendly dashboard",
-    "description_project": "Argent Bank is a new online bank that aims to provide its users with a user-friendly dashboard. To achieve this goal, I developed a complete web application that is responsive and compatible with all devices using technologies such as React, React Router 6, and Protected Routes. \n The application includes several essential features, including user authentication, a homepage, a login page, a profile page, and application state management with Redux. Additionally, I created a dedicated YAML file for transaction-related features.\n This will allow users to easily view their transactions and add, edit, or delete transaction information. With these developments, Argent Bank users will enjoy a smooth and convenient experience when managing their online financial transactions."
-  },
-  "projectHebergeMoi": {
-    "brief_description": "An apartment rental application that provides customers with the ability to view photos, check prices, and obtain detailed information about the location of various apartments.",
-    "description_project": "This is an apartment rental application that allows the client to view apartment photos, prices, and locations.\n The application is built using JavaScript, with React for the frontend and Node.js, Express, and MongoDB for the server side"
-  },
-  "projectAsselelmatell": {
-    "brief_description": "aThis application offers a collection of popular stories, tales, and proverbs that are often shared without people actually knowing their origin and the story behind them.",
-    "description_project": "The 'Asselelmatell'Proverbe Origin' application is a platform that offers a collection of stories and tales based on popular proverbs.\n  These narratives are often shared without people knowing their story, origin, and starting point. This offline-accessible application allows users to discover and explore these enriching stories.\n  Additionally, users have the option to easily share these stories with their friends. The application is available for free on the Play Store and has already been downloaded over 500 times."
-  },
-  "project36": {
-    "brief_description": "This game involves traversing a grid of numbered squares, starting from number 1 and aiming to reach number 36 to make progress.",
-    "description_project": "The game starts at number 1 and continues until number 36 is reached.\n  However, there are simple rules that govern the progression: you can move horizontally ↔ and vertically ↕ by two squares at a time, while a diagonal movement ⤭⤪ counts as one square. If you reach a number and all the allowed move squares are already occupied, you lose the game."
   }
 }
