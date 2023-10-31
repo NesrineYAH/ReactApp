@@ -14,19 +14,19 @@ class App extends React.Component {
     window.location.replace("/");
   };
   render() {
-  return (
-
+  return (  
     <>
+    <div className="App">
       <BrowserRouter>
        <Header handleClick={this.handleClick} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <Footer />
       </BrowserRouter>  
-      </>
-
+         <Footer />
+      </div>
+  </>
 
   );
 }

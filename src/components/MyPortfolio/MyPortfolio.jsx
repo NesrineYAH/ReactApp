@@ -1,39 +1,37 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { Link } from "react-router-dom";
 
 const MyPortfolio = () => {
   const { t } = useTranslation();
   const [projects, setProjects] = useState([]);
- 
-  useEffect(() =>{
-    const fecthProjects = async () => {
-      try{
-        const requete  = await fecthProjects("../../jsons/portfolio.json", {
-           methode: "GET",  
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const requete = await fetch("../../jsons/portfolio.json", {
+          method: "GET",
         });
-        if (requete.ok){
-          const response =await requete.json();
+        if (requete.ok) {
+          const response = await requete.json();
           setProjects(response);
           console.log(response);
-        }      
+        }
       } catch (e) {
         console.log(e);
       }
     };
-    fecthProjects();  
+    fetchProjects();
   }, []);
- 
   useEffect(() => {
     AOS.init({ duration: 6000 });
   }, []);
-  
+
   return (
-    <div className="MyPortfolio">
+    <div className="myPortfolio">
       {projects.map((project) => (
         <figure
           className="card"

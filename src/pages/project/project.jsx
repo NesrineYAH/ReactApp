@@ -13,8 +13,8 @@ const Project = () => {
   useEffect(() => {
   const fetchProjects = async () => {
     try {
-     const requete = await fetch ("../../../public/jsons/portfolio.json", {
-       methode: "GET", 
+     const requete = await fetch("../jsons/portfolio.json", {
+       method: "GET", 
      });
      if (requete.ok) {
         const response = await requete.json();
@@ -22,6 +22,7 @@ const Project = () => {
         const verify = response.find(
             (accommodation) => accommodation.id === id
         );
+
      if (verify === undefined) {
         setError(true);
      }
@@ -38,7 +39,7 @@ console.log(e);
 
     return (
         <section>
-            {error ?(
+            {error ? (
               <ErrorPage />
             ) : (
          <div className="project"> 
@@ -53,26 +54,39 @@ console.log(e);
     }
      />    
     </a>
-    {
-        projects
-        .filter((project) => project.id ===id)
+    {projects
+        .filter((project) => project.id === id)
         .map((project) =>(
-          <h6 className='project_title' key={project.id}>
+          <h6 className="project_title" key={project.id}>
            {project.title}
           </h6>  
         ))}    
         </div>  
         <div
         style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
-        className="project_page"
-        >
-            </div>       
+        className="project_page">
+
+      <div className="project-carousel">
+      {/*<Caroussel  />*/}
+      </div>
+    <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 
+    className="project_descreption">
+     {projects
+     .filter((project) => project.id === id)
+     .map((project) => (
+      <p key={project.id}>{t(project.description_project)}</p>
+     ))} 
+          {/* //à réviser demain  de la ligne 86 */}
+
+    </div>
+
+        </div>       
         </div>
-            )  
-            )};
+            ))};
      
        </section> 
     );
+  
 };
 
 export default Project;

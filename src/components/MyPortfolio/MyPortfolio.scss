@@ -1,4 +1,4 @@
-.MyPortfolio {
+.myPortfolio {
     display: grid;
     width: 100%;
     height: auto;
@@ -6,32 +6,33 @@
     grid-template-columns: repeat(auto-fill, 400px);
     justify-content: center;
     grid-gap: 70px;
-}
 
-.card {
-    height: 244px;
-    width: 295px
-}
 
-.back h2 {
-    padding: 0;
-    font-size: 18px;
-    margin: 0
-}
-
-.card-face p {
-    font-size: 14px;
-    margin-bottom: 0
-}
-
-@media (max-width:450px) {
     .card {
-        height: 244px;
-        width: 263px
+        height: 250px;
+        width: 300px
+    }
+
+    .back h2 {
+        padding: 0;
+        font-size: 18px;
+        margin: 0
     }
 
     .card-face p {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 0
+    }
+
+    @media (max-width:450px) {
+        .card {
+            height: 244px;
+            width: 263px
+        }
+
+        .card-face p {
+            font-size: 12px;
+            margin-bottom: 0
+        }
     }
 }

@@ -45,6 +45,7 @@
     "message__text": " Nous sommes désolés, la page que vous recherchez n'existe pas.",
     "message__btn": "Retourner sur la page d'accueil"
   },
+  
   "projectBooki": {
     "brief_description": "Il s'agit d'un site web qui offre la possibilité de réserver un hôtel tout en permettant aux utilisateurs de découvrir les différentes activités disponibles dans la région",
     "description_project": "Booki est mon tout premier projet de développement web sur lequel j'ai travaillé lors de ma formation en tant qu'intégrateur web chez OpenClassrooms.\n Mon rôle principal était de prendre les maquettes fournies par l'équipe de conception UI et de les transformer en une interface web fonctionnelle en utilisant HTML et CSS.\n Le projet a commencé par l'analyse minutieuse des maquettes qui étaient disponibles sous forme de fichiers Figma, pour différentes tailles d'écran. En suivant les meilleures pratiques de développement web et en respectant les normes de qualité établies, j'ai travaillé sur l'intégration des maquettes en utilisant HTML et CSS. J'ai également veillé à ce que le site web soit entièrement responsive, c'est-à-dire qu'il puisse s'adapter automatiquement à différents types et tailles d'écrans."
