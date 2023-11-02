@@ -63,7 +63,7 @@
   },
   {
     "title": "La Panthère",
-    "image": "",
+    "image": "../assets/projects/La panthere/Prj La panthère.webp",
     "alt": "projet La panthère",
     "id": "3",
     "brief_description": "projectOhMyFood.brief_description",
@@ -77,7 +77,7 @@
   },
   { 
     "title": "Kanap",
-    "image": "../assets/projects/Kanap/kanapCover-min.webp",
+    "image": "../assets/projects/Kanap/KANAPE.webp",
     "alt": "projet kanap",
     "id": "4",
     "brief_description": "projectkanap.brief_description",
@@ -87,7 +87,7 @@
   },
   {
     "title": "Picante",
-    "image": "../assets/projects/Kanap/PicanteCover-min.webp",
+    "image": "../assets/projects/picante/web-p6-first.webp",
     "alt": "projet Picante",
     "id": "5",
     "brief_description": "projectPicante.brief_description",
