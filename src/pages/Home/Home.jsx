@@ -4,6 +4,7 @@ import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
 import Skills from "../../Containers/Skills/Skills";
 import Portfolio from "../../Containers/Portfolio/Portfolio";
+import Contact from "../../components/Contact/Contact";
 
 class Home extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class Home extends React.Component {
           <Profil />        
           <Skills/>
           <Portfolio />
+          <Contact/>
         </div>
 
       </>

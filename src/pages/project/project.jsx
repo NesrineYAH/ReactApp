@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import '../../i18n';
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useParams } from 'react-router-dom';
+import Boutton from "../../components/Bouttons/Boutton";
+import ErrorPage from "../../components/Error/Error";
 
 const Project = () => {
   const lang = localStorage.getItem("i18nextLang");
@@ -20,7 +22,7 @@ const Project = () => {
         const response = await requete.json();
         setProjects(response);
         const verify = response.find(
-            (accommodation) => accommodation.id === id
+            (p) => p.id === id
         );
 
      if (verify === undefined) {
@@ -46,7 +48,7 @@ console.log(e);
          <div className="project_header">
         <a href="/">
         <IoArrowBackOutline className="iconeBack"
-        onMouseOver={ ({ target }) =>
+        onMouseOver={ ({ target }) =>          // à voir onMouseOver
         (target.style.color = "var(--background_icons)")
        }
        onMouseOut={({ target })=>
@@ -62,7 +64,7 @@ console.log(e);
           </h6>  
         ))}    
         </div>  
-        <div
+        <div // pour change de position de page en cas de langue arabe
         style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
         className="project_page">
 
@@ -77,16 +79,64 @@ console.log(e);
       <p key={project.id}>{t(project.description_project)}</p>
      ))} 
           {/* //à réviser demain  de la ligne 86 */}
-
-    </div>
-
-        </div>       
+    <div className="project_boutom">
+      <div className="Technologies">
+        <h6>{t("Technologies_used")}</h6>
+        <div className="technologyUsed_icons">
+        {projects
+        .filter((project) => project.id ===id)
+        .map((project) => project.technologyUsed.map((icon) => (
+          <ul className='wrapper' key={icon.name}>
+          <li className="icon icons">
+          <span className='tooltiop'>{icon.name}</span>
+          <span>
+            <img src={icon.icon} alt="icon"/>
+          </span>
+          </li>
+          </ul>
+        ))
+        )}
         </div>
-            ))};
-     
-       </section> 
-    );
-  
+      </div>
+    </div> {/**   //à refaire  demain */}
+    {projects
+                  .filter((project) => project.id === id)
+                  .map((project) =>
+                    project.site && project.github ? (
+                      <div className="Boutton" key={project.id}>
+                        <Boutton
+                          destination={project.site}
+                          title={t("Demo")}
+                        />
+                        <Boutton
+                          destination={project.github}
+                            title={t("source_code")}
+                        />
+                      </div>
+                    ) : project.github && !project.site ? (
+                      <div className="Boutton" key={project.id}>
+                        <Boutton
+                          destination={project.github}
+                          title={t("source_code")}
+                        />
+                      </div>
+                    ) : (
+                      <div className="Boutton" key={project.id}>
+                        <Boutton
+                          destination={project.site}
+                          title={t("Demo")}
+                        />
+                      </div>
+                    )
+                  )}
+              </div>
+            </div>
+          </div>
+      
+      )}
+    </section>
+  );
 };
+
 
 export default Project;

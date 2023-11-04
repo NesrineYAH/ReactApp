@@ -47,7 +47,7 @@ const MyPortfolio = () => {
           <figcaption className="card-face back">
             <h2> {project.title} </h2>
             <p>{t(project.brief_description)}</p>
-            <div className="glow-on">
+            <div className="glow-on-hover">
               <Link
                 to={`/Project/${project.id}`}
                 className="btn_text"
