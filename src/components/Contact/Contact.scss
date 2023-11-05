@@ -31,9 +31,27 @@
         grid-gap: 14px;
         padding: 20px;
         box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
-        border-radius: 20px
+        border-radius: 20px;
     }
 
+    .send-text {
+        display: block;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        // color: var(--body_color);
+        background-color: var(--body_background);
+        border-radius: 20px;
+        padding: 6px 20px;
+        border: 1px var(--body_color) solid;
+        border: 1px var(--lang_background) solid;
+        background-color: var(--body_color);
+    }
+
+    .send-text:hover {
+        box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+    }
+
+    /*
     .send-text {
         display: block;
         margin-top: 10px;
@@ -43,21 +61,17 @@
         border-radius: 20px;
         padding: 6px 20px;
         border: 1px var(--body_color) solid
-    }
-    .send-text{
-        display:block;
-        argin-top:10px;
-        letter-spacing:2px;
-        color:var(--body_color);
-        background-color:var(--body_background);
-        border-radius:20px;
-        padding:6px 20px;border:1px var(--body_color) solid
-    }
+    }*/
+
     .contact-list {
-        @include flexCenterRow;
+        @include ItemColumn;
+
     }
 
     .list-item {}
 
-    .contact-text {}
+    .contact-text {
+        width: 15px;
+        height: 15px;
+    }
 }

@@ -1,25 +1,31 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+//import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
+import Boutton from "../Bouttons/Boutton";
+//const [name, setName] = useState("");
 
 const Contact = () => {
   const lang = localStorage.getItem("i18nextLang");
   const { t } = useTranslation();
   const form =useRef();
 
+
   const SendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-    .sendForm("service_ftu8pss", "tempalte_8chj4e7", form.current,"UBZTusyE5gpEpliK1")
+    .sendForm("service_qb61wt1", "template_uvl35a8", form.current,"fDUMt5JDlc0iHfBWb")
     .then(
       (result) => {
         alert(`${form.current.user_name.value} ${t("email_envoyer")}`);
         console.log(result.text);
+         // delet  inputs
         form.current.user_name.value = "";
+          form.current.user_name.value = "";
         form.current.user_email.value = "";
         form.current.message.value = "";
       },
@@ -28,10 +34,24 @@ const Contact = () => {
       }
     );
   };
+
   useEffect(() => {
     AOS.init({ duration: 6000 });
   }, []);
 
+
+
+ /* const nameValidation =() => {
+   const regexName = new RegExp(/^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i);
+  if (regexName.test(lastName)) {
+   setName("Nom est valide");
+  } else if (!regexName.test(lastName)){;
+  setName("Nom est n'est pas valide");
+  } else {
+    setName("");
+  }
+};
+*/
   return (
     <section id={t("contact_id")}  className= "contact" itemScope itemType="http://schema.org/Person">
       <h1 className='titleContact'>{t("contact_title")}</h1>
@@ -44,9 +64,15 @@ const Contact = () => {
       data-aos= "zoom-in-up"
       style={{ direction: lang === "ar" ? "rtl": "ltr" }}
       >
-        <lable htmlFor="name">{t("Name")}</lable>
+        <lable htmlFor="lastName">{t("Nom")}</lable>
         <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
         type="text" name="user_name" className="form-control" placeholder={t("Name")}
+        id="name"
+        required
+       />
+        <lable htmlFor="FirstName">{t("Prénom")}</lable>
+        <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
+        type="text" name="user_name" className="form-control" placeholder={t("prénom")}
         id="name"
         required
        />
@@ -94,7 +120,8 @@ const Contact = () => {
       </div>
       </div>
     <div>
-      
+
+  
     </div>
     </section>
   );

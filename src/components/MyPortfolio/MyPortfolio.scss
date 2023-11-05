@@ -79,7 +79,6 @@
         padding: 20px;
         color: var(--body_color);
     }
-
     .back {
         transform: rotateY(180deg);
         @include flex-column;
@@ -90,9 +89,6 @@
             margin: 0
         }
     }
-
-
-
     @media (max-width:450px) {
         .card {
             height: 244px;
