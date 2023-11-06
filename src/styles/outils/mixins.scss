@@ -80,6 +80,13 @@
 
 }
 
+@mixin flex-Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
 @mixin row-center {
   display: flex;
   flex-direction: row;

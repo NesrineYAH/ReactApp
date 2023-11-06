@@ -3,10 +3,10 @@
 
 :root {
 
-    // white-space: pre-line;
+    //white-space: pre-line;
     --body_background: $couleur-body;
     --body_color: #f3ebf6;
-   // --link_color: navy;
+    --link_color: navy;
     --box_background: linear-gradient(#e9d3f1, #d4a9d6);
     --spark: 1.8s;
 }
@@ -14,6 +14,7 @@
 [data-theme="dark"] {
     --body_background: rgb(24, 2, 35);
     --body_color: #f3ebf6;
+    --body_background: #f3ebf6;
     --link_color: white;
     --lang_color: #695da1;
     --lang_background: #433871;
@@ -57,7 +58,7 @@ html {
 }
 
 body {
-    // @include body-position;
+    @include body-position;
     overflow-x: hidden;
     background-color: $couleur-body;
     background-color: var(--body_background);

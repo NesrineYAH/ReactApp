@@ -1,18 +1,10 @@
 .myPortfolio {
-
     width: 100%;
     height: auto;
     margin: 30px auto;
     @include flexCenterRow;
     flex-wrap: wrap;
-    /*    display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
-    justify-content: center;*/
-    gap: 70px;
-    // margin: 50px;
-    // padding-left: 100px;
-    //padding-right: 100px;
-
+    gap: 50px;
 
     .card {
         border-radius: 50px 0;
@@ -79,6 +71,7 @@
         padding: 20px;
         color: var(--body_color);
     }
+
     .back {
         transform: rotateY(180deg);
         @include flex-column;
@@ -89,6 +82,7 @@
             margin: 0
         }
     }
+
     @media (max-width:450px) {
         .card {
             height: 244px;

@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-//import { useState } from "react";
+import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
-import Boutton from "../Bouttons/Boutton";
-//const [name, setName] = useState("");
+//import Boutton from "../Bouttons/Boutton";
+import { IoMail } from "react-icons/io5";
+import { FaPhoneFlip } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
+import { regexName } from "../../regex.js"
 
 const Contact = () => {
   const lang = localStorage.getItem("i18nextLang");
@@ -25,9 +28,10 @@ const Contact = () => {
         console.log(result.text);
          // delet  inputs
         form.current.user_name.value = "";
-          form.current.user_name.value = "";
+        form.current.user_name.value = "";
         form.current.user_email.value = "";
         form.current.message.value = "";
+        form.reset();
       },
       (error) => {
         console.log(error.text);
@@ -40,18 +44,18 @@ const Contact = () => {
   }, []);
 
 
+  const [name, setName] = useState("");
+const nameValidation =() => {
 
- /* const nameValidation =() => {
-   const regexName = new RegExp(/^[a-zA-ZÀ-ÿ]{2,35}([-' ,][a-zA-ZÀ-ÿ]+)*$/i);
-  if (regexName.test(lastName)) {
+  if (regexName.test(name)) {
    setName("Nom est valide");
-  } else if (!regexName.test(lastName)){;
+  } else if (!regexName.test(name)){;
   setName("Nom est n'est pas valide");
   } else {
     setName("");
   }
 };
-*/
+
   return (
     <section id={t("contact_id")}  className= "contact" itemScope itemType="http://schema.org/Person">
       <h1 className='titleContact'>{t("contact_title")}</h1>
@@ -91,30 +95,33 @@ const Contact = () => {
        </textarea>
       <input type="submit" value={t("Send")} className="send-text" />
       </form>  
-      <div className='direct-contact-conatiner' data-aos="zoom-in-up">
-        <ul className="contact-list">
-          <li className="list-item">
-            <i className="fa fa-map-marker fa-2x"></i>
-              <span itemProp="location" className="contatc-text place">P
-                 aris, ile de France
-              </span>
-          </li>
-          <li className="liste-item">
-          <i className="fa fa-phone fa-2x"></i>
-          <span className="contact-text phone">
-          <a itemProp="telephone" href="00769551422">
+      <div className='contactList__conatiner' data-aos="zoom-in-up">
+        <ul className="contactList">      
+          <li className="contactList__item">
+        
+        <FaPhoneFlip className ="contactList__i" />
+          <span className="contactList__span phone">
+          <a itemProp="telephone" href="00769551422" className="contactList__a">
             (33) 7 69 55 14 22
           </a>
           </span>
           </li>
-          <li className="list-item">  
-          <i className="fa fa-envelope fa-2x"></i>
+
+          <li className="contactList__item">  
+          <IoMail className="contactList__i" />
           <span className="contact-text gmail">
-          <a itemProp="email" href="mailto:nesrineyahoum@gmail.com">
+          <a itemProp="email" href="mailto:nesrineyahoum@gmail.com" className="contactList__a">
           nesrineyahoum@gmail.com
           </a>
           </span>
           </li>
+
+          <li className="contactList__item">
+              <IoLocationSharp className="loc" /> 
+              <span itemProp="location" className="contactList__sapn place">
+                 Paris, ile de France
+              </span>
+          </li> 
         </ul>
 
       </div>

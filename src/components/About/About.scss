@@ -32,7 +32,7 @@
     width: 130px;
     height: 30px;
     color: navy;
-    background-color: rgb(199, 199, 230);
+   // background-color: rgb(199, 199, 230);
     border: 3px, solid, navy;
     //  transform: scale(0);
     // animation-delay: 5s;
@@ -40,13 +40,8 @@
     // animation-name: zoomBtn;
     // animation-fill-mode: forwards;
     // min-width: 5vw;
-    margin: 1vh auto;
+    //margin: 1vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-    Link {
-        color: rgb(199, 199, 230);
-    }
 }

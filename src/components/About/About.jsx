@@ -150,7 +150,11 @@ class About extends Component {
               </span>
             </p>
             <TxtToDisplay />
-            <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
+           
+            <button  className="glow-on-hover btn"><Link to="/#Profil" onClick={this.handleLinkClick}>Plus d'info</Link></button>
+            {/* <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
+            */}
+
           </div>
         </div>
       </section>

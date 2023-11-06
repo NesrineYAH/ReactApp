@@ -1,5 +1,5 @@
 import React from "react";
-import monImage from "../../assets/images/bakground/pigiste.avif";
+
 const Profil = () => {
   return (
     <div className="Profil__container">
@@ -15,7 +15,7 @@ const Profil = () => {
         <img className="mon-img" src="{monImage}" alt="IMAGE" />
     
 
-<monImg />
+
       </div>
     </div>
   );
