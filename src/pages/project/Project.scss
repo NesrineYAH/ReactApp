@@ -1,0 +1,85 @@
+.project {
+    width: 100%;
+    margin: 0 auto;
+    @include flex-center;
+    position: relative;
+    height: 100vh;
+    margin-top: -60px;
+    margin-bottom: 100px;
+
+
+    &__header {
+        // @include flex-Row;
+
+        // display: flex;
+        //  flex-direction: row;
+        // justify-content: space-between;
+        @include flex-between;
+    }
+
+    &__iconeBack {
+        position: absolute;
+        top: 27px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 2.5vw;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        height: 40px;
+
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    &__page {
+        width: 80%;
+        // @include flex-center;
+    }
+
+    &__carousel {}
+
+    &__descreption {
+        width: 80%;
+        @include flex-center;
+        //padding: 50px 100px 0 100px;
+        row-gap: 20px;
+
+        P {
+            color: navy;
+            //color: var(--body_color);
+        }
+    }
+
+    .wrapper {
+        display: inline-flex;
+        list-style: none;
+
+        .icon {
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            height: 50px;
+            justify-content: center;
+            margin: 10px;
+            padding: 15px;
+            position: relative;
+            transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
+            width: 50px;
+        }
+    }
+
+    &__boutton {}
+
+    .Technologies {}
+
+    .Boutton {}
+}

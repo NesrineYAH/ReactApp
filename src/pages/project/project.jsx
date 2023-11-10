@@ -37,6 +37,7 @@ console.log(e);
   }, [id]);
      const { t } = useTranslation();
      console.log(projects);
+
      console.log(id);
 
     return (
@@ -45,9 +46,9 @@ console.log(e);
               <ErrorPage />
             ) : (
          <div className="project"> 
-         <div className="project_header">
+         <div className="project__header">
         <a href="/">
-        <IoArrowBackOutline className="iconeBack"
+        <IoArrowBackOutline className="project__iconeBack"
         onMouseOver={ ({ target }) =>          // à voir onMouseOver
         (target.style.color = "var(--background_icons)")
        }
@@ -59,33 +60,33 @@ console.log(e);
     {projects
         .filter((project) => project.id === id)
         .map((project) =>(
-          <h6 className="project_title" key={project.id}>
+          <h6 className="project__title" key={project.id}>
            {project.title}
           </h6>  
         ))}    
         </div>  
         <div // pour change de position de page en cas de langue arabe
         style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
-        className="project_page">
+        className="project__page">
 
-      <div className="project-carousel">
+      <div className="project__carousel">
       {/*<Caroussel  />*/}
       </div>
     <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 
-    className="project_descreption">
+    className="project__descreption">
      {projects
      .filter((project) => project.id === id)
      .map((project) => (
       <p key={project.id}>{t(project.description_project)}</p>
      ))} 
           {/* //à réviser demain  de la ligne 86 */}
-    <div className="project_boutom">
+    <div className="project__boutton">
       <div className="Technologies">
         <h6>{t("Technologies_used")}</h6>
-        <div className="technologyUsed_icons">
+        <div className="technologUsed_icons">
         {projects
-        .filter((project) => project.id ===id)
-        .map((project) => project.technologyUsed.map((icon) => (
+        .filter((project) => projects.id ===id)
+        .map((project) => projects.technologyUsed.map((icon) => (
           <ul className='wrapper' key={icon.name}>
           <li className="icon icons">
           <span className='tooltiop'>{icon.name}</span>
@@ -100,19 +101,13 @@ console.log(e);
       </div>
     </div> {/**   //à refaire  demain */}
     {projects
-                  .filter((project) => project.id === id)
-                  .map((project) =>
-                    project.site && project.github ? (
-                      <div className="Boutton" key={project.id}>
-                        <Boutton
-                          destination={project.site}
-                          title={t("Demo")}
-                        />
-                        <Boutton
-                          destination={project.github}
-                            title={t("source_code")}
-                        />
-                      </div>
+            .filter((project) => project.id === id)
+            .map((project) =>
+            project.site && project.github ? (
+           <div className="Boutton" key={project.id}>
+          <Boutton destination={project.site} title={t("Demo")} />
+          <Boutton destination={project.github} title={t("source_code")} />
+          </div>
                     ) : project.github && !project.site ? (
                       <div className="Boutton" key={project.id}>
                         <Boutton

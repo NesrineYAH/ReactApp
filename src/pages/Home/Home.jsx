@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Routes, Route } from "react-router-dom";
+//import { Routes, Route } from "react-router-dom";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
 import Skills from "../../Containers/Skills/Skills";

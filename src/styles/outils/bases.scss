@@ -5,6 +5,7 @@
 
     //white-space: pre-line;
     --body_background: $couleur-body;
+    //--body_background: $couleur-body;
     --body_color: #f3ebf6;
     --link_color: navy;
     --box_background: linear-gradient(#e9d3f1, #d4a9d6);
@@ -60,8 +61,9 @@ html {
 body {
     @include body-position;
     overflow-x: hidden;
-    background-color: $couleur-body;
+    color: var(--body_color);
     background-color: var(--body_background);
+
     color: var(--link_color);
     height: 100%;
     /*
