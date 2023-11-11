@@ -72,6 +72,7 @@ console.log(e);
       <div className="project__carousel">
       {/*<Caroussel  />*/}
       </div>
+
     <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 
     className="project__descreption">
      {projects
@@ -80,13 +81,13 @@ console.log(e);
       <p key={project.id}>{t(project.description_project)}</p>
      ))} 
           {/* //à réviser demain  de la ligne 86 */}
-    <div className="project__boutton">
+    <div className="project__boutton">    {/* //modifié 11/11*/}
       <div className="Technologies">
         <h6>{t("Technologies_used")}</h6>
-        <div className="technologUsed_icons">
+        <div className="technologyUsed_icons">
         {projects
-        .filter((project) => projects.id ===id)
-        .map((project) => projects.technologyUsed.map((icon) => (
+        .filter((project) => project.id ===id)
+        .map((project) => project.technologyUsed.map((icon) => (
           <ul className='wrapper' key={icon.name}>
           <li className="icon icons">
           <span className='tooltiop'>{icon.name}</span>
@@ -98,7 +99,6 @@ console.log(e);
         ))
         )}
         </div>
-      </div>
     </div> {/**   //à refaire  demain */}
     {projects
             .filter((project) => project.id === id)
@@ -124,10 +124,10 @@ console.log(e);
                       </div>
                     )
                   )}
-              </div>
+                 </div>
+               </div>
             </div>
           </div>
-      
       )}
     </section>
   );

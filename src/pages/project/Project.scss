@@ -3,9 +3,9 @@
     margin: 0 auto;
     @include flex-center;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -60px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
 
     &__header {
@@ -32,7 +32,6 @@
         justify-content: center;
         font-size: 2vw;
         height: 40px;
-
         width: 100%;
         margin-bottom: 2.5rem;
     }
@@ -47,7 +46,7 @@
     &__descreption {
         width: 80%;
         @include flex-center;
-        //padding: 50px 100px 0 100px;
+
         row-gap: 20px;
 
         P {
@@ -77,9 +76,30 @@
         }
     }
 
-    &__boutton {}
+    &__boutton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0%;
+        align-items: center;
+        border-radius: 20px;
+        //color: #100733;
+        //color: var(--body_color);
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        text-decoration: none;
 
-    .Technologies {}
+
+    }
+
+    .Technologies {
+        .technologyUsed_icons {
+            @include flexCenterRow;
+            row-gap: 40px;
+        }
+    }
+
 
     .Boutton {}
 }
