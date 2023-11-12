@@ -2,10 +2,9 @@ import React from "react";
 
 const Profil = () => {
   return (
+    <section id="Profil">
     <div className="Profil__container">
-     
       <div className="Profil__info">
-         
         <p className="Profil__biography">
          
          Je suis Nesrine , je suis développeuse web frontend créative, autonome et passionnée par tous ce qui lien avec la technologie, l’informatique, web exactement la création de sites web et d’applications e-commerce, et même des refontes de site web, dotée d’une expérience dans différents secteurs d’activités.
@@ -13,11 +12,9 @@ const Profil = () => {
          </p>   
 
         <img className="mon-img" src="{monImage}" alt="IMAGE" />
-    
-
-
       </div>
     </div>
+    </section>
   );
 };
 

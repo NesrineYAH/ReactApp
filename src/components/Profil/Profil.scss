@@ -1,31 +1,33 @@
-.Profil__container {
-    margin: 0 auto;
-    height: 100vh;
-    gap: 60px;
-    @include flexCenterRow;
-    align-items: center;
-    justify-content: center;
-    // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
-    background-position: center;
-    background-size: auto;
-    //background-repeat: no-repeat;
-    // background-blend-mode: darken;
-  //  position: relative;
-   height: 100%;
+#Profil {
+    background-color: #f2e8e8;
 
-    .Profil__info {
-        width: 55%;
-        @include flex-start;
-    }
+    .Profil__container {
+        margin: 0 auto;
+        height: 100vh;
+        gap: 60px;
+        @include flexCenterRow;
+        align-items: center;
+        justify-content: center;
+        // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
+        background-position: center;
+        background-size: auto;
 
-    .ImgeProfil {
-        width: 35%;
-        //  height: 300px;
-        @include flex-end;
+        //height: 100%;
 
-        .mon-img {
-            width: 100%;
-            //height: 100%;
+        .Profil__info {
+            width: 55%;
+            @include flex-start;
+        }
+
+        .ImgeProfil {
+            width: 35%;
+            //  height: 300px;
+            @include flex-end;
+
+            .mon-img {
+                width: 100%;
+                //height: 100%;
+            }
         }
     }
 }

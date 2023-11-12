@@ -1,25 +1,17 @@
 .project {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     @include flex-center;
     position: relative;
-    min-height: 100vh;
-    margin-top: -60px;
-    margin-bottom: 150px;
-
+    top: 25px;
 
     &__header {
-        // @include flex-Row;
-
-        // display: flex;
-        //  flex-direction: row;
-        // justify-content: space-between;
         @include flex-between;
     }
 
     &__iconeBack {
         position: absolute;
-        top: 27px;
+        top: 2px;
         left: 10px;
         cursor: pointer;
         font-size: 2.5vw;
@@ -37,21 +29,31 @@
     }
 
     &__page {
-        width: 80%;
-        // @include flex-center;
+        width: 90%;
+        //@include flexCenterRow;
     }
 
     &__carousel {}
 
     &__descreption {
-        width: 80%;
+        width: 60%;
         @include flex-center;
-
         row-gap: 20px;
+        position: absolute;
+        left: -7%;
 
         P {
             color: navy;
             //color: var(--body_color);
+            border-radius: 40px;
+            color: var(--link_color);
+            display: flex;
+            justify-content: start;
+            height: auto;
+            padding: 12px;
+            width: 70%;
+            overflow: hidden;
+            font-size: 14px;
         }
     }
 
@@ -79,27 +81,31 @@
     &__boutton {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 0%;
-        align-items: center;
+        //align-items: center;
+        justify-content: space-between;
+        gap: 48%;
         border-radius: 20px;
         //color: #100733;
         //color: var(--body_color);
         display: flex;
         height: 100%;
-        justify-content: center;
         text-decoration: none;
-
-
     }
 
     .Technologies {
+        @include ItemColumn;
+        margin-left: -60px;
+
+
         .technologyUsed_icons {
-            @include flexCenterRow;
-            row-gap: 40px;
+            @include flex-Row;
+            margin-left: -20px;
         }
     }
 
 
-    .Boutton {}
+    .Boutton {
+        @include flexCenterRow;
+        border: 1px, solid, var(--background_icons);
+    }
 }

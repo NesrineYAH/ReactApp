@@ -9,7 +9,8 @@ import emailjs from "@emailjs/browser";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
-import { regexName } from "../../regex.js"
+import { regexName } from "../../regex.js";
+import SocialMedia from '../socialMedia/socialMedia';
 
 const Contact = () => {
   const lang = localStorage.getItem("i18nextLang");
@@ -96,9 +97,9 @@ const nameValidation =() => {
       <input type="submit" value={t("Send")} className="send-text" />
       </form>  
       <div className='contactList__conatiner' data-aos="zoom-in-up">
-        <ul className="contactList">      
-          <li className="contactList__item">
-        
+        <ul className="contactList">  
+
+          <li className="contactList__item">    
         <FaPhoneFlip className ="contactList__i" />
           <span className="contactList__span phone">
           <a itemProp="telephone" href="00769551422" className="contactList__a">
@@ -123,12 +124,11 @@ const nameValidation =() => {
               </span>
           </li> 
         </ul>
-
+        <SocialMedia />
       </div>
       </div>
-    <div>
-
   
+    <div>
     </div>
     </section>
   );
