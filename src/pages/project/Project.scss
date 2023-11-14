@@ -60,6 +60,7 @@
     .wrapper {
         display: inline-flex;
         list-style: none;
+        gap: 55px;
 
         .icon {
             align-items: center;
@@ -69,12 +70,13 @@
             flex-direction: row;
             font-size: 18px;
             height: 50px;
-            justify-content: center;
+            justify-content: space-between;
             margin: 10px;
             padding: 15px;
             position: relative;
             transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
             width: 50px;
+            margin: 22px;
         }
     }
 
@@ -94,7 +96,7 @@
 
     .Technologies {
         @include ItemColumn;
-        margin-left: -60px;
+        // margin-left: -60px;
 
 
         .technologyUsed_icons {

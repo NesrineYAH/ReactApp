@@ -2,7 +2,7 @@
   "title": "Nesrine BEKKAR YAHOUM ",
   "description": "portfolio Nesrine BEKKAR YAHOUM Développeuse web Front-end et Fullstack.sur Ile De France",
   "photo_alt": "Nesrine BEKKAR YAHOUM",
-  "logo_alt": "logo de portfolio ",
+  "logo_alt": "",
   "home_title": "Accueil",
   "home_id": "Accueil",
   "home_path": "/#Accueil",
@@ -57,18 +57,18 @@
   },
 "projectLaPantherre": {
   "brief_description": "Il s'agit d'un site web d'une agence web pour faire un audit SEO,  une analyse, tests et modifications du site La Panthère pour optimisation Accessibilité et Performance en respectant les normes du W3C." ,
-  "description_project": "La Panthère Agence de web Design, est un site vitrine optimisé avec l'application du réferencement naturel"
+  "description_project": "La Panthère Agence de web Design, est un site vitrine optimisé avec l'application du réferencement naturel, a pour objectif de vous présenter les résultats de l'audit SEO du site l’agence de web design la Panthère, contenant une liste non-exhaustive des mauvaises pratiques qui ne contribuent pas à un bon référencement naturel du site ainsi qu'une accessibilité faible et des performances assez basses."
 },
 "projectKanap": {
   "brief_description": "Il s'agit d'un site e-commerce de vente des canapé avec javascript",
-  "description_project": "En tant que développeur, j'ai été chargée de créer un site dynamique avec javascript"
+  "description_project": "En tant que développeur, j'ai été chargée de créer un site dynamique avec javascript, c'est un site e-commerce de vente kanap (les canapés) on ligne, en créant la page produit pour afficher le produit, la page panier pour que l'utilisateur puisse ajouter les articles dans le pannier,et dans ce cas là si le panier n'est pas vide l'utilisateur va remplir un formaulaire de contact et la page confirmation qui contient la confirmation de la commande avec le numéro de commande"
 },
 "projectPicante": {
   "brief_description": "Picante est une application  d'évaluation en une boutique en ligne, l'entreprise souhaite que la première version soit une « galerie de sauces »",
-  "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale."
+  "description_project": "entreprise du produit PICANTE souhaite désormais développer une application évaluation de ses sauces piquantes, appelée HOT TAKES, et la transformer à une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent, Donc notre mission en tant que développeur web est de construire une API sécurisé pour son application HOT TAKE."
 },
   "projectKasa": {
     "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France",
-    "description_project": "En tant que développeur, j'ai été chargé par Kasa, web est de construire une API sécurisé pour cette application «HOT TAKE»."
+    "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale"
 }
 }

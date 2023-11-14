@@ -18,7 +18,7 @@
   "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM  ",
   "main_heading": {
     "hello": "Hello ",
-    "name": "I'm Imene",
+    "name": "I'm Nesrine",
     "static_desc": "I'am a frontend web developer",
     "dynamic_desc": "Passionate about the world of web development."
   },
@@ -52,6 +52,18 @@
   "projectOhMyFood": {
     "brief_description": "This is a website dedicated to gourmet restaurants, where customers have the opportunity to create their own menu before their arrival. ",
     "description_project": "OhMyFood is a mobile-first website dedicated to presenting menus offered by gourmet restaurants. As a Front-End developer, my role was to transform the mockups provided by the design team into a functional and responsive website, suitable for various devices such as smartphones, tablets, and desktop computers.\n As part of this project, I was also tasked with integrating the animations and behaviors specified in the site's prototype to provide an optimal and attractive user experience. This professional experience allowed me to put my web integration skills into practice and deliver a quality result within the given timeframe."
+  },
+  "projectLaPantherre": {
+    "brief_description": "This is a website from a web agency to carry out an SEO audit analysis tests and modifications of the La Panthère site for Accessibility and Performance optimization while respecting W3C standards",
+    "description_project": "The Panthere Web Design Agency, is a showcase site optimized with the application of natural referencing, aims to present to you the results of the SEO audit of the site of the web design agency La Panthère, containing a non-exhaustive list bad practices which do not contribute to good natural referencing of the site as well as poor accessibility and fairly low performance"
+  },
+  "projectKanap": {
+    "brief_description": "This is an e-commerce site for selling sofas with javascript",
+    "description_project": "As a developer, I was responsible for creating a dynamic site with javascript, it is an e-commerce site selling kanap (sofapes) online, by creating the product page to display the product, the shopping cart page to that the user can add the items to the basket, and in this case if the basket is not empty the user will fill out a contact form and the confirmation page which contains the confirmation of the order with the number of order"
+  },
+  "projectPicante": {
+    "brief_description": "Picante is a review application in an online store, the company wants the first version to be a “sauce gallery",
+    "description_project" :"As a developer, I was tasked by Kasa, leader in peer-to-peer apartment rental in France, to renovate their website. For this task, I used JavaScript for the client side and opted for React as the framework for the front end. I had access to 20 recent real estate listings in JSON format, which I worked on to create a functional and responsive website. I also used Figma to convert the mockups into React components and routes, which allowed me to ensure visual consistency while developing an interactive and friendly user interface." 
   },
   "projectKasa": {
     "brief_description": "Kasa is an application dedicated to peer-to-peer apartment rentals in France",
