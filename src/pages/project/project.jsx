@@ -5,6 +5,7 @@ import { IoArrowBackOutline } from "react-icons/io5";
 import { useParams } from 'react-router-dom';
 import Boutton from "../../components/Bouttons/Boutton";
 import ErrorPage from "../../components/Error/Error";
+import Caroussel from "../../components/Caroussel/Caroussel";
 
 const Project = () => {
   const lang = localStorage.getItem("i18nextLang");
@@ -70,7 +71,7 @@ console.log(e);
         className="project__page">
 
       <div className="project__carousel">
-      {/*<Caroussel  />*/}
+     <Caroussel  />
       </div>
 
     <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 

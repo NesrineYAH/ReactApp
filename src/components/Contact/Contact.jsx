@@ -44,16 +44,17 @@ const Contact = () => {
     AOS.init({ duration: 6000 });
   }, []);
 
+// a revenir pour éxcuter les expression régulière 
 
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
 const nameValidation =() => {
 
-  if (regexName.test(name)) {
-   setName("Nom est valide");
-  } else if (!regexName.test(name)){;
-  setName("Nom est n'est pas valide");
+  if (regexName.test(firstName)) {
+   setFirstName("Nom est valide");
+  } else if (!regexName.test(firstName)){;
+  setFirstName("Nom est n'est pas valide");
   } else {
-    setName("");
+    setFirstName("");
   }
 };
 
@@ -69,15 +70,15 @@ const nameValidation =() => {
       data-aos= "zoom-in-up"
       style={{ direction: lang === "ar" ? "rtl": "ltr" }}
       >
-        <lable htmlFor="lastName">{t("Nom")}</lable>
+        <lable htmlFor="lastName">{t("lastName")}</lable>
         <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
-        type="text" name="user_name" className="form-control" placeholder={t("Name")}
+        type="text" name="user_name" className="form-control" placeholder={t("lastName")}
         id="name"
         required
        />
-        <lable htmlFor="FirstName">{t("Prénom")}</lable>
+        <lable htmlFor="FirstName">{t("firstName")}</lable>
         <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
-        type="text" name="user_name" className="form-control" placeholder={t("prénom")}
+        type="text" name="user_name" className="form-control" placeholder={t("firstName")}
         id="name"
         required
        />

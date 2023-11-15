@@ -1,0 +1,50 @@
+//.carousel{position:relative}
+.carousel {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+
+}
+
+.carousel {
+    margin: 0 30px;
+    max-height: 500px;
+    max-width: 500px;
+
+}
+
+.carousel .overlay {
+    width: 100%;
+    transform: translateY(-50);
+    list-style-type: none;
+}
+
+.img_carousel {
+    height: 500px;
+    width: 500px;
+}
+
+.thumbs {
+    display: none !important;
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.control-arrow {
+    display: none !important;
+}
+
+@media (max-width:767px) {
+    .img_carousel {
+        width: 90%
+    }
+
+    .carousel {
+        margin: 0 5px
+    }
+}
