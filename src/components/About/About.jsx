@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 
 class TxtRotate extends Component {
@@ -152,7 +152,7 @@ class About extends Component {
             </p>
             <TxtToDisplay />
            
-            <button  className="glow-on-hover btn"><Link to="/#Profil" onClick={this.handleLinkClick}>Plus d'info</Link></button>
+            <button  className="glow-on-hover btn"><a href="/#Profil" onClick={this.handleLinkClick}>Plus d'info</a></button>
             {/* <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
             */}
 

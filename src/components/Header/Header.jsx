@@ -3,7 +3,11 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
+//import { useTranslation } from "react-i18next";
 //import { FaBars, FaTimes } from "react-icons/fa";
+//import Accueil from "../../Containers/Accueil/Accueil"
+//import { translate } from 'react-i18next';
+import { t } from 'i18next'
 
 class Header extends Component {
   constructor(props) {
@@ -58,7 +62,6 @@ handleLinkClick =(event) => {
   }, 500);
   };
 
-
   render() {
     // Setup menu Header with state 
     const {isTransparent, isMobile, showLinks} =this.state
@@ -68,27 +71,33 @@ handleLinkClick =(event) => {
     //Menu ouverture et fermeture 
    const handleShowLinks =() => {
     this.setState({ showLinks: !this.state.showLinks });
-   }
+   };
+   
+   const lang = localStorage.getItem("i18nextLng");
 
     return (
-    <header className="header">
- <nav className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
-''} `}>         
+    <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
+     className="header"  id={t("home_path")}>
+      
+         <nav  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
+         className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
+          ''} `}>
+          
          <button className="navbar_burger" onClick={handleShowLinks}>
          <span className="burger_bar">Retour</span>
           </button> 
-          <ul className="navbar__links">
+          {/*
+           <ul className="navbar__links">
             <li className="navbar_item slide1">
               <NavLink to="/#Home" className="navbar_link" onClick={this.handleLinkClick}>
-                Accueil
+             Acceuil
               </NavLink>
             </li>
             <li className="navbar_item slide2">
               <NavLink to="/#Profil" className="navbar_link" onClick={this.handleLinkClick}>
                 Profil
               </NavLink>
-            </li>
-      
+           </li>     
             <li className="navbar_item slide3">
               <NavLink to="/#Skills" className="navbar_link" onClick={this.handleLinkClick}>
                 Compétences
@@ -104,9 +113,37 @@ handleLinkClick =(event) => {
                 Contact
               </NavLink>
             </li>
-          </ul>       
-                    
-        </nav> 
+          </ul>   */}     
+                   <ul className="navbar__links">
+                    <li className="navbar_item slide1">
+                      <NavLink to={t("home_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("home_title")}
+                      </NavLink>
+                    </li>
+                    <li className="navbar_item slide2">
+                      <NavLink to={t("Profil_path")}className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("Profil_title")}
+                      </NavLink>
+                    </li>
+              
+                    <li className="navbar_item slide3">
+                      <NavLink to={t("skills_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("skills_title")}
+                      </NavLink>
+                    </li>
+                    <li className="navbar_item slide4">
+                      <NavLink to={t("portfolio_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("portfolio_title")}
+                      </NavLink>
+                    </li>
+                    <li className="navbar_item slide5">
+                      <NavLink to={t("contact_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("contact_title")}
+                      </NavLink>
+                    </li>
+                  </ul>               
+        </nav>  
+      
         <DarkMode />
         < Language /> 
     </header>

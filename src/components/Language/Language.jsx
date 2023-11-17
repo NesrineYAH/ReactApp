@@ -20,7 +20,7 @@ const handleToggleMenu = () => {
       className="header"
       id={t("home_path")}
     ></div>
-            <select
+            <select style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}
                       value={lang} // Ajouter cet attribut value

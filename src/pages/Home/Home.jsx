@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 //import { Routes, Route } from "react-router-dom";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
@@ -6,22 +6,24 @@ import Skills from "../../Containers/Skills/Skills";
 import Portfolio from "../../Containers/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
 
-class Home extends React.Component {
-  render() {
+import { useTranslation } from "react-i18next";
+
+
+const Home = () => {
+    const { t } = useTranslation();
     return (
       <>
-        <div className="home">
-        {/* <Accueil id={t("home_path")} /> */}
-           <About />
+        <main className="home">
+        
+          <About />
           <Profil />        
           <Skills/>
           <Portfolio />
           <Contact/>
-        </div>
-
+        </main>
       </>
     );
   }
-}
+
 
 export default Home;

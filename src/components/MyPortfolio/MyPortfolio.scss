@@ -4,16 +4,21 @@
     margin: 30px auto;
     @include flexCenterRow;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
+    padding: 0 60px 0 60px;
 
     .card {
-        border-radius: 50px 0;
+        // border-radius: 50px 0;
+        border-radius: 15px;
         height: 323px;
-        width: 417px;
+        width: 380px;
         position: relative;
         transform-style: preserve-3d; // à revenir
         background: 0 0;
-        border: none;
+        box-shadow: $box-shadow;
+        box-shadow: var(--box-shadow);
+        box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+
 
         &:hover {
             .front {
@@ -32,7 +37,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 50px 0;
+        // border-radius: 50px 0;
+        border-radius: 15px;
         backface-visibility: hidden;
         overflow: hidden;
 
@@ -64,8 +70,10 @@
         font-weight: 400;
         text-transform: uppercase;
         //color: var(--body_color);
+
         color: #0000;
         font-size: 25px;
+        font-weight: bold;
         z-index: 1;
         background-color: rgba(240, 248, 255, .12);
         padding: 20px;
