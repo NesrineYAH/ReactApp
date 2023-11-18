@@ -3,11 +3,9 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
-//import { useTranslation } from "react-i18next";
 //import { FaBars, FaTimes } from "react-icons/fa";
 //import Accueil from "../../Containers/Accueil/Accueil"
-//import { translate } from 'react-i18next';
-import { t } from 'i18next'
+import { withTranslation } from 'react-i18next';
 
 class Header extends Component {
   constructor(props) {
@@ -22,6 +20,7 @@ class Header extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.resizeScreen = this.resizeScreen.bind(this);
   };
+
   //What I did is adding an event listener after component mount:
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -67,14 +66,14 @@ handleLinkClick =(event) => {
     const {isTransparent, isMobile, showLinks} =this.state
     // import via propos funtion retour home 
     const {handleClick} = this.props;
-    
+    const { t } = this.props;                               // j'ai ajouté 18/11
     //Menu ouverture et fermeture 
    const handleShowLinks =() => {
     this.setState({ showLinks: !this.state.showLinks });
    };
    
    const lang = localStorage.getItem("i18nextLng");
-
+  
     return (
     <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
      className="header"  id={t("home_path")}>
@@ -86,35 +85,8 @@ handleLinkClick =(event) => {
          <button className="navbar_burger" onClick={handleShowLinks}>
          <span className="burger_bar">Retour</span>
           </button> 
-          {/*
-           <ul className="navbar__links">
-            <li className="navbar_item slide1">
-              <NavLink to="/#Home" className="navbar_link" onClick={this.handleLinkClick}>
-             Acceuil
-              </NavLink>
-            </li>
-            <li className="navbar_item slide2">
-              <NavLink to="/#Profil" className="navbar_link" onClick={this.handleLinkClick}>
-                Profil
-              </NavLink>
-           </li>     
-            <li className="navbar_item slide3">
-              <NavLink to="/#Skills" className="navbar_link" onClick={this.handleLinkClick}>
-                Compétences
-              </NavLink>
-            </li>
-            <li className="navbar_item slide4">
-              <NavLink to="/#Portfolio" className="navbar_link" onClick={this.handleLinkClick}>
-                Portfolio
-              </NavLink>
-            </li>
-            <li className="navbar_item slide5">
-              <NavLink to="/#Contact" className="navbar_link" onClick={this.handleLinkClick}>
-                Contact
-              </NavLink>
-            </li>
-          </ul>   */}     
-                   <ul className="navbar__links">
+     
+          <ul className="navbar__links">
                     <li className="navbar_item slide1">
                       <NavLink to={t("home_path")} className="navbar_link" onClick={this.handleLinkClick}>
                       {t("home_title")}
@@ -141,11 +113,11 @@ handleLinkClick =(event) => {
                       {t("contact_title")}
                       </NavLink>
                     </li>
-                  </ul>               
+        </ul>         
         </nav>  
       
         <DarkMode />
-        < Language /> 
+        <Language /> 
     </header>
     )
   }
@@ -153,5 +125,5 @@ handleLinkClick =(event) => {
 }
 
   
-export default Header;
+export default withTranslation()(Header);
 

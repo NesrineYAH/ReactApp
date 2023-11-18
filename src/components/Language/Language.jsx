@@ -16,6 +16,7 @@ const handleToggleMenu = () => {
     return (
         <div>
           <div
+          
       style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
       className="header"
       id={t("home_path")}

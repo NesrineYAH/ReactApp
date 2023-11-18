@@ -5,7 +5,6 @@ import About from "../../components/About/About";
 import Skills from "../../Containers/Skills/Skills";
 import Portfolio from "../../Containers/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
-
 import { useTranslation } from "react-i18next";
 
 
@@ -14,7 +13,6 @@ const Home = () => {
     return (
       <>
         <main className="home">
-        
           <About />
           <Profil />        
           <Skills/>
