@@ -4,7 +4,6 @@ import React from "react";
 import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 //import { FaBars, FaTimes } from "react-icons/fa";
-//import Accueil from "../../Containers/Accueil/Accueil"
 import { withTranslation } from 'react-i18next';
 
 class Header extends Component {

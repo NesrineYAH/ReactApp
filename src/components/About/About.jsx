@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-//import { Link } from "react-router-dom";
+import { withTranslation } from 'react-i18next';
+import { Translation  } from 'react-i18next';
+import "../../i18n";
+import i18next from 'i18next';
+import PropTypes from 'prop-types';
 
 
-class TxtRotate extends Component {
+export class TxtRotate extends Component {
     constructor(props) {
       super(props);
-  
+
       this.state = {
         toRotate: JSON.parse(props.toRotate),
         loopNum: 0,
         txt: '',
         isDeleting: false,
+        translations: {},
+ 
       };
+  
     }
   
     componentDidMount() {
@@ -24,7 +31,7 @@ class TxtRotate extends Component {
       const { toRotate, loopNum, txt, isDeleting } = this.state;
       const i = loopNum % toRotate.length;
       const fullTxt = toRotate[i];
-  
+    
       if (isDeleting) {
         this.setState({ txt: fullTxt.substring(0, txt.length - 1) });
       } else {
@@ -33,7 +40,7 @@ class TxtRotate extends Component {
   
       let delta = 300 - Math.random() * 100;
       const that = this;
-  
+      
       if (isDeleting) {
         delta /= 2;
       }
@@ -55,13 +62,17 @@ class TxtRotate extends Component {
     }
   
   render() {
-    return (
-      <span className="txt-rotate">
-        <span className="wrap">{this.state.txt}</span>
-      </span>
+    const { t } = this.props; 
+    return ( 
+ 
+     <span className="txt-rotate">
+ <span className="wrap">{this.state.txt}</span>
+    </span>
+
     );
   }
 }
+
 
 class TxtToDisplay extends Component {
   constructor(props) {
@@ -69,8 +80,9 @@ class TxtToDisplay extends Component {
 
     this.state = {
       h1Text: '',
-      h2Text: '',
-    };
+      h2Text: '', 
+      translations: {}                                
+    }
 
     this.h1Ref = React.createRef();
     this.h2Ref = React.createRef();
@@ -82,7 +94,7 @@ class TxtToDisplay extends Component {
     let timer = setInterval(() => {
       if (j < text.length) {
         const lastChar = text.charAt(j);
-        console.log(lastChar);
+       // console.log(lastChar);
         this.setState(prevState => ({
           [setStateKey]: prevState[setStateKey].slice(0, j-1) + lastChar,
         }));
@@ -102,65 +114,80 @@ class TxtToDisplay extends Component {
     const h2Text = "développeur web - intégrateur";
     const h1Delay = h1Text.length * speed;
 
-    this.setState({
+    this.setState({  
       h1Text: '',
       h2Text: '',
+  
     });
 
     setTimeout(() => {
-      this.typeEffect(h1Text, speed, 'h1Text');
+      this.typeEffect(h1Text, speed,'h1Text');
     }, 1000);
     
     setTimeout(()=> {
       this.typeEffect(h2Text, speed, 'h2Text');
     }, 1000 + h1Delay)
 
-
     h1.classList.remove("hidden");
-
 
     setTimeout(() => {
       h2.classList.remove("hidden");
     }, h1Delay);
+
   }
 
+
   render() {
+    const { t } = this.props; 
     return (
-      <div className='txt-display'>
-        <h1 ref={this.h1Ref} className='hidden'>{this.state.h1Text}</h1>
-        <h2 ref={this.h2Ref} className='hidden'>{this.state.h2Text}</h2>
-      </div>
+
+    <div className='txt-display'>        
+    <h1 ref={this.h1Ref} className='hidden'>{(this.state.h1Text)}</h1>
+    <h2 ref={this.h2Ref} className='hidden'>{(this.state.h2Text)}</h2>
+    </div>
+  
     )
   }
 }
-  
+
 class About extends Component {
   render() {
+    const lang = localStorage.getItem("i18nextLang");
+    const { t } = this.props;  
+
     return (
       <section>
         <div id="About">
           <div className="presentation">
-            <p>
-              Bonjour {' '}
-              <TxtRotate
-                toRotate='["tout le monde!", "Visiteur !", "Recruteur ?!"]'
-                period="3000"
-              />
+            <p>Bonjour {' '}
+      <TxtRotate
+        toRotate='["tout le monde!", "Visiteur !", "Recruteur ?!"]'
+        period="3000"
+           >
+            </TxtRotate>
               <span className='wrap-border'>
                 |
               </span>
-            </p>
-            <TxtToDisplay />
-           
-            <button  className="glow-on-hover btn"><a href="/#Profil" onClick={this.handleLinkClick}>Plus d'info</a></button>
+            </p>  
+            <Translation>
+              {
+           t=> <TxtToDisplay />
+             }
+            </Translation>
+            <button  className="glow-on-hover Bttn"><a href={t("Profil_path")} onClick={this.handleLinkClick}>{t("txtInfo")}</a></button>
             {/* <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
             */}
 
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default About;
+About.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+
+export default withTranslation()(About);

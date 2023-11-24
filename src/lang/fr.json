@@ -18,8 +18,15 @@
   "contact_title": "Contact",
   "contact_id": "Contact",
   "contact_path": "/#Contact",
+  "txtInfo":"plus d'informations",
   "footer": "Tous droits réservés © 2023 - Nesrine BEKKAR YAHOUM",
 
+  "presentation": {
+    "h1Text" : "Nesrine BEKKAR YAHOUM",
+    "h2Text" : "développeur web - intégrateur",
+    "p": "Bonjour",
+    "toRotate": "[(tout le monde!, Visiteur !, Recruteur ?!]"
+    },
   "main_heading": {
     "hello": "Bonjour",
     "last name": " BEKKAR YAHOUM",

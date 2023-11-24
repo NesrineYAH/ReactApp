@@ -2,35 +2,35 @@
     min-width: 55px;
     min-height: 30px;
     width: auto;
-
+    background-color: transparent;
+    border-radius: 15px;
 }
 
 .btn_text {
     align-items: center;
-    border-radius: 20px;
-    //color: #100733;
-    //color: var(--body_color);
+    color: var(--body_color);
     display: flex;
     height: 100%;
     justify-content: center;
     text-decoration: none;
-    width: 100%;
-    // margin-top: 20px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .glow-on-hover {
     background-color: var(--body_background);
-    border: none;
-    border-radius: 20px;
-    color: var(--body_color);
+    border: 1px solide #ffff;
+    border-radius: 15px;
+    //color: var(--body_color);
     cursor: pointer;
-    height: 40px;
+    height: 55px;
     outline: 0;
     position: relative;
     width: 155px;
     z-index: 1;
     margin-top: 30px;
-   // border: 1px, solid 
+
 }
 
 
@@ -48,15 +48,21 @@
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: all .3s ease-in-out;
-    border-radius: 20px
+    border-radius: 15px;
+
 }
 
+
 .glow-on-hover:active {
-    color: #000
+    // color: navy;
+    color: var(--body-color);
+
 }
 
 .glow-on-hover:hover::before {
-    opacity: 1
+    opacity: 1;
+    border-radius: 15px;
+
 }
 
 .glow-on-hover::after {
@@ -65,15 +71,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--body_background);
+    border: 1px, solid, var(--body_background);
     left: 0;
     top: 0;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid var(--body_color);
+
 }
 
 .glow-on-hover a:hover {
     background-color: var(--body_color);
+
 }
 
 

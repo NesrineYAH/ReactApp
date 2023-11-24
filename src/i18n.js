@@ -8,12 +8,18 @@ import translationsAR from "./lang/ar.json";
 const resources = {
   en: {
     translation: translationsEN,
+    i18n: "Internationalisation",
+    "key": "hello world",
   },
   fr: {
     translation: translationsFR,
+    i18n: "Internationalisation",
+    "key": "Bonjour tout le monde",
   },
   ar: {
     translation: translationsAR,
+    i18n: "Internationalisation",
+    "key": "مرحبا بالجميع",
   },
 };
 
@@ -27,14 +33,26 @@ i18n
     lng: lang, // Initialise la langue avec la variable "lang"
     fallbackLng: ["fr", "en", "ar"],
     ns: ["translation"],
+
     keySeparator: ".", // to support nested translations
     debug: true,
     interpolation: {
       espaceValue: false,
+      // formatSeparator: ",",
     },
     react: {
       useSuspense: false,
+      hashTransKey: function (defaultValue) {
+        console.log("missing key", defaultValue);
+        return defaultValue;
+      },
     },
+    function({ t }) {
+      // initialized and ready to go!
+      i18n.t("key"); // -> ok
+      document.getElementById("output").innerHTML = i18n.t("key");
+    },
+    //["tout le monde !", "Visiteur !", "Recruteur !"]  ["","",""]
   });
 
-export default i18n;
+export default i18n.t.bind(i18n);
