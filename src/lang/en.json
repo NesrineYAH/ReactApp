@@ -15,7 +15,10 @@
   "portfolio_title": "Portfolio",
   "portfolio_id": "Portfolio",
   "portfolio_path": "/#Portfolio",
-  "contact_title": "Contact",
+  "service_title": "Service",
+  "service_id": "service",
+  "service__path": "/#Service",
+  "contact_title": "Cntact",
   "contact_id": "Contact",
   "contact_path": "/#Contact",
   "txtInfo":"More informations",
@@ -81,5 +84,12 @@
   "projectKasa": {
     "brief_description": "Kasa is an application dedicated to peer-to-peer apartment rentals in France",
     "description_project": "As a developer, I was tasked by Kasa, a leading peer-to-peer apartment rental company in France, to renovate their website.\n For this task, I used JavaScript for the client-side and opted for React as the front-end framework. I had access to 20 recent real estate listings in JSON format, which I worked on to create a functional and responsive website.\n I also used Figma to convert the designs into React components and routes, ensuring visual consistency while developing an interactive and user-friendly interface."
+  },
+  "service": {
+    "WEB": "Creation of showcase sites, e-commerce site, dynamic site Integration of models",
+     "Mobile": "In a mobile-dominated era, a well-designed app is more than just a tool. It's your direct connection to your users, wherever you are.",
+    "Natural SEO": "includes all the methods and techniques which aim to position the web pages of your SITE",
+    "Technology watch": "Always on the lookout for new technologies"
+   
   }
 }

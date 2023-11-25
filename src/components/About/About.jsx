@@ -4,6 +4,7 @@ import { Translation  } from 'react-i18next';
 import "../../i18n";
 import i18next from 'i18next';
 import PropTypes from 'prop-types';
+import Language from "../Language/Language";
 
 
 export class TxtRotate extends Component {
@@ -28,7 +29,8 @@ export class TxtRotate extends Component {
     }
   
     tick() {
-      const { toRotate, loopNum, txt, isDeleting } = this.state;
+      const { t } = this.props; 
+      const { toRotate, loopNum, txt, isDeleting } =this.state;
       const i = loopNum % toRotate.length;
       const fullTxt = toRotate[i];
     
@@ -63,6 +65,7 @@ export class TxtRotate extends Component {
   
   render() {
     const { t } = this.props; 
+    const lang = localStorage.getItem("i18nextLng");
     return ( 
  
      <span className="txt-rotate">

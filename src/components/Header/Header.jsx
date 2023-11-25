@@ -108,6 +108,11 @@ handleLinkClick =(event) => {
                       </NavLink>
                     </li>
                     <li className="navbar_item slide5">
+                      <NavLink to={t("service_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                      {t("service_title")}
+                      </NavLink>
+                    </li>
+                    <li className="navbar_item slide6">
                       <NavLink to={t("contact_path")} className="navbar_link" onClick={this.handleLinkClick}>
                       {t("contact_title")}
                       </NavLink>
