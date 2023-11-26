@@ -6,6 +6,7 @@ import Skills from "../../Containers/Skills/Skills";
 import Portfolio from "../../Containers/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
 import { useTranslation } from "react-i18next";
+import Service from "../../components/Services/Services"
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
           <Profil />        
           <Skills/>
           <Portfolio />
+          <Service />
           <Contact/>
         </main>
       </>
