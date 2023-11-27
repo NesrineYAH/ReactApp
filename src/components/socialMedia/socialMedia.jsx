@@ -12,7 +12,7 @@ const SocialMedia = () => {
         <a href="https://github.com/NesrineYAH" target="_blank" rel="noreferrer" aria-label="github">
         <DiGithubBadge
             color="var(--body_color)"
-            size="50px"
+            size="40px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--background_icons)")}           
             onMouseOut={({ target }) =>
@@ -25,7 +25,7 @@ const SocialMedia = () => {
         <a href="https://www.linkedin.com/in/nesrine-yahoum-16ba4590/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
         <TiSocialLinkedinCircular
             color="var(--body_color)"
-            size="50px"
+            size="40px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--background_icons)")
             }
@@ -36,11 +36,11 @@ const SocialMedia = () => {
         </a>
         </li>  
 
-        <li className='socialMedia__Icone'>
+        <li className='socialMedia__Icone discord'>
         <a href="https://discord.com/#1420" target="_blank" rel="Discord">
         <FaDiscord
             color="var(--body_color)"
-            size="45px"
+            size="35px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--background_icons)")
             }

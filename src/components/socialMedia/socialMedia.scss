@@ -4,4 +4,9 @@
     flex-direction: row;
     flex-direction: space-between;
     list-style-type: none;
+    padding-left: 0;
+
+    .discord {
+        margin-top: 3px;
+    }
 }
