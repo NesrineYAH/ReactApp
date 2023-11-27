@@ -30,25 +30,22 @@ const Service = () => {
   return (
 
     <section id="Service">
-               <h2 className="serviceTitle"> {t("service_title")} </h2>
-      {services.map((service) => (
-
-        <div id={t("service_id")} className="Service__Container">
+       <div className="Service__Container">
+        <h2 className="titlePortfolio"> {t("service_title")} </h2>
+      {services.map((service) => (       
+    
+       <div id={("service.id")} >
+          <figure className='serviceCard' key={service.id} >
+          <img className='serviceCard__img' src={service.image} alt ={service.alt} />
+          <h3 className='serviceCard__title' >{t(service.title)}</h3>
+          <p className='serviceCard__prg'>{t(service.description)}</p>    
+          </figure>
+       </div>
      
-          <div className='serviceCard'>
-          <h3>{service.titile}</h3>
-                <figure className='Card'
-                key={service.id}
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-                >     
-           </figure>
-
-          </div>
-        </div>
       ))
       }
+     </div>   
+        
     </section>
 
 

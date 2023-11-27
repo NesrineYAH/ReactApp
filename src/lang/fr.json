@@ -85,11 +85,11 @@
     "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France",
     "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale"
 },
-"services": {
-  " description__WEB":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
-   "description__Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil. C'est votre connexion directe avec vos utilisateurs, où que vous soyez.",
-  "description__Réferencement-Naturel-SEO":"englobe l'ensemble des méthodes et techniques qui visent à positionner les pages web de votre SITE",
-  "description__Veille-technologique" :"Toujours à l'affût des nouvelles technologies"
+"service.description": {
+  " web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
+   "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
+   "Referencement":"englobe l'ensemble des méthodes et techniques qui visent à positionner les pages web de votre SITE",
+   "Veille" :"Toujours à l'affût des nouvelles technologies"
  
 }
 

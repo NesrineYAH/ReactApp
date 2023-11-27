@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
 <section id="Portfolio">
     <div id={t("Portfolio_id")} className="portfoloi">
-      <h1 className="title"> {t("portfolio_title")} </h1>
+      <h2 className="titlePortfolio"> {t("portfolio_title")} </h2>
       <MyPortfolio />
     </div>
  </section>

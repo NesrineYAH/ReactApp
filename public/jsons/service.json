@@ -1,10 +1,10 @@
 [
     {
-       "title": "web",
+       "title": "WEB",
        "image": "../assets/images/web.jpg",
        "alt": "image service web",
        "id": "1",
-       "services.description":"services.descriptio__WEB"
+       "description":"service.description.web"
 
     },
     {
@@ -12,7 +12,7 @@
         "image": "../assets/images/version-mobile.png",
         "alt": "image service Mobile",
         "id": "2",
-        "services.description":"services.descriptio__Mobile"
+        "description":"service.description.Mobile"
  
      },
      {
@@ -20,7 +20,7 @@
         "image": "../assets/images/SEO.jpg",
         "alt": "image service SEO",
         "id": "3",
-        "services.description":"services.description__Réferencement-Naturel-SEO "
+        "description":"service.description.Referencement"
  
      },
      {
@@ -28,7 +28,6 @@
         "image": "../assets/images/la-veille-technologique.jpg",
         "alt": "image service SEO",
         "id": "3",
-        "services.description":"services.description__Veille-technologique "
- 
+        "description":"service.description.Veille"
      }
 ]

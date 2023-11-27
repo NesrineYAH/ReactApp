@@ -9,10 +9,6 @@ import { ScrollToPlugin } from 'gsap/all';
 
 gsap.registerPlugin( ScrollToPlugin, ScrollTrigger);
 
-
-
-
-
 const Skills = () => {
     const { t } = useTranslation();
     // 22/10 - 27/10
@@ -80,9 +76,9 @@ useEffect(() => {
     return (
         <section id="Skills"> 
        <div id={t("skills_id")} className="SkillsBloc">
-            <h1 className="titleCom">{t("skills_title")}
+            <h2 className="titlePortfolio">{t("skills_title")}
             <span ref={textRef}><span className='display-dots'></span></span>  
-            </h1>
+            </h2>
         <MySkills />
           
         </div>

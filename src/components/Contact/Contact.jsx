@@ -60,7 +60,7 @@ const nameValidation =() => {
 
   return (
     <section id={t("contact_id")}  className= "contact" itemScope itemType="http://schema.org/Person">
-      <h1 className='titleContact'>{t("contact_title")}</h1>
+      <h2 className='titlePortfolio'>{t("contact_title")}</h2>
       <div
         style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
         className=" contact-wrapper"
