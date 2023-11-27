@@ -4,14 +4,14 @@
     margin: 30px auto;
     @include flexCenterRow;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 60px 0 60px;
+    gap: 20px;
+    padding: 0 35px 0 35px;
 
     .card {
         // border-radius: 50px 0;
         border-radius: 15px;
         height: 323px;
-        width: 380px;
+        width: 370px;
         position: relative;
         transform-style: preserve-3d; // à revenir
         background: 0 0;

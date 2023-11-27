@@ -1,7 +1,5 @@
 .competance__Container {
-    height: 550px;
-
-
+    min-height: 100vh;
 
     .competance {
         width: 250px;
@@ -30,7 +28,7 @@
 
     .competance_item {
         //width: 100px;
-      //  padding: 25px;
+        //  padding: 25px;
 
         .competance-bar {
             width: 100%;

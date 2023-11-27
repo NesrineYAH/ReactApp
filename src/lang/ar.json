@@ -57,10 +57,10 @@
   "Demo": "عرض",
   "source_code": "الكود المصدري",
   "email_envoyer": "تم إرسال بريدك الإلكتروني بنجاح. سأقوم بالرد عليكم في أقرب وقت ممكن",
-  "web": "الويب",
-  "Réferancement Naturel SEO" :"المرجع الطبيعي للمواقع",
-  "La veille technologique": "مراقبة التكنولوجيا",
-  "notFound": {
+  "WEB": "الويب",
+  "Réferencement Naturel SEO" :"المرجع الطبيعي للمواقع",
+  "Veille technologique": "مراقبة التكنولوجيا",
+  "ErrorPage": {
     "message__title": "صفحة غير متاحة",
     "message__text": " نعتذر، الصفحة المطلوبة غير موجودة .",
     "message__btn": "العودة للصفحة الرئيسية"

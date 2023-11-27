@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/PageError/PageError";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 import Project from "./pages/Project/Project";
 import "./App.scss";
+
 class App extends React.Component {
  // const location = useLocation();
  handleClick = () => {

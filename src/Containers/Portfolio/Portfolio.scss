@@ -1,12 +1,16 @@
 #Portfolio {
-    width: 100%;
+    // width: 100%;
+    width: 92%;
     height: 100%;
     position: relative;
+    left: 4.4%;
     min-height: 100vh;
     background-color: var(--body_background);
     display: flex;
     border-radius: 20px;
     transition: .2s linear;
+    background-color: #e9e2e2;
+    margin-bottom: 50px;
 
     .portfoloi {
         padding: 60px;
@@ -16,7 +20,7 @@
         align-items: center;
         z-index: 3;
         width: 100%;
-        margin: 60px auto;
+        margin: 45px auto;
     }
 
     // .title {

@@ -15,9 +15,11 @@
   "portfolio_title": "Portfolio",
   "portfolio_id": "Portfolio",
   "portfolio_path": "/#Portfolio",
-  "service_title": "Service",
-  "service_id": "service",
-  "service__path": "/#Service",
+
+  "service_title": "Services",
+  "service_id": "services",
+  "service__path": "/#Services",
+
   "contact_title": "Cntact",
   "contact_id": "Contact",
   "contact_path": "/#Contact",
@@ -55,7 +57,10 @@
   "Demo": "Demo",
   "source_code": "Source code",
   "email_envoyer": "Your email has been successfully sent. I will get back to you as soon as possible",
-  "notFound": {
+  "WEB": "WEB",
+  "Réferencement Naturel SEO" :"Search Engine Optimization",
+  "Veille technologique": "Technology surveillance ",
+  "ErrorPage": {
     "message__title": "Page Not Found",
     "message__text": " We're sorry, the page you were looking for isn't found here.",
     "message__btn": "Return to the home page"
@@ -88,8 +93,7 @@
   "serviceescription":{
     "web": "Creation of showcase sites, e-commerce site, dynamic site Integration of models",
      "Mobile": "In a mobile-dominated era, a well-designed app is more than just a tool. It's your direct connection to your users, wherever you are.",
-    "Natural SEO": "includes all the methods and techniques which aim to position the web pages of your SITE",
+    "Referencement": "includes all the methods and techniques which aim to position the web pages of your SITE",
     "Technology watch": "Always on the lookout for new technologies"
-   
   }
 }

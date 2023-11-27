@@ -15,9 +15,11 @@
   "portfolio_title": "Portfolio",
   "portfolio_id": "Portfolio",
   "portfolio_path": "/#Portfolio",
+
   "service_title": "Services",
   "service_id": "services",
   "service_path": "/#Services",
+  
   "contact_title": "Contact",
   "contact_id": "Contact",
   "contact_path": "/#Contact",
@@ -55,7 +57,10 @@
   "Demo": "Démo",
   "source_code": "Code source",
   "email_envoyer": "Votre e-mail a bien été envoyé. Je reviendrai vers vous dans les plus brefs délais",
-  "notFound": {
+  "WEB": "WEB",
+  "Réferencement Naturel SEO" :"Réferencement Naturel SEO",
+  "Veille technologique": "Veille technologique",
+  "ErrorPage": {
     "message__title": "Page non trouvée",
     "message__text": " Nous sommes désolés, la page que vous recherchez n'existe pas.",
     "message__btn": "Retourner sur la page d'accueil"
@@ -86,7 +91,7 @@
     "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale"
 },
 "service.description": {
-  " web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
+  "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
    "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
    "Referencement":"englobe l'ensemble des méthodes et techniques qui visent à positionner les pages web de votre SITE",
    "Veille" :"Toujours à l'affût des nouvelles technologies"

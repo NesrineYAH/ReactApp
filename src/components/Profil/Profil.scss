@@ -1,9 +1,17 @@
 #Profil {
-    background-color: #f2e8e8;
-    //@include flexCenterRow;
+    background-color: #e9e2e2;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 4.4%;
+    border-radius: 15px;
+    margin-bottom: 50px;
 
     .Profil__container {
         margin: 0 auto;
+        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: row;

@@ -36,7 +36,7 @@ class Header extends Component {
     this.setState({ isMobile });
 };
 handleScroll() {
-  const isTransparent = window.scrollY < 250;
+  const isTransparent = window.scrollY < 350;
   this.setState({ isTransparent });
 }
 // Fonction scroll To #section au click (tempo 500ms pr rendu page avant scroll)
@@ -96,7 +96,6 @@ handleLinkClick =(event) => {
                       {t("Profil_title")}
                       </NavLink>
                     </li>
-              
                     <li className="navbar_item slide3">
                       <NavLink to={t("skills_path")} className="navbar_link" onClick={this.handleLinkClick}>
                       {t("skills_title")}

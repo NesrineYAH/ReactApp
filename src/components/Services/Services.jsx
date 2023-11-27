@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+//import { FaDesktop } from "react-icons/fa6";
+//import { FaMobileAlt } from "react-icons/fa";
 
-const Service = () => {
+const Services = () => {
   const { t } = useTranslation();
   const [services, setServices] = useState([]);
   useEffect(() => {
@@ -25,31 +27,31 @@ const Service = () => {
     fetchServices();
   }, []);
   useEffect(() => {
-    AOS.init({ duration: 6000 });
+    AOS.init({ duration: 5000 });
   }, []);
-  return (
 
-    <section id="Service">
+  return (
+    <section id="Services">
        <div className="Service__Container">
         <h2 className="titlePortfolio"> {t("service_title")} </h2>
       {services.map((service) => (       
     
        <div id={("service.id")} >
-          <figure className='serviceCard' key={service.id}>
+          <figure className='serviceCard' key={service.id}
+            data-aos="zoom-in-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
           <img className='serviceCard__img' src={service.image} alt ={service.alt} />
           <h3 className='serviceCard__title' >{t(service.title)}</h3>
           <p className='serviceCard__prg'>{t(service.description)}</p>    
           </figure>
        </div>
-     
       ))
-      }
-     </div>   
-        
+       }  
+     </div>     
     </section>
-
-
   );
 };
 
-export default Service;
+export default Services;

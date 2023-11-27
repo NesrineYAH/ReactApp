@@ -72,7 +72,6 @@ useEffect(() => {
     slideInTop("#skills");
 })
   
-   
     return (
         <section id="Skills"> 
        <div id={t("skills_id")} className="SkillsBloc">
@@ -83,9 +82,7 @@ useEffect(() => {
           
         </div>
         </section>
-    );
-
-   
+    ); 
     };
 
 export default Skills;
