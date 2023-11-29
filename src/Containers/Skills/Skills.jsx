@@ -69,12 +69,12 @@ const fullfillBars =(elem, options) => {
     )
 }
 useEffect(() => {
-    slideInTop("#skills");
+    slideInTop("#Skills");
 })
   
     return (
         <section id="Skills"> 
-       <div id={t("skills_id")} className="SkillsBloc">
+       <div id={t("skills_id")}>
             <h2 className="titlePortfolio">{t("skills_title")}
             <span ref={textRef}><span className='display-dots'></span></span>  
             </h2>

@@ -3,16 +3,11 @@
     align-items: center;
     width: 92%;
     position: relative;
-    left: 4.4%;
+    left: 4%;
     border-radius: 15px;
     min-height: 100vh;
     z-index: 3;
-   // background-color: #e9e2e2;
+    background-color: #e9e2e2;
     padding-top: 100px;
     margin-bottom: 50px;
-
-    .SkillsBloc {
-        // @include flexCenterRow;
-    }
-
 }

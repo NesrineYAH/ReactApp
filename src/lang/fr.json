@@ -9,9 +9,11 @@
   "Profil_title": "Profil",
   "Profil_id": "Profil",
   "Profil_path": "/#Profil",
+
   "skills_title": "Compétences",
   "skills_id": "Compétences",
   "skills_path": "/#Compétences",
+  
   "portfolio_title": "Portfolio",
   "portfolio_id": "Portfolio",
   "portfolio_path": "/#Portfolio",

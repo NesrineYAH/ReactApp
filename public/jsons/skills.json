@@ -1,150 +1,159 @@
 [
-  {
-    "image": "./assets/technologyIcons/html-min.webp",
-    "alt": "html icon ",
-    "name": "Html",
-    "category": "Frontend",
-    "key": "1"
-  },
-  {
-    "image": "./assets/technologyIcons/css-3-min.webp",
-    "alt": " icon css",
-    "name": "Css",
-    "category": "Frontend",
-    "key": "2"
-  },
-  {
-    "image": "./assets/technologyIcons/admobe-min.webp",
-    "alt": " icon admobe",
-    "name": "Admob",
-    "category": "Mobile",
-    "key": "3"
-  },
-  {
-    "image": "./assets/technologyIcons/github-min.webp",
-    "alt": "icon github",
-    "name": "Github",
-    "category": "Logiciel",
-    "key": "4"
-  },
-  {
-    "image": "./assets/technologyIcons/figma-min.webp",
-    "alt": " icon figma",
-    "name": "Figma",
-    "category": "Frontend",
-    "key": "5"
-  },
-  {
-    "image": "./assets/technologyIcons/express-1-min.webp",
-    "alt": "icon express",
-    "name": "Express",
-    "category": "Backend",
-    "key": "6"
-  },
-  {
-    "image": "./assets/technologyIcons/js-min.webp",
-    "alt": "icon js",
-    "name": "JavaScript",
-    "category": "Frontend",
-    "key": "7"
-  },
-  {
-    "image": "./assets/technologyIcons/mongodb-min.webp",
-    "alt": "icon mongodb",
-    "name": "Mongodb",
-    "category": "Backend",
-    "key": "8"
-  },
-  {
-    "image": "./assets/technologyIcons/nodejs-min.webp",
-    "alt": "icon node.js",
-    "name": "Node.js",
-    "category": "Backend",
-    "key": "9"
-  },
-  {
-    "image": "./assets/technologyIcons/bootstrap-min.webp",
-    "alt": "icon bootstrap",
-    "name": "Bootstrap",
-    "category": "Frontend",
-    "key": "10"
-  },
-  {
-    "image": "./assets/technologyIcons/kotlin-min.webp",
-    "alt": " icon Kotlin",
-    "name": "Kotlin",
-    "category": "Mobile",
-    "key": "11"
-  },
-  {
-    "image": "./assets/technologyIcons/Android_Studio-min.webp",
-    "alt": "icon android stodio",
-    "name": "Android Studio",
-    "category": "Logiciel",
-    "key": "12"
-  },
-  {
-    "image": "./assets/technologyIcons/visualStudio-min.webp",
-    "alt": "icon vs",
-    "name": "Visual Studio",
-    "category": "Logiciel",
-    "key": "17"
-  },
-  {
-    "image": "./assets/technologyIcons/postman-min.webp",
-    "alt": "icon postman",
-    "name": "Postman",
-    "category": "Logiciel",
-    "key": "13"
-  },
-  {
-    "image": "./assets/technologyIcons/react-min.webp",
-    "alt": "React ",
-    "name": "React",
-    "category": "Frontend",
-    "key": "14"
-  },
-  {
-    "image": "./assets/technologyIcons/sass-min.webp",
-    "alt": "icon sass",
-    "name": "Sass",
-    "category": "Frontend",
-    "key": "15"
-  },
-  {
-    "image": "./assets/technologyIcons/git-min.webp",
-    "alt": "icon git",
-    "name": "Git",
-    "category": "Logiciel",
-    "key": "16"
-  },
 
-  {
-    "image": "./assets/technologyIcons/seo-min.webp",
-    "alt": "icon seo",
-    "name": "Seo",
-    "category": "Frontend",
-    "key": "18"
-  },
-  {
-    "image": "./assets/technologyIcons/redux-min.webp",
-    "alt": "icon redux",
-    "name": "Redux",
-    "category": "Frontend",
-    "key": "19"
-  },
-  {
-    "image": "./assets/technologyIcons/Notion-min.webp",
-    "alt": "icon notion",
-    "name": "Notion",
-    "category": "Logiciel",
-    "key": "20"
-  },
-  {
-    "image": "./assets/technologyIcons/slack-min.webp",
-    "alt": "icon slack",
-    "name": "Slack",
-    "category": "Logiciel",
-    "key": "21"
-  }
+    {
+      "name": "Html",
+      "image": "./assets/technologyIcons/html-min.webp",
+      "alt": "html icon ",
+      "category": "Frontend",
+      "key": "1"
+    },
+    {
+      "image": "./assets/technologyIcons/css-3-min.webp",
+      "alt": " icon css",
+      "name": "Css",
+      "category": "Frontend",
+      "key": "2"
+    },
+    {
+      "image": "./assets/technologyIcons/sass-min.webp",
+      "alt": "icon sass",
+      "name": "Sass",
+      "category": "Frontend",
+      "key": "3"
+    },
+    {
+      "image": "./assets/technologyIcons/js-min.webp",
+      "alt": "icon js",
+      "name": "JavaScript",
+      "category": "Frontend",
+      "key": "4"
+    },
+    {
+      "image": "./assets/technologyIcons/bootstrap-min.webp",
+      "alt": "icon bootstrap",
+      "name": "Bootstrap",
+      "category": "Frontend",
+      "key": "5"
+    },
+    {
+      "image": "./assets/technologyIcons/figma-min.webp",
+      "alt": " icon figma",
+      "name": "Figma",
+      "category": "Frontend",
+      "key": "6"
+    },
+    {
+      "image": "./assets/technologyIcons/seo-min.webp",
+      "alt": "icon seo",
+      "name": "Seo",
+      "category": "Frontend",
+      "key": "7"
+    },
+    {
+      "image": "./assets/technologyIcons/redux-min.webp",
+      "alt": "icon redux",
+      "name": "Redux",
+      "category": "Frontend",
+      "key": "8"
+    },
+  
+
+{
+  "Backend": [
+    {
+      "image": "./assets/technologyIcons/nodejs-min.webp",
+      "alt": "icon node.js",
+      "name": "Node.js",
+      "category": "Backend",
+      "key": "1"
+    },
+    {
+      "image": "./assets/technologyIcons/express-1-min.webp",
+      "alt": "icon express",
+      "name": "Express",
+      "category": "Backend",
+      "key": "2"
+    },
+    {
+      "image": "./assets/technologyIcons/mongodb-min.webp",
+      "alt": "icon mongodb",
+      "name": "Mongodb",
+      "category": "Backend",
+      "key": "3"
+    },
+    {
+      "image": "./assets/technologyIcons/admobe-min.webp",
+      "alt": " icon admobe",
+      "name": "Admob",
+      "category": "Mobile",
+      "key": "1"
+    },
+    {
+      "image": "./assets/technologyIcons/kotlin-min.webp",
+      "alt": " icon Kotlin",
+      "name": "Kotlin",
+      "category": "Mobile",
+      "key": "2"
+    }
+  ]
+ },
+ {
+  "logiciel": [
+    {
+      "image": "./assets/technologyIcons/github-min.webp",
+      "alt": "icon github",
+      "name": "Github",
+      "category": "Logiciel",
+      "key": "1"
+    },
+    {
+      "image": "./assets/technologyIcons/Android_Studio-min.webp",
+      "alt": "icon android stodio",
+      "name": "Android Studio",
+      "category": "Logiciel",
+      "key": "2"
+    },
+    {
+      "image": "./assets/technologyIcons/visualStudio-min.webp",
+      "alt": "icon vs",
+      "name": "Visual Studio",
+      "category": "Logiciel",
+      "key": "3"
+    },
+    {
+      "image": "./assets/technologyIcons/postman-min.webp",
+      "alt": "icon postman",
+      "name": "Postman",
+      "category": "Logiciel",
+      "key": "4"
+    },
+    {
+      "image": "./assets/technologyIcons/git-min.webp",
+      "alt": "icon git",
+      "name": "Git",
+      "category": "Logiciel",
+      "key": "5"
+    },
+    {
+      "image": "./assets/technologyIcons/Notion-min.webp",
+      "alt": "icon notion",
+      "name": "Notion",
+      "category": "Logiciel",
+      "key": "6"
+    },
+    {
+      "image": "./assets/technologyIcons/slack-min.webp",
+      "alt": "icon slack",
+      "name": "Slack",
+      "category": "Logiciel",
+      "key": "7"
+    }
+  ]
+ }, 
+ { 
+  "Design": [
+    "Adobe Illustrator",
+    "Adobe Photohop"
+  ]
+}
 ]

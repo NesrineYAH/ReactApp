@@ -1,14 +1,13 @@
-.competance__Container {
+.competence__Container {
     min-height: 100vh;
 
-    .competance {
-        width: 250px;
+    .competence {
+        width: 100%;
         @include ItemColumn;
 
     }
 
-
-    .filtre {
+    /*  .filtre {
         width: auto;
         height: auto;
         display: flex;
@@ -23,19 +22,25 @@
         border: 1px solid var(--body_color);
         margin: 2px auto;
         margin-bottom: 12px;
-    }
+    }*/
 
 
-    .competance_item {
-        //width: 100px;
-        //  padding: 25px;
+    .competence__Backend {
+        width: 450px;
+        padding: 15px;
+        color: navy;
 
-        .competance-bar {
+        h5 {
+        
+            color: navy;
+        }
+
+        .competence-bar {
             width: 100%;
             height: .8em;
             background-color: rgb(184, 182, 241);
 
-            .competance-bar-fullfilled {
+            .competence-bar-fullfilled {
                 height: .5em;
                 background-color: #80c5eb;
             }

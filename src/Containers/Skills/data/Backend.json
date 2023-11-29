@@ -1,0 +1,39 @@
+{
+    "Backend": [
+      {
+        "image": "./assets/technologyIcons/nodejs-min.webp",
+        "alt": "icon node.js",
+        "name": "Node.js",
+        "category": "Backend",
+        "key": "1"
+      },
+      {
+        "image": "./assets/technologyIcons/express-1-min.webp",
+        "alt": "icon express",
+        "name": "Express",
+        "category": "Backend",
+        "key": "2"
+      },
+      {
+        "image": "./assets/technologyIcons/mongodb-min.webp",
+        "alt": "icon mongodb",
+        "name": "Mongodb",
+        "category": "Backend",
+        "key": "3"
+      },
+      {
+        "image": "./assets/technologyIcons/admobe-min.webp",
+        "alt": " icon admobe",
+        "name": "Admob",
+        "category": "Mobile",
+        "key": "1"
+      },
+      {
+        "image": "./assets/technologyIcons/kotlin-min.webp",
+        "alt": " icon Kotlin",
+        "name": "Kotlin",
+        "category": "Mobile",
+        "key": "2"
+      }
+    ]
+   }

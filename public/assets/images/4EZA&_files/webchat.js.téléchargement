@@ -1,0 +1,19 @@
+    function loadStudizzScript() 
+{
+            
+    var studizzScript = document.createElement('script');
+    studizzScript.type = 'text/javascript';
+    studizzScript.src = "https://webchat.studizz.fr/webchat.init.js?token=5eb26f5c75549a267736be8a";
+    document.body.appendChild(studizzScript);
+}
+
+if (document.readyState !== 'loading') {
+    loadStudizzScript();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        loadStudizzScript();
+    });
+}
+
+
+  
