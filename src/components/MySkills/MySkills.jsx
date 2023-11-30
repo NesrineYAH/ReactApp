@@ -72,7 +72,7 @@ const MySkills = () => {
 
     useEffect(() => {
         fullfillBars(".html_skill", "70%");
-        fullfillBars(".css_skill", "70%");
+        fullfillBars(".css_skill", "75%");
         fullfillBars(".bootstrap_skill", "50%");
         fullfillBars(".javascript_skill", "70%");
         fullfillBars(".react_skill", "70%");
@@ -90,38 +90,37 @@ const MySkills = () => {
                 <h2 className="titlePortfolio">{t("skills_title")}
                     <span ref={textRef}><span className='display-dots'></span><span className='display-dots'>.</span></span>
                 </h2>
-                </div>
                 <div className="Skills__Container">
-                <div className="Skills__box">
+               
                        {/* Frontend */}
                     <div className="box">
                         <h4 className="titreSkill">Front-end</h4>
                         <div className="skill-item">
-                            <p>HTML</p>
+                            <p className="skill-item__p">HTML</p>
                             <div className="skill-bar">
                                 <div className="skill__bar-fullfilled html_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>CSS / SCSS</p>
+                            <p className="skill-item__p">CSS / SCSS</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled css_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>Bootstrap</p>
+                            <p className="skill-item__p">Bootstrap</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled bootstrap_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>Javascript</p>
+                            <p className="skill-item__p">Javascript</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled javascript_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>React</p>
+                            <p className="skill-item__p"> React</p> 
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled react_skill"></div>
                             </div>
@@ -131,13 +130,13 @@ const MySkills = () => {
                     <div className="box">
                         <h4 className="titreSkill">Back-end</h4>
                         <div className="skill-item">
-                            <p>Node JS</p>
+                            <p className="skill-item__p">Node JS</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled node_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>mySQL</p>
+                            <p className="skill-item__p">mySQL</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled sql_skill"></div>
                             </div>
@@ -147,27 +146,28 @@ const MySkills = () => {
                     <div className="box">
                         <h4 className="titreSkill">Design</h4>
                         <div className="skill-item">
-                            <p>Adobe XD</p>
+                            <p className="skill-item__p">Adobe XD</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled adobe_XD_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>Adobe Photohop</p>
+                            <p className="skill-item__p">Adobe Photohop</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled adobe_PS_skill"></div>
                             </div>
                         </div>
                         <div className="skill-item">
-                            <p>Adobe Illustrator</p>
+                            <p className="skill-item__p">Adobe Illustrator</p>
                             <div className="skill-bar">
                                 <div className="skill-bar-fullfilled adobe_IL_skill"></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                </div>
-                
+             
+               </div>   
           
         </section>
     );
