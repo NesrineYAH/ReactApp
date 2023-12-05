@@ -27,7 +27,7 @@ const toggleTheme =(e) => {
          <input className="dark_mode_input" type="checkbox" id="darkmode-toggle"
         onChange={toggleTheme}
         defaultChecked={selectedTheme === "dark"} />  
-<label className="dark_mode_label"
+<label className="dark_mode_label" 
 htmlFor="darkmode-toggle"
   aria-label="Changer le mode sombre"
 > 

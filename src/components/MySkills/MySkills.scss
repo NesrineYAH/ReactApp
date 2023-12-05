@@ -1,57 +1,82 @@
 #Skills {
-
     width: 92%;
+    height: auto;
     position: relative;
     left: 4%;
     border-radius: 15px;
-    // min-height: 100vh;
-    // z-index: 3;
     background-color: #e9e2e2;
-    padding: 20px 0 35px 0;
-    margin-bottom: 50px;
+    padding: 0 0 80px 0;
+    margin-bottom: 30px;
+
+    .txtxt {
+        display: inline-flex;
+        flex-direction: row;
 
 
-    &__container {
-        margin-top: -50px;
+        .display-dots {
+            font-size: 25px;
+            font-weight: bold;
+            align-self: center;
+        }
+    }
+
+
+    &__Container {
+        margin-top: -4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5vh 0;
+
+        &__box {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            //   justify-content: space-between;  
+        }
 
     }
 
     .box {
-        //  padding: 0 1rem 0 2rem;
+        padding: 0 1rem 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: end;
         width: 35%;
-    }
 
-    .titreSkill {
-        text-align: center;
-        margin: 10px 0 10px 0;
-        font-size: 16px;
-    }
 
-    .skill-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin: 10px;
-
-        &__p {
-            margin-bottom: 4px;
-            font-size: 13px;
+        &__title {
+            text-align: center;
+            margin: 10px 0 10px 0;
+            font-size: 15px;
         }
 
-        .skill-bar {
-
-            height: 16px;
-            background-color: navy;
+        .skillItem {
             display: flex;
+            flex-direction: column;
             justify-content: flex-end;
+            margin: 10px;
 
-            .skill-bar-fullfilled {
+            &__p {
+                margin-bottom: 4px;
+                font-size: 13px;
+            }
+
+            &__bar {
+                width: 100%;
                 height: 16px;
+                display: flex;
+                justify-content: start;
                 background-color: rgb(211, 211, 230);
+
+                &__fullfilled {
+                    height: 16px;
+                    background-color: navy;
+                }
             }
         }
     }
+
 }

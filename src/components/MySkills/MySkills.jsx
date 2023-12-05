@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
-
+import BlobCloud from "../BlobCloud/BlobCloud";
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
@@ -74,103 +74,102 @@ const MySkills = () => {
         fullfillBars(".html_skill", "70%");
         fullfillBars(".css_skill", "75%");
         fullfillBars(".bootstrap_skill", "50%");
-        fullfillBars(".javascript_skill", "70%");
+        fullfillBars(".javascript_skill", "60%");
         fullfillBars(".react_skill", "70%");
         fullfillBars(".node_skill", "60%");
         fullfillBars(".sql_skill", "60%");
-        fullfillBars(".adobe_XD_skill", "60%");
+        fullfillBars(".Git_skill", "60%");
+        fullfillBars(".Figma_skill", "60%");
         fullfillBars(".adobe_PS_skill", "50%");
         fullfillBars(".adobe_IL_skill", "50%");
-
     }, []);
 
     return (
         <section id="Skills">
-            <div id={t("skills_id")}>
-                <h2 className="titlePortfolio">{t("skills_title")}
-                    <span ref={textRef}><span className='display-dots'></span><span className='display-dots'>.</span></span>
-                </h2>
-                <div className="Skills__Container">
-               
-                       {/* Frontend */}
+           <div id={t("skills_id")} className="txtxt"> 
+                <h2 className="titlePortfolio">{t("skills_title")}</h2>
+                    <span ref={textRef}><span className='display-dots'>.</span><span className='display-dots'>.</span><span className='display-dots'>.</span></span>
+            </div>            
+            <div className="Skills__Container">
+                <div className="Skills__box">
                     <div className="box">
-                        <h4 className="titreSkill">Front-end</h4>
-                        <div className="skill-item">
-                            <p className="skill-item__p">HTML</p>
-                            <div className="skill-bar">
-                                <div className="skill__bar-fullfilled html_skill"></div>
+                        <h4 className="box__title">Front-end</h4>
+                        <div className="skillItem">
+                            <p className="skillItem__p">HTML</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled html_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">CSS / SCSS</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled css_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">CSS / SCSS</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled css_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Bootstrap</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled bootstrap_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Bootstrap</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled bootstrap_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Javascript</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled javascript_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Javascript</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled javascript_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p"> React</p> 
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled react_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p"> React</p> 
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
                         </div>
                     </div>
-                        {/* Backend */}
                     <div className="box">
-                        <h4 className="titreSkill">Back-end</h4>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Node JS</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled node_skill"></div>
+                        <h4 className="box__title">Back-end</h4>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Node JS</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled node_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">mySQL</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled sql_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">mySQL</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled sql_skill"></div>
                             </div>
                         </div>
                     </div>
-                      {/* Logiciel */}
                     <div className="box">
-                        <h4 className="titreSkill">Design</h4>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Adobe XD</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled adobe_XD_skill"></div>
+                        <h4 className="box__title">Design</h4>
+
+                        <div className="skillItem">
+                            <p className="skillItem__p">Figma</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled Figma_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Adobe Photohop</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled adobe_PS_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Adobe Photohop</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
                             </div>
                         </div>
-                        <div className="skill-item">
-                            <p className="skill-item__p">Adobe Illustrator</p>
-                            <div className="skill-bar">
-                                <div className="skill-bar-fullfilled adobe_IL_skill"></div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Adobe Illustrator</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled adobe_IL_skill"></div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-             
-               </div>   
-          
+            </div> 
+            <BlobCloud />
         </section>
+        
     );
+
 };
 
 export default MySkills;

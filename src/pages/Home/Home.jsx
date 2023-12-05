@@ -7,7 +7,7 @@ import Portfolio from "../../Containers/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
 import { useTranslation } from "react-i18next";
 import Services from "../../components/Services/Services";
-
+import BlobCloud from "../../components/BlobCloud/BlobCloud";
 
 const Home = () => {
     const { t } = useTranslation();

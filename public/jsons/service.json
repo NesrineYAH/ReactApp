@@ -4,6 +4,7 @@
        "image": "../assets/images/web.jpg",
        "alt": "image service web",
        "id": "1",
+       "icon":  "../assets/images/devices-svgrepo-com.svg",
        "description":"service.description.web"
 
     },
@@ -12,6 +13,7 @@
         "image": "../assets/images/service2.jpg",
         "alt": "image service Mobile",
         "id": "2",
+        "icon": "../assets/images/mobile.svg",
         "description":"service.description.Mobile"
  
      },
@@ -20,6 +22,7 @@
         "image": "../assets/images/service3.jpg",
         "alt": "image service SEO",
         "id": "3",
+        "img": "",
         "description":"service.description.Referencement"
  
      },
@@ -28,6 +31,7 @@
         "image": "../assets/images/service4.jpg",
         "alt": "image service SEO",
         "id": "3",
+        "img": "",
         "description":"service.description.Veille"
      }
 ]
