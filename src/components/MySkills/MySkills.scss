@@ -9,14 +9,14 @@
     margin-bottom: 30px;
 
     .txtxt {
-        display: inline-flex;
-        flex-direction: row;
+        //display: inline-flex;
+  
 
 
         .display-dots {
             font-size: 25px;
             font-weight: bold;
-            align-self: center;
+                position: relative;
         }
     }
 

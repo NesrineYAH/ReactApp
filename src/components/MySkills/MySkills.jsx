@@ -71,13 +71,15 @@ const MySkills = () => {
     });
 
     useEffect(() => {
-        fullfillBars(".html_skill", "70%");
+        fullfillBars(".html_skill", "85%");
         fullfillBars(".css_skill", "75%");
         fullfillBars(".bootstrap_skill", "50%");
         fullfillBars(".javascript_skill", "60%");
-        fullfillBars(".react_skill", "70%");
-        fullfillBars(".node_skill", "60%");
+        fullfillBars(".react_skill", "90%");
+        fullfillBars(".wordpress_skill", "90%");
+        fullfillBars(".node_skill", "75%");
         fullfillBars(".sql_skill", "60%");
+        fullfillBars(".express_skill", "60%");
         fullfillBars(".Git_skill", "60%");
         fullfillBars(".Figma_skill", "60%");
         fullfillBars(".adobe_PS_skill", "50%");
@@ -92,6 +94,7 @@ const MySkills = () => {
             </div>            
             <div className="Skills__Container">
                 <div className="Skills__box">
+
                     <div className="box">
                         <h4 className="box__title">Front-end</h4>
                         <div className="skillItem">
@@ -124,11 +127,24 @@ const MySkills = () => {
                                 <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
                         </div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Wordpress</p> 
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled react_skill"></div>
+                            </div>
+                        </div>
                     </div>
+                
                     <div className="box">
                         <h4 className="box__title">Back-end</h4>
                         <div className="skillItem">
                             <p className="skillItem__p">Node JS</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled node_skill"></div>
+                            </div>
+                        </div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Express.JS</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled node_skill"></div>
                             </div>
