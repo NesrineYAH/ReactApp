@@ -5,6 +5,7 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 //import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from 'react-i18next';
+import NBYy2 from "../../assets/images/logo/NBYy2.png";
 
 class Header extends Component {
   constructor(props) {
@@ -81,8 +82,9 @@ handleLinkClick =(event) => {
          className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
           ''} `}>
           
-         <button className="navbar_burger" onClick={handleShowLinks}>
-         <span className="burger_bar">Retour</span>
+         <button className="navbar_logo" onClick={handleShowLinks}>
+  <img className="navbar_logo"
+  src={NBYy2} alt="logo" />
           </button> 
      
           <ul className="navbar__links">

@@ -9,8 +9,8 @@ import DownloadBtn from '../Download/download';
 const BlobCloud = () => {
     return (
       <div id="blobCloud">
-        <p className='softSkills__Intro'>Qu'est ce que je sais faire ?</p>
-      <p>Mes compétences professionnelles me permettent d'être aujourd'hui <span className='IntroP'>Autonome, Polyvalent</span>
+        <h6 className='softSkills__Intro'>Qu'est ce que je sais faire ?</h6>
+      <p className='softSkills__p'>Mes compétences professionnelles me permettent d'être aujourd'hui <strong className='IntroP'>Autonome, Polyvalent, Tenace </strong>
        et de disposer des compétences techniques dont voici un aperçu :</p>
     <div className='softSkills'>
     <div className='softSkills__item'>
@@ -32,7 +32,7 @@ const BlobCloud = () => {
     </div>
 
     </div>
-        <DownloadBtn />
+<DownloadBtn className='ButtonCV'/>
     </div>
 
     );

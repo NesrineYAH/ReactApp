@@ -4,19 +4,20 @@
     width: auto;
     background-color: transparent;
     border-radius: 15px;
+    // color: var(--link_color);
 }
 
 .btn_text {
     align-items: center;
     //    color: var(--body_color);
-    color: var(--lang_color);
+    color: var(--link_color);
     display: flex;
     height: 100%;
     justify-content: center;
     text-decoration: none;
     border-radius: 15px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .glow-on-hover {
@@ -28,9 +29,10 @@
     height: 55px;
     outline: 0;
     position: relative;
-    width: 155px;
+    width: 160px;
     z-index: 1;
     margin-top: 30px;
+
 
 }
 
@@ -82,7 +84,6 @@
 
 .glow-on-hover a:hover {
     background-color: var(--body_color);
-
 }
 
 

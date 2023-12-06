@@ -3,10 +3,10 @@
     width: 100%;
     height: 100vh;
     //background-color: rgb(199, 199, 230);
-   // position: relative;
-   // left: 4.4%;
-  //  margin-bottom: 50px;
- //   background-color: #e9e2e2;
+    // position: relative;
+    // left: 4.4%;
+    //  margin-bottom: 50px;
+    //   background-color: #e9e2e2;
 
 
     .presentation {
@@ -31,37 +31,20 @@
     }
 
     a {
-        color: navy;
+        //color: navy;
         background-color: transparent;
         font-weight: 600;
+        color: var(--link_color);
+
     }
 
     p {
         font-weight: 600;
     }
 
-    .btn {
-        width: 130px;
-        height: 30px;
-        color: navy;
-        // background-color: rgb(199, 199, 230);
-        border: 3px, solid, navy;
-        //  transform: scale(0);
-        // animation-delay: 5s;
-        // animation-duration: 2s;
-        // animation-name: zoomBtn;
-        // animation-fill-mode: forwards;
-        // min-width: 5vw;
-        //margin: 1vh auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .Bttn {
-        border: 1px, solid $nouveauLinear;
-        background-color: transparent;
-        border-radius: 12px;
 
-    }
+
+
+
 }

@@ -177,10 +177,9 @@ class About extends Component {
            t=> <TxtToDisplay />
              }
             </Translation>
-            <button  className="glow-on-hover Bttn"><a href={t("Profil_path")} onClick={this.handleLinkClick}>{t("txtInfo")}</a></button>
+            <button  className="glow-on-hover"><a href={t("Profil_path")} onClick={this.handleLinkClick}>{t("txtInfo")}</a></button>
             {/* <button className='btn btn-about lightblue-btn'><Link to="/#Profil">Plus d'info</Link></button>
             */}
-
           </div>
         </div>
       </section>
