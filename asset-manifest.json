@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/BEKKAR_NESRINE/static/css/main.3857fe0b.css",
-    "main.js": "/BEKKAR_NESRINE/static/js/main.b635d7d0.js",
-    "static/media/Capture d'écran skills.png": "/BEKKAR_NESRINE/static/media/Capture d'écran skills.c4de8078610443f0c62d.png",
-    "static/media/CV BEKKAR NESRINE YAHOUM.pdf": "/BEKKAR_NESRINE/static/media/CV BEKKAR NESRINE YAHOUM.e77d8b558020cfe77916.pdf",
-    "static/media/NBYy2.png": "/BEKKAR_NESRINE/static/media/NBYy2.f482a92ff5aab7a65274.png",
-    "static/media/imeneYahiaoui.webp": "/BEKKAR_NESRINE/static/media/imeneYahiaoui.7421c0a4329760bd18f1.webp",
-    "index.html": "/BEKKAR_NESRINE/index.html",
-    "static/media/Sun.svg": "/BEKKAR_NESRINE/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
-    "static/media/Moon.svg": "/BEKKAR_NESRINE/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "main.3857fe0b.css.map": "/BEKKAR_NESRINE/static/css/main.3857fe0b.css.map",
-    "main.b635d7d0.js.map": "/BEKKAR_NESRINE/static/js/main.b635d7d0.js.map"
+    "main.css": "/static/css/main.3857fe0b.css",
+    "main.js": "/static/js/main.e7eeb474.js",
+    "static/media/Capture d'écran skills.png": "/static/media/Capture d'écran skills.c4de8078610443f0c62d.png",
+    "static/media/CV BEKKAR NESRINE YAHOUM.pdf": "/static/media/CV BEKKAR NESRINE YAHOUM.e77d8b558020cfe77916.pdf",
+    "static/media/NBYy2.png": "/static/media/NBYy2.f482a92ff5aab7a65274.png",
+    "static/media/imeneYahiaoui.webp": "/static/media/imeneYahiaoui.7421c0a4329760bd18f1.webp",
+    "index.html": "/index.html",
+    "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "main.3857fe0b.css.map": "/static/css/main.3857fe0b.css.map",
+    "main.e7eeb474.js.map": "/static/js/main.e7eeb474.js.map"
   },
   "entrypoints": [
     "static/css/main.3857fe0b.css",
-    "static/js/main.b635d7d0.js"
+    "static/js/main.e7eeb474.js"
   ]
 }
