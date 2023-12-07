@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio-BEKKAR_NESRIN/static/css/main.3857fe0b.css",
-    "main.js": "/Portfolio-BEKKAR_NESRIN/static/js/main.ef1f8a4b.js",
-    "static/media/Capture d'écran skills.png": "/Portfolio-BEKKAR_NESRIN/static/media/Capture d'écran skills.c4de8078610443f0c62d.png",
-    "static/media/CV BEKKAR NESRINE YAHOUM.pdf": "/Portfolio-BEKKAR_NESRIN/static/media/CV BEKKAR NESRINE YAHOUM.e77d8b558020cfe77916.pdf",
-    "static/media/NBYy2.png": "/Portfolio-BEKKAR_NESRIN/static/media/NBYy2.f482a92ff5aab7a65274.png",
-    "static/media/imeneYahiaoui.webp": "/Portfolio-BEKKAR_NESRIN/static/media/imeneYahiaoui.7421c0a4329760bd18f1.webp",
-    "index.html": "/Portfolio-BEKKAR_NESRIN/index.html",
-    "static/media/Sun.svg": "/Portfolio-BEKKAR_NESRIN/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
-    "static/media/Moon.svg": "/Portfolio-BEKKAR_NESRIN/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "main.3857fe0b.css.map": "/Portfolio-BEKKAR_NESRIN/static/css/main.3857fe0b.css.map",
-    "main.ef1f8a4b.js.map": "/Portfolio-BEKKAR_NESRIN/static/js/main.ef1f8a4b.js.map"
+    "main.css": "/Portfolio-BEKKAR_NESRINE/static/css/main.3857fe0b.css",
+    "main.js": "/Portfolio-BEKKAR_NESRINE/static/js/main.892574cc.js",
+    "static/media/Capture d'écran skills.png": "/Portfolio-BEKKAR_NESRINE/static/media/Capture d'écran skills.c4de8078610443f0c62d.png",
+    "static/media/CV BEKKAR NESRINE YAHOUM.pdf": "/Portfolio-BEKKAR_NESRINE/static/media/CV BEKKAR NESRINE YAHOUM.e77d8b558020cfe77916.pdf",
+    "static/media/NBYy2.png": "/Portfolio-BEKKAR_NESRINE/static/media/NBYy2.f482a92ff5aab7a65274.png",
+    "static/media/imeneYahiaoui.webp": "/Portfolio-BEKKAR_NESRINE/static/media/imeneYahiaoui.7421c0a4329760bd18f1.webp",
+    "index.html": "/Portfolio-BEKKAR_NESRINE/index.html",
+    "static/media/Sun.svg": "/Portfolio-BEKKAR_NESRINE/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/Moon.svg": "/Portfolio-BEKKAR_NESRINE/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "main.3857fe0b.css.map": "/Portfolio-BEKKAR_NESRINE/static/css/main.3857fe0b.css.map",
+    "main.892574cc.js.map": "/Portfolio-BEKKAR_NESRINE/static/js/main.892574cc.js.map"
   },
   "entrypoints": [
     "static/css/main.3857fe0b.css",
-    "static/js/main.ef1f8a4b.js"
+    "static/js/main.892574cc.js"
   ]
 }
