@@ -2,7 +2,7 @@ import React from 'react';
 import { DiGithubBadge } from "react-icons/di";
 import { FaDiscord } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { GrCodepen } from "react-icons/gr";
+
 
 const SocialMedia = () => {
     return (
