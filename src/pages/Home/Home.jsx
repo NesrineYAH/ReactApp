@@ -8,6 +8,7 @@ import Contact from "../../components/Contact/Contact";
 import { useTranslation } from "react-i18next";
 import Services from "../../components/Services/Services";
 import BlobCloud from "../../components/BlobCloud/BlobCloud";
+import TypingAnimation from "../../components/Blog/Blog";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -19,6 +20,10 @@ const Home = () => {
           <MySkills/>
           <Portfolio />
           <Services />
+         <TypingAnimation/> 
+       
+        
+
           <Contact/>
         </main>
       </>

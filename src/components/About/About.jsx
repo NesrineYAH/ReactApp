@@ -166,8 +166,7 @@ class About extends Component {
       <TxtRotate
         toRotate='["tout le monde!", "Visiteur !", "Recruteur ?!"]'
         period="3000"
-           >
-            </TxtRotate>
+            />
               <span className='wrap-border'>
                 |
               </span>

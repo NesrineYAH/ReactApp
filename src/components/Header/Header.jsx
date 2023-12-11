@@ -5,7 +5,7 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 //import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from 'react-i18next';
-import NBYy2 from "../../assets/images/logo/NBYy2.png";
+import NBY from "../../assets/images/logo/NBY.png";
 
 class Header extends Component {
   constructor(props) {
@@ -77,16 +77,17 @@ handleLinkClick =(event) => {
     return (
     <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
      className="header"  id={t("home_path")}>
-      
+    
          <nav  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
          className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
           ''} `}>
           
-         <button className="navbar_logo" onClick={handleShowLinks}>
-  <img className="navbar_logo"
-  src={NBYy2} alt="logo" />
-          </button> 
-     
+         <button className="navbarLogo" onClick={handleShowLinks}>
+  <img className="navbarLogo__img" src={NBY} alt="logo"
+    style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
+   />
+          </button>
+
           <ul className="navbar__links">
                     <li className="navbar_item slide1">
                       <NavLink to={t("home_path")} className="navbar_link" onClick={this.handleLinkClick}>
@@ -120,9 +121,9 @@ handleLinkClick =(event) => {
                     </li>
         </ul>         
         </nav>  
-      
         <DarkMode />
         <Language /> 
+       {/*} <div   className="header__block"></div>  */}
     </header>
     )
   }

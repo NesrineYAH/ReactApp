@@ -42,7 +42,7 @@ const Services = () => {
             data-aos-duration="2000"
           >
           <img className='serviceCard__img' src={service.image} alt ={service.alt} />
-          <img className='Img' src={service.icon} />
+       {/*  <img className='Img' src={service.icon} /> */} 
           <h3 className='serviceCard__title' >{t(service.title)}</h3>
           <p className='serviceCard__prg'>{t(service.description)}</p>    
           </figure>
