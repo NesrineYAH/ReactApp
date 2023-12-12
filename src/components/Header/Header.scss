@@ -11,7 +11,7 @@
 
 
         .navbar__links {
-            width: 52%;
+            width: 50%;
             @include flexCenterRow;
             text-transform: uppercase;
             position: absolute;
@@ -66,7 +66,7 @@
         border-radius: 50%;
         position: absolute;
         left: 8%;
-        top: 5px;
+        top: 0.65%;
         box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
 
         &__img {

@@ -75,7 +75,8 @@ console.log(e);
       </div>
 
     <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 
-    className="project__descreption">
+    className="project__descreption"
+    >
      {projects
      .filter((project) => project.id === id)
      .map((project) => (
@@ -125,10 +126,10 @@ console.log(e);
                       </div>
                     )
                   )}
-                </div>
-               </div>
-            </div>
-          </div>
+   </div>
+    </div>
+    </div>
+    </div>
       )}
     </section>
   );

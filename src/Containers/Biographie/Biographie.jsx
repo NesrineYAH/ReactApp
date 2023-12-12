@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import SocialMedia from "../../components/socialMedia/socialMedia";
+
 const Biographie = () => {
     const { t } = useTranslation();
     const lang = localStorage.getItem("i18nextLng");

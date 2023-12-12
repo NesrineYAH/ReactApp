@@ -47,7 +47,7 @@ const TypingAnimation = () =>{
 
   return (
     <div className='Loisir'>
- <p>j'adore {' '}
+ <p> J'adore {' '}
       <span className='Loisir__text'>{text}</span>
       <Cursor cursorColor='red' />
 </p>

@@ -7,11 +7,15 @@ import photoImene from "../../assets/images/bakground/imeneYahiaoui.webp";
 
 const Profil = () => {
     const { t } = useTranslation();
+    const lang = localStorage.getItem("i18nextLng");
   return (
-    <section id="Profil">
+    <section id="Profil"
+    style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}>
     <div className="Profil__container">
      <Biographie />  
-    <div className="container_photo" data-aos="zoom-in-up">
+    <div className="container_photo" 
+     style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
+    data-aos="zoom-in-up">
         <img src={photoImene} alt={t("photo_alt")} />
    </div>
      </div>

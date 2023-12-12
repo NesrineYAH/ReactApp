@@ -97,5 +97,14 @@
      "Mobile": "In a mobile-dominated era, a well-designed app is more than just a tool. It's your direct connection to your users, wherever you are.",
     "Referencement": "includes all the methods and techniques which aim to position the web pages of your SITE",
     "Technology watch": "Always on the lookout for new technologies"
-  }
+  },
+  "Competence":{ 
+    "question": "What can I do?",
+    "prgI": "My professional skills allow me to be today",
+    "prgII":"and to have the technical skills of which here is an overview",
+    "strongWords":"Autonomous, versatile, rigorous",  
+    "softSkills__titleI":" Project management",
+    "softSkills__titleII":"Team management",
+    "softSkills__titleIII":"Customers relationship"
+}
 }

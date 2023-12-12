@@ -30,8 +30,12 @@
 
     &__page {
         width: 90%;
-        @include flexCenterRow;
-   
+        //@include flexCenterRow;
+        //  @extend %flex-rowReverse;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center
     }
 
     &__carousel {
@@ -88,7 +92,7 @@
         flex-direction: row;
         //align-items: center;
         justify-content: space-between;
-        gap: 48%;
+        gap: 26%;
         border-radius: 20px;
         //color: #100733;
         //color: var(--body_color);
@@ -104,7 +108,7 @@
 
         .technologyUsed_icons {
             @include flex-Row;
-            margin-left: -20px;
+            margin-left: -40px;
         }
     }
 
