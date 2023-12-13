@@ -1,5 +1,4 @@
 #Portfolio {
-    // width: 100%;
     width: 92%;
     height: 100%;
     position: relative;
@@ -9,7 +8,6 @@
     display: flex;
     border-radius: 20px;
     transition: .2s linear;
-    background-color: #e9e2e2;
     margin-bottom: 50px;
 
     .portfoloi {
@@ -22,9 +20,4 @@
         width: 100%;
         margin: 45px auto;
     }
-
-    // .title {
-    // //     // color: var(--body_color);
-    //     margin-bottom: 50px;
-    // }
 }

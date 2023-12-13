@@ -10,7 +10,9 @@ const Portfolio = () => {
       <h2 className="titlePortfolio"> {t("portfolio_title")}</h2>
       <MyPortfolio />
     </div>
+    
  </section>
+ 
   );
 };
 

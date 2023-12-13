@@ -9,7 +9,9 @@
     top: calc(60% - 30vmin);
     left: calc(85% - 30vmin);
     display: block;
-    width: 23%;
+    width: 22.5%;
+    // display: flex;
+
 
 }
 
@@ -28,6 +30,12 @@
 
     }
 
+    &__img {
+        height: 180px;
+        position: absolute;
+        top: calc(60% - 30vmin);
+        left: calc(165% - 30vmin);
+    }
 
     &__p {
         font-size: 15px;
@@ -37,6 +45,7 @@
     &__item {
         display: flex;
         flex-direction: row;
+        //justify-content: space-around;
         font-weight: 500;
     }
 

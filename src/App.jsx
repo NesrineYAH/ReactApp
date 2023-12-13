@@ -7,6 +7,7 @@ import Error from "./pages/PageError/PageError";
 //import { useLocation } from "react-router-dom";
 import Project from "./pages/Project/Project";
 import "./App.scss";
+import Certification from "./pages/Certification/Certification";
 
 class App extends React.Component {
  // const location = useLocation();
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />
           <Route path="/Project/:id" element={<Project />} />
+          <Route path="/Certification" element={<Certification />} />
         </Routes>
       </BrowserRouter>  
          <Footer />

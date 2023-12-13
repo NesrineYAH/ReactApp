@@ -38,7 +38,6 @@ console.log(e);
   }, [id]);
      const { t } = useTranslation();
      console.log(projects);
-
      console.log(id);
 
     return (
@@ -126,10 +125,10 @@ console.log(e);
                       </div>
                     )
                   )}
-   </div>
-    </div>
-    </div>
-    </div>
+          </div>
+          </div>
+          </div>
+          </div>
       )}
     </section>
   );

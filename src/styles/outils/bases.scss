@@ -15,7 +15,8 @@
 [data-theme="dark"] {
     --body_background: rgb(24, 2, 35);
     --body_color: #f3ebf6;
-    --body_background: #f3ebf6;
+    // --body_background: #f3ebf6;
+    // --body_background: #e9e2e2;
     --link_color: white;
     --lang_color: #695da1;
     --lang_background: #433871;
@@ -30,7 +31,8 @@
     --box_background: linear-gradient(#8552c4, #916bbf);
     background: rgb(131, 58, 180);
     --background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%); //nouvea
-    --body_color: #f3ebf6;
+    // --body_color: #f3ebf6;
+    --body_color: #e9e2e2;
     --lang_color: #695da1;
     --lang_background: rgb(67, 56, 113);
     --background_icons: #c996cc;
@@ -49,7 +51,7 @@
 
     padding: 0;
     margin: 0;
-    //  background-color: #e9e2e2;
+    // background-color: #e9e2e2;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     background-color: var(--body_background);
@@ -68,6 +70,8 @@ body {
     overflow-x: hidden;
     color: var(--body_color);
     background-color: var(--body_background);
+    // background-color: #e9e2e2;
+    background-color: #fdf6f6;
     margin: 0 auto;
     color: var(--link_color);
     height: 100%;
