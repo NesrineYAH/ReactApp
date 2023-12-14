@@ -13,12 +13,13 @@ const Certification = () => {
 useEffect(()=> {
     const fetchCertifications = async () => {
         try {
-    const requete = await fetch("../jsons/Certifications.json", {
+    const requete = await fetch("../jsons/Certification.json", {
         method:"GET",
     })
     if (requete.ok) {
         const response = await requete.json();
         setCertifications(response);
+        console.log(response);
     }
         } catch (e) {
             console.log(e);
@@ -29,15 +30,25 @@ useEffect(()=> {
 
     return (
         <section id="certifications">
-        <div className='certifications__Container'>
-            <h2 className='certifications__Title'></h2>
-        {certifications.map((certifications) => (
-           <div id="certifications.id">   
-        <div className='certifications__card'>
-            <img src={certifications.image} alt={certifications.alt} className='certifications__card__img' />
-            <h3 className='certifications__card__h3'></h3>
-         </div>
-        </div>
+            <h3 className='certifications__Title'>Mes certifications</h3>
+
+
+
+        <div className='Container'>
+        {certifications.map((certification) => (
+           // <div id={("certification.id")} className='Container__dd'>   
+        <figure className='Container__card'  key={certification.id}>
+            <img src={certification.image} alt={certification.alt} className='Container__card__img' />
+            <div className='overly'>
+             <a href={certification.document} target=  "_blank"  rel="noopener noreferrer"  className='Container__card__doc'> 
+            {/* <a href={certification.document} data-toggle="modal" target={certification.document}> */}
+
+            <h4 className='Container__card__h4'>{certification.title}</h4>
+            </a>
+            </div>
+          </figure>    
+      // </div>
+      
         ))}    
 
         </div>
@@ -46,3 +57,6 @@ useEffect(()=> {
 };
 
 export default Certification;
+
+        
+        

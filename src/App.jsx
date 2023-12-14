@@ -28,7 +28,7 @@ class App extends React.Component {
         </Routes>
       </BrowserRouter>  
          <Footer />
-      </div>
+       </div>
   </>
 
   );

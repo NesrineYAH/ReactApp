@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import Services from "../../components/Services/Services";
 import BlobCloud from "../../components/BlobCloud/BlobCloud";
 import TypingAnimation from "../../components/Blog/Blog";
-import Certification from "../Certification/Certification";
+//import Certification from "../Certification/Certification";
 
 
 
@@ -17,7 +17,7 @@ const Home = () => {
     const { t } = useTranslation();
     return (
       <>
-        <main className="home">
+        <main id="home">
           <About />
           <Profil />        
           <MySkills/>

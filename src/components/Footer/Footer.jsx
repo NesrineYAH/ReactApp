@@ -1,7 +1,7 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { FaChevronUp } from "react-icons/fa6";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -14,6 +14,9 @@ export default function Footer() {
    
       <div className="footerContainer">
       </div>
+      <a className="fa" title="Go to top" href="#home">
+      <FaChevronUp   id="toTop "/>
+      </a>
     </footer>
   );
 }
