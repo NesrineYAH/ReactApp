@@ -62,6 +62,12 @@
   "WEB": "WEB",
   "Réferencement Naturel SEO" :"Search Engine Optimization",
   "Veille technologique": "Technology surveillance ",
+
+  "le développement": "the development",
+  "la Programmation" :"the programming",
+  "le web" : "the web",
+  "la technologie!": "the technology!",
+  "love": "I love",
   "ErrorPage": {
     "message__title": "Page Not Found",
     "message__text": " We're sorry, the page you were looking for isn't found here.",
@@ -106,5 +112,10 @@
     "softSkills__titleI":" Project management",
     "softSkills__titleII":"Team management",
     "softSkills__titleIII":"Customers relationship"
+}, 
+"TxtCertiPrg": { 
+  "p":"Following to the training at Openclassrooms, to become a web developer I learned and followed online courses offered by Openclassrooms, certifications obtained at the end of the courses ",
+  "lien" : "View certificates"
 }
+
 }

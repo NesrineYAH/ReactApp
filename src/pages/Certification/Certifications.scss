@@ -1,16 +1,24 @@
  #certifications {
-     width: 100%;
+     width: 94%;
      height: 100vh;
-     border: 2px solid #433871;
+     // border: 2px solid #433871;
      background-color: #433871;
-     box-shadow: 0px 0px 0px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+     box-shadow: 0px 0px 2px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+     background-color: var(--body_background);
+     position: relative;
+     left: 3%;
+     top: 9%;
+     margin-bottom: 80px;
+     border-radius: 5px;
 
 
-     &__Title {
+     h3 {
          font-weight: 700;
-         //   width: 100%;
+         width: 100%;
          text-align: center;
-         margin-bottom: 50px;
+         padding-top: 50px;
+         margin-bottom: 20px;
+
      }
 
      .Container {
@@ -23,33 +31,35 @@
          padding: 100px 70px 0 70px;
 
          &__card {
-             width: 250px;
+             width: 220px;
              border-radius: 5px;
              cursor: pointer;
 
              &__img {
-                 width: 250px;
+                 width: 220px;
                  border-radius: 5px;
              }
 
              &__doc {
                  overflow: hidden;
                  display: block;
+                 text-decoration: none;
              }
 
              .overly {
                  position: absolute;
-                 bottom: 200px;
-                 left: 9%;
+                 margin-top: -50px;
+                 margin-left: 9px;
                  background: rgba(13, 30, 76, 0.5);
                  color: #f1f1f1;
-                 //  width: 100%;
+                 width: 200px;
                  transition: .5s ease;
-                 opacity: 0;
-                 font-size: 15px;
-                 padding: 10px;
+                 font-size: 14px;
+                 padding: 4px;
                  display: flex;
-                 text-align: cente;
+                 text-align: center;
+                 text-decoration: none;
+                 opacity: 0;
 
                  &:hover {
                      opacity: 1;
@@ -67,7 +77,11 @@
                  top: 5%;
                  color: #fff;
                  text-align: center;
+                 text-decoration: none;
 
+                 a {
+                     text-decoration: none;
+                 }
 
              }
          }

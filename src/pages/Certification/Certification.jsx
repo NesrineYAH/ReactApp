@@ -39,10 +39,8 @@ useEffect(()=> {
            // <div id={("certification.id")} className='Container__dd'>   
         <figure className='Container__card'  key={certification.id}>
             <img src={certification.image} alt={certification.alt} className='Container__card__img' />
-            <div className='overly'>
+            <div className='overly' key={certification.id}>
              <a href={certification.document} target=  "_blank"  rel="noopener noreferrer"  className='Container__card__doc'> 
-            {/* <a href={certification.document} data-toggle="modal" target={certification.document}> */}
-
             <h4 className='Container__card__h4'>{certification.title}</h4>
             </a>
             </div>

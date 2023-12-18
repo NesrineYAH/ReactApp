@@ -7,9 +7,8 @@ import Portfolio from "../../Containers/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
 import { useTranslation } from "react-i18next";
 import Services from "../../components/Services/Services";
-import BlobCloud from "../../components/BlobCloud/BlobCloud";
 import TypingAnimation from "../../components/Blog/Blog";
-//import Certification from "../Certification/Certification";
+
 
 
 
@@ -22,9 +21,8 @@ const Home = () => {
           <Profil />        
           <MySkills/>
           <Portfolio />
-          <p>Apprentissage et suivi des cours en ligne proposés par Openclassrooms, des certifications obtenues à l'issue des cours 
-      <Link  to={`../Certification/#certifications`} > Voir certificats </Link>
-      </p>
+          <p className="CertiPrg"> {t("TxtCertiPrg.p")}
+          <Link  to={`../Certification/#certifications`} className="Link" >   -- {t("TxtCertiPrg.lien")} --  </Link></p>
           <Services />
          <TypingAnimation/> 
           <Contact/>

@@ -63,6 +63,13 @@
   "WEB": "WEB",
   "Réferencement Naturel SEO" :"Réferencement Naturel SEO",
   "Veille technologique": "Veille technologique",
+
+  "le développement": "le développement",
+  "la Programmation" :"la Programmation",
+  "le web" : "le web",
+  "la technologie!": "la technologie!",
+  "love": "J'adore",
+
   "ErrorPage": {
     "message__title": "Page non trouvée",
     "message__text": " Nous sommes désolés, la page que vous recherchez n'existe pas.",
@@ -109,6 +116,10 @@
     "softSkills__titleII":"Pilotage d'équipe",
     "softSkills__titleIII":"Relation clients"
 
+  }, 
+ 
+   "TxtCertiPrg": {
+    "p": "Suite à une formation suivie chez Openclassrooms,  pour devenir une développeuse web j'ai appris et suivi des cours en ligne proposés par Openclassrooms, des certifications obtenues à l'issue des cours ",
+    "lien": "Voir les certificats"
   }
-
 }

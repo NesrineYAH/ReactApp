@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
-import { regexName } from "../../regex.js";
+//import { regexName } from "../../regex.js";
 import SocialMedia from '../socialMedia/socialMedia';
 
 const Contact = () => {
@@ -17,6 +17,42 @@ const Contact = () => {
   const { t } = useTranslation();
   const form =useRef();
 
+  
+  useEffect(() => {
+    AOS.init({ duration: 6000 });
+  }, []);
+
+ 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+  });
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+  });
+
+  const validateForm = () => {
+    const nameRegex = /^[a-zA-Z ]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+    let isValid = true;
+    const newErrors = { name: '', email: ''};
+
+    // Validate name
+    if (!nameRegex.test(formData.name)) {
+      newErrors.name = 'Le nom ne doit contenir que des lettres et des espaces.';
+      isValid = false;
+    }
+
+    // Validate email
+    if (!emailRegex.test(formData.email)) {
+      newErrors.email = 'Veuillez saisir une adresse e-mail valide.';
+      isValid = false;
+    }
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const SendEmail = (e) => {
     e.preventDefault();
@@ -32,74 +68,56 @@ const Contact = () => {
         form.current.user_name.value = "";
         form.current.user_email.value = "";
         form.current.message.value = "";
-        form.reset();
+  
       },
       (error) => {
         console.log(error.text);
       }
     );
+    if (validateForm()) {
+      // Envoyer les données du formulaire
+      console.log('Formulaire valide, soumission des données :', formData);
+      // Ajoutez ici le code pour envoyer les données du formulaire à votre backend ou effectuer d'autres actions.
+    } else {
+      console.log('Le formulaire contient des erreurs. Veuillez le corriger.');
+    }
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 6000 });
-  }, []);
-
-// a revenir pour éxcuter les expression régulière 
-
-  const [firstName, setFirstName] = useState("");
-const nameValidation =() => {
-
-  if (regexName.test(firstName)) {
-   setFirstName("Nom est valide");
-  } else if (!regexName.test(firstName)){;
-  setFirstName("Nom est n'est pas valide");
-  } else {
-    setFirstName("");
-  }
-};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   return (
     <section id={t("contact_id")}  className= "contact" itemScope itemType="http://schema.org/Person">
       <h2 className='titlePortfolio'>{t("contact_title")}</h2>
-      <div
-        style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
-        className=" contact-wrapper"
-      >
-      <form ref={form} onSubmit={SendEmail} 
-      className="form-horizontal" 
-      data-aos= "zoom-in-up"
-      style={{ direction: lang === "ar" ? "rtl": "ltr" }}
-      >
+
+      <div style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}  className=" contact-wrapper" >
+      <form ref={form} onSubmit={SendEmail}  className="form-horizontal" 
+      data-aos= "zoom-in-up"  style={{ direction: lang === "ar" ? "rtl": "ltr" }}>
+        
         <lable htmlFor="lastName">{t("lastName")}</lable>
-        <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
-        type="text" name="user_name" className="form-control" placeholder={t("lastName")}
-        id="name"
-        required
-       />
+        <input type="text" name="user_name" className="form-control" placeholder={t("lastName")} id="name"   required  />
+        <div className="error">{errors.name}</div>  
+
         <lable htmlFor="FirstName">{t("firstName")}</lable>
-        <input style={{ direction : lang === "ar" ? "rtl" : "ltr" }}
-        type="text" name="user_name" className="form-control" placeholder={t("firstName")}
-        id="name"
-        required
-       />
+        <input value={formData.name}
+        type="text" name="user_name" className="form-control" placeholder={t("firstName")} id="name" required/>
+          <div className="error">{errors.name}</div> 
+
        <label htmlFor="email">{t("Email")}</label>
-       <input 
-       style={{ direction: lang === "ar" ?  "rtl": "ltr" }}
-       type="email" id="email" name="user_email" className="form-control" 
-       placeholder={t("Email")}
-       required
-       />
+       <input value={formData.email}
+        type="email" id="email" name="user_email" className="form-control"  placeholder={t("Email")}   required />
+<div className="error">{errors.email}</div> 
+      
        <lable htmlFor="message">{t("Message")}</lable>
        <textarea style={{ direction: lang === "ar" ?  "rtl": "ltr" }}
-       name="message" id="message" className="form-control" placeholder={t("Message")} rows="10"
-       required
-       >
+       name="message" id="message" className="form-control" placeholder={t("Message")} rows="10"   required >
        </textarea>
       <input type="submit" value={t("Send")} className="send-text" />
-      </form>  
+      </form> 
+
       <div className='contactList__conatiner' data-aos="zoom-in-up">
         <ul className="contactList">  
-
           <li className="contactList__item">    
         <FaPhoneFlip className ="contactList__i" />
           <span className="contactList__span phone">

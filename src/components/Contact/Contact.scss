@@ -1,11 +1,6 @@
 .contact {
     @include flex-column;
 
-
-    // .titleContact {
-    //     text-align: center;
-    // }
-
     .contact-wrapper {
         display: flex;
         flex-direction: row-reverse;
@@ -33,6 +28,14 @@
         border-radius: 20px;
     }
 
+
+
+    .error {
+        font-size: 12px;
+        color: red;
+
+    }
+
     .send-text {
         display: block;
         margin-top: 10px;
@@ -44,6 +47,7 @@
         border: 1px var(--body_color) solid;
         border: 1px var(--lang_background) solid;
         background-color: var(--body_color);
+        color: navy;
     }
 
     .send-text:hover {

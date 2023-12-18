@@ -9,17 +9,17 @@ const resources = {
   en: {
     translation: translationsEN,
     i18n: "Internationalisation",
-    "key": "hello world",
+    key: "hello world",
   },
   fr: {
     translation: translationsFR,
     i18n: "Internationalisation",
-    "key": "Bonjour tout le monde",
+    key: "Bonjour tout le monde",
   },
   ar: {
     translation: translationsAR,
     i18n: "Internationalisation",
-    "key": "مرحبا بالجميع",
+    key: "مرحبا بالجميع",
   },
 };
 

@@ -1,8 +1,6 @@
 .Loisir {
     width: 100%;
     height: 70px;
-    // position: relative;
-    //  left: 4%;
     align-items: center;
     margin-bottom: 140px;
     display: flex;
@@ -11,6 +9,7 @@
     border: 2px solid #433871;
     background-color: #433871;
     box-shadow: 0px 0px 0px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+    // background-color: var(--body_backg);
 
     p {
         font-size: 24px;
@@ -22,5 +21,7 @@
         font-size: 24px;
         text-align: center;
         color: #fff;
+        letter-spacing: .1rem;
+        background-color: transparent;
     }
 }

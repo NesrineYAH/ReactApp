@@ -9,6 +9,8 @@ import Project from "./pages/Project/Project";
 import "./App.scss";
 import Certification from "./pages/Certification/Certification";
 
+
+
 class App extends React.Component {
  // const location = useLocation();
  handleClick = () => {
