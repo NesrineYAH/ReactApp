@@ -1,15 +1,15 @@
 #blobCloud {
     transform: translate(-4vw, -10vw);
     margin-top: 10vh;
-
     filter: blur(0.5px);
-    //  position: absolute;
-    // right: 1vw;
-    //  top: 30vw;
-    //  top: calc(60% - 30vmin);
-    // left: calc(85% - 30vmin);
+    position: absolute;
+    right: 1vw;
+    top: 30vw;
+    top: calc(98% - 20vmin);
+    left: calc(35% - 30vmin);
     display: block;
-    width: 22.5%;
+    width: 90%;
+    padding-bottom: 50px;
 
     @media screen and (min-width: $breakpoint-desktop) {
         transform: translate(-4vw, -10vw);
@@ -29,6 +29,54 @@
 .softSkills {
     display: flex;
     flex-direction: column;
+
+    &__Intro {
+        font-weight: 800;
+        font-size: 22px;
+
+        .IntroP {
+            font-weight: 800;
+        }
+    }
+
+    &__img {
+        height: 180px;
+        position: absolute;
+        top: calc(115% - 30vmin);
+        left: calc(130% - 30vmin);
+    }
+
+    &__p {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-around;
+        font-weight: 500;
+    }
+
+    &__title {
+        // color: rgb(131, 135, 153);
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+
+    .fa {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        color: rgba(43, 43, 48, 0.871);
+    }
+
+    .ButtonCV {
+        margin-left: 80px;
+    }
+
 
     @media screen and (min-width: $breakpoint-desktop) {
         display: flex;
