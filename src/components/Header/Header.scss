@@ -1,18 +1,17 @@
 .header {
+
     width: 100%;
     height: 100%;
-    margin-bottom: 50px;
-    @include flexCenterRow;
-    // background-color: #f5e6e6;
-    padding-bottom: 15px;
+    @include flex-column;
+
 
     .navbar_header {
-        width: 100%;
-
+        width: 40%;
+        // @include flex-column;
 
         .navbar__links {
-            width: 50%;
-            @include flexCenterRow;
+            // width: 50%;
+            @include flex-column;
             text-transform: uppercase;
             position: absolute;
             left: 35%;
@@ -55,9 +54,69 @@
         }
     }
 
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        @include flexCenterRow;
+        flex-wrap: wrap;
+        // background-color: #f5e6e6;
+        padding-bottom: 15px;
+
+        .navbar_header {
+            width: 100%;
+            @include flexCenterRow;
+
+            .navbar__links {
+                width: 100%;
+                @include flexCenterRow;
+                flex-wrap: wrap;
+                text-transform: uppercase;
+                position: absolute;
+                left: 35%;
+                font-weight: 600;
+
+                a {
+                    color: navy;
+                    color: var(--link_color);
+                    text-decoration: none;
+                    font-weight: 700;
+
+                    &:hover {
+                        //  text-decoration: underline;
+                        border-bottom: 4px, solid, #33067f
+                    }
+                }
+
+                .navbar__link {
+                    color: navy;
+                    color: var(--link_color);
+                }
+
+                .navbar_item {
+                    @include font(16px, 500);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    color: navy;
+                    text-decoration: none;
+                    margin-right: 18px;
+                    line-height: 300%;
+
+                }
+            }
+
+            .navbar_header--transparent {
+                transition: all 0.3s ease-in-out;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
     .navbarLogo {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        // height: 40px;
         background: transparent;
         border: none;
         color: inherit;
@@ -75,6 +134,27 @@
             height: 100%;
             position: relative;
             width: 100%;
+        }
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            // width: 8%;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            @include flex-start;
+            border-radius: 50%;
+            box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+
+            &__img {
+                border-radius: 50px;
+                box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+                height: 100%;
+                position: relative;
+                width: 100%;
+            }
         }
     }
 

@@ -1,29 +1,18 @@
 #Profil {
-    background-color: #e9e2e2;
-    width: 92%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 4.4%;
-    border-radius: 15px;
-    margin-bottom: 50px;
+    width: 100%;
+    @include flex-column;
+    height: 100vh;
+    margin-bottom: 100px;
 
     .Profil__container {
         margin: 0 auto;
         width: 100%;
         height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
-        background-position: center;
-        background-size: auto;
+        @include flex-column;
     }
 
     .container_photo {
-        height: 400px;
+        height: 340px;
         width: 280px;
         border: 1px #f2e8e8 solid;
         box-shadow: var(--box-shadow);
@@ -41,5 +30,51 @@
         transition: all .8s ease;
         box-shadow: var(--box-shadow-portfolio);
         overflow: hidden;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        background-color: #e9e2e2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 4%;
+        border-radius: 15px;
+        margin-bottom: 50px;
+
+        .Profil__container {
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
+            background-position: center;
+            background-size: auto;
+        }
+
+        .container_photo {
+            height: 400px;
+            width: 280px;
+            border: 1px #f2e8e8 solid;
+            box-shadow: var(--box-shadow);
+            box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+            border-radius: 20px;
+        }
+
+        .container_photo img {
+            position: relative;
+            padding-top: 20px;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            backface-visibility: hidden;
+            transition: all .8s ease;
+            box-shadow: var(--box-shadow-portfolio);
+            overflow: hidden;
+        }
     }
 }

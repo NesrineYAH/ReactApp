@@ -1,7 +1,7 @@
 //01/07
 @mixin body-position {
-  max-width: $Mmax;
-  min-width: $Mmin;
+  max-width: $Wmax;
+  min-width: $Wmin;
   margin: auto;
 }
 
@@ -75,7 +75,7 @@
 @mixin flexCenterRow {
   display: flex;
   flex-direction: row;
-   justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 
 }

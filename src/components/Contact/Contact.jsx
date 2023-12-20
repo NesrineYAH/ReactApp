@@ -5,11 +5,9 @@ import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
-//import Boutton from "../Bouttons/Boutton";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
-//import { regexName } from "../../regex.js";
 import SocialMedia from '../socialMedia/socialMedia';
 
 const Contact = () => {
@@ -82,16 +80,17 @@ const Contact = () => {
       console.log('Le formulaire contient des erreurs. Veuillez le corriger.');
     }
   };
-  const handleChange = (e) => {
+   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+   setFormData({ ...formData, [name]: value });
+ };
 
   return (
     <section id={t("contact_id")}  className= "contact" itemScope itemType="http://schema.org/Person">
       <h2 className='titlePortfolio'>{t("contact_title")}</h2>
 
       <div style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}  className=" contact-wrapper" >
+     
       <form ref={form} onSubmit={SendEmail}  className="form-horizontal" 
       data-aos= "zoom-in-up"  style={{ direction: lang === "ar" ? "rtl": "ltr" }}>
         
@@ -100,13 +99,11 @@ const Contact = () => {
         <div className="error">{errors.name}</div>  
 
         <lable htmlFor="FirstName">{t("firstName")}</lable>
-        <input value={formData.name}
-        type="text" name="user_name" className="form-control" placeholder={t("firstName")} id="name" required/>
+        <input type="text" name="user_name" className="form-control" placeholder={t("firstName")} id="name" required/>
           <div className="error">{errors.name}</div> 
 
        <label htmlFor="email">{t("Email")}</label>
-       <input value={formData.email}
-        type="email" id="email" name="user_email" className="form-control"  placeholder={t("Email")}   required />
+       <input type="email" id="email" name="user_email" className="form-control"  placeholder={t("Email")}   required />
 <div className="error">{errors.email}</div> 
       
        <lable htmlFor="message">{t("Message")}</lable>

@@ -7,13 +7,16 @@ import DarkMode from "../dark/darkMode";
 import { withTranslation } from 'react-i18next';
 import NBY from "../../assets/images/logo/NBY.png";
 
+
+
+
 class Header extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isTransparent: true,
-      isMobile: false,
+      isMobile: false,  //window.matchMedia('(max-width: 768px)').matches,
       showLinks: false,
     };
    // create a handling event ( grestionnaire d'évènement)
@@ -30,14 +33,15 @@ class Header extends Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
     window.removeEventListener("resize", this.resizeScreen);
+    
   }
  // créer une fonction pour redimensionner la taille de l'écran 
   resizeScreen(){
-    const isMobile =window.innerWidth<768;
+    const isMobile =window.matchMedia('(max-width: 768px)').matches;     //    const isMobile =window.innerWidth<768;
     this.setState({ isMobile });
 };
 handleScroll() {
-  const isTransparent = window.scrollY < 350;
+  const isTransparent = window.scrollY < 350;  
   this.setState({ isTransparent });
 }
 // Fonction scroll To #section au click (tempo 500ms pr rendu page avant scroll)
@@ -67,27 +71,23 @@ handleLinkClick =(event) => {
     // import via propos funtion retour home 
     const {handleClick} = this.props;
     const { t } = this.props;                               // j'ai ajouté 18/11
+    const lang = localStorage.getItem("i18nextLng");
+
     //Menu ouverture et fermeture 
    const handleShowLinks =() => {
     this.setState({ showLinks: !this.state.showLinks });
    };
    
-   const lang = localStorage.getItem("i18nextLng");
-  
-    return (
-    <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
-     className="header"  id={t("home_path")}>
-    
-         <nav  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
-         className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :
-          ''} `}>
-          
-         <button className="navbarLogo" onClick={handleShowLinks}>
-  <img className="navbarLogo__img" src={NBY} alt="logo"
-    style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
-   />
-          </button>
 
+    return (
+    <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>
+
+        <button className="navbarLogo" onClick={handleShowLinks}>
+         <img className="navbarLogo__img" src={NBY} alt="logo" style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}/>
+        </button>
+
+        <nav  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
+         className={`navbar_header ${showLinks ? "show_nav" : ""} ${(isTransparent && !isMobile) ? 'navbar_header--transparent' :''} `}>
           <ul className="navbar__links">
                     <li className="navbar_item slide1">
                       <NavLink to={t("home_path")} className="navbar_link" onClick={this.handleLinkClick}>

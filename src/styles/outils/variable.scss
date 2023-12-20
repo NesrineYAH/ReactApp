@@ -12,8 +12,8 @@ $liner: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.83
 $nouveauLinear: linear-gradient(45deg, #645cbb, #1c0c5b, #ebc7e6, #3d2c8d, #bface2, #7a00ff, #fbf4f9, #a084dc);
 $body-background :#cfc9d3;
 
-//$Mmin: 375px;
-//$Mmax: 768px;
+$Wmin: 375px;
+$Wmax: 768px;
 $Mmin: 1400px;
 $Mmax: 1600px;
 $breakpoint-desktop: 769px;
@@ -22,7 +22,7 @@ $breakpoint-desktop: 769px;
 .titlePortfolio {
     width: 100%;
     text-align: center;
-    //color: var(--body_color);
+
 
 }
 

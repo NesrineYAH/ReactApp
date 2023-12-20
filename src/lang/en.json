@@ -22,29 +22,14 @@
   "service_id": "services",
   "service__path": "/#Services",
 
-  "contact_title": "Cntact",
+  "contact_title": "Contact",
   "contact_id": "Contact",
   "contact_path": "/#Contact",
   "txtInfo":"More informations",
   "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM  ",
-
-  "presentation": {
-    "h1Text" : "Nesrine BEKKAR YAHOUM",
-    "h2Text" : "développeur web - intégrateur",
-    "p": "Welcome",
-    "toRotate": " !, الزوار !, Recruiter ?!"
-    },
-
-  "main_heading": {
-    "hello": "Hello ",
-    "name": "I'm Nesrine",
-    "static_desc": "I'am a frontend web developer",
-    "dynamic_desc": "Passionate about the world of web development."
-  },
-  "description_info": {
-    "main": "Curious and passionate about new technologies, I constantly strive to improve my skills. Starting as a self-taught mobile developer, I have transitioned to web development, which has become both my passion and profession. To strengthen my expertise, I have obtained a diploma in web integration at a Bac+2 level. Additionally, my enthusiasm for backend development has led me to explore advanced technologies such as Node.js and MongoDB.\n I am always eager to learn and explore new opportunities in the field of web development.",
-    "introduction": "My name is Nesrine and I am a Frontend web developer passionate about the world of web development. As a self-taught individual, I am constantly learning new technologies and approaches to improve my skills and provide unique user experiences. I hold a degree in web integration at the Bac+2 level. I have worked on several personal projects to strengthen my skills as a web integrator and front-end developer. My goal is to continue learning and evolving as a web professional while offering creative and innovative solutions for any web project.As a web integrator, I have gained strong expertise in developing modern and functional websites using the latest web development technologies. I am also passionate about designing attractive and intuitive user interfaces to provide optimal user experiences. Currently looking for a position in permanent or temporary employment, I am open to new opportunities to continue developing my skills and contribute to the field of web development."
-  },
+  "Mentions": "Legal Notice",
+  "plan": "Sitemap",
+  
   "Download": "Download my CV",
   "all": "All",
   "software": "Software",
@@ -68,6 +53,28 @@
   "le web" : "the web",
   "la technologie!": "the technology!",
   "love": "I love",
+
+  "lan": "Welcome",
+  "world": "World ",
+  "Visiteurs": "Visitors",
+  "Recruteurs": "Recruiters",
+
+  "presentation": {
+    "h1Text" : "Nesrine BEKKAR YAHOUM",
+    "h2Text" : "Web developer - integrator"  
+    },
+
+  "main_heading": {
+    "hello": "Hello ",
+    "name": "I'm Nesrine",
+    "static_desc": "I'am a frontend web developer",
+    "dynamic_desc": "Passionate about the world of web development."
+  },
+  "description_info": {
+    "main": "Curious and passionate about new technologies, I constantly strive to improve my skills. Starting as a self-taught mobile developer, I have transitioned to web development, which has become both my passion and profession. To strengthen my expertise, I have obtained a diploma in web integration at a Bac+2 level. Additionally, my enthusiasm for backend development has led me to explore advanced technologies such as Node.js and MongoDB.\n I am always eager to learn and explore new opportunities in the field of web development.",
+    "introduction": "My name is Nesrine and I am a Frontend web developer passionate about the world of web development. As a self-taught individual, I am constantly learning new technologies and approaches to improve my skills and provide unique user experiences. I hold a degree in web integration at the Bac+2 level. I have worked on several personal projects to strengthen my skills as a web integrator and front-end developer. My goal is to continue learning and evolving as a web professional while offering creative and innovative solutions for any web project.As a web integrator, I have gained strong expertise in developing modern and functional websites using the latest web development technologies. I am also passionate about designing attractive and intuitive user interfaces to provide optimal user experiences. Currently looking for a position in permanent or temporary employment, I am open to new opportunities to continue developing my skills and contribute to the field of web development."
+  },
+  
   "ErrorPage": {
     "message__title": "Page Not Found",
     "message__text": " We're sorry, the page you were looking for isn't found here.",

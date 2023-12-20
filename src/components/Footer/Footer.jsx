@@ -10,7 +10,7 @@ export default function Footer() {
       <h2 className="footer__text-copyright">{t("footer")}
         {/* © CopiyRight 2023- BEKKAR NESRINE.All rights reserved */}
       </h2>
-       <h3 className="TitreH3">plan du site ||  Mentions légales </h3> 
+       <h3 className="TitreH3">{t('plan')} || {t('Mentions')}  </h3> 
    
       <div className="footerContainer">
       </div>
