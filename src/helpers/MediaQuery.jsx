@@ -1,5 +1,6 @@
 import react from "react";
 import { useEffect, useState } from "react";
+//import {useMediaQuery} from '@react-hook/media-query'
 
 function useMediaQuery(
   query,

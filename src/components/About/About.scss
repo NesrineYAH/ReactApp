@@ -4,9 +4,9 @@
     height: 100vh;
 
     .presentation {
-        width: 80%;
+        width: 90%;
         position: relative;
-        top: 8.5%;
+        top: 28%;
         margin: 0 auto;
         @include flex-column;
         background-position: center;
@@ -24,7 +24,7 @@
     h2 {
         text-transform: uppercase;
         text-align: center;
-        font-size: 16px;
+        //font-size: 20px;
         font-weight: 600;
     }
 
@@ -32,13 +32,14 @@
         font-weight: 600;
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    //@media screen and (min-width: $breakpoint-desktop)
+    @media screen and (min-width: $Mmin) {
         @include flex-column;
         width: 100%;
         height: 100vh;
 
         .presentation {
-            width: 80%;
+            width: 100%;
             position: relative;
             top: 5.5%;
             margin: 0 auto;

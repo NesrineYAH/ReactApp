@@ -14,7 +14,7 @@ const TxtToDisplay = () => {
         ],
     loop: 0,
     typeSpeed: 120,
-    deleteSpeed: 200
+    deleteSpeed: 80
   })
   const [text2] = useTypewriter({
     words: [
@@ -22,7 +22,7 @@ const TxtToDisplay = () => {
         ],
     loop: 0,
     typeSpeed: 120,
-    deleteSpeed: 200
+    deleteSpeed: 80
   })
   return (
     <div className="txt-display">
@@ -45,7 +45,7 @@ const About = () => {
     ],
     loop: 0,
     typeSpeed: 120,
-    deleteSpeed: 200
+    deleteSpeed: 80
   })
   
   return (
