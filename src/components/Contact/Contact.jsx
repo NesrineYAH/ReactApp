@@ -6,8 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import { IoMail } from "react-icons/io5";
-import { FaPhoneFlip } from "react-icons/fa6";
+import { FaPhoneFlip  } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from '../socialMedia/socialMedia';
 
 const Contact = () => {
@@ -104,7 +106,7 @@ const Contact = () => {
 
        <label htmlFor="email">{t("Email")}</label>
        <input type="email" id="email" name="user_email" className="form-control"  placeholder={t("Email")}   required />
-<div className="error">{errors.email}</div> 
+        <div className="error">{errors.email}</div> 
       
        <lable htmlFor="message">{t("Message")}</lable>
        <textarea style={{ direction: lang === "ar" ?  "rtl": "ltr" }}
@@ -125,7 +127,7 @@ const Contact = () => {
           </li>
 
           <li className="contactList__item">  
-          <IoMail className="contactList__i" />
+          <IoMail className="contactList__i Noc" />
           <span className="contact-text gmail">
           <a itemProp="email" href="mailto:nesrineyahoum@gmail.com" className="contactList__a">
           nesrineyahoum@gmail.com
@@ -134,13 +136,14 @@ const Contact = () => {
           </li>
 
           <li className="contactList__item">
-              <IoLocationSharp className="loc" /> 
+
+              <FontAwesomeIcon icon={faLocationDot}  className="loc" />
               <span itemProp="location" className="contactList__sapn place">
                  Paris, ile de France
               </span>
           </li> 
         </ul>
-        <SocialMedia />
+        <SocialMedia className="sm"/>
       </div>
       </div>
   

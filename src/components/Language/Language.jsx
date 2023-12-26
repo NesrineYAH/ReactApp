@@ -8,11 +8,7 @@ import '../../i18n';
 const  Language = () => {
 const { t, i18n } = useTranslation();
 const lang = localStorage.getItem("i18nextLng");
-const [showMenu, setShowMenu] = useState(false);
 
-const handleToggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
     return (
         <div>
           <div

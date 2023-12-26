@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
@@ -10,21 +10,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const MySkills = () => {
     const { t } = useTranslation();
-    const textRef = useRef(null);
-
-    useEffect(() => {
-        const timeline = gsap.timeline({ repeat: -1 });
-        const chars = Array.from(textRef.current.querySelectorAll(' .display-dots'));
-
-        timeline.from(chars, { opacity: 0, stagger: 0.5 })
-            .to(chars, { opacity: 1, stagger: 0.5, delay: 0 })
-            .from(chars.reverse(), { opacity: 1, stagger: 0.5 })
-            .to(chars.reverse(), { opacity: 0, stagger: 0.5, delay: 0 })
-        return () => {
-            timeline.kill();
-        };
-    }, []);
-
+  
     const slideInTop = (elem) => {
         gsap.fromTo(elem,
             {
@@ -90,7 +76,7 @@ const MySkills = () => {
         <section id="Skills">
            <div id={t("skills_id")} className="txtxt"> 
                 <h2 className="titlePortfolio">{t("skills_title")}</h2>
-                    <span ref={textRef}><span className='display-dots'>.</span><span className='display-dots'>.</span><span className='display-dots'>.</span></span>
+                    {/* <span ref={textRef}><span className='display-dots'>?</span><span className='display-dots'>?</span><span className='display-dots'>?</span></span> */}
             </div>            
             <div className="Skills__Container">
                 <div className="Skills__box">
@@ -181,7 +167,7 @@ const MySkills = () => {
 
                 </div>
             </div> 
-            <BlobCloud />
+            <BlobCloud />            
         </section>
         
     );

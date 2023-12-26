@@ -20,6 +20,7 @@ class App extends React.Component {
   return (  
     <>
     <div className="App">
+{/* <div className="main">  */}
       <BrowserRouter>
        <Header handleClick={this.handleClick} />
         <Routes>
@@ -29,8 +30,12 @@ class App extends React.Component {
           <Route path="/Certification" element={<Certification />} />
         </Routes>
       </BrowserRouter>  
-         <Footer />
-       </div>
+              <Footer />  
+ </div> 
+        
+       {/* </div> */}
+ 
+       
   </>
 
   );

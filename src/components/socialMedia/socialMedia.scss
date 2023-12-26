@@ -5,8 +5,20 @@
     flex-direction: space-between;
     list-style-type: none;
     padding-left: 0;
+    //position: relative;
+    //left: 22%;
+
 
     .discord {
         margin-top: 3px;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-direction: space-between;
+        list-style-type: none;
+        padding-left: 0;
     }
 }

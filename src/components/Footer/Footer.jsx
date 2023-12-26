@@ -7,13 +7,8 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="footer">
-      <h2 className="footer__text-copyright">{t("footer")}
-        {/* © CopiyRight 2023- BEKKAR NESRINE.All rights reserved */}
-      </h2>
-       <h3 className="TitreH3">{t('plan')} || {t('Mentions')}  </h3> 
-   
-      <div className="footerContainer">
-      </div>
+      <h2 className="footer__text-copyright">{t("footer")}</h2>
+       <h3 className="TitreH3">{t('plan')} || {t('Mentions')}  </h3>    
       <a className="fa" title="Go to top" href="#home">
       <FaChevronUp   id="toTop "/>
       </a>

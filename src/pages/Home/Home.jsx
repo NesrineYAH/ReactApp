@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import Profil from "../../components/Profil/Profil";
 import About from "../../components/About/About";
 import MySkills from "../../components/MySkills/MySkills";
@@ -8,8 +8,6 @@ import Contact from "../../components/Contact/Contact";
 import { useTranslation } from "react-i18next";
 import Services from "../../components/Services/Services";
 import TypingAnimation from "../../components/Blog/Blog";
-
-
 
 
 const Home = () => {
@@ -22,7 +20,7 @@ const Home = () => {
           <MySkills/>
           <Portfolio />
           <p className="CertiPrg"> {t("TxtCertiPrg.p")}
-          <Link  to={`../Certification/#certifications`} className="Link" >   -- {t("TxtCertiPrg.lien")} --  </Link></p>
+          <a  href={`../Certification/#certifications`} className="Link" >-- {t("TxtCertiPrg.lien")} --  </a></p>
           <Services />
          <TypingAnimation/> 
           <Contact/>

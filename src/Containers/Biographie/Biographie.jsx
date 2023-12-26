@@ -7,7 +7,7 @@ const Biographie = () => {
     const lang = localStorage.getItem("i18nextLng");
 
     return (
-    <div className='biographie__container'
+    <div className='Biographie__container'
      style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
       itemScope
       itemType="http://schema.org/Person"

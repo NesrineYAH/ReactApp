@@ -73,11 +73,19 @@
         "icon": "../assets/technologyIcons/seo-min.webp",
         "name": "SEO"
       }
-      ]  
+      ], 
+     "pictures": [
+      "../assets/projects/La panthere/lapanthereCover.webp",
+      "../assets/projects/La panthere/la panthère 1.jpg",
+      "../assets/projects/La panthere/lapanthereCover..webp",
+      "../assets/projects/La panthere/lapanthere-OC.jpg",
+      "../assets/projects/La panthere/img_panthere.jpg"
+
+      ]
   },
   { 
     "title": "Kanap",
-    "image": "../assets/projects/Kanap/KANAPE.webp",
+    "image": "../assets/projects/Kanap/Kanpa_img_Carte.png",
     "alt": "projet kanap",
     "id": "4",
     "brief_description": "projectKanap.brief_description",
@@ -95,18 +103,24 @@
   "pictures": [
     "../assets/projects/kanap/kanap.mo-min.webp",
     "../assets/projects/kanap/kanap.mo.webp",
-    "../assets/projects/kanap/KANAPE.webp"
+    "../assets/projects/kanap/kanapCover.79eddcbad30795e23406.webp",
+    "../assets/projects/kanap/Mockup Kanap.jpg",
+    "../assets/projects/kanap/kanapEtap1.20d232f0cabac0dd1a83.webp"
   ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
   {
     "title": "Picante",
-    "image": "../assets/projects/picante/web-p6-first.webp",
+    "image": "../assets/projects/picante/Piquante_IMG.png",
     "alt": "projet Picante",
     "id": "5",
     "brief_description": "projectPicante.brief_description",
     "description_project": "projectPicante.description_project",
     "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/js-min.webp",
+        "name": "Javascript"
+      },
     {
       "icon": "../assets/technologyIcons/nodejs-min.webp",
       "name": "Node.js"
@@ -121,9 +135,10 @@
     } 
   ],
     "pictures": [
-      "../assets/projects/picante/web-p6-first.webp",
-      "../assets/projects/picante/web-p6-first.webp",
-      "../assets/projects/picante/web-p6-second.webp"
+      "../assets/projects/picante/hottakesCover.b8.webp",
+      "../assets/projects/picante/hottakesEtap1.7.webp",
+      "../assets/projects/picante/hottakesEtap1.7.webp",
+      "../assets/projects/picante/Picante_img.webp"
     ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },

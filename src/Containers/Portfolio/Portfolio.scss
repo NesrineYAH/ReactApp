@@ -1,23 +1,28 @@
 #Portfolio {
-    width: 92%;
-    height: 100%;
-    position: relative;
-    left: 4%;
-    min-height: 100vh;
-    background-color: var(--body_background);
-    display: flex;
-    border-radius: 20px;
-    transition: .2s linear;
-    margin-bottom: 50px;
+    height: 186vh;
+    margin-bottom: 350px;
 
-    .portfoloi {
-        padding: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 3;
-        width: 100%;
-        margin: 45px auto;
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 92%;
+        height: 100%;
+        position: relative;
+        left: 4%;
+        min-height: 100vh;
+        background-color: var(--body_background);
+        //   display: flex;
+        border-radius: 20px;
+        transition: .2s linear;
+        margin-bottom: 50px;
+
+        .portfoloi {
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            width: 100%;
+            margin: 45px auto;
+        }
     }
 }

@@ -90,11 +90,9 @@ console.log(e);
         .filter((project) => project.id ===id)
         .map((project) => project.technologyUsed.map((icon) => (
           <ul className='wrapper' key={icon.name}>
-          <li className="icon icons">
-          <span className='tooltiop'>{icon.name}</span>
-          <span>
-            <img src={icon.icon} alt="icon"/>
-          </span>
+          <li className="wrapper__icon icons">
+          <span className='wrapper__tooltip'>{icon.name}</span>
+          <span><img src={icon.icon} alt="icon"/></span>
           </li>
           </ul>
         ))
