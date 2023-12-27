@@ -1,22 +1,42 @@
 .project {
     @include flex-center;
     flex-shrink: 1;
-    height: 200vh;
+    height: 160vh;
+    margin-bottom: 25%;
 
-    &__page {
+    &__title {
+        font-size: 22px;
+        font-weight: 800;
+        //    display: flex;
+        //  justify-content: center;
+        margin-top: -3.5rem;
         width: 90%;
-        // @include flex-center;
-
     }
 
     &__page {
         font-size: 12px;
     }
 
+    &__iconeBack {
+        position: relative;
+        top: -1.8rem;
+        left: -7rem;
+        cursor: pointer;
+        font-size: 7vw;
+    }
+
+    &__descreption {
+        width: 80%;
+        @include flex-center;
+        row-gap: 20px;
+        //  position: absolute;
+        margin-left: 2rem;
+    }
+
     .wrapper {
         display: inline-flex;
         list-style: none;
-        gap: 55px;
+        gap: 45px;
 
         &__icon {
             align-items: center;
@@ -39,7 +59,6 @@
                 opacity: 1;
                 visibility: visible;
                 pointer-events: auto;
-
                 box-shadow: 6px -6px 25px 0 #ceb1ff,
                     6px 6px 25px 0 #ceb1ff;
 
@@ -187,14 +206,12 @@
                     opacity: 1;
                     visibility: visible;
                     pointer-events: auto;
-
                     box-shadow: 6px -6px 25px 0 #ceb1ff,
                         6px 6px 25px 0 #ceb1ff;
 
                     span {
                         text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
                         color: #ceb1ff;
-
                     }
 
                     ::before {
