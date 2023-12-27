@@ -1,67 +1,175 @@
- .wrapper {
-            display: inline-flex;
-            list-style: none;
-            gap: 55px;
-
-            .icon {
-                align-items: center;
-                border-radius: 50%;
-                cursor: pointer;
-                display: flex;
-                flex-direction: column;
-                font-size: 18px;
-                height: 50px;
-                justify-content: space-between;
-                margin: 10px;
-                padding: 15px;
-                position: relative;
-                transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
-                width: 50px;
-                margin: 22px;
-            }
-
-            .tooltip {
-                position: absolute;
-                top: 0;
-                font-size: 14px;
-                background: var(--box_background);
-                color: #fff;
-                padding: 5px 8px;
-                border-radius: 5px;
-                box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-                opacity: 0;
-                pointer-events: none;
-                transition: all .3s cubic-bezier(.68, -.55, .265, 1.55)
-            }
-
-            .wrapper .tooltip ::before {
-                position: absolute;
-                content: "";
-                height: 8px;
-                width: 8px;
-                background: var(--box_background);
-                bottom: -3px;
-                left: 50%;
-                transform: translate(-50%) rotate(45deg);
-                transition: all .3s cubic-bezier(.68, -.55, .265, 1.55)
-            }
-
-            .wrapper .icon:hover .tooltip {
-                top: -45px;
-                opacity: 1;
-                visibility: visible;
-                pointer-events: auto;
-                box-shadow: 6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff
-            }
-
-            .wrapper .icon:hover .tooltip,
-            .wrapper .icon:hover span {
-                text-shadow: 0 -1px 0 rgba(0, 0, 0, .1)
-            }
-
-            .wrapper .icons:hover,
-            .wrapper .icons:hover .tooltip,
-            .wrapper .icons:hover .tooltip::before {
-                color: var(--body_color)
-            }
-        }
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+}
+.header {
+  position: fixed;
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 0 !important;
+  z-index: 10;
+  top: 0;
+  background-color: var(--body_background);
+}
+.navbar {
+  height: 70px;
+  position: relative;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.logo img {
+  border-radius: 50px;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+}
+.menu-icon {
+  display: none;
+}
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+.nav-elements ul li {
+  margin-right: 45px;
+}
+.nav-elements ul a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--body_color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav_list {
+  padding: 15px 0;
+  position: relative;
+}
+.nav_list ::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 10px;
+  background: var(--lang_color);
+  transition: all 0.5s ease;
+}
+.nav_list :hover:before {
+  width: 100%;
+}
+.btn_lang {
+  width: 65px;
+  display: inline-block;
+  border: 0.16em solid var(--body_color);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn_lang:hover {
+  border-color: var(--lang_color);
+  background-color: var(--lang_background);
+  color: var(--body_color);
+}
+@media all and (max-width: 30em) {
+  .btn_lang {
+    display: block;
+    margin: 0.2em auto;
+  }
+  .navbar-menu ul a {
+    color: var(--body_color);
+  }
+}
+@media (max-width: 767px) {
+  .navbar > .container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 5px 10px;
+  }
+  .logo img {
+    width: 60%;
+    height: 60%;
+  }
+  .navbar-menu ul a {
+    color: var(--body_color);
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    transition: transform 0.2s ease-in-out;
+    transform: translateY(-150%);
+    background-color: var(--lang_background);
+    width: 100vw;
+  }
+  .navbar-icon {
+    align-items: flex-start !important;
+  }
+  .navbar-icon button {
+    background: 0 0;
+    color: var(--body_color);
+    border: 2px solid var(--body_color);
+  }
+  .nav-menu .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+  }
+  .navbar-menu.active {
+    transform: translateY(0);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav-menu li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  .dark_mode {
+    margin-left: 0 !important;
+  }
+  .btn_lang {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  .nav-elements ul a {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--body_color);
+  }
+}

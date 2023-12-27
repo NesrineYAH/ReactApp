@@ -1,0 +1,47 @@
+.errorContainer {
+    color: $primary-color;
+    @extend %flex-column;
+    margin: 22px 22px;
+
+    &__Number {
+        @include flex-center;
+
+        @include font(90px, 700);
+        margin: 10rem 0 1rem 0;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(240px, 700);
+            margin: 0;
+        }
+    }
+
+    &__Text {
+        @include flex-endCenter;
+        text-align: center;
+        @include font(18px, 500);
+        margin: 0 11%;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(36px, 500);
+            margin: 0;
+        }
+    }
+
+    &__LinkHome {
+        @include flex-endCenter;
+        color: $primary-color;
+        @include font(14px, 500);
+        margin: 3rem 0 2rem 0;
+
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(18px, 500);
+            margin-top: 7rem;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+        }
+    }
+}

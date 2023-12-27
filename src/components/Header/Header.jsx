@@ -81,25 +81,15 @@ class Header extends Component {
     };
 
     return (
-      <header
-        style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
-        className="header"
-        id={t("home_path")}
-      >
-        <button className="navbarLogo" onClick={handleShowLinks}>
-          <img
-            className="navbarLogo__img"
-            src={NBY}
-            alt="logo"
-            style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
-          />
-        </button>
+      <header  style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>
+          
+        <nav style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
+          className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>
 
-        <nav
-          style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
-          className={`navbar_header ${showLinks ? "show_nav" : ""} ${
-            isTransparent && !isMobile ? "navbar_header--transparent" : ""
-          } `}>
+        <button className="navbarLogo" onClick={handleShowLinks}>
+          <img className="navbarLogo__img"  src={NBY} alt="logo" style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
+        </button>     
+
           {!matches ? (
             <div className="nav-screen">
               <ul className="navbar__links">
@@ -232,6 +222,8 @@ class Header extends Component {
             </div>
           )}
         </nav>
+
+
       </header>
     );
   }

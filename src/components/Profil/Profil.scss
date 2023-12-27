@@ -3,7 +3,7 @@
     position: relative;
     left: 1.2%;
     @include flex-column;
-
+    height: 120vh;
     margin-bottom: 60px;
     // box-shadow: var(--box-shadow);
     //box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);

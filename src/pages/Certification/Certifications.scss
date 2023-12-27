@@ -1,16 +1,29 @@
  #certifications {
      width: 90%;
-     height: 100vh;
-     // border: 2px solid #433871;
+     height: 150vh;
+     border: 2px solid #433871;
      background-color: #433871;
      box-shadow: 0px 0px 2px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
      background-color: var(--body_background);
      position: relative;
      left: 4.8%;
-     top: 7%;
-     //  margin-bottom: 80px;
      border-radius: 5px;
+     margin-top: 10%;
+    margin-bottom: 10%;
 
+
+
+
+
+     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+
+         position: relative;
+         left: 4.8%;
+         margin-top: 10%;
+         height: 180vh;
+
+
+     }
 
      h3 {
          font-weight: 700;
@@ -28,15 +41,19 @@
          justify-content: space-around;
          flex-wrap: wrap;
          align-items: center;
-         padding: 100px 70px 0 70px;
+         padding: 10px 70px 0 70px;
+
+         @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+             padding: 70px 70px 0 70px;
+         }
 
          &__card {
-             width: 220px;
+             width: 180px;
              border-radius: 5px;
              cursor: pointer;
 
              &__img {
-                 width: 220px;
+                 width: 180px;
                  border-radius: 5px;
              }
 
@@ -49,12 +66,11 @@
              .overly {
                  position: absolute;
                  margin-top: -50px;
-                 margin-left: 9px;
+                 margin-left: 6px;
                  background: rgba(13, 30, 76, 0.5);
                  color: #f1f1f1;
-                 width: 200px;
+                 width: 160px;
                  transition: .5s ease;
-                 font-size: 14px;
                  padding: 4px;
                  display: flex;
                  text-align: center;
@@ -69,7 +85,7 @@
 
              &__h4 {
                  font-weight: 400;
-                 font-size: 12px;
+                 font-size: 10px;
                  width: 200px;
                  overflow: hidden;
                  display: flex;
@@ -84,8 +100,42 @@
                  }
 
              }
+
+             @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+                 width: 220px;
+
+                 &__img {
+                     width: 220px;
+                     border-radius: 5px;
+                 }
+
+                 .overly {
+                     position: absolute;
+                     margin-top: -50px;
+                     margin-left: 9px;
+                     background: rgba(13, 30, 76, 0.5);
+                     color: #f1f1f1;
+                     width: 180px;
+                     transition: .5s ease;
+                     padding: 4px;
+                     display: flex;
+                     text-align: center;
+                     text-decoration: none;
+                     opacity: 0;
+
+                     &:hover {
+                         opacity: 1;
+                     }
+
+                 }
+
+                 &__h4 {
+                     font-size: 12px;
+                     width: 200px;
+                 }
+             }
          }
 
-
      }
+
  }

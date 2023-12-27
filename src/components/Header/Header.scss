@@ -3,6 +3,8 @@
     height: 100%;
     @include flex-column;
     background-color: var(--body_background);
+    z-index: 1;
+
 
     .navbar_header {
         width: 95%;
@@ -51,7 +53,7 @@
                 align-items: center !important;
                 display: flex;
                 justify-content: flex-end;
-                //padding-right: 2px;
+
 
                 button {
                     background: 0 0;
@@ -78,7 +80,7 @@
                 transition: transform .2s ease-in-out;
                 transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
                 width: 100vw;
-                height: 90vw;
+                height: 94vw;
 
                 &.active {
                     transform: translateX(0);
@@ -92,16 +94,23 @@
         }
 
         .navbarLogo {
-            width: 40px;
-            // height: 40px;
+            width: 45px;
+            height: 45px;
             background: transparent;
             border: none;
             color: inherit;
             cursor: pointer;
-            // @include flex-start;
             border-radius: 50%;
             position: absolute;
-            top: 0.5%;
+            top: 0.22%;
+
+            &__img {
+                border-radius: 50px;
+                box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+                height: 100%;
+                position: relative;
+                width: 100%;
+            }
         }
 
     }
@@ -111,11 +120,8 @@
         height: 100%;
         @include flexCenterRow;
         flex-wrap: wrap;
-        // background-color: #f5e6e6;
-
 
         .navbar_header {
-            //   width: 100%;
             @include flexCenterRow;
 
             .navbar__links {
@@ -172,30 +178,29 @@
                 box-shadow: none;
             }
         }
-    }
 
-    .navbarLogo {
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-        color: inherit;
-        cursor: pointer;
-        // @include flex-start;
-        border-radius: 50%;
-        position: absolute;
-        left: 6%;
-        top: 0.2%;
-        box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+        .navbarLogo {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            left: 6%;
+            top: 0.2%;
+            box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
 
-        &__img {
-            border-radius: 50px;
-            box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
-            height: 100%;
-            position: relative;
-            width: 100%;
-        }
+            &__img {
+                border-radius: 50px;
+                box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+                height: 100%;
+                position: relative;
+                width: 100%;
+            }
 
+            /*
         @media screen and (min-width: $breakpoint-desktop) {
             // width: 8%;
             width: 60px;
@@ -215,21 +220,7 @@
                 position: relative;
                 width: 100%;
             }
+        }*/
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
