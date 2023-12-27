@@ -5,7 +5,8 @@
   "logo_alt": "NBYy2",
   "home_title": "الصفحة الرئيسية",
   "home_id": "الصفحةالرئيسية",
-  "home_path": "#الصفحةالرئيسية",
+  "home_path": "/#الصفحةالرئيسية",
+  
   "Profil_id": "Profile",
   "Profil_path": "/#Profil",
   "Profil_title": "لمحة",
@@ -17,9 +18,11 @@
   "portfolio_title": "معرض الأعمال",
   "portfolio_id": "معرضالأعمال",
   "portfolio_path": "#معرضالأعمال",
+
   "service_title": "خدماتي",
   "service_id": "خدماتي",
   "service_path": "#خدماتي",
+
   "contact_title": "تواصل معنا",
   "contact_id": "تواصل معنا",
   "contact_path": "#تواصل معنا",

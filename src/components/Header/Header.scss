@@ -7,13 +7,18 @@
 
 
     .navbar_header {
-        width: 95%;
-        margin-bottom: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+        height: 100px;
+
+
+
 
         .navbar__links {
             @include flex-column;
             text-transform: uppercase;
             font-weight: 600;
+
 
             a {
                 color: navy;
@@ -28,13 +33,13 @@
             }
 
             .navbar_item {
-                @include font(16px, 500);
+                @include font(18px, 500);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 color: navy;
                 text-decoration: none;
-                margin-right: 18px;
+                margin-right: 20px; // reduire la margin tablette 
                 line-height: 280%;
             }
         }
@@ -53,7 +58,7 @@
                 align-items: center !important;
                 display: flex;
                 justify-content: flex-end;
-
+                margin: -70px 10px 10px 0;
 
                 button {
                     background: 0 0;
@@ -101,8 +106,7 @@
             color: inherit;
             cursor: pointer;
             border-radius: 50%;
-            position: absolute;
-            top: 0.22%;
+            margin: 20px 0px 10px 15px;
 
             &__img {
                 border-radius: 50px;
@@ -116,21 +120,27 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
-        width: 100%;
+
         height: 100%;
-        @include flexCenterRow;
-        flex-wrap: wrap;
+        max-width: $Mmax;
+        width: 100%;
 
         .navbar_header {
             @include flexCenterRow;
+            flex-wrap: wrap;
+            margin-top: 0 !important;
+            position: fixed;
+            top: 4%;
+            z-index: 10;
+            width: 90%;
+
 
             .navbar__links {
-                width: 75%;
+                //   width: 100%;
                 @include flexCenterRow;
                 flex-wrap: wrap;
                 text-transform: uppercase;
-                position: absolute;
-                right: 2%;
+                gap: 15px;
                 font-weight: 600;
 
                 a {
@@ -187,9 +197,7 @@
             color: inherit;
             cursor: pointer;
             border-radius: 50%;
-            position: absolute;
-            left: 6%;
-            top: 0.2%;
+            margin-top: -0.8rem;
             box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
 
             &__img {

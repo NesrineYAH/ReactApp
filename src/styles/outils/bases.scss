@@ -80,24 +80,12 @@ body {
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
 
-
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
         max-width: 100%;
         width: 100%;
         margin: auto;
     }
-
 }
-
-/*
-.main {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-}*/
-
 
 .App {
     position: relative;

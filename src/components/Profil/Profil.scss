@@ -1,13 +1,10 @@
 #Profil {
     width: 96%;
     position: relative;
-    left: 1.2%;
+    //left: 1.2%;
     @include flex-column;
     height: 120vh;
     margin-bottom: 60px;
-    // box-shadow: var(--box-shadow);
-    //box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
-    //border-radius: 5px;
     margin-top: 70px;
 
     .Profil__container {
@@ -24,8 +21,6 @@
         // box-shadow: var(--box-shadow);
         //box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
         box-shadow: -6px -6px 0px 0 #583e81, 6px 6px 0px 0 rgba(0, 0, 0, .2);
-
-        //border-radius: 5px;
         margin-top: 10px;
     }
 
@@ -44,14 +39,17 @@
     @media screen and (min-width: $breakpoint-desktop) {
         background-color: #e9e2e2;
         width: 92%;
-        height: 80vh;
+        height: 100vh;
+
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         left: 4%;
+        top: 30.5%;
         border-radius: 15px;
-        margin-bottom: 50px;
+        margin-top: 38%;
+
 
         .Profil__container {
             margin: 0 auto;
@@ -64,6 +62,8 @@
             // background: rgba(0, 0, 0, 0.8) url('../../img/banner_top.jpg');
             background-position: center;
             background-size: auto;
+
+
         }
 
         .container_photo {
