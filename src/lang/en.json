@@ -3,9 +3,11 @@
   "description": "portfolio Nesrine BEKKAR YAHOUM Front-end and Fullstack web developer.in Ile De France",
   "photo_alt": "Nesrine BEKKAR YAHOUM",
   "logo_alt": "NBYy2",
+
   "home_title": "Home",
   "home_id": "Home",
-  "home_path": "#Home",
+  "home_path": "/#home",
+
   "Profil_id": "Profil",
   "Profil_path": "/#Profil",
   "Profil_title": "Profil",

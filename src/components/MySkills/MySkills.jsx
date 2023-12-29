@@ -53,7 +53,7 @@ const MySkills = () => {
         )
     }
     useEffect(() => {
-        slideInTop("#Skills");
+        slideInTop("skills_path");
     });
 
     useEffect(() => {

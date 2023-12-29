@@ -1,31 +1,33 @@
 {
-  "title": "Nesrine BEKKAR YAHOUM ",
+  "title": " بكار يهوم نسرين ",
   "description": "الموقع الشخصي لمطوة ويب متخصصة في تطوير الواجهة الأمامية مع مهارات في تطوير الواجهة الخلفية و تطوير برامج الهاتف",
-  "photo_alt": "Nesrine BEKKAR YAHOUM",
+  "photo_alt": " بكار يهوم نسرين",
   "logo_alt": "NBYy2",
+
   "home_title": "الصفحة الرئيسية",
   "home_id": "الصفحةالرئيسية",
-  "home_path": "/#الصفحةالرئيسية",
-  
-  "Profil_id": "Profile",
-  "Profil_path": "/#Profil",
+  "home_path": "#الصفحةالرئيسية",
+
   "Profil_title": "لمحة",
+  "Profil_id": "لمحة",
+  "Profil_path": "/#لمحة",
 
   "skills_title": "المهارات",
   "skills_id": "المهارات",
   "skills_path": "/#المهارات",
   
   "portfolio_title": "معرض الأعمال",
-  "portfolio_id": "معرضالأعمال",
-  "portfolio_path": "#معرضالأعمال",
+  "portfolio_id": "معرضالاعمال",
+  "portfolio_path": "/#معرضالاعمال",
 
   "service_title": "خدماتي",
   "service_id": "خدماتي",
-  "service_path": "#خدماتي",
+  "service_path": "/#خدماتي",
 
   "contact_title": "تواصل معنا",
-  "contact_id": "تواصل معنا",
-  "contact_path": "#تواصل معنا",
+  "contact_id": "تواصلمعنا",
+  "#contact_path": "/#تواصلمعنا",
+  
   "txtInfo":"مزيد من المعلومات",
   "footer":" جميع الحقوق محفوظة© 2023  بكار يهوم نسرين  ",
  "Mentions": "إشعار قانوني",

@@ -3,16 +3,19 @@
   "description": "portfolio Nesrine BEKKAR YAHOUM Développeuse web Front-end et Fullstack.sur Ile De France",
   "photo_alt": "Nesrine BEKKAR YAHOUM",
   "logo_alt": "NBYy2",
+
   "home_title": "Accueil",
-  "home_id": "Accueil",
-  "home_path": "/#Accueil",
+  "home_id": "About",
+  "home_path": "/#About",
+
   "Profil_title": "Profil",
   "Profil_id": "Profil",
   "Profil_path": "/#Profil",
 
+
   "skills_title": "Compétences",
-  "skills_id": "Compétences",
-  "skills_path": "/#Compétences",
+  "skills_id": "Comptences",
+  "#skills_path": "/#Competences",
   
   "portfolio_title": "Portfolio",
   "portfolio_id": "Portfolio",

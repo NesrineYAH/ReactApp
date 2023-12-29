@@ -1,9 +1,11 @@
 .contact {
     margin-bottom: 250px;
-    //position: relative;
-  //  min-height: 100vh;
+
 
     .contact-wrapper {
+        // display: flex;
+        // flex-direction: column !important;
+        // margin: 0 auto !important;
         height: auto;
         padding: 20px;
         max-width: 90%;
@@ -13,6 +15,10 @@
         border-radius: 20px;
         transition: .2s linear;
         box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 rgba(0, 0, 0, .2)
+    }
+
+    .form-control {
+        width: 90%
     }
 
     .form-horizontal {
@@ -61,19 +67,17 @@
     }
 
 
-
-
     @media screen and (min-width: $breakpoint-desktop) {
         display: flex;
         flex-direction: column;
-        // position: relative;
-        //  min-height: 100vh;
+
 
 
         .contact-wrapper {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             flex-wrap: wrap;
+            position: relative;
             padding: 20px;
             max-width: 90%;
             grid-gap: 20%;
@@ -88,17 +92,33 @@
         }
 
         .form-horizontal {
-            //  min-width: 437px;
+
             width: 437px;
+            //  min-width: 437px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             grid-gap: 14px;
             padding: 20px;
             box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
-            border-radius: 20px;
+            border-radius: 20px
+        }
+
+        .form-control,
+        textarea {
+            max-width: 470px;
+            letter-spacing: 1px;
+            background-color: var(--body_background);
+            border: 2px solid navy;
+            box-shadow: var(--box_br);
 
         }
+
+        .form-horizontal label {
+            color: var(--link_color);
+
+        }
+
 
         .error {
             font-size: 12px;

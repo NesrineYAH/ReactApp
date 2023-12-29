@@ -62,7 +62,7 @@ class Header extends Component {
 
   render() {
     const { isTransparent, isMobile, showLinks, showMenu } = this.state;
-    // const {handleClick} = this.props;
+     const {handleClick} = this.props;
     const { t } = this.props;
     const lang = localStorage.getItem("i18nextLng");
 
@@ -81,7 +81,7 @@ class Header extends Component {
     };
 
     return (
-      <header  style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>
+      <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>
           
         <nav style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
           className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>

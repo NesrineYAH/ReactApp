@@ -11,12 +11,10 @@ const lang = localStorage.getItem("i18nextLng");
 
     return (
         <div>
-          <div
-          
-      style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
+          {/* <div style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
       className="header"
-      id={t("home_path")}
-    ></div>
+      id={t("home_path")}>
+      </div> */}
             <select  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}
