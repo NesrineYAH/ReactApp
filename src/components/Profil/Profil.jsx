@@ -10,12 +10,10 @@ const Profil = () => {
     const { t } = useTranslation();
     const lang = localStorage.getItem("i18nextLng");
   return (
-    <section id="Profil"  data-aos="zoom-in-up"
-    style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}>
+    <section id="Profil"  data-aos="zoom-in-up">
     <div className="Profil__container">
      <Biographie />  
-    <div className="container_photo" 
-     style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}>       
+    <div className="container_photo">       
         <img src={photoImene} alt={t("photo_alt")} />
    </div>
      </div>

@@ -1,16 +1,45 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
 import BlobCloud from "../BlobCloud/BlobCloud";
 
+
+//import { useEffect, useRef } from "react";
+import { FaCogs } from "react-icons/fa";
+import { HiUserGroup } from "react-icons/hi2";
+import { FaComment } from "react-icons/fa";
+import DownloadBtn from '../Download/download';
+//import { useTranslation } from "react-i18next";
+import '../../i18n';
+import devine from "../../assets/images/bakground/deveineBGR.png";
+//import { gsap } from "gsap";
+
+
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const MySkills = () => {
     const { t } = useTranslation();
-  
+    const lang = localStorage.getItem("i18nextLang");
+    const textRef = useRef(null);
+
+    
+   useEffect(() => {
+    const timeline = gsap.timeline({ repeat: -1 });
+     const chars = Array.from(textRef.current.querySelectorAll(' .display-dots'));
+
+     timeline.from(chars, { opacity: 0, stagger: 0.5 })
+        .to(chars, { opacity: 1, stagger: 0.5, delay: 0 })
+         .from(chars.reverse(), { opacity: 1, stagger: 0.5 })
+        .to(chars.reverse(), { opacity: 0, stagger: 0.5, delay: 0 })
+    return () => {
+         timeline.kill();
+     };
+}, []);
+
     const slideInTop = (elem) => {
         gsap.fromTo(elem,
             {
@@ -36,7 +65,7 @@ const MySkills = () => {
             {
                 opacity: 1,
                 width: "0%",
-          
+
             },
             {
                 opacity: 1,
@@ -74,12 +103,11 @@ const MySkills = () => {
 
     return (
         <section id="Skills">
-           <div id={t("skills_id")} className="txtxt"> 
+            <div id={t("skills_id")}>
                 <h2 className="titlePortfolio">{t("skills_title")}</h2>
-                    {/* <span ref={textRef}><span className='display-dots'>?</span><span className='display-dots'>?</span><span className='display-dots'>?</span></span> */}
-            </div>            
-            <div className="Skills__Container">
-                <div className="Skills__box">
+            </div>
+            <div className="SkillsContainer">
+                <div className="SkillsContainer__box">
 
                     <div className="box">
                         <h4 className="box__title">Front-end</h4>
@@ -108,19 +136,18 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p"> React</p> 
+                            <p className="skillItem__p"> React</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Wordpress</p> 
+                            <p className="skillItem__p">Wordpress</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
                         </div>
                     </div>
-                
                     <div className="box">
                         <h4 className="box__title">Back-end</h4>
                         <div className="skillItem">
@@ -144,7 +171,6 @@ const MySkills = () => {
                     </div>
                     <div className="box">
                         <h4 className="box__title">Design</h4>
-
                         <div className="skillItem">
                             <p className="skillItem__p">Figma</p>
                             <div className="skillItem__bar">
@@ -166,10 +192,44 @@ const MySkills = () => {
                     </div>
 
                 </div>
-            </div> 
-            <BlobCloud />            
+
+                <div className="SkillsContainer__blob" >
+                    <div className="SoftsSkills">
+                        <h6 
+                            className='SoftsSkills__Intro'>{t("Competence.question")}
+                            <span style={{ direction : lang === "ar" ? "rtl" : "rtl"}}
+                            ref={textRef}><span className='display-dots'>?</span>
+                                <span className='display-dots'>?</span><span className='display-dots'>?</span></span>
+                                    <img src={devine} alt='image devine' className='SoftsSkills__img' />       
+                        </h6>
+             
+                        <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWords")} </strong>
+                            {t("Competence.prgII")} </p>
+                    </div>
+
+
+                    <div className='softSkills'>
+
+                        <div className='softSkills__item'>
+                            <FaCogs className="fa" />
+                            <h5 className='softSkills__title' >{t("Competence.softSkills__titleI")}</h5>
+                        </div>
+                        <div className='softSkills__item'>
+                            <HiUserGroup className="fa" />
+                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleII")}</h5>
+                        </div>
+                        <div className='softSkills__item'>
+                            <FaComment className="fa" />
+                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleIII")}</h5>
+                        </div>
+
+                    </div>
+                    <DownloadBtn className='ButtonCV' />
+                </div>
+
+            </div>
         </section>
-        
+
     );
 
 };

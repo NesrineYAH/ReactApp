@@ -9,12 +9,14 @@ import { FaPhoneFlip  } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from '../socialMedia/socialMedia';
+import style from 'styled-components';
 
 
 const Contact = () => {
   const lang = localStorage.getItem("i18nextLang");
   const { t } = useTranslation();
   const formRef = useRef();
+
 
   const [formData, setFormData] = useState({
     last_name: "",
@@ -94,33 +96,28 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+ // const direction = lang === "ar" ? "rtl" : "ltr";
 
   return (
-    <section id={t("contact_id")} className="contact" itemScope itemType="http://schema.org/Person">
+    <section id={t("contact_id")} className="contact" itemScope itemType="http://schema.org/Person" >
       <h2 className="titlePortfolio">{t("contact_title")}</h2>
 
-      <div
-       style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }}
+      <div style={{  flexDirection: lang === "ar" ? "row" : "row-reverse" }}
         className=" contact-wrapper">
 
         <form 
          ref={formRef}             
           onSubmit={handleSubmit}
           className="form-horizontal"
-          data-aos="zoom-in-up"  
-         style={{ direction: lang === "ar" ?  "rtl" : "ltr" }}  
-          >
+          data-aos="zoom-in-up"   >
       
           <label htmlFor="last_name">{t("lastName")}</label>
           <input
-           style={{
-            direction: lang === "ar" ?  "rtl" : "ltr" ,
-            borderColor: errors.last_name ? "red" : "initial",
-          }}
+           style={{ borderColor: errors.last_name ? "red" : "initial" }}
             type="text"
             name="last_name"
             value={formData.last_name}
-            onChange={handleChange}
+          onChange={handleChange}
             className="form-control"
             placeholder={t("lastName")}
             id="last_name"
@@ -128,17 +125,13 @@ const Contact = () => {
           />         
           <div className="error">{errors.last_name}</div>
           
-          
           <label htmlFor="first_name">{t("firstName")}</label>
           <input
-             style={{
-              direction: lang === "ar" ?  "rtl" : "ltr" ,
-              borderColor: errors.first_name ? "red" : "initial",
-            }}
+             style={{borderColor: errors.first_name ? "red" : "initial"}}
             type="text"
             name="first_name"
             value={formData.first_name}
-            onChange={handleChange}
+         onChange={handleChange}
             className="form-control"
             placeholder={t("firstName")}
             id="first_name"
@@ -148,10 +141,7 @@ const Contact = () => {
 
           <label htmlFor="user_email">{t("Email")}</label>
           <input
-            style={{
-              direction: lang === "ar" ?  "rtl" : "ltr" ,
-              borderColor: errors.user_email ? "red" : "initial",
-            }}
+            style={{borderColor: errors.user_email ? "red" : "initial" }}
             type="email"
             id="user_email"
             name="user_email"
@@ -165,13 +155,11 @@ const Contact = () => {
 
           <label htmlFor="message">{t("Message")}</label>
           <textarea
-            style={{
-              direction: lang === "ar" ?  "rtl" : "ltr" ,
-              borderColor: errors.message ? "red" : "initial",}}
+            style={{ borderColor: errors.message ? "red" : "initial"}}
             name="message"
             id="message"
             value={formData.message}
-            onChange={handleChange}
+          onChange={handleChange}
             className="form-control"
             placeholder={t("Message")}
             rows="10"
@@ -182,7 +170,7 @@ const Contact = () => {
           <input type="submit" value={t("Send")} className="send-text" />
         </form>
 
-        <div className="contactList__conatiner" data-aos="zoom-in-up">
+        <div className="contactList__conatiner" data-aos="zoom-in-up" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}>
           <ul className="contactList">
             <li className="contactList__item">
               <FaPhoneFlip className="contactList__i" />
@@ -213,6 +201,11 @@ const Contact = () => {
         </div>
       </div>
     </section>
+
+
+
       );
 };
     export default Contact;
+
+    

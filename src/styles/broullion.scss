@@ -32,12 +32,12 @@
     padding: 20px;
     box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
     border-radius: 20px;
-    // direction: ltr;
+    direction: rtl;
 }
 
 .form-control,
 textarea {
-    //  direction: ltr;
+    direction: ltr;
     max-width: 470px;
     background-color: #00000000;
     color: var(--body_color);

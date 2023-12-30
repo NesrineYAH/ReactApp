@@ -38,17 +38,20 @@
 
     @media screen and (min-width: $breakpoint-desktop) {
         background-color: #e9e2e2;
-        width: 92%;
+        width: 96%;
         height: 100vh;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        left: 4%;
+        // position: relative;
+        // left: 4%;
         top: 30.5%;
         border-radius: 15px;
         margin-top: 38%;
+        padding-left: 50px;
+        padding-right: 50px;
+
 
 
         .Profil__container {

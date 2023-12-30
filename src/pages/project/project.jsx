@@ -73,9 +73,8 @@ console.log(e);
      <Caroussel  />
       </div>
 
-    <div style={{ direction: lang === "ar" ? "rtl": "ltr" }} 
-    className="project__descreption"
-    >
+    <div
+    className="project__descreption">
      {projects
      .filter((project) => project.id === id)
      .map((project) => (

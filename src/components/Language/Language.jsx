@@ -8,13 +8,11 @@ import '../../i18n';
 const  Language = () => {
 const { t, i18n } = useTranslation();
 const lang = localStorage.getItem("i18nextLng");
+document.body.dir = i18n.dir();         {/*29/12 à 23:15*/}
 
     return (
         <div>
-          {/* <div style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }}
-      className="header"
-      id={t("home_path")}>
-      </div> */}
+    
             <select  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}

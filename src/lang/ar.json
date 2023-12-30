@@ -123,7 +123,9 @@
     "strongWords":"مستقلة، متعددة الاستخدامات، صارمة",
     "softSkills__titleI":"ادارة مشروع",
     "softSkills__titleII":"ادارة فريق",
-    "softSkills__titleIII":"علاقة العملاء"
+    "softSkills__titleIII":"علاقة العملاء", 
+    "?":"؟"
+
   
 },
 "TxtCertiPrg": { 
