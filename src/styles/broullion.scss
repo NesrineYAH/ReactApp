@@ -1,171 +1,240 @@
-.contact {
+.project {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column
 }
 
-.title {
-    text-align: center
-}
-
-.contact-wrapper {
+.project_page {
+    width: 99%;
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px;
-    max-width: 90%;
-    grid-gap: 20%;
-    width: 90%;
-    height: 100%;
-    align-items: center;
+    align-items: center
+}
+
+.project_descreption {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px
+}
+
+.carousel {
+    position: absolute
+}
+
+.project_descreption p {
+    width: 80%;
+    height: auto;
+    border-radius: 40px;
+    color: var(--body_color);
+    display: flex;
     justify-content: center;
-    margin: 20px auto;
-    border-radius: 20px;
-    transition: .2s linear;
-    box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 rgba(0, 0, 0, .2)
+    padding: 10px
 }
 
-.form-horizontal {
-    min-width: 437px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    grid-gap: 14px;
-    padding: 20px;
-    box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
-    border-radius: 20px;
-    direction: rtl;
-}
-
-.form-control,
-textarea {
-    direction: ltr;
-    max-width: 470px;
-    background-color: #00000000;
-    color: var(--body_color);
-    letter-spacing: 1px;
-    border: 2px solid var(--body_color)
-}
-
-.form-horizontal label {
-    color: var(--body_color)
-}
-
-.send-text {
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 2px;
-    color: var(--body_color);
-    background-color: var(--body_background);
-    border-radius: 20px;
-    padding: 6px 20px;
-    border: 1px var(--body_color) solid
-}
-
-.send-text:hover {
-    box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff
-}
-
-.list-item i:hover {
-    border-radius: 50px;
-    box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff
-}
-
-.direct-contact-container {
-    max-width: 400px
-}
-
-.contact-list {
-    display: flex;
-    grid-gap: 19px;
-    flex-direction: column;
-    padding: 0
-}
-
-.list-item {
+.project_header {
     display: flex;
     flex-direction: row;
-    grid-gap: 19px
+    align-items: center;
+    margin-top: 90px
 }
 
-.list-item i {
+.iconBack {
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: var(--body_color);
+    cursor: pointer
+}
+
+.project_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    color: var(--body_color);
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 2vw
+}
+
+.Technologies {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.Technologies h6 {
+    color: var(--body_color);
+    font-weight: 400
+}
+
+.technologyUsed_icons {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, 70px)
+}
+
+.img_item {
+    width: 25px;
+    height: 25px
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none
+}
+
+.wrapper .icon {
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(.68, -.55, .265, 1.55)
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: var(--box_background);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s cubic-bezier(.68, -.55, .265, 1.55)
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--box_background);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all .3s cubic-bezier(.68, -.55, .265, 1.55)
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: 6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff
+}
+
+.wrapper .icon:hover .tooltip,
+.wrapper .icon:hover span {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .1)
+}
+
+.wrapper .icons:hover,
+.wrapper .icons:hover .tooltip,
+.wrapper .icons:hover .tooltip::before {
     color: var(--body_color)
 }
 
-.list-item a,
-span {
-    text-decoration: none;
-    color: var(--body_color);
-    font-size: 16px
+.project_boutom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9%
 }
 
-@media (max-width:340px) {
-    .contact {
-        width: 80%;
-        margin: 0 auto
-    }
-
-    .form-horizontal {
-        min-width: 200px;
-        margin: 0 auto
-    }
-
-    .contact-wrapper {
-        display: flex;
-        flex-direction: column !important;
-        margin: 0 auto !important;
-        grid-gap: 78px;
-        padding: 0;
-        width: 80%
-    }
-
-    .direct-contact-container {
-        max-width: 281px
-    }
-
-    .contact-list {
-        padding: 0
-    }
-
-    .list-item a,
-    span {
-        font-size: 13px
-    }
-
-    .form-control {
-        width: 90%
-    }
+.project_btn {
+    width: 50%;
+    gap: 9%;
+    display: flex
 }
 
 @media (max-width:767px) {
-    .contact {
-        width: 97%;
-        margin: 0 auto
+    .project_header {
+        align-items: stretch
     }
 
-    .form-horizontal {
-        min-width: 200px
+    .project_page {
+        flex-direction: column !important
     }
 
-    .contact-wrapper {
+    .iconBack,
+    .project_title {
+        font-size: 20px
+    }
+
+    .img_carousel {
+        height: 200px;
+        width: 150px
+    }
+
+    .carousel .slide {
+        min-width: 90%
+    }
+
+    .project_descreption {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px
+    }
+
+    .project_btn {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 19px
+    }
+
+    .Technologies {
+        width: 100%
+    }
+
+    .technologyUsed_icons {
+        grid-template-columns: repeat(auto-fill, 65px)
+    }
+
+    .project_boutom {
         display: flex;
         flex-direction: column !important;
-        grid-gap: 78px;
-        padding: 20px 0;
-        margin: 0 auto
-    }
-
-    .direct-contact-container {
-        max-width: 281px
-    }
-
-    .contact-list {
-        padding: 0
+        gap: 9%
     }
 }
 
 @media (max-width:991px) {
-    .contact-wrapper {
-        display: flex;
+    .project_page {
         flex-direction: column !important;
-        grid-gap: 78px
+        gap: 9%
+    }
+
+    .img_carousel {
+        height: 90%;
+        width: 90%
+    }
+
+    .project_descreption p {
+        width: 100%
+    }
+
+    .project_descreption {
+        width: 100%
+    }
+
+    .iconBack,
+    .project_title {
+        font-size: 25px
     }
 }

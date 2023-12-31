@@ -81,13 +81,16 @@ body {
     height: 100%;
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
         max-width: 100%;
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
+
     }
 }
+
 
 .App {
     position: relative;

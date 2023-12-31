@@ -5,71 +5,165 @@
     padding: 0 0 80px 0;
     display: flex;
     flex-direction: column;
-    margin-bottom: 240px;
+    margin-bottom: 340px;
 
     .SkillsContainer {
         width: 90%;
         margin-top: -4rem;
         padding: 5vh 0;
-
+   
 
         &__box {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .box {
+                padding: 0 1rem 0 2rem;
+                width: 82%;
+
+                &__title {
+                    text-align: center;
+                    margin: 10px 0 10px 0;
+                    font-size: 15px;
+                }
+
+                .skillItem {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    margin: 10px;
+
+                    &__p {
+                        margin-bottom: 4px;
+                        font-size: 13px;
+                    }
+
+                    &__bar {
+                        width: 100%;
+                        height: 16px;
+                        display: flex;
+                        justify-content: start;
+                        background-color: rgb(211, 211, 230);
+
+                        &__fullfilled {
+                            background-color: navy;
+                        }
+                    }
+                }
+            }
         }
+
+        &__blob {
+            width: 82%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .SoftsSkills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 82%;
+
+            &__Intro {
+                font-weight: 800;
+                font-size: 22px;
+            }
+            &__IntroP {
+                font-weight: 800;
+            }
+
+            &__img {
+                height: 80px;
+                width: 80px;
+                position: relative;
+                left: calc(100% - 2vmin);
+                top: calc(100% - 2vmin);
+            }
+
+            &__p {
+                font-size: 15px;
+                margin-bottom: 22px;
+                margin-top: -64px;
+                margin-left: 12px;
+
+            }
+        }
+
+        .softSkills {
+            display: flex;
+            flex-direction: column;
+
+            &__item {
+                display: flex;
+                flex-direction: row;
+                //justify-content: space-around;
+                font-weight: 500;
+            }
+
+            &__title {
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+            .fa {
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+                color: rgba(43, 43, 48, 0.871);
+                margin-left: 12px;
+            }
+
+            .ButtonCV {
+                margin-left: 80px;
+            }
+
+        }
+
 
     }
 
-    .box {
-        padding: 0 1rem 0 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        width: 92%;
-
-
-        &__title {
-            text-align: center;
-            margin: 10px 0 10px 0;
-            font-size: 15px;
-        }
-
-        .skillItem {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+        .SkillsContainer {
+            max-width: 92%;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            margin: 10px;
+            flex-direction: row;
+            justify-content: space-arround;
+            column-gap: 18%;
+            margin-right: 3%;
 
-            &__p {
-                margin-bottom: 4px;
-                font-size: 13px;
+
+            &__box {
+                width: 50%;
             }
 
-            &__bar {
-                width: 100%;
-                height: 16px;
-                display: flex;
-                justify-content: start;
-                background-color: rgb(211, 211, 230);
+            &__blob {
+                width: 32%;
+                margin-top: 10%;
+            }
 
-                &__fullfilled {
-                    height: 16px;
-                    background-color: navy;
+            .SoftsSkills {
+                &__img {
+                    width: 80px;
                 }
             }
         }
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
-        width: 100%;
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+        max-width: 92%;
+        width: 90%;
         height: auto;
         border-radius: 15px;
-        //  padding: 0 0 80px 0;
-        margin-bottom: 30px;
-
+        margin-bottom: -50px;
 
         .SkillsContainer {
+
             width: 92%;
             margin-top: 4rem;
             padding-left: 5vh;
@@ -77,10 +171,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-arround;
-            column-gap: 10%;
+            column-gap: 18%;
+            margin-right: 7%;
 
             &__box {
-                width: 50%;
+                width: 45%;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -129,10 +224,11 @@
 
             &__blob {
                 width: 32%;
+                margin-top: 8%;
                 display: flex;
                 flex-direction: column;
                 color: rgba(47, 51, 86, 0.871);
-
+                height: 500px;
             }
 
             .SoftsSkills {
@@ -161,6 +257,8 @@
                     font-size: 15px;
                     margin-bottom: 22px;
                     margin-top: -64px;
+                    margin-left: 12px;
+
                 }
             }
 
@@ -176,7 +274,6 @@
                 }
 
                 &__title {
-                    // color: rgb(131, 135, 153);
                     font-weight: 400;
                     font-size: 15px;
                 }
@@ -187,6 +284,7 @@
                     height: 20px;
                     margin-right: 15px;
                     color: rgba(43, 43, 48, 0.871);
+                    margin-left: 12px;
                 }
 
                 .ButtonCV {
@@ -199,6 +297,20 @@
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @-webkit-keyframes fadeIn {
     from {

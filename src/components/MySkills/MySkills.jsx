@@ -210,16 +210,16 @@ const MySkills = () => {
 
                     <div className='softSkills'>
 
-                        <div className='softSkills__item'>
+                        <div className='softSkills__item'  >
                             <FaCogs className="fa" />
-                            <h5 className='softSkills__title' >{t("Competence.softSkills__titleI")}</h5>
+                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleI")}</h5>
                         </div>
                         <div className='softSkills__item'>
-                            <HiUserGroup className="fa" />
+                            <HiUserGroup className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
                             <h5 className='softSkills__title'>{t("Competence.softSkills__titleII")}</h5>
                         </div>
                         <div className='softSkills__item'>
-                            <FaComment className="fa" />
+                            <FaComment className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
                             <h5 className='softSkills__title'>{t("Competence.softSkills__titleIII")}</h5>
                         </div>
 

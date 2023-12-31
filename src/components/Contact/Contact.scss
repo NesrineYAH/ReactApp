@@ -1,6 +1,7 @@
 .contact {
     margin-bottom: 250px;
-
+    position: relative;
+    min-height: 100vh;
 
     .contact-wrapper {
         // display: flex;
@@ -66,8 +67,13 @@
         }
     }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+        .contactList__conatiner {
+            margin-top: 0px;
+        }
+    }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         display: flex;
         flex-direction: column;
 

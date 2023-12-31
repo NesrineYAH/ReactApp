@@ -1,7 +1,6 @@
 #Profil {
     width: 96%;
     position: relative;
-    //left: 1.2%;
     @include flex-column;
     height: 120vh;
     margin-bottom: 60px;
@@ -20,7 +19,9 @@
         border: 1px #f2e8e8 solid;
         // box-shadow: var(--box-shadow);
         //box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
-        box-shadow: -6px -6px 0px 0 #583e81, 6px 6px 0px 0 rgba(0, 0, 0, .2);
+        //    box-shadow: -6px -6px 0px 0 #583e81, 6px 6px 0px 0 rgba(0, 0, 0, .2);
+        box-shadow: -6px -6px 0px 0 #583e81, 6px 6px 0px 0 #583e81;
+
         margin-top: 10px;
     }
 
@@ -38,14 +39,17 @@
 
     @media screen and (min-width: $breakpoint-desktop) {
         background-color: #e9e2e2;
-        width: 96%;
+        max-width: 100%;
+        width: 92%;
         height: 100vh;
-
+        //margin: 0 5% 0 5%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        // position: relative;
-        // left: 4%;
+        justify-content: center;
+        margin: auto;
+
+
+        place-items: center;
         top: 30.5%;
         border-radius: 15px;
         margin-top: 38%;

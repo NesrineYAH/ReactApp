@@ -2,7 +2,9 @@
 @mixin body-position {
   min-width: $Wmin;
   max-width: $Wmax;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 @mixin linear-cards {
