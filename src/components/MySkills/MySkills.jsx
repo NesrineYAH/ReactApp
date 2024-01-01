@@ -4,18 +4,13 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
-import BlobCloud from "../BlobCloud/BlobCloud";
-
-
-//import { useEffect, useRef } from "react";
 import { FaCogs } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi2";
 import { FaComment } from "react-icons/fa";
 import DownloadBtn from '../Download/download';
-//import { useTranslation } from "react-i18next";
 import '../../i18n';
-import devine from "../../assets/images/bakground/deveineBGR.png";
-//import { gsap } from "gsap";
+//import devine from "../../assets/images/bakground/deveineBGR.png";
+
 
 
 
@@ -200,7 +195,7 @@ const MySkills = () => {
                             <span style={{ direction : lang === "ar" ? "rtl" : "rtl"}}
                             ref={textRef}><span className='display-dots'>?</span>
                                 <span className='display-dots'>?</span><span className='display-dots'>?</span></span>
-                                    <img src={devine} alt='image devine' className='SoftsSkills__img' />       
+                                    {/* <img src={devine} alt='image devine' className='SoftsSkills__img' />        */}
                         </h6>
              
                         <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWords")} </strong>
@@ -209,7 +204,6 @@ const MySkills = () => {
 
 
                     <div className='softSkills'>
-
                         <div className='softSkills__item'  >
                             <FaCogs className="fa" />
                             <h5 className='softSkills__title'>{t("Competence.softSkills__titleI")}</h5>

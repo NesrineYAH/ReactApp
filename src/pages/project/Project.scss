@@ -31,10 +31,17 @@
         @include flex-center;
         row-gap: 30px;
 
-
         p {
             width: 90%;
             font-size: 14px;
+        }
+
+        &__carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-position: center;
         }
     }
 
@@ -115,8 +122,17 @@
         }
     }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+        &__carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-position: center;
+        }
+    }
 
-    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         width: 90%;
         margin: 100px auto;
         @include flex-center;

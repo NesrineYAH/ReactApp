@@ -9,9 +9,8 @@
 
     .SkillsContainer {
         width: 90%;
-        margin-top: -4rem;
         padding: 5vh 0;
-   
+
 
         &__box {
             display: flex;
@@ -56,37 +55,33 @@
         }
 
         &__blob {
-            width: 82%;
+            width: 94%;
+            margin-top: 12%;
+            padding-left: 2rem;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
+            //   align-items: center;
         }
 
         .SoftsSkills {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 82%;
+            width: 86%;
+
 
             &__Intro {
                 font-weight: 800;
-                font-size: 22px;
+                font-size: 21px;
+                margin-bottom: 74px;
             }
+
             &__IntroP {
                 font-weight: 800;
             }
 
-            &__img {
-                height: 80px;
-                width: 80px;
-                position: relative;
-                left: calc(100% - 2vmin);
-                top: calc(100% - 2vmin);
-            }
-
             &__p {
-                font-size: 15px;
+                font-size: 13px;
                 margin-bottom: 22px;
                 margin-top: -64px;
                 margin-left: 12px;
@@ -101,7 +96,6 @@
             &__item {
                 display: flex;
                 flex-direction: row;
-                //justify-content: space-around;
                 font-weight: 500;
             }
 
@@ -128,6 +122,7 @@
 
     }
 
+
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         .SkillsContainer {
             max-width: 92%;
@@ -138,18 +133,25 @@
             margin-right: 3%;
 
 
+
+
+
             &__box {
-                width: 50%;
+                width: 64%;
+
             }
 
             &__blob {
-                width: 32%;
+                width: 50%;
                 margin-top: 10%;
             }
 
             .SoftsSkills {
-                &__img {
-                    width: 80px;
+                width: 80%;
+
+                &__Intro {
+                    width: 100%;
+
                 }
             }
         }
@@ -157,7 +159,7 @@
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         max-width: 92%;
-        width: 90%;
+        width: 92%;
         height: auto;
         border-radius: 15px;
         margin-bottom: -50px;
@@ -166,28 +168,26 @@
 
             width: 92%;
             margin-top: 4rem;
-            padding-left: 5vh;
-            padding-left: 5vh;
+            margin-left: 4rem;
             display: flex;
             flex-direction: row;
             justify-content: space-arround;
-            column-gap: 18%;
+            column-gap: 22%;
             margin-right: 7%;
 
             &__box {
-                width: 45%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
 
 
                 .box {
+                    width: 100%;
                     padding: 0 1rem 0 2rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-
-
 
                     &__title {
                         text-align: center;
@@ -223,7 +223,7 @@
             }
 
             &__blob {
-                width: 32%;
+                width: 45%;
                 margin-top: 8%;
                 display: flex;
                 flex-direction: column;
@@ -234,14 +234,14 @@
             .SoftsSkills {
                 &__Intro {
                     font-weight: 800;
-                    font-size: 22px;
-                    display: flex;
-                    flex-direction: row;
-                    width: 600px;
+                    font-size: 20px;
+                    width: 100%;
+                    margin-bottom: 75px;
                 }
 
                 &__IntroP {
                     font-weight: 800;
+
                 }
 
                 &__img {
@@ -249,16 +249,16 @@
                     width: 120px;
                     display: flex;
                     flex-direction: flex-end;
-                    margin-left: 88px;
-
+                    //  margin-left: 100px;
+                    position: absolute;
+                    right: 12%;
                 }
 
                 &__p {
                     font-size: 15px;
-                    margin-bottom: 22px;
+                    margin-bottom: 20px;
                     margin-top: -64px;
                     margin-left: 12px;
-
                 }
             }
 
