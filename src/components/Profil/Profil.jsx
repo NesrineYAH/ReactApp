@@ -1,10 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Biographie from "../../Containers/Biographie/Biographie";
-import photoImene from "../../assets/images/bakground/imeneYahiaoui.webp";
-//import photoImeneMobile from "../../assets/images/imeneikhlef.webp";        data-aos="zoom-in-up"
-//import AOS from "aos";
-//import "aos/dist/aos.css";
+import photo from "../../assets/images/bakground/deveine.avif";
+
 
 const Profil = () => {
     const { t } = useTranslation();
@@ -14,7 +12,7 @@ const Profil = () => {
     <div className="Profil__container">
      <Biographie />  
     <div className="container_photo">       
-        <img src={photoImene} alt={t("photo_alt")} />
+        <img src={photo} alt={t("photo_alt")} />
    </div>
      </div>
     </section>

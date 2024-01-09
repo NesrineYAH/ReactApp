@@ -9,7 +9,7 @@ import { HiUserGroup } from "react-icons/hi2";
 import { FaComment } from "react-icons/fa";
 import DownloadBtn from '../Download/download';
 import '../../i18n';
-//import devine from "../../assets/images/bakground/deveineBGR.png";
+
 
 
 
