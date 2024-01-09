@@ -49,7 +49,7 @@ console.log(e);
          <div className="project__header">
         <a href="/">
         <IoArrowBackOutline className="project__iconeBack"
-        onMouseOver={ ({ target }) =>          // à voir onMouseOver
+        onMouseOver={ ({ target }) =>         
         (target.style.color = "var(--background_icons)")
        }
        onMouseOut={({ target })=>

@@ -8,6 +8,7 @@ import "../../i18n";
 
 const TxtToDisplay = () => {
   const { t } = useTranslation();
+  
   const [text1] = useTypewriter({
     words: [
       t('presentation.h1Text')
@@ -34,32 +35,34 @@ const TxtToDisplay = () => {
 TxtToDisplay.propTypes = {
   t: PropTypes.func.isRequired,
 };
-
 const About = () => {
   const { t } = useTranslation();
-  const [toRotate] = useTypewriter({
+  const lang = localStorage.getItem("i18nextLang");
+  const [text] = useTypewriter({
     words: [
-      t('world !'),
-      t('Visiteurs !'), 
-      t('Recruteurs !')
+      t('world'),
+      t('Visiteurs'), 
+      t('Développeurs')
+
     ],
     loop: 0,
     typeSpeed: 120,
     deleteSpeed: 80
   })
-  
+
   return (
     <section>
       <div id="About">
         <div className="presentation">
-          <p>{t('lan')} {' '}
-          <span period={3000}>{toRotate}</span>
-          <Cursor  cursorColor='navy' />
+          <p  style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '19px'}}>
+            {t('lan')} {' '}
+            <span period={3000}>{text}</span>
+            <Cursor cursorColor='navy' />
           </p>
-           <TxtToDisplay />   
-       <button className="glow-on-hover">
-       <a href={t('Profil_path')} >{t('txtInfo')}</a>
-        </button>         
+          <TxtToDisplay />
+          <button className="glow-on-hover">
+            <a href={t('Profil_path')}>{t('txtInfo')}</a>
+          </button>
         </div>
       </div>
     </section>

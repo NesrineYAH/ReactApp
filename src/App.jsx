@@ -7,8 +7,9 @@ import Error from "./pages/PageError/PageError";
 import Project from "./pages/Project/Project";
 import "./App.scss";
 import Certification from "./pages/Certification/Certification";
-import loader from 'react-loader-spinner';
-//import { motion } from "framer-motion"
+//import { ClipLoader } from 'react-spinners';
+import { SyncLoader   }  from 'react-spinners';
+import { css } from "@emotion/react";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,22 +21,24 @@ class App extends React.Component {
     window.location.replace("/");
   };
   componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1000); 
+      }
 
-setTimeout(() => {
-  this.setState({ loading: false });
-}, 1000); 
+ render() {
+   const { loading } = this.state; 
+   const spinTransition = {
+    loop: Infinity,
+    ease: "linear",
+    duration: 1,
   }
-
-
-  render() {
-   const { loading } = this.state;
-  
-
   return (  
     <>
     <div className="App" >
     {loading ? (
-         <loader type="TailSpin"  className='TailSpin' />
+         <SyncLoader type="TailSpin" className='TailSpin' size={15}  color="#9356DC" 
+           animate={{ rotate: 360 }} transition={spinTransition} />   
       ) :(
        <div className="main">
       <BrowserRouter>
@@ -50,8 +53,6 @@ setTimeout(() => {
      <Footer />
       </div>
       )}       
-    
-   
      </div>       
   </>
   );

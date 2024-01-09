@@ -1,8 +1,6 @@
 .dark_mode {
     margin-left: 0px;
-    // position: absolute;
-    // right: 11%;
-    // top: 0.30%;
+
 }
 
 .dark_mode_label {
@@ -43,7 +41,8 @@
 }
 
 .dark_mode_input:checked+.dark_mode_label:after {
-    left: 62px;
+    left: 67px;
+    top: 2px;
     transform: translateX(-200%);
     background: linear-gradient(180deg, #777, #3a3a3a);
     z-index: 10;

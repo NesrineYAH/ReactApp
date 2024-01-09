@@ -1,17 +1,13 @@
 .contact {
     margin-bottom: 250px;
     position: relative;
-    min-height: 100vh;
+    height: 140vh;
 
     .contact-wrapper {
-        // display: flex;
-        // flex-direction: column !important;
-        // margin: 0 auto !important;
         height: auto;
         padding: 20px;
         max-width: 90%;
         width: 90%;
-        //  height: 100%;
         margin: 20px auto;
         border-radius: 20px;
         transition: .2s linear;
@@ -34,6 +30,23 @@
         margin-bottom: 45px;
     }
 
+    .send-text {
+        display: block;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        background-color: var(--body_background);
+        border-radius: 20px;
+        padding: 6px 20px;
+        border: 1px var(--body_color) solid;
+        border: 1px var(--lang_background) solid;
+        background-color: var(--body_color);
+        color: navy;
+    }
+
+    .send-text:hover {
+        box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+    }
+
     .contactList__conatiner {
         .contactList {
             grid-gap: 25px;
@@ -54,6 +67,17 @@
                 cursor: pointer;
             }
 
+            &__a {
+                text-decoration: none;
+                font-size: 16px;
+                color: var(--link_color);
+            }
+
+            &__span {
+                font-size: 14px;
+
+            }
+
             .Noc {
                 width: 28px;
                 height: 28px
@@ -69,7 +93,7 @@
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         .contactList__conatiner {
-            margin-top: 0px;
+            margin-top: -50px;
         }
     }
 
@@ -83,7 +107,6 @@
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
-            //   position: relative;
             padding: 20px;
             max-width: 90%;
             grid-gap: 20%;
@@ -92,14 +115,13 @@
             align-items: center;
             justify-content: center;
             margin: 20px auto;
-            border-radius: 20px;
+            border-radius: 17px;
             transition: .2s linear;
             box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 rgba(0, 0, 0, .2);
 
         }
 
         .form-horizontal {
-
             width: 437px;
             min-width: 437px;
             display: flex;
@@ -108,27 +130,34 @@
             grid-gap: 14px;
             padding: 20px;
             box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
-            border-radius: 20px;
-
+            border-radius: 17px;
         }
 
         .form-control,
         textarea {
             max-width: 470px;
             letter-spacing: 1px;
-            background-color: var(--body_background);
-            border: 2px solid navy;
-            box-shadow: var(--box_br);
+            background-color: var(--body_color);
             width: 100%;
+            border-radius: 4px;
+            //    background-color: var(--body_background);
+            box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
 
         }
 
         .form-horizontal label {
-            color: var(--link_color);
+            color: var(--skill_color);
             width: 100%;
-
+            opacity: 1;
         }
 
+        .form-control::placeholder {
+            background-color: var(--body_background);
+            font-size: 14px;
+            border: 3px solid var(--body_background);
+            color: var(--skill_color);
+            box-shadow: var(box-shadow);
+        }
 
         .error {
             font-size: 12px;
@@ -140,7 +169,6 @@
             display: block;
             margin-top: 10px;
             letter-spacing: 2px;
-            // color: var(--body_color);
             background-color: var(--body_background);
             border-radius: 20px;
             padding: 6px 20px;
@@ -155,12 +183,13 @@
         }
 
         .contactList__conatiner {
-            max-width: 400px;
+            max-width: 420px;
 
             .contactList {
                 @include ItemColumn;
                 grid-gap: 19px;
                 list-style-type: none;
+                padding-left: 0;
 
                 &__item {
                     display: flex;
@@ -189,8 +218,8 @@
 
                 &__a {
                     text-decoration: none;
-                    // color: var(--body_color);
                     font-size: 16px;
+                    color: var(--link_color);
                 }
             }
         }

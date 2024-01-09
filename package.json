@@ -5,6 +5,7 @@
    "private": true,
    "dependencies": {
       "@emailjs/browser": "^3.11.0",
+      "@emotion/react": "^11.11.3",
       "@fortawesome/fontawesome-svg-core": "^6.5.1",
       "@fortawesome/free-solid-svg-icons": "^6.5.1",
       "@fortawesome/react-fontawesome": "^0.2.0",
@@ -37,6 +38,7 @@
       "react-router-dom": "^6.11.1",
       "react-scripts": "^5.0.1",
       "react-simple-typewriter": "^5.0.1",
+      "react-spinners": "^0.13.8",
       "react-translate": "^7.0.1",
       "redux-persist": "^6.0.0",
       "regex": "^0.1.1",

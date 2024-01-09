@@ -193,9 +193,9 @@ const MySkills = () => {
                         <h6 
                             className='SoftsSkills__Intro'>{t("Competence.question")}
                             <span style={{ direction : lang === "ar" ? "rtl" : "rtl"}}
-                            ref={textRef}><span className='display-dots'>?</span>
-                                <span className='display-dots'>?</span><span className='display-dots'>?</span></span>
-                                    {/* <img src={devine} alt='image devine' className='SoftsSkills__img' />        */}
+                            ref={textRef}><span className='display-dots'>{t('dot')}</span>
+                                <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
+                                   
                         </h6>
              
                         <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWords")} </strong>

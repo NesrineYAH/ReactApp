@@ -59,7 +59,9 @@
   "lan": "Welcome",
   "world": "World ",
   "Visiteurs": "Visitors",
-  "Recruteurs": "Recruiters",
+  "Recruteur": "Recruiters",
+  "Développeurs": "Developer",
+  "dot":"?",
 
   "presentation": {
     "h1Text" : "Nesrine BEKKAR YAHOUM",

@@ -8,13 +8,13 @@
     border: 2px solid #433871;
     background-color: #433871;
     box-shadow: 0px 0px 0px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
-    // background-color: var(--body_backg);
     margin-bottom: 22px;
 
     p {
         font-size: 14px;
         text-align: center;
         color: #fff;
+        font-weight: 700;
     }
 
     &__text {
@@ -23,6 +23,7 @@
         color: #fff;
         letter-spacing: .1rem;
         background-color: transparent;
+        font-weight: 700;
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
@@ -39,13 +40,13 @@
         // background-color: var(--body_backg);
 
         p {
-            font-size: 14px;
+            font-size: 16px;
             text-align: center;
             color: #fff;
         }
 
         &__text {
-            font-size: 14px;
+            font-size: 16px;
             text-align: center;
             color: #fff;
             letter-spacing: .1rem;

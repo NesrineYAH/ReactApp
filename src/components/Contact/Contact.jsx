@@ -176,7 +176,7 @@ const Contact = () => {
               <FaPhoneFlip className="contactList__i" />
               <span className="contactList__span phone">
                 <a itemProp="telephone" href="00769551422" className="contactList__a">
-                  (33) 7 69 55 14 22
+                  (33) 7 69 55 14 22 
                 </a>
               </span>
             </li>
