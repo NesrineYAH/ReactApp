@@ -1,7 +1,7 @@
 #About {
     @include flex-column;
     width: 100%;
-    height: 88vh;
+    height: 100vh;
 
     .presentation {
         width: 90%;
@@ -12,7 +12,7 @@
         background-position: center;
         background-size: auto;
         background-repeat: no-repeat;
-        height: 500px;
+
     }
 
     .wrap {

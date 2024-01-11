@@ -2,10 +2,8 @@
     @include flex-column;
 
     .card {
-        border-radius: 15px;
-        //   height: 323px;
+        border-radius: 10px;
         height: 260px;
-        // width: 370px;
         width: 90%;
         cursor: pointer;
 
@@ -27,10 +25,10 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // border-radius: 50px 0;
         border-radius: 15px;
         backface-visibility: hidden;
         overflow: hidden;
+        border-radius: 10px;
 
         p {
             font-size: 14px;
@@ -49,6 +47,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+
     }
 
     .card_title {
@@ -58,7 +58,6 @@
         transition: inset .3s .3s ease-out;
         font-weight: 400;
         text-transform: uppercase;
-        //color: var(--body_color);
         color: #0000;
         font-size: 25px;
         font-weight: bold;
@@ -90,16 +89,13 @@
         @include flexCenterRow;
         flex-wrap: wrap;
         gap: 30px;
-        padding: 0 35px 0 35px;
+        padding: 0 80px 0 80px;
 
 
         .card {
-
             border-radius: 15px;
             height: 320px;
-            //  width: 370px;
-            width: 370px;
-
+            width: 380px;
             position: relative;
             transform-style: preserve-3d; // à revenir
             background: 0 0;
@@ -145,6 +141,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+
         }
 
         .card_title {
@@ -154,7 +152,6 @@
             transition: inset .3s .3s ease-out;
             font-weight: 400;
             text-transform: uppercase;
-            //color: var(--body_color);
             color: #0000;
             font-size: 25px;
             font-weight: bold;

@@ -140,23 +140,23 @@
             background-color: var(--body_color);
             width: 100%;
             border-radius: 4px;
-            //    background-color: var(--body_background);
             box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
+            border: 2px solid var(--link_color);
 
         }
 
         .form-horizontal label {
             color: var(--skill_color);
-            width: 100%;
-            opacity: 1;
+            width: 100;
+
         }
 
         .form-control::placeholder {
-            background-color: var(--body_background);
             font-size: 14px;
-            border: 3px solid var(--body_background);
             color: var(--skill_color);
-            box-shadow: var(box-shadow);
+            background-color: var(--body_background);
+
+
         }
 
         .error {

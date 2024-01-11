@@ -6,23 +6,24 @@
 
   "home_title": "الصفحة الرئيسية",
   "home_id": "الصفحةالرئيسية",
-  "home_path": "#الصفحةالرئيسية",
+  "#home_path": "#الصفحةالرئيسية",
 
   "Profil_title": "لمحة",
   "Profil_id": "لمحة",
-  "Profil_path": "/#لمحة",
+  "#Profil_path": "لمحة#/" ,
 
   "skills_title": "المهارات",
   "skills_id": "المهارات",
-  "skills_path": "/#المهارات",
+  "#skills_path": "/#المهارات",
   
   "portfolio_title": "معرض الأعمال",
   "portfolio_id": "معرضالاعمال",
-  "portfolio_path": "/#معرضالاعمال",
+  "#portfolio_path": "/#معرضالاعمال",
+  
 
   "service_title": "خدماتي",
   "service_id": "خدماتي",
-  "service_path": "/#خدماتي",
+  "#service_path": "/#خدماتي",
 
   "contact_title": "تواصل معنا",
   "contact_id": "تواصلمعنا",

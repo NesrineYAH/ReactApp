@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Biographie from "../../Containers/Biographie/Biographie";
-import photo from "../../assets/images/bakground/deveine.avif";
+import photo from "../../assets/images/bakground/imgIII.png";
 
 
 const Profil = () => {

@@ -4,21 +4,22 @@
 :root {
 
     //white-space: pre-line;
-    --body_background: $couleur-body;
-    //--body_background: $couleur-body;
+    // --body_background: $couleur-body;
     --body_color: #f3ebf6;
     --link_color: navy;
     --box_background: linear-gradient(#e9d3f1, #d4a9d6);
     --spark: 1.8s;
+
 }
 
 [data-theme="dark"] {
-    --body_background: #100733;
+    --body_background: #160f35;
     --body_color: #f3ebf6;
     --body_backg: #e9e2e2;
     --link_color: white;
     --lang_color: #695da1;
-    --lang_background: #433871;
+    --header_background: #433871;
+    --lang_background: rgb(67, 56, 113);
     --background_icons: #c996cc;
     --box-shadow: 8px 8px 8px 6px rgba(255, 255, 255, 0.327), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
     --box_br: -10px -10px 0px -20px rgba(236, 225, 231, 0.327), -4px -4px 1px 0 rgba(177, 190, 206, 0.5);
@@ -28,13 +29,13 @@
 }
 
 [data-theme="dark"] {
-    --body_background: #100733;
+    --body_background: #160f35;
     --box_background: linear-gradient(#8552c4, #916bbf);
     background: rgb(131, 58, 180);
     --background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%); //nouvea
     --body_header: #dcd7dd;
     --body_color: #e9e2e2;
-    --lang_color: #695da1;
+    --header_background: #433871;
     --lang_background: rgb(67, 56, 113);
     --background_icons: #c996cc;
     --hover: linear-gradient(45deg,
@@ -48,10 +49,14 @@
             #a084dc)
 }
 
+[data-theme="Light"] {
+    --header_background: #e6dae6;
+    --lang_background: #c996cc;
+}
+
 * {
     padding: 0;
     margin: 0;
-    // background-color: #e9e2e2;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     background-color: var(--body_background);
@@ -71,7 +76,6 @@ body {
     overflow-x: hidden;
     color: var(--body_color);
     background-color: var(--body_background);
-    // background-color: #e9e2e2;
     background-color: #fdf6f6;
     margin: 0 auto;
     color: var(--link_color);
@@ -79,6 +83,8 @@ body {
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
         max-width: 100%;

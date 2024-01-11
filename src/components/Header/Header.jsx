@@ -123,10 +123,10 @@ class Header extends Component {
                     {t("contact_title")}
                   </NavLink>
                 </li>
-                <li>
+                <li className="navbar_item slide7">
                   <DarkMode />
                 </li>
-                <li>
+                <li className="navbar_item slide8">
                   <Language />
                 </li>
               </ul>
