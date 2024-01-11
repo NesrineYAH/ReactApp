@@ -1,3 +1,0 @@
-if (__lo) {__lo.inputBuffer.push('<img src=\"https://ib.adnxs.com/pixie?pi=c5223f42-2cfe-4bb5-b11a-0ac9bd341822&e=PageView&script=0\" width=\"1\" height=\"1\" style=\"display:none\"/>');
-} else {document.writeln('<img src=\"https://ib.adnxs.com/pixie?pi=c5223f42-2cfe-4bb5-b11a-0ac9bd341822&e=PageView&script=0\" width=\"1\" height=\"1\" style=\"display:none\"/>');
-}

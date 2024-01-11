@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3857fe0b.css",
-    "main.js": "/static/js/main.e7eeb474.js",
-    "static/media/Capture d'écran skills.png": "/static/media/Capture d'écran skills.c4de8078610443f0c62d.png",
+    "main.css": "/static/css/main.bc47fc1f.css",
+    "main.js": "/static/js/main.6d89ba06.js",
+    "static/media/imgIII.png": "/static/media/imgIII.f126b22b3107b79a1991.png",
     "static/media/CV BEKKAR NESRINE YAHOUM.pdf": "/static/media/CV BEKKAR NESRINE YAHOUM.e77d8b558020cfe77916.pdf",
-    "static/media/NBYy2.png": "/static/media/NBYy2.f482a92ff5aab7a65274.png",
-    "static/media/imeneYahiaoui.webp": "/static/media/imeneYahiaoui.7421c0a4329760bd18f1.webp",
+    "static/media/NBY.png": "/static/media/NBY.3813c11935ae1d2be0b9.png",
     "index.html": "/index.html",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "main.3857fe0b.css.map": "/static/css/main.3857fe0b.css.map",
-    "main.e7eeb474.js.map": "/static/js/main.e7eeb474.js.map"
+    "main.bc47fc1f.css.map": "/static/css/main.bc47fc1f.css.map",
+    "main.6d89ba06.js.map": "/static/js/main.6d89ba06.js.map"
   },
   "entrypoints": [
-    "static/css/main.3857fe0b.css",
-    "static/js/main.e7eeb474.js"
+    "static/css/main.bc47fc1f.css",
+    "static/js/main.6d89ba06.js"
   ]
 }
