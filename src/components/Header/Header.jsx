@@ -1,11 +1,12 @@
 import react, { Component, useState } from "react";
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 import React from "react";
 import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 import NBY from "../../assets/images/logo/NBY.png";
+//import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -45,9 +46,9 @@ class Header extends Component {
   handleLinkClick = (event) => {
     const { hash } = event.currentTarget;
     setTimeout(() => {
-      const element = document.querySelector(hash);
+      const element = document.querySelector("hash");
       console.log({ hash });
-      // console.log(element);
+       console.log(element);
 
       if (element) {
         event.preventDefault();
@@ -62,7 +63,7 @@ class Header extends Component {
 
   render() {
     const { isTransparent, isMobile, showLinks, showMenu } = this.state;
-     const {handleClick} = this.props;
+    // const {handleClick} = this.props;
     const { t } = this.props;
     const lang = localStorage.getItem("i18nextLng");
 
@@ -70,7 +71,7 @@ class Header extends Component {
       this.setState({ showLinks: !this.state.showLinks });
     };
 
-    const matches = window.matchMedia("(max-width: 768px)").matches; //20/12 du 79 à 83
+    const matches = window.matchMedia("(max-width: 768px)").matches; 
     const handleToggleMenu = (e) => {
       e.preventDefault();
       this.setState({ showMenu: !this.state.showMenu });
@@ -94,34 +95,34 @@ class Header extends Component {
             <div className="nav-screen">
               <ul className="navbar__links">
                 <li className="navbar_item slide1">
-                  <NavLink to={t("home_path")} className="navbar_link"  onClick={this.handleLinkClick}>
+                  <a href={t("home_path")} className="navbar_link"  onClick={this.handleLinkClick}>
                     {t("home_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide2">
-                  <NavLink to={t("Profil_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                  <a href={t("Profil_path")} className="navbar_link" onClick={this.handleLinkClick}>
                     {t("Profil_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide3">
-                  <NavLink to={t("skills_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                  <a href={t("skills_path")} className="navbar_link" onClick={this.handleLinkClick}>
                     {t("skills_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide4">
-                  <NavLink to={t("portfolio_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                  <a href={t("portfolio_path")} className="navbar_link" onClick={this.handleLinkClick}>
                     {t("portfolio_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide5">
-                  <NavLink to={t("service_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                  <a href={t("service_path")} className="navbar_link" onClick={this.handleLinkClick}>
                     {t("service_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide6">
-                  <NavLink to={t("contact_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                  <a href={t("contact_path")} className="navbar_link" onClick={this.handleLinkClick}>
                     {t("contact_title")}
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="navbar_item slide7">
                   <DarkMode />
@@ -162,59 +163,50 @@ class Header extends Component {
                   <li>
                     <Language />
                   </li>
+                  
                   <li className="navbar_item slide1">
-                    <NavLink
-                      to={t("home_path")}
-                      className="navbar_link"
-                      onClick={this.handleLinkClick}
-                    >
-                      {t("home_title")}
-                    </NavLink>
+                    <a href={t("home_path")}  className="navbar_link" onClick={this.handleLinkClick}>{t("home_title")}
+                    </a>
                   </li>
                   <li className="navbar_item slide2">
-                    <NavLink
-                      to={t("Profil_path")}
-                      className="navbar_link"
-                      onClick={this.handleLinkClick}
-                    >
-                      {t("Profil_title")}{" "}
-                    </NavLink>
+                    <a href={t("Profil_path")} className="navbar_link" onClick={this.handleLinkClick}>{t("Profil_title")}
+                    </a>
                   </li>
                   <li className="navbar_item slide3">
-                    <NavLink
-                      to={t("skills_path")}
+                    <a
+                      href={t("skills_path")}
                       className="navbar_link"
                       onClick={this.handleLinkClick}
                     >
                       {t("skills_title")}{" "}
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="navbar_item slide4">
-                    <NavLink
-                      to={t("portfolio_path")}
+                    <a
+                      href={t("portfolio_path")}
                       className="navbar_link"
                       onClick={this.handleLinkClick}
                     >
                       {t("portfolio_title")}
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="navbar_item slide5">
-                    <NavLink
+                    <a
                       to={t("service_path")}
                       className="navbar_link"
                       onClick={this.handleLinkClick}
                     >
                       {t("service_title")}
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="navbar_item slide6">
-                    <NavLink
-                      to={t("contact_path")}
+                    <a
+                      href={t("contact_path")}
                       className="navbar_link"
                       onClick={this.handleLinkClick}
                     >
                       {t("contact_title")}
-                    </NavLink>
+                    </a>
                   </li>
                  
                 </ul>

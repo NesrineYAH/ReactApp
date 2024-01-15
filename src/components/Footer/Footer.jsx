@@ -10,7 +10,7 @@ export default function Footer() {
       <h2 className="footer__text-copyright">{t("footer")}</h2>
        <h3 className="TitreH3">{t('plan')} || {t('Mentions')}  </h3>    
       <a className="fa" title="Go to top" href="#home">
-      <FaChevronUp   id="toTop "/>
+      <FaChevronUp id="toTop "/>
       </a>
     </footer>
   );

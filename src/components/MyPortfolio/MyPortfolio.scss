@@ -1,12 +1,12 @@
 .myPortfolio {
     @include flex-column;
+    gap: 10px;
 
     .card {
         border-radius: 10px;
         height: 260px;
         width: 90%;
         cursor: pointer;
-
 
         &:hover {
             .front {
@@ -17,80 +17,74 @@
                 transform: rotateY(0deg);
             }
         }
-    }
 
-    .card-face {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        backface-visibility: hidden;
-        overflow: hidden;
-        border-radius: 10px;
-
-        p {
-            font-size: 14px;
-            margin-bottom: 0;
-            padding: 0 25px 0 25px;
-            display: block;
-            text-align: center;
+        .card-face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            backface-visibility: hidden;
             overflow: hidden;
+            border-radius: 10px;
+
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+                padding: 0 25px 0 25px;
+                display: block;
+                text-align: center;
+                overflow: hidden;
+            }
         }
-    }
 
-    .front img {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-
-    }
-
-    .card_title {
-        position: absolute;
-        inset: auto auto 30px 30px;
-        margin: 0;
-        transition: inset .3s .3s ease-out;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #0000;
-        font-size: 25px;
-        font-weight: bold;
-        z-index: 1;
-        background-color: rgba(240, 248, 255, .12);
-        padding: 20px;
-        color: var(--body_color);
-    }
-
-    .back {
-        transform: rotateY(180deg);
-        @include flex-column;
-
-        .back h2 {
-            padding: 0;
-            font-size: 18px;
-            margin: 0
+        .front img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
+
+        .card_title {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset .3s .3s ease-out;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #0000;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 1;
+            background-color: rgba(240, 248, 255, .12);
+            padding: 20px;
+            color: var(--body_color);
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            @include flex-column;
+
+            .back h2 {
+                padding: 0;
+                font-size: 18px;
+                margin: 0
+            }
+        }
+
     }
 
-    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
-        width: 98%;
-    }
-
-    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+    @media screen and (min-width: 900px) and (max-width:$Mmax) {
         width: 100%;
         height: auto;
         margin: 30px auto;
         @include flexCenterRow;
         flex-wrap: wrap;
         gap: 30px;
-        padding: 0 80px 0 80px;
-
+        padding: 0 60px 0 60px;
 
         .card {
             border-radius: 15px;
@@ -172,7 +166,4 @@
             }
         }
     }
-
-
-
 }

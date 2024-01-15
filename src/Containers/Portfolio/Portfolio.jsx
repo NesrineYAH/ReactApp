@@ -10,7 +10,8 @@ const Portfolio = () => {
       <h2 className="titlePortfolio"> {t("portfolio_title")}</h2>
       <MyPortfolio />
     </div>
-    
+    <p className="CertiPrg"> {t("TxtCertiPrg.p")}
+          <a  href={`../Certification/#certifications`} className="Link" >-- {t("TxtCertiPrg.lien")} --  </a></p>
  </section>
  
   );

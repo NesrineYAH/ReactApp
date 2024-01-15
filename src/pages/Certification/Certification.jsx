@@ -27,16 +27,16 @@ useEffect(()=> {
     };
     fetchCertifications();
 }, [])
-
+const { t } = useTranslation();
     return (
+        // style={{ direction: lang === "ar" ? "rtl" : "ltr", marginRight:'2%'}}
         <section id="certifications">
-            <h3 className='certifications__Title'>Mes certifications</h3>
-
+            <h3 className='certifications__Title'>{t('rotate')}</h3>
 
 
         <div className='Container'>
         {certifications.map((certification) => (
-           // <div id={("certification.id")} className='Container__dd'>   
+     
         <figure className='Container__card'  key={certification.id}>
             <img src={certification.image} alt={certification.alt} className='Container__card__img' />
             <div className='overly' key={certification.id}>
@@ -45,7 +45,7 @@ useEffect(()=> {
             </a>
             </div>
           </figure>    
-      // </div>
+
       
         ))}    
 

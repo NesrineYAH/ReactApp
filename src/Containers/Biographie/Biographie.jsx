@@ -12,7 +12,7 @@ const Biographie = () => {
       itemScope
       itemType="http://schema.org/Person"
       >
-       <h4 className='Biographie__h4'>
+       <h4 className='Biographie__titre'>
        {" "}
         {t("main_heading.static_desc")} {t("main_heading.dynamic_desc")}
         </h4> 

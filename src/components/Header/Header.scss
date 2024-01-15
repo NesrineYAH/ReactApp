@@ -70,9 +70,6 @@
             }
 
             .navbar-menu {
-                //   display: flex;
-                // flex-direction: column;   
-                margin-top: 6px;
                 padding: 0;
                 position: absolute;
                 right: 0;
@@ -82,12 +79,11 @@
                 transition: transform .2s ease-in-out;
                 transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
                 width: 100vw;
-                height: 92vw;
+                height: 96vw;
                 background-color: var(--header_background);
 
                 &.active {
                     transform: translateX(0);
-                    //     @include flex-column;
                     background-color: var(--header_background);
                     opacity: 1;
                     cursor: pointer;
@@ -105,7 +101,7 @@
             color: inherit;
             cursor: pointer;
             border-radius: 50%;
-            margin: 15px 0px 10px 15px;
+            margin: 15px 10px 10px 15px;
 
             &__img {
                 border-radius: 50px;
@@ -180,14 +176,12 @@
                 justify-content: space-between;
                 color: navy;
                 text-decoration: none;
-                //  margin-right: 18px;   --skill_color: #e7d2ee;
                 line-height: 300%;
 
 
 
                 ::before {
                     content: "";
-
                     position: absolute;
                     height: 2px;
                     width: 0;

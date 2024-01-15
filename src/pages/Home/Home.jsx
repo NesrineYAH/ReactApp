@@ -19,8 +19,7 @@ const Home = () => {
           <Profil />        
           <MySkills/>
           <Portfolio />
-          <p className="CertiPrg"> {t("TxtCertiPrg.p")}
-          <a  href={`../Certification/#certifications`} className="Link" >-- {t("TxtCertiPrg.lien")} --  </a></p>
+    
           <Services />
          <TypingAnimation/> 
           <Contact/>

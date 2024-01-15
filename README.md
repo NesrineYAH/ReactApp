@@ -1,6 +1,6 @@
 🌟 Portfolio BEKKAR YAHOUM Nesrine
 
-ous pouvez accéder à mon site à l'adresse suivante : https://nesrinebekkar.com<🎊
+ous pouvez accéder à mon site à l'adresse suivante : https://nesrinebekkar.com 🎊
 
 Ce projet est mon portfolio personnel, conçu pour présenter mes compétences, projets et expériences professionnelles. Il a été développé en utilisant les technologies suivantes :
 

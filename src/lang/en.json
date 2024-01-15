@@ -2,7 +2,7 @@
   "title": "Nesrine BEKKAR YAHOUM ",
   "description": "portfolio Nesrine BEKKAR YAHOUM Front-end and Fullstack web developer.in Ile De France",
   "photo_alt": "Nesrine BEKKAR YAHOUM",
-  "logo_alt": "NBYy2",
+  "logo_alt": "portfolio's logo",
 
   "home_title": "Home",
   "home_id": "Home",
@@ -22,7 +22,7 @@
 
   "service_title": "Services",
   "service_id": "services",
-  "service__path": "/#Services",
+  "service_path": "/#Services",
 
   "contact_title": "Contact",
   "contact_id": "Contact",
@@ -31,7 +31,7 @@
   "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM  ",
   "Mentions": "Legal Notice",
   "plan": "Sitemap",
-  
+
   "Download": "Download my CV",
   "all": "All",
   "software": "Software",
@@ -49,6 +49,7 @@
   "WEB": "WEB",
   "Réferencement Naturel SEO" :"Search Engine Optimization",
   "Veille technologique": "Technology surveillance ",
+  "rotate":"My Certifications",
 
   "le développement": "the development",
   "la Programmation" :"the programming",
