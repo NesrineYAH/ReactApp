@@ -1,6 +1,6 @@
 import react from 'react';
 import { useTranslation } from "react-i18next";
-import  cv from "./CV BEKKAR NESRINE YAHOUM.pdf";
+import  cv from "./Nesrine BEKKAR.pdf";
 
 const DownloadBtn = () => {
   const { t } = useTranslation();
