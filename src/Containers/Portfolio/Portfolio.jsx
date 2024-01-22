@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import MyPortfolio from "../../components/MyPortfolio/MyPortfolio";
+// 
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -10,8 +11,10 @@ const Portfolio = () => {
       <h2 className="titlePortfolio"> {t("portfolio_title")}</h2>
       <MyPortfolio />
     </div>
-    <p className="CertiPrg"> {t("TxtCertiPrg.p")}
-          <a  href={`../Certification/#certifications`} className="Link" >-- {t("TxtCertiPrg.lien")} --  </a></p>
+  <div className="CertiPrg">
+    <p>{t("TxtCertiPrg.p")} </p>
+   <a className="CertiPrg__a"  href={`../Certification/#certifications`}  target="_blank" rel="noopener noreferrer">-- {t("TxtCertiPrg.lien")} --  </a> 
+   </div>
  </section>
  
   );

@@ -103,7 +103,6 @@ const MySkills = () => {
             </div>
             <div className="SkillsContainer">
                 <div className="SkillsContainer__box">
-
                     <div className="box">
                         <h4 className="box__title">Front-end</h4>
                         <div className="skillItem">
@@ -185,7 +184,6 @@ const MySkills = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="SkillsContainer__blob" >

@@ -54,18 +54,23 @@
         }
 
         &__blob {
-            width: 94%;
+            width: 92%;
+            margin: auto;
+            max-width: auto;
             margin-top: 12%;
             padding-left: 2rem;
+            padding-right: 1rem;
             display: flex;
             flex-direction: column;
+            background-position: center;
         }
 
         .SoftsSkills {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 94%;
+            justify-content: center;
+            width: 90%;
 
 
             &__Intro {

@@ -1,6 +1,7 @@
 #Services {
-    height: auto;
+    height: 100vh;
     @include flex-center;
+    //   margin-top: 2.5rem;
 
     .Service__Container {
         width: 90%;

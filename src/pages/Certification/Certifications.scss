@@ -1,23 +1,24 @@
  #certifications {
-     width: 90%;
-     height: 150vh;
+     width: 80%;
+     margin: auto;
+     position: relative;
+     min-height: 140vh;
      border: 2px solid #433871;
      background-color: #433871;
      box-shadow: 0px 0px 2px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
      background-color: var(--body_background);
      border-radius: 5px;
-     margin-top: 10%;
-     margin-bottom: 10%;
-
-
-
+     margin-top: 50%;
+     margin-bottom: 30%;
+     flex-grow: 1;
+     background-position: center;
 
 
      @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
-
+         width: 70%;
+         margin: auto;
          position: relative;
-         left: 4.8%;
-         margin-top: 10%;
+         margin-top: 12%;
          height: 140vh;
 
      }

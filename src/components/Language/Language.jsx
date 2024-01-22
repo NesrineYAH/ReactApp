@@ -11,8 +11,7 @@ const lang = localStorage.getItem("i18nextLng");
 document.body.dir = i18n.dir();         {/*29/12 à 23:15*/}
 
     return (
-        <div>
-    
+        <div className='Language'>
             <select  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}

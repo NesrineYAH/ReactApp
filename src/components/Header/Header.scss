@@ -18,17 +18,18 @@
             font-weight: 600;
             cursor: pointer;
             width: 100%;
+            background-color: transparent;
 
-
+            ul,
+            li,
             a {
                 color: var(--link_color);
                 text-decoration: none;
                 font-weight: 700;
-                //  background-color: var(--lang_background);
+                background-color: transparent;
             }
 
             .navbar__link {
-
                 color: var(--link_color);
 
             }
@@ -40,6 +41,8 @@
                 justify-content: center;
                 margin-right: 20px;
                 line-height: 280%;
+                margin-bottom: -5px;
+
             }
         }
 
@@ -79,7 +82,7 @@
                 transition: transform .2s ease-in-out;
                 transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
                 width: 100vw;
-                height: 96vw;
+                height: 88vw;
                 background-color: var(--header_background);
 
                 &.active {
@@ -88,6 +91,7 @@
                     opacity: 1;
                     cursor: pointer;
                     width: 100%;
+                    z-index: 1;
 
                 }
             }

@@ -1,3 +1,7 @@
+.Language {
+    background-color: transparent;
+}
+
 .btn_lang {
     border: 1.5px solid var(--link_color);
     border: px solid #2e2b2b00;
@@ -12,6 +16,7 @@
     transition: all .2s;
     width: 52px;
     height: 25px;
+    background-color: var(--header_background);
 
     &:hover {
         border: rgb(24, 2, 35);
@@ -19,6 +24,6 @@
         border-color: var(--lang_background);
         color: var(--link_color);
         font-weight: 500;
-        //text-shadow: ;
+
     }
 }
