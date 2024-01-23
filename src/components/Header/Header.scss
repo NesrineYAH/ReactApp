@@ -3,7 +3,7 @@
     height: 100%;
     @include flex-column;
     z-index: 1;
-    //  background-color: var(--lang_background);
+
 
 
     .navbar_header {
@@ -67,7 +67,7 @@
                     color: var(--body_color);
                     border: 2px solid var(--body_background);
                     border: 2px solid navy;
-                    width: 6.4%;
+                    width: 22px;
                     margin-top: 24px;
                 }
             }
@@ -82,7 +82,7 @@
                 transition: transform .2s ease-in-out;
                 transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
                 width: 100vw;
-                height: 88vw;
+                height: 380px;
                 background-color: var(--header_background);
 
                 &.active {

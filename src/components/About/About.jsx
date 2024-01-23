@@ -27,8 +27,8 @@ const TxtToDisplay = () => {
   })
   return (
     <div className="txt-display">
-      <h1 className="hidden">{text1}</h1>
-      <h2 className="hidden">{text2}</h2>
+      <h1 className="hiddenI">{text1}</h1>
+      <h2 className="hiddenII">{text2}</h2>
     </div>
   );
 };
@@ -54,7 +54,7 @@ const About = () => {
     <section>
       <div id="About">
         <div className="presentation">
-          <p  style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '19px'}}>
+          <p  style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '18px'}}>
             {t('lan')} {' '}
             <span period={3000}>{text}</span>
             <Cursor cursorColor='navy' />
