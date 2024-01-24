@@ -4,7 +4,7 @@
 
     .CertiPrg {
         width: 100%;
-        height: 120px;
+        height: 110px;
         border: 2px solid #433871;
         background-color: #433871;
         box-shadow: 0px 0px 0px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
@@ -13,15 +13,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        //background-color: transparent;
-        //  z-index: 100;
+
 
         p {
             text-align: center;
             font-size: 12px;
             font-weight: 600;
             overflow: hidden;
-            color: #fff;
+            color: #ffffff;
             word-spacing: 3px;
             margin-bottom: 2.5px;
             background-color: transparent;
@@ -43,9 +42,7 @@
                 font-size: 12px;
             }
         }
-
     }
-
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         height: 180vh;
@@ -55,21 +52,21 @@
             width: 100%;
             padding: 10px 45px 0 45px;
             height: 80px;
+
         }
 
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         width: 100%;
-        height: 165vh;
-        background-color: var(--body_background);
+        height: 150vh;
         border-radius: 20px;
         transition: .2s linear;
 
 
 
         .portfoloi {
-            padding: 60px;
+            //padding: 60px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -88,6 +85,7 @@
             cursor: pointer;
             padding: 15px 45px 0 45px;
 
+
             p {
                 text-align: center;
                 font-size: 14px;
@@ -95,7 +93,6 @@
                 overflow: hidden;
                 color: #fff;
                 word-spacing: 3px;
-
             }
 
             &__a {

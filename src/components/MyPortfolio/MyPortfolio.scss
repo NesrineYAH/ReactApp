@@ -77,7 +77,18 @@
 
     }
 
-    @media screen and (min-width: 900px) and (max-width:$Mmax) {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1171px) {
+        @include flexCenterRow;
+        flex-wrap: wrap;
+        padding: 0 50px 0 50px;
+
+        .card {
+            height: 320px;
+            width: 45%;
+        }
+    }
+
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         width: 100%;
         height: auto;
         margin: 30px auto;
@@ -89,9 +100,9 @@
         .card {
             border-radius: 15px;
             height: 320px;
-            width: 380px;
+            width: 30%;
             position: relative;
-            transform-style: preserve-3d; // à revenir
+            transform-style: preserve-3d;
             background: 0 0;
             box-shadow: $box-shadow;
             box-shadow: var(--box-shadow);
