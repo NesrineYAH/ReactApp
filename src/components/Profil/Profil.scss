@@ -1,9 +1,9 @@
 #Profil {
     width: 96%;
     @include flex-column;
-    height: 150vh;
+    height: 115vh;
     position: relative;
-    top: 50%;
+    top: 175px;
 
     .Profil__container {
         margin: 0 auto;
@@ -33,19 +33,20 @@
         overflow: hidden;
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         background-color: #e9e2e2;
         max-width: 100%;
         width: 92%;
-        height: 100vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
         place-items: center;
+        background-position: center;
         top: 30.5%;
         border-radius: 15px;
-        margin-top: 38%;
+        //    margin-top: 38%;
 
         .Profil__container {
             margin: 0 auto;
@@ -59,7 +60,7 @@
         }
 
         .container_photo {
-            height: 380px;
+            height: 300px;
             width: 280px;
             border: 1px #f2e8e8 solid;
             box-shadow: var(--box-shadow);
@@ -75,6 +76,54 @@
             backface-visibility: hidden;
             transition: all .8s ease;
             // box-shadow: var(--box-shadow-portfolio);
+            overflow: hidden;
+            padding-bottom: 20px;
+
+        }
+    }
+
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+        background-color: #e9e2e2;
+        max-width: 100%;
+        width: 92%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        place-items: center;
+        background-position: center;
+        top: 30.5%;
+        border-radius: 15px;
+        margin-top: 38%;
+
+
+        .Profil__container {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-position: center;
+            background-size: auto;
+        }
+
+        .container_photo {
+            height: 350px;
+            width: 280px;
+            border: 1px #f2e8e8 solid;
+            box-shadow: var(--box-shadow);
+            box-shadow: -6px -6px 25px 0 #583e81, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+            border-radius: 20px;
+        }
+
+        .container_photo img {
+            position: relative;
+            width: 100%;
+            border-radius: 20px;
+            backface-visibility: hidden;
+            transition: all .8s ease;
             overflow: hidden;
             padding-bottom: 20px;
 

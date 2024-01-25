@@ -7,7 +7,7 @@
      left: 0;
      right: 0;
      margin-top: auto;
-     margin-bottom: -35%;
+     // margin-bottom: 0%;
      background-color: $footer-color;
 
      &__text-copyright {
@@ -63,7 +63,6 @@
          right: 0;
          height: 190px;
          margin-top: auto;
-         margin-bottom: -15%;
 
 
          &__text-copyright {
@@ -87,7 +86,6 @@
              color: var (--body_color);
              border-radius: 5px;
              padding-right: 6px;
-             //    background-color: transparent;
              background-color: rgba(56, 79, 79, 0.12);
 
 
