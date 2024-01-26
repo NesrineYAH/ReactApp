@@ -44,16 +44,14 @@
         font-size: 14px;
         color: var(--skill_color);
         background-color: var(--body_background);
-        border: 2px solid var(--link_color);
+
 
     }
 
     .error {
         font-size: 12px;
         color: red;
-
     }
-
 
     .send-text {
         display: block;
@@ -94,13 +92,14 @@
 
             &__a {
                 text-decoration: none;
-                font-size: 16px;
+                font-size: 14px;
                 color: var(--link_color);
+                font-weight: 600;
             }
 
             &__span {
                 font-size: 14px;
-
+                font-weight: 600;
             }
 
             .Noc {
@@ -117,15 +116,18 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+        height: 140vh;
+
         .contactList__conatiner {
-            margin-top: -50px;
+            margin-top: -10px;
+
         }
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         display: flex;
         flex-direction: column;
-
+        height: 120vh;
 
         .contact-wrapper {
             display: flex;
@@ -207,6 +209,7 @@
         .contactList__conatiner {
             max-width: 420px;
 
+
             .contactList {
                 @include ItemColumn;
                 grid-gap: 19px;
@@ -236,12 +239,17 @@
                     text-decoration: none;
                     color: var(--link_color);
                     color: navy;
+                    font-weight: 600;
+                    font-size: 16px;
+
                 }
 
                 &__a {
                     text-decoration: none;
                     font-size: 16px;
                     color: var(--link_color);
+                    font-weight: 600;
+
                 }
             }
         }

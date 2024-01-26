@@ -79,7 +79,8 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
-        height: 80vh;
+        //   height: 100vh;
+        margin-top: 0rem;
 
         .Service__Container {
             width: 90%;
@@ -90,19 +91,20 @@
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         width: 100%;
-        // height: 80vh;
+        height: 90vh;
+        margin-top: -5rem;
         background-color: #e9e2e2;
         background-color: var(--body_background);
         display: flex;
-        border-radius: 20px;
         transition: .2s linear;
+
 
         .Service__Container {
             margin: 30px auto;
             margin-top: 50px;
             @include flexCenterRow;
             flex-wrap: wrap;
-            padding: 0 25px 0 25px;
+            padding: 0 20px 0 20px;
         }
 
         .serviceTitle {
