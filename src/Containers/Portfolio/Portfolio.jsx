@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import MyPortfolio from "../../components/MyPortfolio/MyPortfolio";
-// 
+
 
 const Portfolio = () => {
   const { t } = useTranslation();

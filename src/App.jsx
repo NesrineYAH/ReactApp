@@ -7,7 +7,7 @@ import Error from "./pages/PageError/PageError";
 import Project from "./pages/Project/Project";
 import "./App.scss";
 import Certification from "./pages/Certification/Certification";
-//import { ClipLoader } from 'react-spinners';
+import MentionLegales from './pages/MentionsLegales/MentionsLegales'; 
 import { SyncLoader   }  from 'react-spinners';
 import { css } from "@emotion/react";
 
@@ -48,6 +48,7 @@ class App extends React.Component {
           <Route path="*" element={<Error />} />
           <Route path="/Project/:id" element={<Project />} />
           <Route path="/Certification" element={<Certification />} />
+          <Route path="/MentionLegales" element={<MentionLegales />} />
         </Routes>
       </BrowserRouter>  
      <Footer />

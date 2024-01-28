@@ -1,0 +1,43 @@
+#mentionsLegales {
+    background-color: var(--body_background);
+    color: navy;
+    margin: 0;
+    cursor: pointer;
+    padding: 28vh;
+
+    .H1 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    p {
+        overflow: hidden;
+    }
+
+    a {
+        color: var(--link_color);
+        transition: .2s all ease-in-out;
+        position: relative;
+        color: navy;
+        font-weight: 600;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 102%;
+            background-color: var(--body_background);
+            opacity: 0.7;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+}

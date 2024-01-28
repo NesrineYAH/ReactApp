@@ -19,7 +19,6 @@ const Home = () => {
           <Profil />        
           <MySkills/>
           <Portfolio />
-    
           <Services />
          <TypingAnimation/> 
           <Contact/>
