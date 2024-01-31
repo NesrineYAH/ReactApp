@@ -2,42 +2,77 @@
     background-color: var(--body_background);
     color: navy;
     margin: 0;
-    cursor: pointer;
-    padding: 28vh;
+    padding: 6vh;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+
+    margin-bottom: 10%;
+    position: relative;
+    min-height: 100vh;
 
     .H1 {
-        margin-top: 0;
+        font-weight: 600;
+        font-size: 20px;
         text-align: center;
+    }
+
+    h4 {
+        font-size: 15px;
+        font-weight: 600;
+
     }
 
     p {
         overflow: hidden;
+        font-size: 13px;
     }
 
-    a {
-        color: var(--link_color);
-        transition: .2s all ease-in-out;
-        position: relative;
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+        background-color: var(--body_background);
         color: navy;
-        font-weight: 600;
+        margin: 0;
+        cursor: pointer;
+        padding: 25vh;
+        font-size: 28px;
+        position: relative;
+        min-height: 100vh;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 102%;
-            background-color: var(--body_background);
-            opacity: 0.7;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.2s ease-in-out;
-            z-index: -1;
+
+        .H1 {
+            margin-top: 0;
+            text-align: center;
+            // height: 80px;
+            font-weight: 600;
         }
 
-        &:hover::before {
-            transform: scaleX(1);
+        p {
+            overflow: hidden;
+        }
+
+        a {
+            color: var(--link_color);
+            transition: .2s all ease-in-out;
+            position: relative;
+            font-weight: 600;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 102%;
+                background-color: var(--body_background);
+                opacity: 0.7;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.2s ease-in-out;
+                z-index: -1;
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+            }
         }
     }
 }

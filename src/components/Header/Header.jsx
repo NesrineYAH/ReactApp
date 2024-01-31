@@ -80,9 +80,9 @@ class Header extends Component {
       e.preventDefault();
       this.setState({ showMenu: !this.state.showMenu });
     };
-
+//
     return (
-      <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>
+      <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}> 
           
         <nav style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
           className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>

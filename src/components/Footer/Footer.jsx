@@ -9,12 +9,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       <h2 className="footer__text-copyright" style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '18px', alignItems:'center'}}>{t("footer")}</h2>
-     <div>
+
       <ul className='footer__link'>
-           <li>{t('plan')}<a href={`../planSite/planSite`} target="_blank" rel="noopener noreferrer" className='TitreH3'></a></li>  
+           <li><a href={`../planSite/planSite`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('plan')}</a></li>  
        || <li><a href={`../MentionLegales/#mentionsLegales`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('Mentions')}</a></li> 
        </ul>
-    </div>
+  
       <a className="fa" title="Go to top" href="#home">
       <FaChevronUp id="toTop "/>
       </a>

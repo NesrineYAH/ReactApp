@@ -25,6 +25,7 @@
                     text-align: center;
                     margin: 10px 0 10px 0;
                     font-size: 15px;
+                    font-weight: 700;
                 }
 
                 .skillItem {
@@ -178,7 +179,7 @@
             margin-right: 7%;
 
             &__box {
-                width: 52%;
+                width: 48%;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -195,6 +196,7 @@
                         text-align: center;
                         margin: 10px 0 10px 0;
                         font-size: 15px;
+                        font-weight: 700;
                     }
 
                     .skillItem {
