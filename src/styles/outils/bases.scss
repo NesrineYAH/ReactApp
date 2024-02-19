@@ -31,7 +31,6 @@
 [data-theme="dark"] {
     --body_background: #160f35;
     --box_background: linear-gradient(#8552c4, #916bbf);
-    //background: rgb(131, 58, 180);
     --background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%); //nouvea
     --body_header: #dcd7dd;
     --body_color: #e9e2e2;
@@ -76,7 +75,6 @@ body {
     overflow-x: hidden;
     color: var(--body_color);
     background-color: var(--body_background);
-    //    background-color: #fdf6f6;
     margin: 0 auto;
     color: var(--link_color);
     height: 100%;

@@ -129,23 +129,23 @@
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         height: 100vh;
+        margin-top: -8%;
 
         .SkillsContainer {
-            max-width: 94%;
+            max-width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-arround;
-            column-gap: 4%;
-            margin-top: 2%;
-            padding: 0 60px 0 60px;
+            column-gap: 2%;
+            margin-top: 1%;
+            padding: 0 20px 0 40px;
 
             &__box {
-                width: 64%;
-
+                width: 68%;
             }
 
             &__blob {
-                width: 44%;
+                width: 64%;
                 margin-top: 10%;
             }
 
@@ -154,9 +154,7 @@
 
                 &__Intro {
                     width: 100%;
-                    font-size: 17px;
-
-
+                    font-size: 16px;
                 }
             }
         }
@@ -170,7 +168,6 @@
         margin-bottom: -50px;
 
         .SkillsContainer {
-            margin-top: 4rem;
             margin-left: 4rem;
             display: flex;
             flex-direction: row;
@@ -186,7 +183,6 @@
 
 
                 .box {
-                    //   width: 100%;
                     padding: 0 1rem 0 2rem;
                     display: flex;
                     flex-direction: column;

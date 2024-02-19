@@ -12,8 +12,6 @@ import '../../i18n';
 
 
 
-
-
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const MySkills = () => {

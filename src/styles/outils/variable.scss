@@ -1,5 +1,4 @@
 ///Les variables
-
 $primary-color: #3f056b;
 $secondary-color: #f0f0f0;
 $tertiary-color: #ffff;
@@ -11,7 +10,6 @@ $box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 1
 $liner: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%);
 $nouveauLinear: linear-gradient(45deg, #645cbb, #1c0c5b, #ebc7e6, #3d2c8d, #bface2, #7a00ff, #fbf4f9, #a084dc);
 $body-background :#cfc9d3;
-
 $Wmin: 375px;
 $Wmax: 768px;
 $Mmin: 1400px;
@@ -22,7 +20,7 @@ $breakpoint-desktop: 769px;
 .titlePortfolio {
     width: 100%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 12rem;
 }
 
 $small: 480px;

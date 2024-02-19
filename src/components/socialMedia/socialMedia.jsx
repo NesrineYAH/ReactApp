@@ -11,7 +11,7 @@ const SocialMedia = () => {
         <li className='socialMedia__Icone'>
         <a href="https://github.com/NesrineYAH" target="_blank" rel="noreferrer" aria-label="github">
         <DiGithubBadge
-            color="var(--body_color)"
+            color="var(--body_color)" 
             size="40px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--background_icons)")}           

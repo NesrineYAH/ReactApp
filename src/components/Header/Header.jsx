@@ -1,12 +1,11 @@
 import react, { Component, useState } from "react";
-//import { NavLink } from "react-router-dom";
 import React from "react";
 import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 import NBY from "../../assets/images/logo/NBY.png";
-//import { NavLink } from "react-router-dom";
+
 
 class Header extends Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class Header extends Component {
 
     this.state = {
       isTransparent: true,
-      isMobile: false, //window.matchMedia('(max-width: 768px)').matches,
+      isMobile: false, 
       showLinks: false,
       showMenu: false,
       matches: window.matchMedia("(min-width: 768px)").matches,
@@ -35,11 +34,11 @@ class Header extends Component {
   }
 
   resizeScreen() {
-    const isMobile = window.matchMedia("(max-width: 768px)").matches; //    const isMobile =window.innerWidth<768;
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
     this.setState({ isMobile });
   }
   handleScroll() {
-    const isTransparent = window.scrollY < 350;
+    const isTransparent = window.scrollY < 250;
     this.setState({ isTransparent });
   }
 
@@ -80,7 +79,7 @@ class Header extends Component {
       e.preventDefault();
       this.setState({ showMenu: !this.state.showMenu });
     };
-//
+
     return (
       <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}> 
           
