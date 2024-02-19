@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f48479ac.css",
-    "main.js": "/static/js/main.5450d173.js",
+    "main.css": "/static/css/main.22814ee3.css",
+    "main.js": "/static/js/main.b43ed069.js",
     "static/media/imgIII.png": "/static/media/imgIII.f126b22b3107b79a1991.png",
     "static/media/cv Nesrine BEKKAR.pdf": "/static/media/cv Nesrine BEKKAR.5f43fa9f78c6287d8a18.pdf",
     "static/media/NBY.png": "/static/media/NBY.3813c11935ae1d2be0b9.png",
     "index.html": "/index.html",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "main.f48479ac.css.map": "/static/css/main.f48479ac.css.map",
-    "main.5450d173.js.map": "/static/js/main.5450d173.js.map"
+    "main.22814ee3.css.map": "/static/css/main.22814ee3.css.map",
+    "main.b43ed069.js.map": "/static/js/main.b43ed069.js.map"
   },
   "entrypoints": [
-    "static/css/main.f48479ac.css",
-    "static/js/main.5450d173.js"
+    "static/css/main.22814ee3.css",
+    "static/js/main.b43ed069.js"
   ]
 }
