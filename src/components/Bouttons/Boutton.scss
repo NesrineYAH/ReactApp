@@ -16,11 +16,12 @@
     border-radius: 15px;
     font-weight: 500;
     font-size: 14px;
+    border: px solid var(--link_color);
 }
 
 .glow-on-hover {
     background-color: var(--body_background);
-    border: 1px solide #ffff;
+    border: 1px solide navy;
     border-radius: 15px;
     cursor: pointer;
     height: 55px;
@@ -29,8 +30,8 @@
     width: 160px;
     z-index: 1;
     margin-top: 30px;
+    border: 1px solid navy;
 }
-
 
 .glow-on-hover::before {
     content: "";

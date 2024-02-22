@@ -62,7 +62,6 @@ class Header extends Component {
 
   render() {
     const { isTransparent, isMobile, showLinks, showMenu } = this.state;
-    // const {handleClick} = this.props;
     const { t } = this.props;
     const lang = localStorage.getItem("i18nextLng");
 

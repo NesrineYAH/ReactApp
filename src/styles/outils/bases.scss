@@ -2,9 +2,6 @@
 @import './setting.scss';
 
 :root {
-
-    //white-space: pre-line;
-    // --body_background: $couleur-body;
     --body_color: #f3ebf6;
     --link_color: navy;
     --box_background: linear-gradient(#e9d3f1, #d4a9d6);
@@ -51,6 +48,8 @@
 [data-theme="Light"] {
     --header_background: #e6dae6;
     --lang_background: #c996cc;
+
+
 }
 
 * {
@@ -88,6 +87,5 @@ body {
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
-
     }
 }

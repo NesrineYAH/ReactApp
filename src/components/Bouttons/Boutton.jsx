@@ -7,8 +7,7 @@ const Boutton = (props) => {
           href={props.destination}
           className="btn_text"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           {props.title}
         </a>
       </button>
