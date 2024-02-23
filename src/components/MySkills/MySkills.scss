@@ -1,10 +1,9 @@
 #Skills {
     width: 100%;
-    height: 130vh;
+    height: 160vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-
 
 
     .SkillsContainer {
@@ -126,9 +125,8 @@
 
     }
 
-
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
-        height: 100vh;
+        height: 110vh;
         margin-top: -8%;
 
         .SkillsContainer {

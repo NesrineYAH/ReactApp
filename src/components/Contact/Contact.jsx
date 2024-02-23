@@ -31,10 +31,11 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
+ /* useEffect(() => {
     AOS.init({ duration: 6000 });
   }, []);
-
+          data-aos="zoom-in-up" 
+*/
   const validateForm = () => {
     const nameRegex = /^[a-zA-Z ]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -80,7 +81,7 @@ const Contact = () => {
           (result) => {
             alert(`${formData.first_name} ${t("email_envoyer")}`);
             console.log(result.text);
-            // Clear form inputs
+            // Clear form inputs ---------data-aos="zoom-in-up" 
             setFormData({ last_name: "", first_name: "", user_email: "", message: "" });
           },
           (error) => {
@@ -96,7 +97,6 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
- // const direction = lang === "ar" ? "rtl" : "ltr";
 
   return (
     <section id={t("contact_id")} className="contact" itemScope itemType="http://schema.org/Person" >
@@ -109,11 +109,11 @@ const Contact = () => {
          ref={formRef}             
           onSubmit={handleSubmit}
           className="form-horizontal"
-          data-aos="zoom-in-up"   >
+    >
       
-          <label htmlFor="last_name">{t("lastName")}</label>
+          <label htmlFor="last_name" >{t("lastName")}</label>
           <input
-           style={{ borderColor: errors.last_name ? "red" : "initial" }}
+           style={{ borderColor: errors.last_name ? "red" : "initial",}}
             type="text"
             name="last_name"
             value={formData.last_name}
@@ -133,10 +133,7 @@ const Contact = () => {
             value={formData.first_name}
          onChange={handleChange}
             className="form-control"
-            placeholder={t("firstName")}
-            id="first_name"
-            required
-          />
+            placeholder={t("firstName")} id="first_name" required/>
           <div className="error">{errors.first_name}</div>
 
           <label htmlFor="user_email">{t("Email")}</label>
@@ -170,7 +167,7 @@ const Contact = () => {
           <input type="submit" value={t("Send")} className="send-text" />
         </form>
 
-        <div className="contactList__conatiner" data-aos="zoom-in-up" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}>
+        <div className="contactList__conatiner" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}>
           <ul className="contactList">
             <li className="contactList__item">
               <FaPhoneFlip className="contactList__i" />

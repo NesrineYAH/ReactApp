@@ -34,18 +34,20 @@
         box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
     }
 
+    .form-control {
+        background-color: var(--body_background);
+        color: var(--skill_color);
+    }
+
     .form-horizontal label {
         color: var(--skill_color);
         width: 100;
-
     }
 
     .form-control::placeholder {
         font-size: 14px;
         color: var(--skill_color);
         background-color: var(--body_background);
-
-
     }
 
     .error {
@@ -122,6 +124,13 @@
             margin-top: -10px;
 
         }
+
+        .form-control {
+            background-color: var(--body_background);
+            color: var(--skill_color);
+
+        }
+
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
@@ -171,11 +180,22 @@
 
         }
 
-        .form-horizontal label {
+        .form-control {
+            background-color: var(--body_background);
             color: var(--skill_color);
-            width: 100;
 
         }
+
+        .form-horizontal label {
+            color: var(--skill_color);
+        }
+
+        input {
+            color: var(--skill_color);
+            width: 100%;
+            background-color: var(--body_background);
+        }
+
 
         .form-control::placeholder {
             font-size: 14px;

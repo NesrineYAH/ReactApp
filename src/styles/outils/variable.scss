@@ -20,7 +20,11 @@ $breakpoint-desktop: 769px;
 .titlePortfolio {
     width: 100%;
     text-align: center;
-    margin-top: 12rem;
+    margin-top: 6rem;
+
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+        margin-top: 12rem;
+    }
 }
 
 $small: 480px;

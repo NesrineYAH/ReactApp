@@ -37,7 +37,7 @@ const Services = () => {
     
        <div id={("service.id")} >
           <figure className='serviceCard' key={service.id}
-            data-aos="zoom-in-up"
+          //  data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >

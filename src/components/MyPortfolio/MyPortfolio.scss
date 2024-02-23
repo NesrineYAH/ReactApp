@@ -1,12 +1,16 @@
 .myPortfolio {
     @include flex-column;
     gap: 10px;
+    margin-top: 3.5rem;
 
     .card {
         border-radius: 10px;
         height: 260px;
         width: 90%;
         cursor: pointer;
+        box-shadow: $box-shadow;
+        box-shadow: var(--box-shadow);
+        box-shadow: -3px -3px 12px 0 #583e81, 6px 6px 12px 0 rgba(0, 0, 0, .2);
 
         &:hover {
             .front {
@@ -85,6 +89,10 @@
         .card {
             height: 320px;
             width: 45%;
+            box-shadow: $box-shadow;
+            box-shadow: var(--box-shadow);
+            box-shadow: -3px -3px 12px 0 #583e81, 6px 6px 12px 0 rgba(0, 0, 0, .2);
+
         }
     }
 

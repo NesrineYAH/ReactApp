@@ -1,7 +1,7 @@
 #Profil {
     width: 96%;
     @include flex-column;
-    height: 140vh;
+    height: 130vh;
     position: relative;
     top: 155px;
 
@@ -83,7 +83,7 @@
         background-color: #e9e2e2;
         max-width: 100%;
         width: 92%;
-        height: 70vh;
+        height: 65vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,7 +91,7 @@
         place-items: center;
         background-position: center;
         border-radius: 15px;
-       // margin-top: 500px;
+        // margin-top: 500px;
 
 
         .Profil__container {
