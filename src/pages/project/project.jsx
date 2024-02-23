@@ -65,8 +65,7 @@ console.log(e);
           </h6>  
         ))}    
         </div>  
-        <div // pour change de position de page en cas de langue arabe
-        style={{ flexDirection: lang === "ar" ?"row" : "row-reverse" }}
+        <div style={{ flexDirection: lang === "ar" ?"row" : "row-reverse" }}
         className="project__page" >
 
       <div className="project__carousel" >
@@ -77,13 +76,13 @@ console.log(e);
      {projects
      .filter((project) => project.id === id)
      .map((project) => (
-      <p  style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '16px'}}
+      <p  style={{ direction: lang === "ar" ? "rtl" : "ltr"}}
       key={project.id}>{t(project.description_project)}</p>
      ))} 
 
        <div className="project__boutton" >    
       <div className="Technologies">
-        <h6 style={{ direction: lang === "ar" ? "rtl" : "ltr",   textAlign: 'right'}}> {t("Technologies_used")}</h6>
+        <h6 style={{ direction: lang === "ar" ? "rtl" : "ltr",  textAlign: 'right'}}> {t("Technologies_used")}</h6>
         <div className="technologyUsed_icons">
         {projects
         .filter((project) => project.id ===id)

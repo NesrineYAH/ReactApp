@@ -9,7 +9,7 @@
 .carousel {
     margin: 0 30px;
     max-height: 500px;
-    max-width: 500px;
+    max-width: 90%;
 
 }
 
@@ -21,12 +21,12 @@
 
 .img_carousel {
     height: 500px;
-    width: 500px;
+    width: 90%;
 }
 
 .thumbs {
     display: none !important;
-    
+
 }
 
 .carousel img {
@@ -39,7 +39,8 @@
     display: none !important;
 }
 
-@media (max-width:767px) {
+
+@media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
     .img_carousel {
         width: 90%
     }

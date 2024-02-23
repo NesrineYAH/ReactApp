@@ -49,6 +49,11 @@
         font-weight: 600;
     }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+        height: 120vh;
+
+    }
+
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
         @include flex-center;
         max-width: 100%;
