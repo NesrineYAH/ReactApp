@@ -4,25 +4,32 @@
     height: 180vh;
     margin-bottom: 52%;
 
+    &__header {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+
     &__title {
         font-size: 22px;
         font-weight: 800;
-        margin-top: 2rem;
-        width: 90%;
+        text-align: center;
     }
 
     &__page {
-        font-size: 12px;
         padding-bottom: 50px;
 
     }
 
     &__iconeBack {
-        position: fixed;
-        top: 9rem;
+        position: absolute;
+        top: 8.5rem;
         left: 1rem;
         cursor: pointer;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     &__descreption {
@@ -41,28 +48,34 @@
             flex-direction: column;
             background-position: center;
         }
+
+    }
+
+    .hh6 {
+        width: 100%;
+        text-align: center;
     }
 
     .wrapper {
         display: inline-flex;
         list-style: none;
-        gap: 45px;
+        margin-top: 20px;
 
         &__icon {
             align-items: center;
-            border-radius: 50%;
+            border-radius: 5px;
             cursor: pointer;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             font-size: 18px;
             height: 50px;
             justify-content: space-between;
-            margin: 10px;
-            padding: 15px;
+            background-color: #f0ebeb;
+            padding: 8px;
             position: relative;
             transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
             width: 50px;
-            margin: 22px;
+
 
             &:hover .wrapper__tooltip {
                 top: -45px;
@@ -118,7 +131,39 @@
             border-radius: 8px;
 
         }
+
+        .Technologies {
+            display: flex;
+            flex-direction: column;
+            width: 50%
+        }
+
+        .technologyUsed_icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // flex-wrap: wrap;
+        }
     }
+
+    .technologyUsed_icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .Boutton {
+        border: 1px, solid, var(--background_icons);
+        display: flex;
+        //gap: 4%;
+        width: 94%;
+
+    }
+
+
+
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         &__carousel {
@@ -229,12 +274,6 @@
                 width: 50%
             }
 
-            h6 {
-                font-weight: 800;
-                font-size: 18px;
-
-            }
-
             .technologyUsed_icons {
                 display: flex;
                 flex-direction: row;
@@ -323,7 +362,6 @@
         }
 
         .Boutton {
-
             border: 1px, solid, var(--background_icons);
             display: flex;
             gap: 4%;

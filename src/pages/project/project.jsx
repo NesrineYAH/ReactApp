@@ -60,9 +60,9 @@ console.log(e);
     {projects
         .filter((project) => project.id === id)
         .map((project) =>(
-          <h6 className="project__title" key={project.id}>
+          <h5 className="project__title" key={project.id}>
            {project.title}
-          </h6>  
+          </h5>  
         ))}    
         </div>  
         <div style={{ flexDirection: lang === "ar" ?"row" : "row-reverse" }}
@@ -82,7 +82,7 @@ console.log(e);
 
        <div className="project__boutton" >    
       <div className="Technologies">
-        <h6 style={{ direction: lang === "ar" ? "rtl" : "ltr",  textAlign: 'right'}}> {t("Technologies_used")}</h6>
+        <h6 className='hh6'> {t("Technologies_used")}</h6>
         <div className="technologyUsed_icons">
         {projects
         .filter((project) => project.id ===id)
