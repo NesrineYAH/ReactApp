@@ -20,11 +20,11 @@
 }
 
 .glow-on-hover {
-    background-color: var(--body_background);
+    background-color: var(--body_color);
     border: 1px solide navy;
     border-radius: 15px;
     cursor: pointer;
-    height: 55px;
+    height: 53px;
     outline: 0;
     position: relative;
     width: 160px;
@@ -58,7 +58,6 @@
 .glow-on-hover:hover::before {
     opacity: 1;
     border-radius: 15px;
-
 }
 
 .glow-on-hover::after {
@@ -72,11 +71,11 @@
     top: 0;
     border-radius: 15px;
     border: 1px solid var(--body_color);
-
 }
 
 .glow-on-hover a:hover {
     background-color: var(--body_color);
+    animation: glowing 20s linear infinite;
 }
 
 

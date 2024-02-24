@@ -3,7 +3,7 @@ import {useTypewriter, Cursor } from "react-simple-typewriter";
 import { withTranslation, useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import "../../i18n";
-
+import Boutton from "../Bouttons/Boutton";
 
 
 const TxtToDisplay = () => {
@@ -60,9 +60,9 @@ const About = () => {
             <Cursor cursorColor='navy' />
           </p>
           <TxtToDisplay />
-          <button className="glow-on-hover">
-            <a href={t('Profil_path')}>{t('txtInfo')}</a>
-          </button>
+          <button  className="glow-on-hover" >
+            <a href={t('Profil_path')}  className="btn_text">{t('txtInfo')}</a>
+        </button>
         </div>
       </div>
     </section>

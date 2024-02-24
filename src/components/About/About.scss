@@ -1,12 +1,12 @@
 #About {
     @include flex-column;
     width: 100%;
-    height: 95vh;
+    height: 92vh;
 
     .presentation {
         width: 90%;
         position: relative;
-        top: 28%;
+        top: 17%;
         margin: 0 auto;
         @include flex-column;
         background-position: center;
@@ -17,6 +17,7 @@
     .wrap {
         text-align: center;
         width: 80%;
+
     }
 
     h1,
@@ -32,18 +33,16 @@
 
     .hiddenII {
         font-size: 1.2rem;
+
     }
 
     a {
         background-color: transparent;
         font-weight: 600;
-        color: var(--link_color);
-
-        &:hover {
-            background-color: transparent;
-
-        }
+        color: navy;
     }
+
+
 
     p {
         font-weight: 600;
@@ -59,7 +58,6 @@
         max-width: 100%;
         width: 100%;
         height: 150vh;
-
 
         .presentation {
             width: 100%;
