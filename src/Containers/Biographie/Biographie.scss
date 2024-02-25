@@ -17,15 +17,12 @@
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         color: var(--body_color);
-        width: 52%;
+        width: 54%;
 
         &__titre {
-            width: 45%;
-            margin-top: 20px;
-            margin-bottom: 22px;
-            margin-left: 40px;
+            width: 50%;
             overflow: hidden;
-            animation: script 12s steps(45) infinite;
+            font-size: 25px;
         }
 
         &__p {
@@ -34,39 +31,23 @@
             margin-left: 20px;
             word-spacing: 6px;
             overflow: hidden;
-
+            letter-spacing: .2rem;
         }
-
     }
 
     @media screen and (min-width: 1171px) and (max-width: $Mmax) {
-        width: 56%;
+        width: 60%;
+        font-size: 15px;
 
         &__titre {
             width: 55%;
+        }
 
-            animation: script 12s steps(45) infinite;
+        &__p {
+            letter-spacing: .5rem;
+
         }
 
 
     }
 }
-
-/*
-@keyframes script {
-    0% {
-        width: 0
-    }
-
-    45% {
-        width: 102%
-    }
-
-    55% {
-        width: 102%
-    }
-
-    100% {
-        width: 0
-    }
-}*/

@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import Biographie from "../../Containers/Biographie/Biographie";
 import photo from "../../assets/images/bakground/imgIII.png";
+import SocialMedia from "../../components/socialMedia/socialMedia";
+
 
 
 const Profil = () => {
@@ -12,11 +14,22 @@ const Profil = () => {
   return (
     <section id="Profil">
     <div className="Profil__container">
-     <Biographie />  
+      <div className="Profil"> 
+    <h4 className='Profil__titre'>
+       {" "}
+        {t("main_heading.static_desc")} {t("main_heading.dynamic_desc")}
+        </h4> 
+       
+        <p className='Profil__p'> {t("description_info.main")} </p>
+<SocialMedia />        
+      </div>
+   
  <div className="container_photo">      
         <img src={photo} alt={t("photo_alt")} />
    </div>
+
 </div>
+
     </section>
   );
 };
