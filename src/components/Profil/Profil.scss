@@ -80,12 +80,11 @@
             color: var(--body_color);
             padding: 0 25px;
 
-
             .Profil {
                 width: 68%;
                 display: flex;
                 flex-direction: column;
-        
+
                 &__titre {
                     overflow: hidden;
                     font-size: 20px;
@@ -124,6 +123,7 @@
             overflow: hidden;
             padding-bottom: 20px;
         }
+
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {

@@ -2,7 +2,6 @@ import React from "react";
 import AOS from "aos"; // data-aos="zoom-in-up"
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import Biographie from "../../Containers/Biographie/Biographie";
 import photo from "../../assets/images/bakground/imgIII.png";
 import SocialMedia from "../../components/socialMedia/socialMedia";
 
@@ -21,7 +20,7 @@ const Profil = () => {
         </h4> 
        
         <p className='Profil__p'> {t("description_info.main")} </p>
-<SocialMedia />        
+       <SocialMedia />        
       </div>
    
  <div className="container_photo">      

@@ -6,7 +6,7 @@
     .presentation {
         width: 90%;
         position: relative;
-        top: 17%;
+        top: 16%;
         margin: 0 auto;
         @include flex-column;
         background-position: center;
@@ -17,7 +17,6 @@
     .wrap {
         text-align: center;
         width: 80%;
-
     }
 
     h1,
@@ -33,7 +32,7 @@
 
     .hiddenII {
         font-size: 1.2rem;
-
+        margin-bottom: -12px;
     }
 
     a {
@@ -42,8 +41,6 @@
         color: navy;
     }
 
-
-
     p {
         font-weight: 600;
     }
@@ -51,9 +48,15 @@
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         height: 120vh;
 
+        .presentation {
+            width: 90%;
+            position: relative;
+            top: -21%;
+        }
+
     }
 
-    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         @include flex-center;
         max-width: 100%;
         width: 100%;
@@ -70,7 +73,7 @@
             background-size: auto;
             background-repeat: no-repeat;
             position: relative;
-            top: 0%;
+            top: 5%;
         }
 
         .wrap {
