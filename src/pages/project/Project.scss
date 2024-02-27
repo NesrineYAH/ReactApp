@@ -1,22 +1,25 @@
 .project {
     @include flex-center;
     flex-shrink: 1;
-    height: 180vh;
+    height: 150vh;
     margin-bottom: 52%;
 
     &__header {
-        width: 30%;
+        width: 100%;
+        height: 100px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: row-reverse;
+        justify-content: space-around;
         align-items: center;
-        gap: 0px;
+
     }
 
     &__title {
         font-size: 22px;
         font-weight: 800;
         text-align: center;
+        width: 100%;
+
     }
 
     &__page {
@@ -25,9 +28,10 @@
     }
 
     &__iconeBack {
+        margin-top: -1rem;
         position: absolute;
-        top: 8.5rem;
-        left: 1rem;
+        left: .8rem;
+        height: 30px;
         cursor: pointer;
         font-size: 7vw;
     }
@@ -40,20 +44,22 @@
             width: 90%;
             font-size: 12px;
         }
-
-        &__carousel {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background-position: center;
-        }
-
     }
+
+    &__carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-position: center;
+    }
+
+
 
     .hh6 {
         width: 100%;
         text-align: center;
+        font-weight: 500;
     }
 
     .wrapper {
@@ -157,13 +163,24 @@
     .Boutton {
         border: 1px, solid, var(--background_icons);
         display: flex;
-        width: 94%;
+        width: 70%;
     }
 
 
 
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
+
+        &__header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 0px;
+        }
+
         &__carousel {
             display: flex;
             align-items: center;
@@ -175,15 +192,11 @@
         &__title {
             font-size: 28px;
             font-weight: 800;
-            position: relative;
-            top: -10rem;
-            width: 90%;
+
         }
 
         &__iconeBack {
-            position: relative;
-            top: -10rem;
-            left: -28rem;
+
             cursor: pointer;
             font-size: 4vw;
         }
@@ -200,33 +213,26 @@
 
 
         &__header {
+            width: 100%;
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
             align-items: center;
-            margin-top: 90px;
+            height: 50px;
+
         }
 
         &__iconeBack {
-            position: absolute;
-            top: 2px;
-            left: 10px;
             cursor: pointer;
             font-size: 2.5vw;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             color: var(--body_color);
         }
 
         &__title {
             font-size: 28px;
             font-weight: 800;
-            display: flex;
-            justify-content: center;
             font-size: 2vw;
-            height: 40px;
-            width: 100%;
-            margin-bottom: 2.5rem;
+
         }
 
         &__page {
@@ -238,6 +244,9 @@
 
         &__carousel {
             list-style-type: none;
+            width: 55%;
+            height: 600px;
+
         }
 
         &__descreption {

@@ -55,6 +55,7 @@ console.log(e);
        onMouseOut={({ target })=>
        (target.style.color ="var(--body_color)")
     }
+    style={{ position: 'absolute'}}
      />    
     </a>
     {projects
