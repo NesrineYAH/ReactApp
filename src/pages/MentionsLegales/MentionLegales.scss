@@ -22,7 +22,7 @@
 
     p {
         overflow: hidden;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
@@ -51,6 +51,7 @@
             transition: .2s all ease-in-out;
             position: relative;
             font-weight: 600;
+            text-decoration: none;
 
             &::before {
                 content: '';

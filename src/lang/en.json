@@ -128,6 +128,27 @@
 "TxtCertiPrg": { 
   "p":"Following to the training at Openclassrooms, to become a web developer I learned and followed online courses offered by Openclassrooms, certifications obtained at the end of the courses ",
   "lien" : "View certificates"
+}, 
+
+"TextInfo":{
+  "info": "LEGAL INFORMATION",
+  "infoI": "Presentation and principle",
+  "infoII" :"Accessibility ",
+  "infoIII" : "Intellectual Property Rights",
+
+  "p": "Corresponding to the provisions of Article 6-III and 19 of Law No. 2004-575 of June 21, 2004 relating to Confidence in the digital economy, known as the L.C.E.N., we inform visitors to the website: https://nesrinebekkar.com These attached data :",
+  "pI": "Information about the owner: Nesrine BEKKAR YAHOUM Location address of the holder: Paris 75020, ile de France",
+  "pII" :"The Founder of the website is : the chief of the publication is: Nesrine BEKKAR YAHOUM How to get in touch with the Publication Decision-Maker: contact@nesrinebekkar.com",
+  "pIII" : "Company that provides accommodation : HOSTINGER",
+
+  "prI" :"Any Internet user who connects and uses the following site",
+  "prII" : "is considered as a user of the website",
+  "prIII" : "the site",
+  "prIIII" : "gathered several services, in the state, available to the user. It is specified here that the latter must remain honest and show good faith both towards the various users and towards the developer of the site nesrinebekkar.com . The site benjamin-leveque.com is updated regularly by Nesrine BEKKAR YAHOUM",
+  
+  "pIIII" : "Nesrine BEKKAR YAHOUM strives to prescribe on the website nesrinebekkar.com the most accurate information possible (subject to changes made since they have been posted online), but cannot guarantee the accuracy, completeness and information contained on its site, whether or not they are of its own making. In addition, the user acknowledges using this information given (for information purposes, non-exhaustive and likely to evolve) under his sole responsibility.",
+  "pIIIII" : ""
 }
+
 
 }

@@ -133,5 +133,25 @@
    "TxtCertiPrg": {
     "p": "Suite à une formation suivie chez Openclassrooms,  pour devenir une développeuse web j'ai appris et suivi des cours en ligne proposés par Openclassrooms, des certifications obtenues à l'issue des cours ",
     "lien": "Voir les certificats"
-  }
+  }, 
+  "TextInfo": {
+  "info": "Informations légales",
+  "infoI": " Présentation et principe",
+  "infoII" :"Accessibilité ",
+  "infoIII" : "Droit de propriété intellectuelle",
+
+  "p": "Correspondant aux dispositions de l'article 6-III et 19 de la Loi n* 2004-575 du 21 juin 2004 relative à la Confiance en l'économie numérique, dite L.C.E.N., nous informons les visiteurs du site internet : https://nesrinebekkar.com Ces données ci-jointes :",
+  "pI" :"Information du propriétaire : Nesrine BEKKAR YAHOUM Adresse de localisation du titulaire : Paris 75020, ile de France",
+  "pII": "Le Fondateur du site internet est :   Chef de la publication est : Nesrine BEKKAR YAHOUM  Par quel moyen entrer en contact avec le Décideur de publication : contact@nesrinebekkar.com",
+  "pIII" : "Entreprise qui assure l'hébergement : HOSTINGER", 
+
+  "prI" : "Tout internaute qui se connecte et utilise le site suivant",
+  "prII" : "est considéré comme utilisateur du site internet",
+  "prIII" : " Le site ",
+  "prIIII" : "réuni plusieurs services, dans l'état, disponible pour les utilisateur. Il est ici précisé que ces derniers doivent rester honnête et faire preuve de bonne foi tant envers les différents utilisateurs qu'envers le développeur du site nesrinebekkar.com. Le site nesrinebekkar.com est mis à jour de façon régulière par Nesrine BEKKAR YAHOUM.",
+  
+  "pIIII" : "Nesrine BEKKAR YAHOUM s'efforce de prescrire sur le site internet nesrinebekkar.com des informations les plus précises possibles (sous réserve de modifications apportées depuis leur mise en ligne), mais ne saurait affirmer l'exactitude, la complétude et les informations répandu sur son site, qu'elles soient ou non de son fait. En dépendance, l'utilisateur reconnaît utiliser ces informations données (à titre indicatif, non exhaustives et susceptibles d'évoluer) sous son unique responsabilité.",
+  "pIIIII" : "est généralement accessible aux utilisateurs 24/24h, 7/7j, sauf en cas de maintenance, programmée ou pas, pour les besoins de la maintenance ou en cas de force majeure. En cas d'impossibilité d'accès au service"
+}
+  
 }

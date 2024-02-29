@@ -73,18 +73,17 @@ console.log(e);
      <Caroussel className="carousel" />
       </div>
 
-    <div className="project__descreption" style={{ direction: lang === "ar" ? "rtl" : "ltr"}}>
+    <div style={{ flexDirection: lang === "ar" ? "rtl" : "ltr" }} className="project__descreption">
      {projects
      .filter((project) => project.id === id)
      .map((project) => (
-      <p  style={{ direction: lang === "ar" ? "rtl" : "ltr"}}
-      key={project.id}>{t(project.description_project)}</p>
+      <p key={project.id}>{t(project.description_project)}</p>
      ))} 
-
-       <div className="project__boutton" >    
+     
       <div className="Technologies">
-        <h6 className='hh6'> {t("Technologies_used")}</h6>
-        <div className="technologyUsed_icons">
+      <h6 className='hh6' style={{ flexDirection: lang === "ar" ? "rtl" : "ltr" }}> {t("Technologies_used")}</h6>
+        <div className="project__boutton" >    
+        <div className="technologyUsed_icons" style={{ flexDirection: lang === "ar" ? "rtl" : "ltr" }}>
         {projects
         .filter((project) => project.id ===id)
         .map((project) => project.technologyUsed.map((icon) => (
@@ -98,6 +97,7 @@ console.log(e);
         )}
         </div>
     </div>
+        
     {projects
             .filter((project) => project.id === id)
             .map((project) =>
@@ -115,10 +115,10 @@ console.log(e);
         <Boutton destination={project.site} title={t("Demo")} />
      </div>
       ))}          
-          </div>
-        </div>
       </div>
-   </div>
+    </div>
+  </div>
+</div>
       )}
  </section>
   );
