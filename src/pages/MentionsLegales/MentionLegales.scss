@@ -1,13 +1,14 @@
 #mentionsLegales {
-    background-color: var(--body_background);
+    // background-color: var(--body_background);
     color: navy;
     margin: 0;
-    padding: 4vh;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
-    margin-bottom: 28%;
+    padding: 3.5vh;
+    -webkit-transform: translateY(4%);
+    transform: translateY(4%);
+    margin-bottom: 35%;
     position: relative;
-    min-height: 100vh;
+    min-height: 140vh;
+    flex: 1;
     width: 94%;
 
     .H1 {
@@ -17,14 +18,40 @@
     }
 
     h4 {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
+
     }
 
+    span,
     p {
         overflow: hidden;
-        font-size: 15px;
-        white-space: wrap;
+        font-size: 12.5px;
+    }
+
+    a {
+        transition: .2s all ease-in-out;
+        position: relative;
+        font-weight: 600;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 102%;
+            background-color: rgb(192, 192, 247);
+            opacity: 0.7;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+        }
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
@@ -33,7 +60,6 @@
         margin: 0;
         cursor: pointer;
         padding: 20vh;
-        font-size: 28px;
         position: relative;
         min-height: 100vh;
 
@@ -55,16 +81,12 @@
         span,
         p {
             overflow: hidden;
-            word-spacing: .4rem;
-            //  white-space: wrap;
-            font-size: 16px;
+            word-spacing: .3rem;
+            font-size: 14px;
+            line-height: 22px;
         }
 
-
-
         a {
-            color: rgb(145, 15, 232);
-
             transition: .2s all ease-in-out;
             position: relative;
             font-weight: 600;
@@ -77,7 +99,7 @@
                 left: 0;
                 height: 100%;
                 width: 102%;
-                background-color: var(--body_background);
+                background-color: rgb(192, 192, 247);
                 opacity: 0.7;
                 transform: scaleX(0);
                 transform-origin: left;
