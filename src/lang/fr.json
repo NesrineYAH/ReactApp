@@ -139,11 +139,20 @@
   "infoI": " Présentation et principe",
   "infoII" :"Accessibilité ",
   "infoIII" : "Droit de propriété intellectuelle",
+  "infoVI"  :"Protection des biens et personnes - Utilisation des données personnelles ",
+   "nom":"Nesrine BEKKAR YAHOUM",
 
   "p": "Correspondant aux dispositions de l'article 6-III et 19 de la Loi n* 2004-575 du 21 juin 2004 relative à la Confiance en l'économie numérique, dite L.C.E.N., nous informons les visiteurs du site internet : https://nesrinebekkar.com Ces données ci-jointes :",
-  "pI" :"Information du propriétaire : Nesrine BEKKAR YAHOUM Adresse de localisation du titulaire : Paris 75020, ile de France",
-  "pII": "Le Fondateur du site internet est :   Chef de la publication est : Nesrine BEKKAR YAHOUM  Par quel moyen entrer en contact avec le Décideur de publication : contact@nesrinebekkar.com",
-  "pIII" : "Entreprise qui assure l'hébergement : HOSTINGER", 
+  "pI" :"Information du propriétaire",
+  "pS": "Adresse de localisation du titulaire : ",
+  "pS1":"Paris, ile de France",
+  "pS2" : "La développeuse web est",
+  "pII": "Le Fondateur du site internet est :   Chef de la publication est : Nesrine BEKKAR YAHOUM  Par quel moyen entrer en contact avec le Décideur de publication : ",
+  "pIII" : "Entreprise qui assure l'hébergement :",
+   "pIII1" : "HOSTINGER INTERNATIONAL LTD", 
+  "pr": " le siège social :61 Lordou Vironos Street, 6023 Larnaca, Chypre",
+  "pr1" : "",
+  "pr2" : "joignable par le moyen suivant : https://www.hostinger.fr/contact.",
 
   "prI" : "Tout internaute qui se connecte et utilise le site suivant",
   "prII" : "est considéré comme utilisateur du site internet",
@@ -151,7 +160,17 @@
   "prIIII" : "réuni plusieurs services, dans l'état, disponible pour les utilisateur. Il est ici précisé que ces derniers doivent rester honnête et faire preuve de bonne foi tant envers les différents utilisateurs qu'envers le développeur du site nesrinebekkar.com. Le site nesrinebekkar.com est mis à jour de façon régulière par Nesrine BEKKAR YAHOUM.",
   
   "pIIII" : "Nesrine BEKKAR YAHOUM s'efforce de prescrire sur le site internet nesrinebekkar.com des informations les plus précises possibles (sous réserve de modifications apportées depuis leur mise en ligne), mais ne saurait affirmer l'exactitude, la complétude et les informations répandu sur son site, qu'elles soient ou non de son fait. En dépendance, l'utilisateur reconnaît utiliser ces informations données (à titre indicatif, non exhaustives et susceptibles d'évoluer) sous son unique responsabilité.",
-  "pIIIII" : "est généralement accessible aux utilisateurs 24/24h, 7/7j, sauf en cas de maintenance, programmée ou pas, pour les besoins de la maintenance ou en cas de force majeure. En cas d'impossibilité d'accès au service"
+  "pIIIII" : "est généralement accessible aux utilisateurs 24/24h, 7/7j, sauf en cas de maintenance, programmée ou pas, pour les besoins de la maintenance ou en cas de force majeure. En cas d'impossibilité d'accès au service",
+
+  "pT1": " se devouera à faire de son mieux pour rétablir l'accès au site suivant et s'efforcera alors d'informer au préalable aux utilisateurs Dates & heures de l'interruption. N'étant subordonné qu'à une obligation de moyen, ",
+   "pT2" : "ne saurait être tenu comme responsable des dommages, peu importe la nature, résultant d'une indisponibilité du service",
+   "pT3" : "Nesrine BEKKAR YAHOUM est le propriétaire exclusif de tous les droits de propriété intellectuelle ou détient les droits d'usage sur l'intégralité des éléments accessibles sur le site web, tant sur la structure que sur les articles et textes, graphismes, icônes, bande sonore, logiciels", 
+   "pT4" : "Toute reproduction totale ou partielle du site",
+   "pT5" : "affichage, edition, adaptation totale ou partielle de l'un de ces éléments, peu importe le  moyen ou le procédé utilisé, est interdite, sauf acceptation écrite préalable de Nesrine BEKKAR YAHOUM, propriétaire du site ",
+   "pT6" : "Dans le cas contraire elle sera considérée de la même manière qu'une contrefaçon et passible de poursuite d'après les dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle",
+   "pT7" : "En France, les données personnelles sont par exemple protégées par la loi n° 78-87 du 6 janvier 1978 et la loi n° 2004-801 datant du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive Européenne datant du 24 octobre 1995. ", 
+   "pT8" : "",
+   "pT9" : ""
 }
   
 }

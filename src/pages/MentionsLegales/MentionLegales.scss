@@ -2,12 +2,13 @@
     background-color: var(--body_background);
     color: navy;
     margin: 0;
-    padding: 6vh;
+    padding: 4vh;
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
     margin-bottom: 28%;
     position: relative;
     min-height: 100vh;
+    width: 94%;
 
     .H1 {
         font-weight: 600;
@@ -23,6 +24,7 @@
     p {
         overflow: hidden;
         font-size: 15px;
+        white-space: wrap;
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
@@ -30,7 +32,7 @@
         color: navy;
         margin: 0;
         cursor: pointer;
-        padding: 25vh;
+        padding: 20vh;
         font-size: 28px;
         position: relative;
         min-height: 100vh;
@@ -40,18 +42,33 @@
             margin-top: 0;
             text-align: center;
             font-weight: 600;
+            font-size: 34px;
+
         }
 
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        span,
         p {
             overflow: hidden;
+            word-spacing: .4rem;
+            //  white-space: wrap;
+            font-size: 16px;
         }
 
+
+
         a {
-            color: var(--link_color);
+            color: rgb(145, 15, 232);
+
             transition: .2s all ease-in-out;
             position: relative;
             font-weight: 600;
-            text-decoration: none;
+
 
             &::before {
                 content: '';

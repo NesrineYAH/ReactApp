@@ -134,12 +134,15 @@
   "info": "LEGAL INFORMATION",
   "infoI": "Presentation and principle",
   "infoII" :"Accessibility ",
-  "infoIII" : "Intellectual Property Rights",
+  "infoIII": "Intellectual Property Rights",
+  "infoVI": "Protection of goods and persons - Use of personal data",
 
   "p": "Corresponding to the provisions of Article 6-III and 19 of Law No. 2004-575 of June 21, 2004 relating to Confidence in the digital economy, known as the L.C.E.N., we inform visitors to the website: https://nesrinebekkar.com These attached data :",
-  "pI": "Information about the owner: Nesrine BEKKAR YAHOUM Location address of the holder: Paris 75020, ile de France",
+  "pI": "Information about the owner: Nesrine BEKKAR YAHOUM",
+  "pS": "Location address of the holder:",
+  "pS1":"Paris, France",
   "pII" :"The Founder of the website is : the chief of the publication is: Nesrine BEKKAR YAHOUM How to get in touch with the Publication Decision-Maker: contact@nesrinebekkar.com",
-  "pIII" : "Company that provides accommodation : HOSTINGER",
+  "pIII" : "Company that provides accommodation : HOSTINGER INTERNATIONAL LTD",
 
   "prI" :"Any Internet user who connects and uses the following site",
   "prII" : "is considered as a user of the website",
@@ -147,7 +150,18 @@
   "prIIII" : "gathered several services, in the state, available to the user. It is specified here that the latter must remain honest and show good faith both towards the various users and towards the developer of the site nesrinebekkar.com . The site benjamin-leveque.com is updated regularly by Nesrine BEKKAR YAHOUM",
   
   "pIIII" : "Nesrine BEKKAR YAHOUM strives to prescribe on the website nesrinebekkar.com the most accurate information possible (subject to changes made since they have been posted online), but cannot guarantee the accuracy, completeness and information contained on its site, whether or not they are of its own making. In addition, the user acknowledges using this information given (for information purposes, non-exhaustive and likely to evolve) under his sole responsibility.",
-  "pIIIII" : ""
+  "pIIIII" : "is generally accessible to users 24 / 24h, 7 / 7d, except in case of maintenance, scheduled or not, for maintenance needs or in case of force majeure. In case of impossibility of access to the service",
+
+  "pT1" : "will devote itself to doing its best to restore access to the following site and will then endeavor to inform users in advance of the Dates & times of the interruption. Being subject only to an obligation of means",
+  "pT2" : "can not be held responsible for damages, whatever the nature, resulting from an unavailability of the service",
+  "pT3" : "Nesrine BEKKAR YAHOUM is the exclusive owner of all intellectual property rights or holds the rights to use all the elements accessible on the website, both on the structure and on the articles and texts, graphics, icons, soundtrack, software", 
+  "pT4" : "Any total or partial reproduction of the site", 
+  "pT5" : "display, edition, total or partial adaptation of one of these elements, regardless of the means or the process used, is prohibited, unless prior written acceptance of Nesrine BEKKAR YAHOUM, owner of the site",
+  "pT6" : "Otherwise, it will be considered in the same way as an infringement and liable to prosecution according to the provisions of Articles L.335-2 and following of the Intellectual Property Code",
+  "pT7" : "In France, personal data are, for example, protected by law n ° 78-87 of January 6, 1978 and law n ° 2004-801 of August 6, 2004, article L. 226-13 of the Criminal Code and the European Directive dated October 24, 1995.", 
+  "pT8" : "",
+  "pT9" : ""
+  
 }
 
 
