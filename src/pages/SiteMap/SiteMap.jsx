@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { useTranslation } from "react-i18next";
 
 
 const Sitemap = () => {
+    const { t } = useTranslation();
 
     useEffect(() => {
         gsap.fromTo(
@@ -17,9 +19,15 @@ const Sitemap = () => {
     }, [])
 
     return (
-        <div className="sitemap">
-            <h3 className="title">Plan du site</h3>
-            <p></p>
+        <div id="sitemap">
+            <h1 className="title">{t('plan')}</h1>
+         <ul className='sitemap__ul'> 
+                  <a href="https://nesrinebekkar.com" target="_blank" rel="noopener noreferrer"><li> {t("home_title")} </li> </a> 
+
+                 <a href="https://nesrinebekkar.com/MentionLegales/#mentionsLegales"  rel="noopener noreferrer"><li> {t('Mentions')} </li></a>
+             <a href="https://nesrinebekkar.com/SiteMap/#sitemap"  rel="noopener noreferrer"> <li> {t('plan')} </li></a>
+                       
+     </ul>
         </div>
     )
 }

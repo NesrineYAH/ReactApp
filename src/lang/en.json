@@ -144,9 +144,11 @@
   "pS": "Location address of the holder:",
   "pS1":"Paris, France",
   "pS2" : "The web developer is",
-  "pII" :"The Founder of the website is : the chief of the publication is: Nesrine BEKKAR YAHOUM How to get in touch with the Publication Decision-Maker: contact@nesrinebekkar.com",
+  "pII" :"The Founder of the website is : the chief of the publication is: Nesrine BEKKAR YAHOUM How to get in touch with the Publication Decision-Maker:",
   "pIII" : "Company that provides accommodation:",
-  "pIII1" : "HOSTINGER INTERNATIONAL LTD", 
+  "pIII1" : "HOSTINGER INTERNATIONAL LTD",
+  "pr": " the head office : 61 Lordou Vironos Street, 6023 Larnaca, Chypre" ,
+  "pr2" : "reachable by the following means : https://www.hostinger.fr/contact.",
 
   "prI" :"Any Internet user who connects and uses the following site",
   "prII" : "is considered as a user of the website",

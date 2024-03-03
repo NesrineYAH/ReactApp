@@ -11,7 +11,7 @@ export default function Footer() {
       <h2 className="footer__text-copyright" style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '18px', alignItems:'center'}}>{t("footer")}</h2>
 
       <ul className='footer__link'>
-           <li><a href={`../planSite/planSite`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('plan')}</a></li>  
+           <li><a href={`../../SiteMap/#sitemap`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('plan')}</a></li>  
        || <li><a href={`../MentionLegales/#mentionsLegales`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('Mentions')}</a></li> 
        </ul>
   

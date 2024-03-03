@@ -14,11 +14,10 @@ const MentionsLegales = () => {
 
 <span  style={{whiteSpace:"nowrap"}}>{t('TextInfo.pI')} : <span style={{fontWeight: 'bold'}}> {t('TextInfo.nom')}</span></span> <br/>
 <span >{t('TextInfo.pS')}<span style={{fontWeight: 'bold'}}>{t('TextInfo.pS1')}</span></span> <br/>
-<span>{t('TextInfo.pII')} <strong style={{fontWeight: 'bold'}}>contact@nesrinebekkar.com</strong></span>   <br/>
+<span>{t('TextInfo.pII')} <span style={{fontWeight: 'bold'}}> {t('TextInfo.nom')}</span> {t('TextInfo.pII')} <strong style={{fontWeight: 'bold'}}> contact@nesrinebekkar.com </strong></span>   <br/>
+<span>{t('TextInfo.pS2')} :<span style={{fontWeight: 'bold'}}> {t('TextInfo.nom')}</span></span> <br/>
 <span>{t('TextInfo.pIII')} <span style={{fontWeight: 'bold'}}>{t('TextInfo.pIII1')}</span></span><br/>
-<span>{t('TextInfo.pS2')} :<span style={{fontWeight: 'bold'}}> {t('TextInfo.nom')}</span></span>
 <p>{t('TextInfo.pr')}</p>
-<p>{t('TextInfo.pr1')}</p>
 <p>{t('TextInfo.pr2')}</p>
 <br />
 

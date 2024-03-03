@@ -8,7 +8,8 @@ import Project from "./pages/Project/Project";
 import "./App.scss";
 import Certification from "./pages/Certification/Certification";
 import MentionLegales from './pages/MentionsLegales/MentionsLegales'; 
-import { SyncLoader   }  from 'react-spinners';
+import SiteMap from './pages/SiteMap/SiteMap';
+import { SyncLoader   }  from 'react-spinners'; 
 import { css } from "@emotion/react";
 
 class App extends React.Component {
@@ -49,6 +50,7 @@ class App extends React.Component {
           <Route path="/Project/:id" element={<Project />} />
           <Route path="/Certification" element={<Certification />} />
           <Route path="/MentionLegales" element={<MentionLegales />} />
+          <Route path="/SiteMap" element={<SiteMap />} />
         </Routes>
       </BrowserRouter>  
      <Footer />
