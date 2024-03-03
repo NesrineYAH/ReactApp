@@ -20,7 +20,7 @@ const Sitemap = () => {
 
     return (
         <div id="sitemap">
-            <h1 className="title">{t('plan')}</h1>
+            <h1 className="title" style={{fontSize: '40px', marginBottom:'30px'}}>{t('plan')}</h1>
          <ul className='sitemap__ul'> 
                   <a href="https://nesrinebekkar.com" target="_blank" rel="noopener noreferrer"><li> {t("home_title")} </li> </a> 
 
