@@ -63,7 +63,7 @@
   },
   {
     "title": "La Panthère",
-    "image": "../assets/projects/La panthere/PrjCopie.webp",
+    "image": "../assets/projects/La panthere/one.webp",
     "alt": "projet La panthère",
     "id": "3",
     "brief_description": "projectLaPantherre.brief_description",
@@ -75,17 +75,21 @@
       }
       ], 
      "pictures": [
-      "../assets/projects/La panthere/Cover.webp",
-      "../assets/projects/La panthere/la panthère 1.jpg",
-      "../assets/projects/La panthere/lapanthereCover..webp",
-      "../assets/projects/La panthere/lapanthere-OC.jpg",
-      "../assets/projects/La panthere/img_panthere.jpg"
+    
+      "../assets/projects/La panthere/two.webp",
 
+      "../assets/projects/La panthere/Coverr..webp",
+      "../assets/projects/La panthere/three.webp",  
+      "../assets/projects/La panthere/four.webp",
+      "../assets/projects/La panthere/five.webp",
+      "../assets/projects/La panthere/six.webp",
+      "../assets/projects/La panthere/seven.webp",
+      "../assets/projects/la panthere/eight.webp"
       ]
   },
   { 
     "title": "Kanap",
-    "image": "../assets/projects/Kanap/Kanpa_img_Carte.png",
+    "image": "../assets/projects/Kanap/KanpaCarte.webp",
     "alt": "projet kanap",
     "id": "4",
     "brief_description": "projectKanap.brief_description",

@@ -8,7 +8,7 @@ export default function Footer() {
   const lang = localStorage.getItem("i18nextLang");
   return (
     <footer className="footer">
-      <h2 className="footer__text-copyright" style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '18px', alignItems:'center'}}>{t("footer")}</h2>
+      <h2 className="footer__text-copyright" style={{ direction: lang === "ar" ? "rtl" : "ltr", alignItems:'center'}}>{t("footer")}</h2>
 
       <ul className='footer__link'>
            <li><a href={`../../SiteMap/#sitemap`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('plan')}</a></li>  

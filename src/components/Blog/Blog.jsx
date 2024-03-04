@@ -1,4 +1,4 @@
-//import { useState, useEffect } from 'react';
+
 import React from 'react';
 import {useTypewriter, Cursor } from "react-simple-typewriter"; 
 import { useTranslation } from 'react-i18next';
@@ -9,10 +9,9 @@ const TypingAnimation = () =>{
   const lang = localStorage.getItem("i18nextLang");
   const [text] = useTypewriter({
     words: [
-      t('le développement'),
-      t('la Programmation'), 
-      t('le web'),
-     t('la technologie!')
+      t('ma créativité'),
+      t('mon inspiration'), 
+      t('ma passion')
     ],
     loop: 0,
     typeSpeed: 120,
@@ -22,7 +21,7 @@ const TypingAnimation = () =>{
   return (
     <div style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }} 
      className='Loisir'>
-    <p>  {t('love')} {' '}
+    <p>  {t("le développement web pour moi est un art lequel j'exprime")}  {' '}
       <span className='Loisir__text'>{text}</span>
       <Cursor  style={{ direction: lang === "ar" ? "rtl": "ltr" }}  cursorColor='red' />
 </p>

@@ -36,9 +36,7 @@ const MyPortfolio = () => {
         <figure
           className="card"
           key={project.id}
-         // data-aos="flip-left"
-          //data-aos-easing="ease-out-cubic"
-         // data-aos-duration="2000"
+ 
         >
           <div className="card-face front">
             <img src={project.image} alt={project.alt} />

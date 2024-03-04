@@ -11,20 +11,26 @@
     margin-bottom: 22px;
 
     p {
+        font-family: "Great Vibes";
+        font-style: italic;
         font-size: 14px;
         text-align: center;
         color: #fff;
-        font-weight: 700;
+        font-weight: 600;
         background-color: #433871;
+        word-spacing: .2rem;
     }
 
     &__text {
+        font-family: "Great Vibes";
+        font-style: italic;
         font-size: 14px;
         text-align: center;
         color: #fff;
         letter-spacing: .1rem;
         background-color: transparent;
-        font-weight: 700;
+        font-weight: 600;
+        word-spacing: .2rem;
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
@@ -44,6 +50,7 @@
             font-size: 16px;
             text-align: center;
             color: #fff;
+            word-spacing: .2rem;
         }
 
         &__text {
@@ -52,6 +59,7 @@
             color: #fff;
             letter-spacing: .1rem;
             background-color: transparent;
+            word-spacing: .2rem;
         }
     }
 }
