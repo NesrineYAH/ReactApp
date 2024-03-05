@@ -9,8 +9,7 @@ import i18next from "i18next";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 <React.StrictMode>  
-  
-     <I18nextProvider i18n={i18next}  dir="rtl">          {/*29/12 à 23:15*/}
+     <I18nextProvider i18n={i18next}  dir="rtl">        
      <App />
      </I18nextProvider>
   </React.StrictMode>

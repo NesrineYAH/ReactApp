@@ -163,8 +163,6 @@
     }
 
 
-
-
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
 
         &__header {
@@ -188,11 +186,9 @@
         &__title {
             font-size: 28px;
             font-weight: 800;
-
         }
 
         &__iconeBack {
-
             cursor: pointer;
             font-size: 4vw;
         }

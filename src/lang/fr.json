@@ -22,7 +22,7 @@
 
   "service_title": "Services",
   "service_id": "services",
-  "Service_path": "/#Services",
+  "service_path": "/#Services",
   
   "contact_title": "Contact",
   "contact_id": "Contact",
@@ -52,7 +52,6 @@
    "Veille technologique": "Veille Technologique",
    "rotate":"Mes Certifications",
  
-
    "lle développement web pour moi est un art lequel j'exprime ": "le développement web pour moi est un art lequel j'exprime",
  "ma créativité" : "ma créativité",
  "mon inspiration" : "mon inspiration",
@@ -121,9 +120,11 @@
 },
   "Competence":{ 
     "question": "Qu'est ce que je sais faire ?",
-    "prgI": "Mes comIétences professionnelles me permettent d'être aujourd'hui ",
-    "prgII":"et de disposer des compétences techniques dont voici un aperçu",
-    "strongWords":"Autonome, Polyvalent, rigoureuse",
+    "prgI": "En tant que développeuse dévouée et passionnée, je suis convaincu que mes compétences techniques et mes soft skills combinées font de moi ",
+   "strongWordsI": " un atout précieux ", 
+    "prgII": "pour tout un environnement professionnel exigeant. En effectuant ma formation en reconversion professionnelle à distance, en étant",
+    "strongWordsII":"Autodidacte, Autonome, créative, rigoureuse",
+    "prgIII":"et de disposer des compétences techniques comme :",
     "softSkills__titleI":"Getion de projets",
     "softSkills__titleII":"Pilotage d'équipe",
     "softSkills__titleIII":"Relation clients", 

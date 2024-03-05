@@ -118,9 +118,11 @@
   },
   "Competence":{ 
     "question": "What can I do?",
-    "prgI": "My professional skills allow me to be today",
-    "prgII":"and to have the technical skills of which here is an overview",
-    "strongWords":"Autonomous, versatile, rigorous",  
+    "prgI": "As a dedicated and passionate developer, I am convinced that my technical skills and my soft skills combined make me",
+    "strongWordsI": "a valuable asset",
+    "prgII":"for a demanding professional environment. By completing my training in professional retraining remotely, by being",
+    "strongWordsII":"Self-taught, Autonomous, creative, rigorous",  
+    "prgIII": "and to have the technical skills as :",
     "softSkills__titleI":" Project management",
     "softSkills__titleII":"Team management",
     "softSkills__titleIII":"Customers relationship"

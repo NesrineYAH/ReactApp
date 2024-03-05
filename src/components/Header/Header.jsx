@@ -189,13 +189,9 @@ class Header extends Component {
                     </a>
                   </li>
                   <li className="navbar_item slide5">
-                    <a
-                      to={t("service_path")}
-                      className="navbar_link"
-                      onClick={this.handleLinkClick}
-                    >
-                      {t("service_title")}
-                    </a>
+                  <a href={t("service_path")} className="navbar_link" onClick={this.handleLinkClick}>
+                    {t("service_title")}
+                  </a>
                   </li>
                   <li className="navbar_item slide6">
                     <a

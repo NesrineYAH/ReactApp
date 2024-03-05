@@ -22,7 +22,7 @@ const MySkills = () => {
     
    useEffect(() => {
     const timeline = gsap.timeline({ repeat: -1 });
-     const chars = Array.from(textRef.current.querySelectorAll(' .display-dots'));
+     const chars = Array.from(textRef.current.querySelectorAll('.display-dots'));
 
      timeline.from(chars, { opacity: 0, stagger: 0.5 })
         .to(chars, { opacity: 1, stagger: 0.5, delay: 0 })
@@ -193,9 +193,7 @@ const MySkills = () => {
                                 <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
                                    
                         </h6>
-             
-                        <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWords")} </strong>
-                            {t("Competence.prgII")} </p>
+                        <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} </p>
                     </div>
 
 
