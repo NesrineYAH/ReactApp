@@ -9,9 +9,9 @@ const TypingAnimation = () =>{
   const lang = localStorage.getItem("i18nextLang");
   const [text] = useTypewriter({
     words: [
-      t('ma créativité'),
-      t('mon inspiration'), 
-      t('ma passion')
+      t('creativite'),
+      t('inspiration'), 
+      t('passion')
     ],
     loop: 0,
     typeSpeed: 120,
@@ -21,7 +21,7 @@ const TypingAnimation = () =>{
   return (
     <div style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }} 
      className='Loisir'>
-    <p>  {t("le développement web pour moi est un art lequel j'exprime")}  {' '}
+    <p>  {t("myTextBlog")}  {' '}
       <span className='Loisir__text'>{text}</span>
       <Cursor  style={{ direction: lang === "ar" ? "rtl": "ltr" }}  cursorColor='red' />
 </p>

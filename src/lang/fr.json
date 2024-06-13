@@ -52,11 +52,10 @@
    "Veille technologique": "Veille Technologique",
    "rotate":"Mes Certifications",
  
-   "lle développement web pour moi est un art lequel j'exprime ": "le développement web pour moi est un art lequel j'exprime",
- "ma créativité" : "ma créativité",
- "mon inspiration" : "mon inspiration",
- "ma passion" : "ma passion",
-
+   "myTextBlog": "le développement web pour moi est un art lequel j'exprime",
+ "creativite" : "ma créativité",
+ "inspiration" : "mon inspiration",
+ "passion" : "ma passion",
 
    "lan": "Bonjour",
    "world": "Tout le monde",

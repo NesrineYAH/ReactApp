@@ -1,9 +1,10 @@
 #Profil {
-    width: 96%;
+
     @include flex-column;
-    height: 120vh;
+    /*height: 120vh;
     position: relative;
-    top: 150px;
+    top: 150px;*/
+    padding-top: 42px;
 
     .Profil__container {
         margin: 0 auto;
