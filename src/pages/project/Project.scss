@@ -27,9 +27,9 @@
     }
 
     &__iconeBack {
-        margin-top: -1rem;
+        margin-top: -1.2rem;
         position: absolute;
-        left: .8rem;
+        left: 5.2%;
         height: 30px;
         cursor: pointer;
         font-size: 7vw;
@@ -211,6 +211,8 @@
             justify-content: space-around;
             align-items: center;
             height: 50px;
+            position: relative;
+            top: 11%;
         }
 
         &__iconeBack {
