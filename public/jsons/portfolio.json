@@ -175,5 +175,99 @@
     ],
     "site": "https://nesrineyah.github.io/Kasa-app-YAHOUM/",
     "github":"https://github.com/NesrineYAH/Ohmyfood-YAHOUM-NESRINE.git"
-  }
+  },
+  {
+    "title": "Les petits plats",
+    "image": "../assets/projects/LesPetitsPlats/Recette05.jpg",
+    "alt": "projet les petits plats",
+    "id": "7",
+    "brief_description": "projectLesPetitsPlats.brief_description",
+    "description_project": "projectLesPetitsPlats.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/html-min.webp",
+        "name": "HTML"
+      },
+      {
+        "icon": "../assets/technologyIcons/css-3-min.webp",
+        "name": "css"
+      },
+      {
+        "icon": "../assets/technologyIcons/js-min.webp",
+        "name": "JavaScript"
+      }
+      
+    ],
+    "pictures": [
+      "../assets/projects/LesPetitsPlats/Recette01.jpg",
+      "../assets/projects/lesPetitsPlats/Recette02.jpg",
+      "../assets/projects/lesPetitsPlats/Recette03.jpg",
+      "../assets/projects/lesPetitsPlats/Recette04.jpg",
+      "../assets/projects/lesPetitsPlats/Recette05.jpg",
+      "../assets/projects/lesPetitsPlats/Recette06.jpg",
+      "../assets/projects/lesPetitsPlats/Recette07.jpg",
+      "../assets/projects/lesPetitsPlats/Recette08.jpg",
+      "../assets/projects/lesPetitsPlats/Recette09.jpg"
+    ],
+    "site": " https://superb-sfogliatella-83d6ff.netlify.app",
+    "github":"https://github.com/NesrineYAH/les_petits_plats.git"
+  }, 
+  {
+      "title": "Game on",
+      "image": "../assets/projects/GameONWebSiteFr/GameOnIII.png ",
+      "alt": "projet Game on",
+      "id": "8",
+      "brief_description": "GameOn.brief_description",
+      "description_project": "GameOn.description_project",
+      "technologyUsed": [
+        {
+          "icon": "../assets/technologyIcons/html-min.webp",
+          "name": "HTML"
+        },
+        {
+          "icon": "../assets/technologyIcons/css-3-min.webp",
+          "name": "css"
+        },
+        {
+          "icon": "../assets/technologyIcons/js-min.webp",
+          "name": "JavaScript"
+        }
+        
+      ],
+      "pictures": [     
+      ],
+      "site": "https://friendly-rolypoly-f3cef3.netlify.app",
+      "github":"https://github.com/NesrineYAH/GameOn-website-FR.git"
+    
+  
+  },
+  {
+    "title": "Marathon Marathon Paris 2024",
+    "image": "../assets/projects/Marathon",
+    "alt": "projet Marathon Paris 2024",
+    "id": "9",
+    "brief_description": "Marathon.brief_description",
+    "description_project": "Marathon.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/html-min.webp",
+        "name": "HTML"
+      },
+      {
+        "icon": "../assets/technologyIcons/css-3-min.webp",
+        "name": "css"
+      },
+      {
+        "icon": "../assets/technologyIcons/js-min.webp",
+        "name": "JavaScript"
+      }
+      
+    ],
+    "pictures": [     
+    ],
+    "site": "",
+    "github":""
+  
+
+}
 ]

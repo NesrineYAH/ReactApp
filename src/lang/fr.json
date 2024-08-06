@@ -110,6 +110,13 @@
     "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France",
     "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale"
 },
+{
+  "projectLesPetitsPlats": {
+    "brief_description": "Créer une landing page attrayante avec HTML et CSS. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation",
+"description_project":"Ce projet sert à créer une page web d'inscription à un évenement sprtif Marathon, donc notre role au tant que développeur c'est de créer cette page an ajoutant des fonctionnalités en javascript pour que l'utlisateur puisse s'inscrire à cet évenement "
+  }
+},
+
 "service.description": {
   "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
    "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
