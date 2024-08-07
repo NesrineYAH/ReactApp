@@ -242,8 +242,8 @@
   
   },
   {
-    "title": "Marathon Marathon Paris 2024",
-    "image": "../assets/projects/Marathon",
+    "title": "Marathon  Paris 2024",
+    "image": "../assets/projects/Marathon/img Eveil II.png",
     "alt": "projet Marathon Paris 2024",
     "id": "9",
     "brief_description": "Marathon.brief_description",
@@ -264,6 +264,16 @@
       
     ],
     "pictures": [     
+      "../assets/projects/Marathon/img Eveil II.png",
+      "../assets/projects/Marathon/img Eveil III.png",
+      "../assets/projects/Marathon/Img kelya nemour.avif",
+      "../assets/projects/Marathon/images -imaneKhelif.jpg",
+      "../assets/projects/Marathon/marathonID.jpg",
+      "../assets/projects/Marathon/marathonIE7.jpg",
+      "../assets/projects/Marathon/marathonIA.jpg",
+      "../assets/projects/Marathon/marathonI.jpg"
+
+
     ],
     "site": "",
     "github":""
