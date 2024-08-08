@@ -193,6 +193,18 @@
    "pT17" : " à céder les informations à l' acquéreur qui serait alors lui-même tenu à la même obligation de conservation et de modification des informations concernant l'utilisateur du site suivant ",
    "pT18" : "est en conformité avec le RGPD.",
    "pT19" : "Les bases de données sont protégées par les obligations de la loi du 1er juillet 1998 transposant ainsi la directive 96/9 du 11 mars 1996 relative à la protection juridique des BDD (bases de données)."
-}
-  
+},
+"contact": {
+  "ErrorName": "Le nom ne doit contenir que des lettres et des espaces",
+  "ErrorLastName": "Le prénom ne doit contenir que des lettres et des espaces",
+  "ErrorMail": "Veuillez saisir une adresse e-mail valide",
+  "ErrorMessage" :"Veuillez saisir votre message",
+  "alert":"Le formulaire contient des erreurs. Veuillez le corriger"
+},
+  "errors" :{
+    "last_name" :"Le nom ne doit contenir que des lettres et des espaces", 
+    "first_name": "Le nom ne doit contenir que des lettres et des espaces",
+     "user_email": "Veuillez saisir une adresse e-mail valide", 
+     "message": "Veuillez saisir votre message" 
+  }
 }

@@ -31,6 +31,7 @@ const Contact = () => {
     message: "",
   });
 
+  //setErrors(errors);
  /* useEffect(() => {
     AOS.init({ duration: 6000 });
   }, []);
@@ -41,29 +42,29 @@ const Contact = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let isValid = true;
-    const newErrors = { last_name: "", first_name: "", user_email: "", message: "" };
+    const newErrors = {last_name: "", first_name: "", user_email: "", message: "" };
 
     // Validate last name
     if (!nameRegex.test(formData.last_name)) {
-      newErrors.last_name = "Le nom ne doit contenir que des lettres et des espaces.";
+      newErrors.last_name = t("errors.last_name");
       isValid = false;
     }
 
     // Validate first name
     if (!nameRegex.test(formData.first_name)) {
-      newErrors.first_name = "Le prénom ne doit contenir que des lettres et des espaces.";
+      newErrors.first_name =  t("errors.first_name");
       isValid = false;
     }
 
     // Validate email
     if (!emailRegex.test(formData.user_email)) {
-      newErrors.user_email = "Veuillez saisir une adresse e-mail valide.";
+      newErrors.user_email = t("errors.user_email");
       isValid = false;
     }
 
     // Validate message
     if (formData.message.trim() === "") {
-      newErrors.message = "Veuillez saisir un message.";
+      newErrors.message = t("errors.message");
       isValid = false;
     }
 
@@ -89,7 +90,7 @@ const Contact = () => {
           }
         );
     } else {
-      alert("Le formulaire contient des erreurs. Veuillez le corriger.");
+      alert(t('contact.alert'));
     }
   };
 
@@ -113,7 +114,7 @@ const Contact = () => {
       
           <label htmlFor="last_name" >{t("lastName")}</label>
           <input
-           style={{ borderColor: errors.last_name ? "red" : "initial",}}
+           style={{borderColor: errors.last_name ? "red" : "initial"}}
             type="text"
             name="last_name"
             value={formData.last_name}
@@ -123,8 +124,7 @@ const Contact = () => {
             id="last_name"
             required
           />         
-          <div className="error">{errors.last_name}</div>
-          
+          <div className="error">{errors.last_name}</div>          
           <label htmlFor="first_name">{t("firstName")}</label>
           <input
              style={{borderColor: errors.first_name ? "red" : "initial"}}
@@ -135,12 +135,11 @@ const Contact = () => {
             className="form-control"
             placeholder={t("firstName")} id="first_name" required/>
           <div className="error">{errors.first_name}</div>
-
           <label htmlFor="user_email">{t("Email")}</label>
           <input
             style={{borderColor: errors.user_email ? "red" : "initial" }}
             type="email"
-            id="user_email"
+           // id="user_email"
             name="user_email"
             value={formData.user_email}
             onChange={handleChange}
@@ -151,19 +150,19 @@ const Contact = () => {
           <div className="error">{errors.user_email}</div>
 
           <label htmlFor="message">{t("Message")}</label>
-          <textarea
-            style={{ borderColor: errors.message ? "red" : "initial"}}
+          <textarea 
+            style={{borderColor: errors.message ? "red" : "initial"}}
             name="message"
             id="message"
             value={formData.message}
-          onChange={handleChange}
+            onChange={handleChange}
             className="form-control"
             placeholder={t("Message")}
             rows="10"
             required
           />
-          <div className="error">{errors.message}</div>
 
+<div className="error">{errors.message}</div>
           <input type="submit" value={t("Send")} className="send-text" />
         </form>
 

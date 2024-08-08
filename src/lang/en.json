@@ -181,7 +181,21 @@
    "pT17" : "to transfer the information to the purchaser who would then himself be bound by the same obligation to store and modify the information concerning the user of the following site",
   "pT18" : "is in compliance with the GDPR.",
   "pT19" : "The databases are protected by the obligations of the law of July 1, 1998 thus transposing Directive 96/9 of March 11, 1996 relating to the legal protection of databases (databases)"
-}
+},
 
+"contact": {
+  "ErrorName": "The name should only contain letters and spaces",
+  "ErrorLastName": "The first name should only contain letters and spaces",
+  "ErrorMail": "Please enter a valid e-mail address",
+  "ErrorMessage" :"Please enter your message",
+  "alert":"The form contains errors. Please correct it"
 
+},
+  "errors" :{
+    "last_name" :"The name should only contain letters and spaces", 
+    "first_name": "The first name should only contain letters and spaces",
+     " user_email": "Please enter a valid e-mail address", 
+     "message": "Please enter your message" 
+
+  }
 }
