@@ -192,9 +192,9 @@
 
 },
   "errors" :{
-    "last_name" :"The name should only contain letters and spaces", 
+    "last_name" :"The last name should only contain letters and spaces", 
     "first_name": "The first name should only contain letters and spaces",
-     " user_email": "Please enter a valid e-mail address", 
+     "user_email": "Please enter a valid e-mail address", 
      "message": "Please enter your message" 
 
   }

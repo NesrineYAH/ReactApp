@@ -22,7 +22,7 @@
 
   "service_title": "Services",
   "service_id": "services",
-  "service_path": "/#Services",
+  "service_path":"/#Services",
   
   "contact_title": "Contact",
   "contact_id": "Contact",
@@ -202,7 +202,7 @@
   "alert":"Le formulaire contient des erreurs. Veuillez le corriger"
 },
   "errors" :{
-    "last_name" :"Le nom ne doit contenir que des lettres et des espaces", 
+    "last_name":"Le nom ne doit contenir que des lettres et des espaces", 
     "first_name": "Le nom ne doit contenir que des lettres et des espaces",
      "user_email": "Veuillez saisir une adresse e-mail valide", 
      "message": "Veuillez saisir votre message" 

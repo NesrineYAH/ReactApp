@@ -21,7 +21,7 @@ const TypingAnimation = () =>{
   return (
     <div style={{ flexDirection: lang === "ar" ? "row" : "row-reverse" }} 
      className='Loisir'>
-    <p>  {t("myTextBlog")}  {' '}
+    <p>  {t("myTextBlog")} {' '} {' '}
       <span className='Loisir__text'>{text}</span>
       <Cursor  style={{ direction: lang === "ar" ? "rtl": "ltr" }}  cursorColor='red' />
 </p>
