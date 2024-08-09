@@ -112,11 +112,18 @@
 },
 
   "projectLesPetitsPlats": {
-    "brief_description": "Créer une landing page attrayante avec HTML et CSS. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation",
-"description_project":"Ce projet sert à créer une page web d'inscription à un évenement sprtif Marathon, donc notre role au tant que développeur c'est de créer cette page an ajoutant des fonctionnalités en javascript pour que l'utlisateur puisse s'inscrire à cet évenement "
+    "brief_description": "Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.",
+   "description_project":"Au tant qu'une développeuse web freelance missioné par l'entreprise “Les petits plats” pour réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g, et réaliser deux algorithmes distincts, le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).Définir quel algorithme fonctionne le mieux et donne le plus de résultats avec JSBENCH."
   
 },
-
+"GameOn":{
+  "brief_description": "GameOn. c'est un projet de créer une landing page avec HTML CSS et Javascript, donc le put c'est pour mieux pratiquer le JavaScript",
+  "description_project": "Ce projet sert à créer une page web d'inscription à un évenement sprtif Marathon, donc notre rôle au tant que développeur c'est de créer cette page an ajoutant des fonctionnalités en javascript pour que l'utlisateur puisse s'inscrire à cet évenement "
+},
+"Marathon":{
+"brief_description":"Créer une landing page attrayante avec HTML et CSS. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation",
+"description_project": ""
+},
 "service.description": {
   "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
    "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
@@ -206,5 +213,8 @@
     "first_name": "Le nom ne doit contenir que des lettres et des espaces",
      "user_email": "Veuillez saisir une adresse e-mail valide", 
      "message": "Veuillez saisir votre message" 
-  }
+  }, 
+
+    "txtError":"Oups! La page que vous demandez n'existe pas.",
+    "txtErrorI":"Retourner sur la page d’accueil" 
 }

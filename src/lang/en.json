@@ -197,5 +197,8 @@
      "user_email": "Please enter a valid e-mail address", 
      "message": "Please enter your message" 
 
-  }
+  },
+  "txtError":"Oops! The page you are looking for does not exist.",
+  "txtErrorI":"Retour to the home page"
+
 }

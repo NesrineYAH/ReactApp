@@ -62,8 +62,8 @@ const Contact = () => {
       isValid = false;
     }
 
-    // Validate message // and(formData.message.trim() === "")
-    if (!msgRegex.test(formData.message) && (formData.message.trim() === "")){
+    // Validate message // &&(formData.message.trim() === "")
+    if (!msgRegex.test(formData.message)){
       newErrors.message = t("errors.message");
       isValid = false;
     }

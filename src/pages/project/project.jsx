@@ -4,7 +4,7 @@ import '../../i18n';
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useParams } from 'react-router-dom';
 import Boutton from "../../components/Bouttons/Boutton";
-import ErrorPage from "../../components/Error/Error";
+import ErrorPage from "../../pages/PageError/PageError";
 import Caroussel from "../../components/Caroussel/Caroussel";
 
 const Project = () => {
