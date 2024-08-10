@@ -183,7 +183,7 @@ const Contact = () => {
             <li className="contactList__item">
               <FontAwesomeIcon icon={faLocationDot} className="loc" />
               <span itemProp="location" className="contactList__span place">
-                Paris, ile de France
+                Paris, Île de France
               </span>
             </li>
           </ul>
