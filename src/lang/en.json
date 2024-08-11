@@ -120,8 +120,8 @@
   "description_project": "This project is used to create a registration web page for a Marathon sports event, so our role as a developer is to create this page by adding javascript features so that the user can register for this event"
 },
 "Marathon":{
-"brief_description":"",
-"description_project": ""
+"brief_description":"This project is used to create a website for a festive event the Olympic Games",
+"description_project": "Create a website with HTML and CSS and JavaScript. 🎯 Implement interactive features with JavaScript to improve the user experience. ✅ Validate the form entries and display appropriate error messages in case of incorrect data. ⚙️ Add user interactions, such as opening and closing a modal window.🔧 Implementation details"
 },
 
 

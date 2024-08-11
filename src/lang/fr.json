@@ -120,8 +120,8 @@
   "description_project": "Ce projet sert à créer une page web d'inscription à un évenement sportif Marathon, donc notre rôle au tant que développeur c'est de créer cette page an ajoutant des fonctionnalités en javascript pour que l'utlisateur puisse s'inscrire à cet évenement "
 },
 "Marathon":{
-"brief_description":"Ce projet sert à créer une page web d'inscription à un évenement sprtif Marathon",
-"description_project": "Créer une landing page attrayante avec HTML et CSS. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation"
+"brief_description":"Ce projet sert à créer une site web pour un évenement soprtif les jeux olympique",
+"description_project": "Créer un site web avec HTML et CSS et javaScript. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation"
 },
 "service.description": {
   "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
