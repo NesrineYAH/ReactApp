@@ -214,7 +214,7 @@
   }, 
   {
       "title": "Game on",
-      "image": "../assets/projects/GameONWebSiteFr/GameOnIII.png ",
+      "image": "../assets/projects/GameON/GameOnIII.png",
       "alt": "projet Game on",
       "id": "8",
       "brief_description": "GameOn.brief_description",
@@ -234,7 +234,12 @@
         }
         
       ],
-      "pictures": [     
+      "pictures": [  
+           "../assets/projects/GameON/GameonI.jpg",
+           "../assets/projects/GameON/GameOnII.png",
+           "../assets/projects/GameON/GameOnVII.png",
+           "../assets/projects/GameON/GameOnIII.png",
+           "../assets/projects/GameON/GameONVX.png"
       ],
       "site": "https://friendly-rolypoly-f3cef3.netlify.app",
       "github":"https://github.com/NesrineYAH/GameOn-website-FR.git"
@@ -242,7 +247,7 @@
 
   },
   {
-    "title": "Marathon  Paris 2024",
+    "title": "Marathon",
     "image": "../assets/projects/Marathon/img Eveil II.png",
     "alt": "projet Marathon Paris 2024",
     "id": "9",
@@ -276,7 +281,7 @@
 
     ],
     "site": "",
-    "github":""
+    "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
   
 
 }

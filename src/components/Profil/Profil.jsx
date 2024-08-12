@@ -14,7 +14,7 @@ const Profil = () => {
     <section id="Profil">
     <div className="Profil__container">
       <div className="Profil"> 
-    <h4 className='Profil__titre'>
+      <h4 className='Profil__titre'>
        {" "}
         {t("main_heading.static_desc")} {t("main_heading.dynamic_desc")}
         </h4> 

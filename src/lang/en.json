@@ -140,7 +140,10 @@
     "prgIII": "and to have the technical skills as :",
     "softSkills__titleI":" Project management",
     "softSkills__titleII":"Team management",
-    "softSkills__titleIII":"Customers relationship"
+    "softSkills__titleIII":"Customers relationship",
+    "titleI" : "Front-end",
+   "titleII" : "Back-end",
+   "titleIII" : "Design"
 }, 
 "TxtCertiPrg": { 
   "p":"Following to the training at Openclassrooms, to become a web developer I learned and followed online courses offered by Openclassrooms, certifications obtained at the end of the courses ",

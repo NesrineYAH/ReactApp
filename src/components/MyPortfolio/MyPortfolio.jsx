@@ -35,9 +35,7 @@ const MyPortfolio = () => {
       {projects.map((project) => (
         <figure
           className="card"
-          key={project.id}
- 
-        >
+          key={project.id}>
           <div className="card-face front">
             <img src={project.image} alt={project.alt} />
             <h2 className="card_title "> {project.title} </h2>

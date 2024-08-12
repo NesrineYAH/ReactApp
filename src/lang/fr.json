@@ -140,7 +140,10 @@
     "softSkills__titleI":"Getion de projets",
     "softSkills__titleII":"Pilotage d'équipe",
     "softSkills__titleIII":"Relation clients", 
-    "?":"؟"
+    "?":"؟",
+   "titleI" : "Front-end",
+   "titleII" : "Back-end",
+   "titleIII" : "Design"
 
   }, 
  

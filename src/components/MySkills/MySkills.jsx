@@ -102,7 +102,7 @@ const MySkills = () => {
             <div className="SkillsContainer">
                 <div className="SkillsContainer__box">
                     <div className="box">
-                        <h4 className="box__title">Front-end</h4>
+                        <h4 className="box__title">{t("Competence.titleI")}</h4>
                         <div className="skillItem">
                             <p className="skillItem__p">HTML</p>
                             <div className="skillItem__bar">
@@ -116,7 +116,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Bootstrap</p>
+                            <p className="skillItem__p">Tailwind CSS</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled bootstrap_skill"></div>
                             </div>
@@ -141,7 +141,7 @@ const MySkills = () => {
                         </div>
                     </div>
                     <div className="box">
-                        <h4 className="box__title">Back-end</h4>
+                        <h4 className="box__title">{t("Competence.titleII")}</h4>
                         <div className="skillItem">
                             <p className="skillItem__p">Node JS</p>
                             <div className="skillItem__bar">
@@ -162,7 +162,7 @@ const MySkills = () => {
                         </div>
                     </div>
                     <div className="box">
-                        <h4 className="box__title">Design</h4>
+                        <h4 className="box__title">{t("Competence.titleIII")}</h4>
                         <div className="skillItem">
                             <p className="skillItem__p">Figma</p>
                             <div className="skillItem__bar">
