@@ -107,27 +107,26 @@
   "description_project": "l'entreprise du produit PICANTE souhaite désormais développer une application évaluation de ses sauces piquantes, appelée HOT TAKES, et la transformer à une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent, Donc notre mission en tant que développeur web est de construire une API sécurisé pour son application HOT TAKE."
 },
   "projectKasa": {
-    "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France",
-    "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale"
+    "brief_description": "Kasa est une application dédiée à la location d'appartements entre particuliers en France.",
+    "description_project": "En tant que développeur, j'ai été chargé par Kasa, leader de la location d'appartements entre particuliers en France, de rénover leur site web.\n Pour cette tâche, j'ai utilisé JavaScript pour le côté client et j'ai opté pour React comme framework pour le front-end. J'ai eu accès à 20 annonces immobilières récentes au format JSON, sur lesquelles j'ai travaillé pour créer un site web fonctionnel et responsive.\n J'ai également utilisé Figma pour convertir les maquettes en composants et routes React, ce qui m'a permis de garantir une cohérence visuelle tout en développant une interface utilisateur interactive et conviviale."
 },
   "projectLesPetitsPlats": {
     "brief_description": "Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise “Les petits plats” a décidé de réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.",
    "description_project":"Au tant qu'une développeuse web freelance missioné par l'entreprise “Les petits plats” pour réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g, et réaliser deux algorithmes distincts, le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).Définir quel algorithme fonctionne le mieux et donne le plus de résultats avec JSBENCH."
-
 },
 "GameOn":{
-  "brief_description": "GameOn c'est un projet de créer une landing page avec HTML CSS et Javascript, donc le but c'est pour mieux pratiquer le JavaScript",
+  "brief_description": "GameOn c'est un projet de créer une landing page avec HTML CSS et Javascript, donc le but c'est pour mieux pratiquer le JavaScript.",
   "description_project": "Ce projet sert à créer une page web d'inscription à un évenement sportif Marathon, donc notre rôle au tant que développeur c'est de créer cette page an ajoutant des fonctionnalités en javascript pour que l'utlisateur puisse s'inscrire à cet évenement "
 },
 "Marathon":{
-"brief_description":"Ce projet sert à créer une site web pour un évenement soprtif les jeux olympique",
-"description_project": "Créer un site web avec HTML et CSS et javaScript. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale.🔧 Détails de l'implémentation"
+"brief_description":"Ce projet sert à créer une site web pour un évenement soprtif les jeux olympique qui contient les différents évenement sportifs.",
+"description_project": "Créer un site web avec HTML et CSS et javaScript. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale contient 🔧 les détails de l'implémentation."
 },
 "service.description": {
-  "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes",
+  "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes.",
    "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
-   "Referencement":"englobe l'ensemble des méthodes et techniques qui visent à positionner les pages web de votre site",
-   "Veille" :"Toujours à l'affût des nouvelles technologies, et désireuse de d'élargir  ma zone de compétences et connaissances"
+   "Referencement":"Englobe l'ensemble des méthodes et techniques qui visent à positionner les pages web de votre site.",
+   "Veille" :"Toujours à l'affût des nouvelles technologies, et désireuse de d'élargir  ma zone de compétences et connaissances."
 
 },
   "Competence":{ 

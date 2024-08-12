@@ -54,6 +54,8 @@
     .error {
         font-size: 12px;
         color: red;
+        margin-top: -6px;
+        font-weight: 500;
     }
 
     .send-text {
@@ -207,8 +209,9 @@
 
         .error {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
             color: red;
+            margin-top: -7px;
         }
 
         .send-text {
