@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import Error from "./pages/PageError/PageError";
 import Project from "./pages/Project/Project";
 import "./App.scss";
-import Certification from "./pages/Certification/Certification";
 import MentionLegales from './pages/MentionsLegales/MentionsLegales'; 
 import SiteMap from './pages/SiteMap/SiteMap';
 import { SyncLoader   }  from 'react-spinners'; 
@@ -48,7 +47,6 @@ class App extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error />} />
           <Route path="/Project/:id" element={<Project />} />
-          <Route path="/Certification" element={<Certification />} />
           <Route path="/MentionLegales" element={<MentionLegales />} />
           <Route path="/SiteMap" element={<SiteMap />} />
         </Routes>
@@ -63,46 +61,4 @@ class App extends React.Component {
 }
 
 export default App;
-   {/*          
-
-      const containerStyle ={
-      position :'relative',
-      width: '3rem',
-      height: '3rem'
-    }
-  const circlestyle ={
-  display :'block',
-  width: '3rem',
-  height:'3rem',
-  border: "0.5rem solid #e9e9e9",
-  borderTop: "0.5rem solid #3498db", 
-  borderRadius: "50%",
-  position: "absolute",
-  boxSizing: "border-box",
-  top: 0,
-  left :0
-  }  
-  const spinTransition = {
-  loop: Infinity,
-  ease: "linear",
-  duration: 1,
- }
-
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  */}

@@ -13,7 +13,6 @@ const Portfolio = () => {
     </div>
   <div className="CertiPrg">
     <p>{t("TxtCertiPrg.p")} </p>
-   <a className="CertiPrg__a"  href={`../Certification/#certifications`}  target="_blank" rel="noopener noreferrer">-- {t("TxtCertiPrg.lien")} --  </a> 
    </div>
  </section>
  
