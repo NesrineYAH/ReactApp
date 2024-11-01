@@ -31,11 +31,10 @@ const Contact = () => {
     message: "",
   });
 
- /* useEffect(() => {
-    AOS.init({ duration: 6000 });
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
   }, []);
-          data-aos="zoom-in-up" 
-*/
+
   const validateForm = () => {
     const nameRegex = /^[a-zA-Z ]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -98,7 +97,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+/**         data-aos="zoom-in-up" */
   return (
     <section id={t("contact_id")} className="contact" itemScope itemType="http://schema.org/Person" >
       <h2 className="titlePortfolio">{t("contact_title")}</h2>
@@ -110,6 +109,7 @@ const Contact = () => {
          ref={formRef}             
           onSubmit={handleSubmit}
           className="form-horizontal"
+  
     >
       
           <label htmlFor="last_name" >{t("lastName")}</label>
@@ -160,18 +160,18 @@ const Contact = () => {
           <input type="submit" value={t("Send")} className="send-text" />
         </form>
 
-        <div className="contactList__conatiner" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}>
+        <div className="contactList__conatiner" >
           <ul className="contactList">
-            <li className="contactList__item">
+            <li className="contactList__item" >
               <FaPhoneFlip className="contactList__i" />
               <span className="contactList__span phone">
-                <a itemProp="telephone" href="00769551422" className="contactList__a">
-                  (33) 7 69 55 14 22 
+                <a itemProp="telephone" href="0033769551422" className="contactList__a" style={{ direction: lang === "ar" ? "rtl" : "ltr" }}>
+                  (0033) 7 69 55 14 22 
                 </a>
               </span>
             </li>
 
-            <li className="contactList__item">
+            <li className="contactList__item" style={{  flexDirection: lang === "ar" ? "row-reverse" : "row" }}>
               <IoMail className="contactList__i Noc" />
               <span className="contact-text gmail">
                 <a itemProp="email" href="mailto:nesrineyahoum@gmail.com" className="contactList__a">
@@ -180,8 +180,8 @@ const Contact = () => {
               </span>
             </li>
 
-            <li className="contactList__item">
-              <FontAwesomeIcon icon={faLocationDot} className="loc" />
+            <li className="contactList__item" style={{  flexDirection: lang === "ar" ? "row-reverse" : "row" }}>
+              <FontAwesomeIcon icon={faLocationDot} className="loc"  />
               <span itemProp="location" className="contactList__span place">
                 Paris, Île de France
               </span>

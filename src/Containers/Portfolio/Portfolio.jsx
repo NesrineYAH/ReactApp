@@ -7,7 +7,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   return (
 <section id="Portfolio">
-    <div id={t("Portfolio_id")} className="portfoloi">
+    <div id={t("portfolio_id")} className="portfoloi">
       <h2 className="titlePortfolio"> {t("portfolio_title")}</h2>
       <MyPortfolio />
     </div>

@@ -12,7 +12,7 @@ const Profil = () => {
 
   return (
     <section id="Profil">
-    <div className="Profil__container">
+    <div id={t("Profil_id")}  className="Profil__container">
       <div className="Profil"> 
       <h4 className='Profil__titre'>
        {" "}

@@ -53,7 +53,7 @@ const About = () => {
   return (
     <section>
       <div id="About">
-        <div className="presentation">
+        <div id={t("home_id")}  className="presentation">
           <p  style={{ direction: lang === "ar" ? "rtl" : "ltr",   fontSize: '18px'}}>
             {t('lan')} {' '}
             <span period={3000}>{text}</span>

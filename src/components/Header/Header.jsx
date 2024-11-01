@@ -44,10 +44,15 @@ class Header extends Component {
 
   handleLinkClick = (event) => {
     const { hash } = event.currentTarget;
-    setTimeout(() => {
-      const element = document.querySelector("hash");
-      console.log({ hash });
-       console.log(element);
+   //  if (!hash) return; // Si hash est nul, on sort de la fonction
+     const decodedHash = decodeURIComponent(hash);
+     setTimeout(() => {
+    /*  const element = document.querySelector("hash");
+      console.log({ hash });*/
+      const element = document.querySelector(decodedHash);
+      console.log({ hash: decodedHash });
+      console.log(element);
+      
 
       if (element) {
         event.preventDefault();
