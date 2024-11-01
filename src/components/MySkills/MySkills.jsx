@@ -79,14 +79,14 @@ const MySkills = () => {
     });
 
     useEffect(() => {
-        fullfillBars(".html_skill", "85%");
-        fullfillBars(".css_skill", "75%");
-        fullfillBars(".bootstrap_skill", "50%");
-        fullfillBars(".javascript_skill", "60%");
-        fullfillBars(".react_skill", "90%");
+        fullfillBars(".html_skill", "95%");
+        fullfillBars(".css_skill", "95%");
+        fullfillBars(".bootstrap_skill", "85%");
+        fullfillBars(".javascript_skill", "75%");
+        fullfillBars(".react_skill", "95%");
         fullfillBars(".wordpress_skill", "90%");
         fullfillBars(".node_skill", "75%");
-        fullfillBars(".sql_skill", "60%");
+        fullfillBars(".jQuery_skill", "60%");
         fullfillBars(".express_skill", "60%");
         fullfillBars(".Git_skill", "60%");
         fullfillBars(".Figma_skill", "60%");
@@ -116,7 +116,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Tailwind CSS</p>
+                            <p className="skillItem__p">Tailwind CSS, Bootstrap</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled bootstrap_skill"></div>
                             </div>
