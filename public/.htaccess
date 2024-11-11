@@ -1,7 +1,5 @@
 # Activer la réécriture d'URL
 RewriteEngine On
-
-# Ne pas réécrire les URL vers des fichiers ou des répertoires existants
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
@@ -62,8 +60,7 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 # BEGIN EXPIRES
   
 <IfModule mod_expires.c>
-    ExpiresActive On
-    
+    ExpiresActive On 
       ExpiresByType text/html "access plus 1 years"
 ExpiresByType image/webp "access plus 1 years"
 ExpiresByType text/javascript "access plus 1 years"
@@ -92,4 +89,15 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 2 days"
 </IfModule>
-## EXPIRES HEADER CACHING ##
+## EXPIRES HEADER CACHING ## // 11/11
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+## 11/11
+<Limit GET POST>
+  Order Deny,Allow
+  Deny from all
+  Allow from 192.168.1.1   # Remplacez par votre adresse IP
+</Limit>
+
