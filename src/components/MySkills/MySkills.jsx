@@ -31,6 +31,7 @@ const MySkills = () => {
     return () => {
          timeline.kill();
      };
+    
 }, []);
 
     const slideInTop = (elem) => {
