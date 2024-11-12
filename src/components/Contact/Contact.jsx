@@ -165,7 +165,7 @@ const Contact = () => {
             <li className="contactList__item" >
               <FaPhoneFlip className="contactList__i" />
               <span className="contactList__span phone">
-                <a itemProp="telephone" href="0033769551422" className="contactList__a" style={{ direction: lang === "ar" ? "rtl" : "ltr" }}>
+                <a itemProp="telephone" href="0033769551422" className="contactList__phone" style={{ direction: lang === "ar" ? "rtl" : "ltr" }} >
                   (0033) 7 69 55 14 22 
                 </a>
               </span>

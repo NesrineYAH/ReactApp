@@ -100,6 +100,7 @@
                 font-size: 14px;
                 color: var(--link_color);
                 font-weight: 600;
+
             }
 
             &__span {
@@ -275,7 +276,21 @@
                     color: var(--link_color);
                     font-weight: 600;
 
+
                 }
+
+                .phone {
+                    text-align: left;
+                    direction: ltr;
+                }
+
+                .phone .contactList__phone {
+                    direction: ltr;
+                    text-align: left;
+                    text-decoration: none;
+                    color: var(--link_color);
+                }
+
             }
         }
     }
