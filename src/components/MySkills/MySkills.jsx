@@ -188,12 +188,19 @@ const MySkills = () => {
                     <div className="SoftsSkills">
                         <h6 
                             className='SoftsSkills__Intro'>{t("Competence.question")}
-                            <span style={{ direction : lang === "ar" ? "rtl" : "rtl"}}
+                            <span 
+                            style={{
+                                direction: lang === "ar" ? "rtl" : "ltr",  
+                        
+                              }}
                             ref={textRef}><span className='display-dots'>{t('dot')}</span>
                                 <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
                                    
                         </h6>
-                        <p className='SoftsSkills__p'>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} </p>
+                        <p className='SoftsSkills__p'  style={{
+                                direction: lang === "ar" ? "rtl" : "ltr",  
+                                fontSize: lang === "ar" ? "18px" : "initial" 
+                              }}>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} </p>
                     </div>
 
 
