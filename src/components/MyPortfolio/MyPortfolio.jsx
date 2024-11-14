@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
+
 const MyPortfolio = () => {
   const { t } = useTranslation();
   const [projects, setProjects] = useState([]);
@@ -29,6 +30,7 @@ const MyPortfolio = () => {
   useEffect(() => {
     AOS.init({ duration: 6000 });
   }, []);
+  
 
   return (
     <div className="myPortfolio">
@@ -45,7 +47,7 @@ const MyPortfolio = () => {
             <p>{t(project.brief_description)}</p>
             <div className="glow-on-hover">
               <Link
-                to={`/Project/${project.id}`}  target="_blank" className="btn_text"key={project.id}>
+                to={`/Project/${project.id}`} target="_blank" className="btn_text"key={project.id}>
                 {t("Readmore")}
               </Link>
             </div>
