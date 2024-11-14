@@ -85,10 +85,11 @@ const MySkills = () => {
         fullfillBars(".bootstrap_skill", "85%");
         fullfillBars(".javascript_skill", "75%");
         fullfillBars(".react_skill", "95%");
-        fullfillBars(".wordpress_skill", "90%");
+        fullfillBars(".wordpress_skill", "60%");
         fullfillBars(".node_skill", "75%");
         fullfillBars(".jQuery_skill", "60%");
         fullfillBars(".express_skill", "60%");
+        fullfillBars(".MySQL_skill", "60%");
         fullfillBars(".Git_skill", "60%");
         fullfillBars(".Figma_skill", "60%");
         fullfillBars(".adobe_PS_skill", "50%");
@@ -129,7 +130,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p"> React</p>
+                            <p className="skillItem__p">React</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
@@ -156,7 +157,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">mySQL</p>
+                            <p className="skillItem__p">MySQL</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled sql_skill"></div>
                             </div>
