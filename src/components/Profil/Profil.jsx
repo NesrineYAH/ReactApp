@@ -2,7 +2,7 @@ import React from "react";
 import AOS from "aos"; // data-aos="zoom-in-up"
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import photo from "../../assets/images/bakground/imgIII.png";
+import photo from "../../assets/img/bakground/imgIII.png";
 import SocialMedia from "../../components/socialMedia/socialMedia";
 
 
@@ -23,11 +23,11 @@ const Profil = () => {
        <SocialMedia />        
       </div>
    
- <div className="container_photo">      
-        <img src={photo} alt={t("photo_alt")} />
+    <div className="container_photo">      
+        <img src={photo} alt={t("photo_alt")} loading="lazy" />
    </div>
 
-</div>
+    </div>
 
     </section>
   );

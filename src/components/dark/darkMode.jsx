@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as Sun } from "../../assets/images/bakground/Sun.svg";
-import { ReactComponent as Moon } from "../../assets/images/bakground/Moon.svg";
+import { ReactComponent as Sun } from "../../assets/img/bakground/Sun.svg";
+import { ReactComponent as Moon } from "../../assets/img/bakground/Moon.svg";
 import { useState , useEffect } from 'react';
 import { SyncLoader   } from 'react-spinners';
 

@@ -4,7 +4,7 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
-import NBY from "../../assets/images/logo/NBY.png";
+import NBY from "../../assets/img/logo/NBY.png";
 
 
 class Header extends Component {
@@ -85,13 +85,12 @@ class Header extends Component {
     };
 
     return (
-      <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}> 
-          
+      <header style={{ flexDirection: lang === "ar" ? "row-reverse" : "row" }} className="header"  id={t("home_path")}>          
         <nav style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
           className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>
 
         <button className="navbarLogo" onClick={handleShowLinks}>
-          <img className="navbarLogo__img"  src={NBY} alt="logo" style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
+          <img className="navbarLogo__img"  src={NBY} alt={t("logo_alt")} loading="lazy" style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
         </button>     
 
           {!matches ? (

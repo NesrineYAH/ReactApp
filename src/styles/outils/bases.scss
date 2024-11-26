@@ -23,6 +23,7 @@
     --box-shadow-portfolio: 5px 10px 18px rgba(0, 0, 0, 0.8);
     --skill_color: #e7d2ee;
 
+
 }
 
 [data-theme="dark"] {
@@ -34,6 +35,7 @@
     --header_background: #433871;
     --lang_background: rgb(67, 56, 113);
     --background_icons: #c996cc;
+    --background_profil: #160f35;
     --hover: linear-gradient(45deg,
             #645cbb,
             #1c0c5b,
@@ -48,7 +50,7 @@
 [data-theme="Light"] {
     --header_background: #e6dae6;
     --lang_background: #c996cc;
-
+    --background_profil: #e9e2e2;
 }
 
 * {

@@ -1,7 +1,7 @@
 #About {
     @include flex-column;
     width: 100%;
-    height: 180vh;
+    height: 96vh;
 
     .presentation {
         width: 90%;
@@ -46,12 +46,10 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
-        height: 120vh;
+        height: auto;
 
         .presentation {
             width: 90%;
-            position: relative;
-            top: -21%;
         }
 
     }
