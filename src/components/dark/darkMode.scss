@@ -1,6 +1,11 @@
 .dark_mode {
-    margin-left: 0px;
+    margin-left: 10px;
     background-color: transparent;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+        margin-top: -30px;
+    }
 }
 
 .dark_mode_label {
@@ -19,7 +24,6 @@
     content: "";
     width: 20px;
     height: 20px;
-    //   margin-left: 3px;
     margin-top: 2.5px;
     position: absolute;
     top: 1.2%;
