@@ -1,7 +1,7 @@
 [
     {
        "title": "WEB",
-       "image": "../assets/images/web.jpg",
+       "image": "../assets/images/web.webp",
        "alt": "image service web",
        "id": "1",
        "description":"service.description.web"
@@ -9,7 +9,7 @@
     },
     {
         "title": "Mobile",
-        "image": "../assets/images/service2.jpg",
+        "image": "../assets/images/service2.webp",
         "alt": "image service Mobile",
         "id": "2",
         "description":"service.description.Mobile"
@@ -17,7 +17,7 @@
      },
      {
         "title": "Réferencement Naturel SEO",
-        "image": "../assets/images/service4.jpg",
+        "image": "../assets/images/service4.webp",
         "alt": "image service SEO",
         "id": "3",
         "description":"service.description.Referencement"
@@ -25,7 +25,7 @@
      },
      {
         "title": "Veille technologique",
-        "image": "../assets/images/service3.jpg",
+        "image": "../assets/images/service3.webp",
         "alt": "image service SEO",
         "id": "4",
         "description":"service.description.Veille"

@@ -18,7 +18,7 @@
     ],
 
     "pictures": [
-      "../assets/projects/booki/booki1-min.webp",
+      "../assets/projects/booki/booki-min.webp",
       "../assets/projects/booki/booki2-min.webp",
       "../assets/projects/booki/booki3-min.webp",
       "../assets/projects/booki/booki4-min.webp",
@@ -89,7 +89,7 @@
   },
   { 
     "title": "Kanap",
-    "image": "../assets/projects/kanap/CartePort.jpg",
+    "image": "../assets/projects/kanap/CartePort.webp",
     "alt": "projet kanap",
     "id": "4",
     "brief_description": "projectKanap.brief_description",
@@ -105,20 +105,20 @@
     }
   ],
   "pictures": [
-    "../assets/projects/kanap/banniere.png",
-    "../assets/projects/kanap/CartePort.jpg",
-    "../assets/projects/kanap/kanap01.jpeg",
-    "../assets/projects/kanap/kanap02.jpeg",
-    "../assets/projects/kanap/kanap03.jpeg",
-    "../assets/projects/kanap/kanap04.jpeg",
-    "../assets/projects/kanap/kanap05.jpeg",
+    "../assets/projects/kanap/Mockup Kanap.webp",
+    "../assets/projects/kanap/CartePort.webp",
+    "../assets/projects/kanap/kanap01.webp",
+    "../assets/projects/kanap/kanap02.webp",
+    "../assets/projects/kanap/kanap03.webp",
+    "../assets/projects/kanap/kanap04.webp",
+    "../assets/projects/kanap/kanap05.webp",
     "../assets/projects/kanap/KanapI.webp"
   ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
   {
     "title": "Picante",
-    "image": "../assets/projects/picante/Piquante_IMG.png",
+    "image": "../assets/projects/picante/Piquante_IMG_2_11zon.webp",
     "alt": "projet Picante",
     "id": "5",
     "brief_description": "projectPicante.brief_description",
@@ -143,9 +143,12 @@
   ],
     "pictures": [
       "../assets/projects/picante/hottakesCover.b8.webp",
-      "../assets/projects/picante/hottakesEtap1.7.webp",
-      "../assets/projects/picante/hottakesEtap1.7.webp",
-      "../assets/projects/picante/Picante_img.webp"
+      "../assets/projects/picante/mqdefault-zon.webp",
+      "../assets/projects/picante/Picante_1_11zon.webp",
+      "../assets/projects/picante/Picante_img.webp",
+        "../assets/projects/picante/web-p6-first.webp",
+          "../assets/projects/picante/web-p6-second.webp",
+            "../assets/projects/picante/web-p6-second-min.webp"
     ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
@@ -181,7 +184,7 @@
   },
   {
     "title": "Les petits plats",
-    "image": "../assets/projects/LesPetitsPlats/Recette03.jpg",
+    "image": "../assets/projects/LesPetitsPlats/Recette03.webp",
     "alt": "projet les petits plats",
     "id": "7",
     "brief_description": "projectLesPetitsPlats.brief_description",
@@ -202,22 +205,22 @@
       
     ],
     "pictures": [
-      "../assets/projects/LesPetitsPlats/Recette01.jpg",
-      "../assets/projects/lesPetitsPlats/Recette02.jpg",
-      "../assets/projects/lesPetitsPlats/Recette03.jpg",
-      "../assets/projects/lesPetitsPlats/Recette04.jpg",
-      "../assets/projects/lesPetitsPlats/Recette05.jpg",
-      "../assets/projects/lesPetitsPlats/Recette06.jpg",
-      "../assets/projects/lesPetitsPlats/Recette07.jpg",
-      "../assets/projects/lesPetitsPlats/Recette08.jpg",
-      "../assets/projects/lesPetitsPlats/Recette09.jpg"
+      "../assets/projects/LesPetitsPlats/Recette01.webp",
+      "../assets/projects/lesPetitsPlats/Recette02.webp",
+      "../assets/projects/lesPetitsPlats/Recette03.webp",
+      "../assets/projects/lesPetitsPlats/Recette04.webp",
+      "../assets/projects/lesPetitsPlats/Recette05.webp",
+      "../assets/projects/lesPetitsPlats/Recette06.webp",
+      "../assets/projects/lesPetitsPlats/Recette07.webp",
+      "../assets/projects/lesPetitsPlats/Recette08.webp",
+      "../assets/projects/lesPetitsPlats/Recette09.webp"
     ],
     "site": " https://superb-sfogliatella-83d6ff.netlify.app",
     "github":"https://github.com/NesrineYAH/les_petits_plats.git"
   }, 
   {
       "title": "Game on",
-      "image": "../assets/projects/GameON/GameOnIII.png",
+      "image": "../assets/projects/GameON/GameOnIII.webp",
       "alt": "projet Game on",
       "id": "8",
       "brief_description": "GameOn.brief_description",
@@ -238,11 +241,11 @@
         
       ],
       "pictures": [  
-           "../assets/projects/GameON/GameonI.jpg",
-           "../assets/projects/GameON/GameOnII.png",
-           "../assets/projects/GameON/GameOnVII.png",
-           "../assets/projects/GameON/GameOnIII.png",
-           "../assets/projects/GameON/GameONVX.png"
+           "../assets/projects/GameON/GameonI.webp",
+           "../assets/projects/GameON/GameOnII.webp",
+           "../assets/projects/GameON/GameOnVII.webp",
+           "../assets/projects/GameON/GameOnIII.webp",
+           "../assets/projects/GameON/GameONVX.webp"
       ],
       "site": "https://nesrineyah.github.io/GameOn-website-FR/",
       "github":"https://github.com/NesrineYAH/GameOn-website-FR.git"
@@ -251,7 +254,7 @@
   },
   {
     "title": "Marathon",
-    "image": "../assets/projects/Marathon/img Eveil II.png",
+    "image": "../assets/projects/Marathon/marathonIE7_10_11zon.webp",
     "alt": "projet Marathon Paris 2024",
     "id": "9",
     "brief_description": "Marathon.brief_description",
@@ -272,18 +275,16 @@
       
     ],
     "pictures": [     
-      "../assets/projects/Marathon/img Eveil II.png",
-      "../assets/projects/Marathon/img Eveil III.png",
-      "../assets/projects/Marathon/Img kelya nemour.avif",
-      "../assets/projects/Marathon/images -imaneKhelif.jpg",
-      "../assets/projects/Marathon/marathonID.jpg",
-      "../assets/projects/Marathon/marathonIE7.jpg",
-      "../assets/projects/Marathon/marathonIA.jpg",
-      "../assets/projects/Marathon/marathonI.jpg"
+      "../assets/projects/Marathon/img Eveil II.webp",
+      "../assets/projects/Marathon/img Eveil III.webp",
+      "../assets/projects/Marathon/Img kelya nemour.webp",
+      "../assets/projects/Marathon/images -imaneKhelif.webp",
+      "../assets/projects/Marathon/marathonID.webp",
+      "../assets/projects/Marathon/marathonIE7.webp",
+      "../assets/projects/Marathon/marathonIA.webp",
+      "../assets/projects/Marathon/marathonI.webp"
     ],
     "site": "",
     "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
-  
-
 }
 ]
