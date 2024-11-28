@@ -75,7 +75,7 @@
             width: 50px;
             height: 50px;
             justify-content: space-between;
-            background-color: #f3ecf0;
+            background: transparent;
             padding: 8px;
             position: relative;
             transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
@@ -130,8 +130,7 @@
         img {
             height: 35px;
             width: 35px;
-            background-color: #f3ecf0;
-
+            background: transparent;
 
         }
 
@@ -375,7 +374,7 @@
                 height: 35px;
                 width: 35px;
                 border-radius: 8px;
-
+                background: transparent;
             }
         }
 
