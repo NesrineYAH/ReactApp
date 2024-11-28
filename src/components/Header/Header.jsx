@@ -4,7 +4,7 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
-import NBY from "../../assets/img/logo/NBY.png";
+import NBY from "../../assets/img/logo/NBY.webp";
 
 
 class Header extends Component {
