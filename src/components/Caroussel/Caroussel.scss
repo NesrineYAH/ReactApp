@@ -3,14 +3,12 @@
     justify-content: center;
     margin: 0;
     position: relative;
-
 }
 
 .carousel {
     margin: 0 30px;
     max-height: 500px;
     max-width: 90%;
-
 }
 
 .carousel .overlay {
@@ -22,26 +20,21 @@
 .img_carousel {
     width: 100%;
     height: 400px;
-
-
 }
 
 .thumbs {
     display: none !important;
-
 }
 
 .img_carousel img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
 }
 
 .control-arrow {
     display: none !important;
 }
-
 
 @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
     .img_carousel {
@@ -51,6 +44,4 @@
     .carousel {
         margin: 0 5px
     }
-
-    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {}
 }

@@ -23,7 +23,6 @@
         box-shadow: var(--box-shadow);
         box-shadow: -6px -6px 15px 1px #583e81, 6px 6px 25px 1px rgba(0, 0, 0, .2);
 
-
         &__img {
             background-position: center;
             background-size: cover;
@@ -72,7 +71,6 @@
             width: 100%;
             padding: 56px;
             color: var(--link_color);
-
         }
     }
 
@@ -91,7 +89,6 @@
         background-color: var(--body_background);
         display: flex;
         transition: .2s linear;
-
 
         .Service__Container {
             margin: 30px auto;

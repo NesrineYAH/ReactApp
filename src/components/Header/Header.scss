@@ -116,7 +116,6 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
-
         .navbar_header {
             display: flex;
             flex-direction: row;
@@ -125,7 +124,6 @@
             position: fixed;
             top: 2%;
             width: 100%;
-
 
             .navbar__links {
                 font-size: 14px;
@@ -143,12 +141,9 @@
                 }
             }
         }
-
-        .navbarLogo {}
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
-
         height: 100%;
         max-width: 100%;
         width: 100%;
@@ -161,7 +156,6 @@
             top: 4%;
             z-index: 10;
             width: 92%;
-
 
             .navbar__links {
                 @include flexCenterRow;

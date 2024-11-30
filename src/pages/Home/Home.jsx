@@ -9,7 +9,6 @@ import Services from "../../components/Services/Services";
 import TypingAnimation from "../../components/Blog/Blog";
 
 
-
 const Home = () => {
     const { t } = useTranslation();
     return (

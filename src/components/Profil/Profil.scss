@@ -1,5 +1,4 @@
 #Profil {
-
     @include flex-column;
     padding-top: 42px;
 
@@ -28,7 +27,6 @@
 
             }
         }
-
     }
 
     .container_photo {
@@ -118,11 +116,9 @@
             overflow: hidden;
             padding-bottom: 20px;
         }
-
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
-
         max-width: 100%;
         width: 92%;
         height: 65vh;
@@ -183,7 +179,6 @@
                 transition: all .8s ease;
                 overflow: hidden;
                 padding-bottom: 20px;
-
             }
         }
     }

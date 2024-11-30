@@ -1,7 +1,6 @@
 .Language {
     background-color: transparent;
     margin-top: -5.5px;
-
 }
 
 .bttn {
@@ -23,13 +22,11 @@
     height: 27px;
     background-color: var(--header_background);
 
-
     &:hover {
         border: rgb(24, 2, 35);
         background-color: var(--body_color);
         border-color: var(--lang_background);
         color: var(--link_color);
         font-weight: 500;
-
     }
 }
