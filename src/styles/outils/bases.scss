@@ -71,7 +71,6 @@ body {
     overflow-x: hidden;
 }
 
-
 body {
     @include body-position;
     overflow-x: hidden;
@@ -91,8 +90,4 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-
-
-
-
 }
