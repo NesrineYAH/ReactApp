@@ -16,11 +16,9 @@
     border-radius: 15px;
     font-weight: 500;
     font-size: 14px;
-    border: px solid var(--link_color);
 }
 
 .glow-on-hover {
-    border: 1px solide navy;
     border-radius: 15px;
     cursor: pointer;
     height: 53px;
@@ -49,14 +47,15 @@
     border-radius: 15px;
 }
 
+/*
 .glow-on-hover:active {
     color: var(--body-color);
-
 }
-
+*/
 .glow-on-hover:hover::before {
     opacity: 1;
     border-radius: 15px;
+
 }
 
 .glow-on-hover::after {
@@ -65,19 +64,33 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 1px, solid, var(--body_background);
     left: 0;
     top: 0;
     border-radius: 15px;
     border: 1px solid var(--body_color);
+    color: var(--link_color);
+
 }
 
 .glow-on-hover a:hover {
     background-color: var(--body_color);
     animation: glowing 20s linear infinite;
+    color: var(--link_color);
+
 }
 
-
+.glowON {
+    margin-top: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 53px;
+    outline: 0;
+    position: relative;
+    width: 160px;
+    z-index: 1;
+    margin-top: 30px;
+    border: 1px solid var(--link_color);
+}
 
 @keyframes glowing {
     0% {
