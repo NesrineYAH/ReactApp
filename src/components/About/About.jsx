@@ -60,7 +60,7 @@ const About = () => {
           </p>
           <TxtToDisplay />
           
-          <button className="glow-on-hover">
+          <button className="glowON">
             <a href={t('Profil_path')}  className="btn_text">{t('txtInfo')}</a>
         </button>
         </div>
