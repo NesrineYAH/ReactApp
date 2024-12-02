@@ -1,13 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
 
 const MyPortfolio = () => {
   const { t } = useTranslation();
+  const lang = localStorage.getItem("i18nextLang");
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -27,9 +26,7 @@ const MyPortfolio = () => {
     };
     fetchProjects();
   }, []);
-  useEffect(() => {
-    AOS.init({ duration: 6000 });
-  }, []);
+
   
 
   return (
@@ -40,11 +37,11 @@ const MyPortfolio = () => {
           key={project.id}>
           <div className="card-face front">
             <img src={project.image} alt={project.alt} />
-            <h2 className="card_title "> {project.title} </h2>
+            <h3 className="card_title "> {project.title} </h3>
           </div>
           <figcaption className="card-face back">
-            <h2> {project.title} </h2>
-            <p>{t(project.brief_description)}</p>
+            <h3> {project.title} </h3>
+            <p style={{direction: lang === "ar" ? "rtl" : "ltr", fontSize: lang === "ar" ? "18px" : "initial"}}>{t(project.brief_description)}</p>
             <div className="glow-on-hover">
               <Link
                 to={`/Project/${project.id}`} target="_blank"  className="btn_text" key={project.id}>

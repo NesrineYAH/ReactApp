@@ -176,10 +176,15 @@
             transform: rotateY(180deg);
             @include flex-column;
 
-            .back h2 {
+            .back h3 {
                 padding: 0;
                 font-size: 18px;
-                margin: 0
+
+            }
+
+            p {
+                margin-top: 20px;
+                line-height: 141.8%;
             }
         }
     }

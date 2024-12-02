@@ -188,7 +188,7 @@ const MySkills = () => {
 
                 <div className="SkillsContainer__blob" >
                     <div className="SoftsSkills">
-                        <h6 
+                        <h3 
                             className='SoftsSkills__Intro'>{t("Competence.question")}
                             <span 
                             style={{
@@ -198,7 +198,7 @@ const MySkills = () => {
                             ref={textRef}><span className='display-dots'>{t('dot')}</span>
                                 <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
                                    
-                        </h6>
+                        </h3>
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
@@ -209,15 +209,24 @@ const MySkills = () => {
                     <div className='softSkills'>
                         <div className='softSkills__item'  >
                             <FaCogs className="fa" />
-                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleI")}</h5>
+                            <h5 className='softSkills__title' style={{
+                                direction: lang === "ar" ? "rtl" : "ltr",  
+                                fontSize: lang === "ar" ? "18px" : "initial" 
+                              }}>{t("Competence.softSkills__titleI")}</h5>
                         </div>
                         <div className='softSkills__item'>
                             <HiUserGroup className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
-                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleII")}</h5>
+                            <h5 className='softSkills__title' style={{
+                                direction: lang === "ar" ? "rtl" : "ltr",  
+                                fontSize: lang === "ar" ? "18px" : "initial" 
+                              }}>{t("Competence.softSkills__titleII")}</h5>
                         </div>
                         <div className='softSkills__item'>
                             <FaComment className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
-                            <h5 className='softSkills__title'>{t("Competence.softSkills__titleIII")}</h5>
+                            <h5 className='softSkills__title' style={{
+                                direction: lang === "ar" ? "rtl" : "ltr",  
+                                fontSize: lang === "ar" ? "18px" : "initial" 
+                              }}>{t("Competence.softSkills__titleIII")}</h5>
                         </div>
 
                     </div>

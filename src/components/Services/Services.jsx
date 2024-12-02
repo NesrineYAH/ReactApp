@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 const Services = () => {
@@ -25,9 +23,6 @@ const Services = () => {
     };
     fetchServices();
   }, []);
-  useEffect(() => {
-    AOS.init({ duration: 5000 });
-  }, []);
 
   return (
     <section id="Services">
@@ -36,11 +31,7 @@ const Services = () => {
       {services.map((service) => (       
     
        <div id={("service.id")} >
-          <figure className='serviceCard' key={service.id}
-          //  data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <figure className='serviceCard' key={service.id}>
           <img className='serviceCard__img' src={service.image} alt ={service.alt} />
           <h3 className='serviceCard__title' >{t(service.title)}</h3>
           <p className='serviceCard__prg'>{t(service.description)}</p>    

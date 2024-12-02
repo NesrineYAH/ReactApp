@@ -15,7 +15,7 @@
     text-decoration: none;
     border-radius: 15px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 14.5px;
 }
 
 .btn_text:hover {
@@ -85,7 +85,6 @@
 .glow-on-hover a:hover {
     background-color: var(--body_color);
     animation: glowing 20s linear infinite;
-    color: var(--link_color);
     color: navy;
 }
 

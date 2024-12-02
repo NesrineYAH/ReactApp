@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneFlip  } from "react-icons/fa6";
@@ -31,10 +29,6 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   const validateForm = () => {
     const nameRegex = /^[a-zA-Z ]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -43,25 +37,18 @@ const Contact = () => {
     let isValid = true;
     const newErrors = {last_name: "", first_name: "", user_email: "", message: "" };
 
-    // Validate last name
     if (!nameRegex.test(formData.last_name)) {
       newErrors.last_name = t("errors.last_name");
       isValid = false;
     }
-
-    // Validate first name
     if (!nameRegex.test(formData.first_name)) {
       newErrors.first_name =  t("errors.first_name");
       isValid = false;
     }
-
-    // Validate email
     if (!emailRegex.test(formData.user_email)) {
       newErrors.user_email = t("errors.user_email");
       isValid = false;
     }
-
-    // Validate message // &&(formData.message.trim() === "")
     if (!msgRegex.test(formData.message)){
       newErrors.message = t("errors.message");
       isValid = false;
@@ -81,7 +68,6 @@ const Contact = () => {
           (result) => {
             alert(`${formData.first_name} ${t("email_envoyer")}`);
             console.log(result.text);
-            // Clear form inputs ---------data-aos="zoom-in-up" 
             setFormData({ last_name: "", first_name: "", user_email: "", message: "" });
           },
           (error) => {
@@ -97,7 +83,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-/**         data-aos="zoom-in-up" */
+
   return (
     <section id={t("contact_id")} className="contact" itemScope itemType="http://schema.org/Person" >
       <h2 className="titlePortfolio">{t("contact_title")}</h2>

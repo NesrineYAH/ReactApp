@@ -111,11 +111,25 @@
                 font-size: 14px;
                 color: var(--link_color);
                 font-weight: 600;
+
             }
 
             &__span {
                 font-size: 14px;
                 font-weight: 600;
+            }
+
+            .phone {
+                text-align: left;
+                direction: ltr;
+                text-decoration: none;
+            }
+
+            .phone .contactList__phone {
+                direction: ltr;
+                text-align: left;
+                text-decoration: none;
+                color: var(--link_color);
             }
 
             .Noc {
@@ -128,6 +142,7 @@
                 height: 35px;
                 margin-left: -2px;
             }
+
         }
     }
 
@@ -285,6 +300,7 @@
                 .phone {
                     text-align: left;
                     direction: ltr;
+                    text-decoration: none;
                 }
 
                 .phone .contactList__phone {

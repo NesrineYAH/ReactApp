@@ -49,7 +49,7 @@ const MentionsLegales = () => {
 
 </p>
 
-
+<br/>
     <h4>6. {t('TextInfo.infoVI')}:</h4>
 
 
