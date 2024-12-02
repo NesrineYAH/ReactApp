@@ -20,6 +20,7 @@
         background-color: var(--body_color);
         border: 2px solid var(--link_color);
         box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
+
     }
 
     .form-horizontal {
@@ -34,9 +35,21 @@
         box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
     }
 
+    .form-horizontal input {
+        height: 35px;
+        opacity: 0.8;
+        border-radius: 4px;
+        padding: 3px 0 0 8px;
+    }
+
+    .form-horizontal textarea {
+        padding: 8px 0 0 8px;
+    }
+
     .form-control {
         background-color: var(--body_background);
         color: var(--skill_color);
+
     }
 
     .form-horizontal label {
@@ -62,12 +75,10 @@
         display: block;
         margin-top: 10px;
         letter-spacing: 2px;
-        background-color: var(--body_background);
         border-radius: 20px;
         padding: 6px 20px;
         border: 1px var(--body_color) solid;
         border: 1px var(--lang_background) solid;
-        background-color: var(--body_color);
         color: navy;
     }
 

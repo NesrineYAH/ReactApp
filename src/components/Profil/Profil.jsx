@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from "aos"; // data-aos="zoom-in-up"
-import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import photo from "../../assets/img/bakground/imgIII.webp";
 import SocialMedia from "../../components/socialMedia/socialMedia";

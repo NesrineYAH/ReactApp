@@ -59,9 +59,10 @@ const About = () => {
             <Cursor cursorColor='navy' />
           </p>
           <TxtToDisplay />
-          <div className="glowON">
+          
+          <button className="glowON">
             <a href={t('Profil_path')}  className="btn_text">{t('txtInfo')}</a>
-        </div>
+        </button>
         </div>
       </div>
     </section>

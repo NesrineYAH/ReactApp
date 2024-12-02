@@ -108,10 +108,7 @@ const Contact = () => {
         <form 
          ref={formRef}             
           onSubmit={handleSubmit}
-          className="form-horizontal"
-  
-    >
-      
+          className="form-horizontal">
           <label htmlFor="last_name" >{t("lastName")}</label>
           <input 
            style={{borderColor: errors.last_name ? "red" : "initial"}}
