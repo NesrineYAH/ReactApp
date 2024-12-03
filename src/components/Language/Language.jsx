@@ -10,7 +10,7 @@ const lang = localStorage.getItem("i18nextLng");
 document.body.dir = i18n.dir();       
 
     return (
-        <div className='Language'>
+        <label className='Language'> lang
             <select  style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
                       className="btn_lang"
                       onChange={(e) => i18n.changeLanguage(e.target.value)}
@@ -19,7 +19,7 @@ document.body.dir = i18n.dir();
                       <option value="en">en</option>
                       <option value="ar">ar</option>
              </select>
-        </div>
+        </label>
     );
 };
 
