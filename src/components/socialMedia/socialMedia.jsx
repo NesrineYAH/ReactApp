@@ -37,7 +37,7 @@ const SocialMedia = () => {
         </li>  
 
         <li className='socialMedia__Icone discord'>
-        <a href="https://discord.com/channels/1015201868886052924/1015201868886052928" target="_blank" rel="Discord">
+        <a href="https://discord.com/channels/@me" target="_blank" rel="Discord">
         <FaDiscord
             color="var(--body_color)"
             size="35px"

@@ -14,7 +14,8 @@ export default function Footer() {
            <li>
             <a href={`../../SiteMap/#sitemap`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('plan')}</a>
             </li>  
-       || <li>
+             || 
+         <li>
         <a href={`../MentionLegales/#mentionsLegales`} target="_blank" rel="noopener noreferrer" className='TitreH3'>{t('Mentions')}</a>
         </li> 
       </ul>

@@ -164,7 +164,7 @@ const MySkills = () => {
                         </div>
                     </div>
                     <div className="box">
-                        <h4 className="box__title">{t("Competence.titleIII")}</h4>
+                        <h3 className="box__title">{t("Competence.titleIII")}</h3>
                         <div className="skillItem">
                             <p className="skillItem__p">Figma</p>
                             <div className="skillItem__bar">
@@ -188,7 +188,7 @@ const MySkills = () => {
 
                 <div className="SkillsContainer__blob" >
                     <div className="SoftsSkills">
-                        <h3 
+                        <h4
                             className='SoftsSkills__Intro'>{t("Competence.question")}
                             <span 
                             style={{
@@ -198,7 +198,7 @@ const MySkills = () => {
                             ref={textRef}><span className='display-dots'>{t('dot')}</span>
                                 <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
                                    
-                        </h3>
+                        </h4>
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
@@ -212,21 +212,24 @@ const MySkills = () => {
                             <h5 className='softSkills__title' style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
-                              }}>{t("Competence.softSkills__titleI")}</h5>
+                              }}>{t("Competence.softSkills__titleI")}
+                              </h5>
                         </div>
                         <div className='softSkills__item'>
                             <HiUserGroup className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
                             <h5 className='softSkills__title' style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
-                              }}>{t("Competence.softSkills__titleII")}</h5>
+                              }}>{t("Competence.softSkills__titleII")}
+                            </h5>
                         </div>
                         <div className='softSkills__item'>
                             <FaComment className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>
                             <h5 className='softSkills__title' style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
-                              }}>{t("Competence.softSkills__titleIII")}</h5>
+                              }}>{t("Competence.softSkills__titleIII")}
+                            </h5>
                         </div>
 
                     </div>
