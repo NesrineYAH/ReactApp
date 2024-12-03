@@ -30,7 +30,7 @@ const Services = () => {
         <h2 className="titlePortfolio"> {t("service_title")} </h2>
       {services.map((service) => (       
     
-       <div id={("service.id")} >
+       <div key={"service.id"}>
           <figure className='serviceCard' key={service.id}>
           <img className='serviceCard__img' src={service.image} alt ={service.alt} />
           <h3 className='serviceCard__title' >{t(service.title)}</h3>
