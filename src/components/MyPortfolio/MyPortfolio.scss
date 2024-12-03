@@ -54,22 +54,6 @@
             object-fit: cover;
         }
 
-        .card_title {
-            position: absolute;
-            inset: auto auto 30px 30px;
-            margin: 0;
-            transition: inset .3s .3s ease-out;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #0000;
-            font-size: 25px;
-            font-weight: bold;
-            z-index: 1;
-            background-color: rgba(240, 248, 255, .12);
-            padding: 20px;
-            color: var(--body_background);
-        }
-
         .back {
             transform: rotateY(180deg);
             @include flex-column;

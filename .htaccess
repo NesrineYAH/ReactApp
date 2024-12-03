@@ -5,3 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Réécrire toutes les autres URL vers index.html
 RewriteRule ^ index.html [L]
+# CSP
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://apis.example.com; object-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self' https://api.example.com;"
+</IfModule>

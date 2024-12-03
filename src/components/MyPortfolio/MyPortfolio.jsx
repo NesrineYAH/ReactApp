@@ -37,10 +37,9 @@ const MyPortfolio = () => {
           key={project.id}>
           <div className="card-face front">
             <img src={project.image} alt={project.alt} />
-            <h3 className="card_title "> {project.title} </h3>
           </div>
           <figcaption className="card-face back">
-            <h3> {project.title} </h3>
+            <h3 style={{textTransform: "uppercase", fontWeight: "bold"}}> {project.title} </h3>
             <p style={{direction: lang === "ar" ? "rtl" : "ltr", fontSize: lang === "ar" ? "18px" : "initial"}}>{t(project.brief_description)}</p>
             <div className="glow-on-hover">
               <Link

@@ -2,13 +2,12 @@
     min-width: 55px;
     min-height: 30px;
     width: auto;
-    background-color: transparent;
+    /*  background-color: transparent;*/
     border-radius: 15px;
 }
 
 .btn_text {
     align-items: center;
-    /* color: var(--link_color);*/
     display: flex;
     height: 100%;
     justify-content: center;
@@ -21,8 +20,6 @@
 .btn_text:hover {
     color: navy;
     background-color: var(--body_background);
-
-
 }
 
 .glow-on-hover {
@@ -35,6 +32,7 @@
     z-index: 1;
     margin-top: 30px;
     border: 1px solid navy;
+
 }
 
 .glow-on-hover::before {
@@ -64,8 +62,6 @@
     opacity: 1;
     border-radius: 15px;
     background-color: var(--body_color);
-
-
 }
 
 .glow-on-hover::after {
@@ -92,14 +88,16 @@
     margin-top: 40px;
     border-radius: 15px;
     cursor: pointer;
-    height: 53px;
+    height: 60px;
     outline: 0;
     position: relative;
     width: 160px;
     z-index: 1;
     margin-top: 30px;
     border: 1px solid var(--link_color);
+    min-width: 156px;
 }
+
 
 @keyframes glowing {
     0% {

@@ -60,9 +60,9 @@ const About = () => {
           </p>
           <TxtToDisplay />
           
-          <button className="glowON">
+           <button className="glowON">
             <a href={t('Profil_path')}  className="btn_text">{t('txtInfo')}</a>
-        </button>
+        </button> 
         </div>
       </div>
     </section>
