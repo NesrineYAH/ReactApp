@@ -7,11 +7,18 @@
     padding-left: 0;
 
     &__Icone {
-        background-color: #695da1;
+        width: 35px;
+        color: var(--background_icons);
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
-    .discord {
-        margin-top: 3px;
+    .X {
+        margin: 7px;
+        width: 40px;
+        height: 40px;
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
