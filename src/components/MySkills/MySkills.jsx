@@ -104,7 +104,7 @@ const MySkills = () => {
             <div className="SkillsContainer">
                 <div className="SkillsContainer__box">
                     <div className="box">
-                        <h4 className="box__title">{t("Competence.titleI")}</h4>
+                        <h3 className="box__title">{t("Competence.titleI")}</h3>
                         <div className="skillItem">
                             <p className="skillItem__p">HTML</p>
                             <div className="skillItem__bar">
@@ -188,7 +188,7 @@ const MySkills = () => {
 
                 <div className="SkillsContainer__blob" >
                     <div className="SoftsSkills">
-                        <h4
+                        <h3
                             className='SoftsSkills__Intro'>{t("Competence.question")}
                             <span 
                             style={{
@@ -198,7 +198,7 @@ const MySkills = () => {
                             ref={textRef}><span className='display-dots'>{t('dot')}</span>
                                 <span className='display-dots'>{t('dot')}</span><span className='display-dots'>{t('dot')}</span></span>
                                    
-                        </h4>
+                        </h3>
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
