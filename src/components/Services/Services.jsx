@@ -15,7 +15,6 @@ const Services = () => {
         if (requete.ok) {
           const response = await requete.json();
           setServices(response);
-          console.log(response);
         }
       } catch (e) {
         console.log(e);
