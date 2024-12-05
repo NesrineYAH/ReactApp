@@ -4,21 +4,19 @@
     flex-direction: row;
     flex-direction: space-between;
     list-style-type: none;
-    padding-left: 0;
+    margin-left: -9px;
+    row-gap: 40px;
 
-    &__Icone {
-        width: 35px;
+    .socialMedia__icone {
+        width: 50px;
+        height: 50px;
         color: var(--background_icons);
-
-        &:hover {
-            transform: scale(1.2);
-        }
+        font-size: 0;
     }
 
     .X {
-        margin: 7px;
-        width: 40px;
-        height: 40px;
+        margin-top: 7px;
+
     }
 
     @media screen and (min-width: $breakpoint-desktop) {

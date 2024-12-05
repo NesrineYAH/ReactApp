@@ -204,7 +204,8 @@
   "ErrorLastName": "Le prénom ne doit contenir que des lettres et des espaces",
   "ErrorMail": "Veuillez saisir une adresse e-mail valide",
   "ErrorMessage" :"Veuillez saisir votre message",
-  "alert":"Le formulaire contient des erreurs. Veuillez le corriger"
+  "alert":"Le formulaire contient des erreurs. Veuillez le corriger",
+  "location": "Paris, France"
 },
   "errors" :{
     "last_name":"Le nom ne doit contenir que des lettres et des espaces", 

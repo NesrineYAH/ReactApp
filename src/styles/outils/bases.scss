@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import './setting.scss';
 
 :root {
@@ -28,7 +29,7 @@
 [data-theme="dark"] {
     --body_background: #160f35;
     --box_background: linear-gradient(#8552c4, #916bbf);
-    --background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%); //nouvea
+    --background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 250, 29, 0.8352591036414566) 50%, rgba(252, 176, 69, 1) 100%);
     --body_header: #dcd7dd;
     --body_color: #f3ebf6;
     --header_background: #433871;

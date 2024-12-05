@@ -206,8 +206,8 @@
   "ErrorLastName": "The first name should only contain letters and spaces",
   "ErrorMail": "Please enter a valid e-mail address",
   "ErrorMessage" :"Please enter your message",
-  "alert":"The form contains errors. Please correct it"
-
+  "alert":"The form contains errors. Please correct it",
+"location": "Paris, France"
 },
   "errors" :{
     "last_name" :"The last name should only contain letters and spaces", 

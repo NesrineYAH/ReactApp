@@ -165,9 +165,7 @@ const Contact = () => {
 
             <li className="contactList__item" style={{  flexDirection: lang === "ar" ? "row-reverse" : "row" }}>
               <FontAwesomeIcon icon={faLocationDot} className="loc"  />
-              <span itemProp="location" className="contactList__span place">
-                Paris, Île de France
-              </span>
+              <p itemProp="location" className="contactList__span place">{t("contact.location")}</p>
             </li>
           </ul>
           <SocialMedia className="sm" />

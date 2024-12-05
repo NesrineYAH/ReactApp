@@ -14,7 +14,7 @@
     text-decoration: none;
     border-radius: 15px;
     font-weight: 500;
-    font-size: 14.5px;
+    font-size: 13px;
 }
 
 .btn_text:hover {
@@ -53,11 +53,6 @@
 
 }
 
-/*
-.glow-on-hover:active {
-    color: var(--body-color);
-}
-*/
 .glow-on-hover:hover::before {
     opacity: 1;
     border-radius: 15px;

@@ -8,45 +8,47 @@ const SocialMedia = () => {
     return (
         <ul className='socialMedia__Conatiner'>
 
-        <li className='socialMedia__Icone'>
+        <li className='socialMedia__icone'>git
         <a href="https://github.com/NesrineYAH" target="_blank" rel="noreferrer" aria-label="github">
         <DiGithubBadge
             color="var(--body_color)" 
             size="50px"
             onMouseOver={({ target }) =>
-              (target.style.color = "var(--background_icons)")}           
+              (target.style.color = "var(--body_backg)")
+            }
             onMouseOut={({ target }) =>
-              (target.style.color = "var(--body_color)")}           
+              (target.style.color = "var(--background_icons)")
+            }  
           />
         </a>
         </li>  
 
-        <li className='socialMedia__Icone'>
+        <li className='socialMedia__icone'>link
         <a href="https://www.linkedin.com/in/nesrine-yahoum-16ba4590/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
         <TiSocialLinkedinCircular
             color="var(--body_color)"
             size="50px"
         
             onMouseOver={({ target }) =>
-              (target.style.color = "var(--background_icons)")
+              (target.style.color = "var(--body_backg)")
             }
             onMouseOut={({ target }) =>
-              (target.style.color = "var(--body_color)")
+              (target.style.color = "var(--background_icons)")
             }
           />
         </a>
         </li>  
 
-        <li className='socialMedia__Icone X'>
+        <li className='socialMedia__icone X'>lien X
         <a href="https://x.com/NesrineYAH87" target="_blank" rel="X">
         <RiTwitterXLine 
             color="var(--body_color)"
             size="37px"
             onMouseOver={({ target }) =>
-              (target.style.color = "var(--background_icons)")
+              (target.style.color = "var(--body_backg)")
             }
             onMouseOut={({ target }) =>
-              (target.style.color = "var(--body_color)")
+              (target.style.color = "var(--background_icons)")
             }
           />
         </a>
