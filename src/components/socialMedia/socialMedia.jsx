@@ -11,7 +11,7 @@ const SocialMedia = () => {
         <a href="https://github.com/NesrineYAH" target="_blank" rel="noreferrer" aria-label="github">github
         <DiGithubBadge
             color="var(--body_color)" 
-            size="50px"
+            size="54px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--body_backg)")
             }
@@ -26,7 +26,7 @@ const SocialMedia = () => {
         <a href="https://www.linkedin.com/in/nesrine-yahoum-16ba4590/" target="_blank" rel="noreferrer" aria-label="LinkedIn">link
         <TiSocialLinkedinCircular
             color="var(--body_color)"
-            size="50px"
+            size="54px"
         
             onMouseOver={({ target }) =>
               (target.style.color = "var(--body_backg)")
@@ -42,7 +42,7 @@ const SocialMedia = () => {
         <a href="https://x.com/NesrineYAH87" target="_blank" rel="X">lien X
         <RiTwitterXLine 
             color="var(--body_color)"
-            size="37px"
+            size="36px"
             onMouseOver={({ target }) =>
               (target.style.color = "var(--body_backg)")
             }
