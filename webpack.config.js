@@ -14,4 +14,14 @@ module.exports = {
       openAnalyzer: true,
     }),
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: true,
+        },
+      }),
+    ],
+  },
 };
