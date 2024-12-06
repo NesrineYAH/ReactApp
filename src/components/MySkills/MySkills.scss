@@ -17,7 +17,7 @@
 
             .box {
                 padding: 0 1rem 0 2rem;
-                width: 94%;
+                width: 96%;
 
                 &__title {
                     text-align: center;
@@ -53,7 +53,7 @@
         }
 
         &__blob {
-            width: 94%;
+            width: 96%;
             margin: auto;
             max-width: auto;
             margin-top: 12%;
@@ -69,7 +69,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 94%;
+            width: 96%;
 
             &__Intro {
                 width: 94%;
@@ -103,7 +103,7 @@
 
             &__title {
                 font-weight: 400;
-                font-size: 15px;
+                margin-bottom: 4px;
             }
 
             .fa {
@@ -260,6 +260,7 @@
                 &__title {
                     font-weight: 400;
                     font-size: 13px;
+                    margin-bottom: 4px;
                 }
 
                 .fa {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import photo from "../../assets/img/bakground/img_Nesrine.webp";
+import photo from "../../assets/img/bakground/img_NesrineI.webp";
 import SocialMedia from "../../components/socialMedia/socialMedia";
 
 
@@ -22,7 +22,7 @@ const Profil = () => {
       </div>
    
     <div className="container_photo">      
-        <img src={photo} alt={t("photo_alt")} loading="lazy" />
+        <img src={photo} alt={t("photo_alt")} />
    </div>
     </div>
 

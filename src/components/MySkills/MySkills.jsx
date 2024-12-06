@@ -202,7 +202,8 @@ const MySkills = () => {
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
-                              }}>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} </p>
+                              }}>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} 
+                        </p>
                     </div>
 
                     <div className='softSkills'>
@@ -212,7 +213,7 @@ const MySkills = () => {
                                 direction: lang === "ar" ? "rtl" : "ltr",  
                                 fontSize: lang === "ar" ? "18px" : "initial" 
                               }}>{t("Competence.softSkills__titleI")}
-                              </h4>
+                            </h4>
                         </div>
                         <div className='softSkills__item'>
                             <HiUserGroup className="fa" style={{ direction : lang === "ar" ? "rtl" : "ltr"}}/>

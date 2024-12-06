@@ -89,7 +89,6 @@
 
     .contactList__conatiner {
         .contactList {
-            grid-gap: 25px;
             margin-bottom: 30px;
 
             &__item {
@@ -97,6 +96,7 @@
                 flex-direction: row;
                 grid-gap: 19px;
                 margin-bottom: 10px;
+                align-items: center;
             }
 
             &__i {
@@ -118,6 +118,7 @@
             &__span {
                 font-size: 14px;
                 font-weight: 600;
+
             }
 
             .phone {
@@ -288,7 +289,7 @@
                     color: navy;
                     font-weight: 600;
                     font-size: 16px;
-
+                    margin-top: 6px;
                 }
 
                 &__a {
