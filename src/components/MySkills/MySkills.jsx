@@ -19,7 +19,6 @@ const MySkills = () => {
     const lang = localStorage.getItem("i18nextLang");
     const textRef = useRef(null);
 
-    
    useEffect(() => {
     const timeline = gsap.timeline({ repeat: -1 });
      const chars = Array.from(textRef.current.querySelectorAll('.display-dots'));
@@ -240,7 +239,6 @@ const MySkills = () => {
         </section>
 
     );
-
 };
 
 export default MySkills;

@@ -23,5 +23,15 @@ module.exports = {
         },
       }),
     ],
+    splitChunks: {
+      chunks: "all",
+      minSize: 20000, // Taille minimum pour la création de chunks
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+        },
+      },
+    },
   },
 };
