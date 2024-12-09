@@ -79,20 +79,16 @@
 }
 
 .glowON {
-    margin-top: 40px;
     border-radius: 15px;
     cursor: pointer;
     height: 64px;
     outline: 0;
-    position: relative;
-    width: 160px;
     z-index: 1;
     margin-top: 30px;
     border: 1px solid var(--link_color);
     min-width: 170px;
-
+    padding: 25px;
 }
-
 
 @keyframes glowing {
     0% {
