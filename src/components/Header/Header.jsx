@@ -4,7 +4,7 @@ import Language from "../Language/Language";
 import DarkMode from "../dark/darkMode";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import NBY from "../../assets/img/logo/NBYy2.webp";
 
 class Header extends Component {
   constructor(props) {
@@ -86,7 +86,7 @@ class Header extends Component {
           className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>
 
         <div className="navbarLogo" onClick={handleShowLinks}>
-          <Link rel="preload" href="../../assets/img/logo/NBYy2.webp" as="image" style={{ direction: lang === "ar" ? "rtl" : "ltr" }} className="navbarLogo__img" ></Link>
+        <img className="navbarLogo__img"  src={NBY} alt={t("logo_alt")} style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
         </div>     
 
           {!matches ? (
