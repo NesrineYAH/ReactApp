@@ -88,7 +88,6 @@ class Header extends Component {
         <div className="navbarLogo" onClick={handleShowLinks}>
         <img className="navbarLogo__img"  src={NBY} alt={t("logo_alt")} style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
         </div>     
-
           {!matches ? (
             <div className="nav-screen">
               <ul className="navbar__links">
