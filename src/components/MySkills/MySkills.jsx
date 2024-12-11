@@ -200,7 +200,7 @@ const MySkills = () => {
                         </h3>
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
-                                fontSize: lang === "ar" ? "18px" : "initial" 
+                                fontSize: lang === "ar" ? "17px" : "initial" 
                               }}>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} 
                         </p>
                     </div>
