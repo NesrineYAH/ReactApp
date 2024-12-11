@@ -22,7 +22,7 @@ const Profil = () => {
       </div>
    
     <div className="container_photo">      
-        <img src={photo} alt={t("photo_alt")} />
+        <img src={photo} alt={t("photo_alt")}  loading="lazy" />
    </div>
     </div>
 

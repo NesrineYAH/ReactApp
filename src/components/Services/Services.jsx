@@ -29,7 +29,7 @@ const Services = () => {
         <h2 className="titlePortfolio"> {t("service_title")} </h2>
       {services.map((service) => (          
           <figure key={service.id} className='serviceCard' >
-          <img className='serviceCard__img' src={service.image} alt ={service.alt} />
+          <img className='serviceCard__img' src={service.image} alt ={service.alt}  loading="lazy" />
           <h3 className='serviceCard__title' >{t(service.title)}</h3>
           <p className='serviceCard__prg'>{t(service.description)}</p>    
           </figure>

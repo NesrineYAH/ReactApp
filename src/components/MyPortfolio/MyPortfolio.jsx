@@ -36,7 +36,7 @@ const MyPortfolio = () => {
           className="card"
           key={project.id}>
           <div className="card-face front">
-            <img src={project.image} alt={project.alt} />
+            <img src={project.image} alt={project.alt}  loading="lazy" />
           </div>
           <figcaption className="card-face back">
             <h3 style={{textTransform: "uppercase", fontWeight: "bold"}}> {project.title} </h3>

@@ -1,6 +1,6 @@
 const path = require("path");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: "./src/index.jsx", // Remplacez par le point d'entrée principal de votre projet
