@@ -87,7 +87,7 @@ class Header extends Component {
           className={`navbar_header ${showLinks ? "show_nav" : ""} ${ isTransparent && !isMobile ? "navbar_header--transparent" : ""} `}>
 
         <button className="navbarLogo" onClick={handleShowLinks}>
-          <img className="navbarLogo__img"  src={NBY} alt={t("logo_alt")} loading="lazy"  style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
+          <img className="navbarLogo__img"  src={NBY} alt={t("logo_alt")} style={{ direction: lang === "ar" ? "rtl" : "ltr" }} />
         </button>     
 
           {!matches ? (
