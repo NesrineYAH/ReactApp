@@ -3,6 +3,7 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "production",
+  devtool: "source-map",
   entry: "./src/index.jsx", // Remplacez par le point d'entrée principal de votre projet
   output: {
     filename: "bundle.js",
