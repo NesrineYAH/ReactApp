@@ -16,16 +16,27 @@
 
     .X {
         margin-top: 15px;
-
     }
-
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         width: 400px;
         display: flex;
         flex-direction: row;
         flex-direction: space-between;
         list-style-type: none;
         padding-left: 0;
-        margin-left: -14px;
+        margin-left: 1.5%;
     }
+
+    @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+        @media screen and (min-width: $breakpoint-desktop) {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-direction: space-between;
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: -14px;
+        }
+    }
+
 }

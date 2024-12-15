@@ -66,8 +66,7 @@ console.log(e);
           </h5>  
         ))}    
         </div>  
-        <div style={{ flexDirection: lang === "ar" ?"row" : "row-reverse" }}
-        className="project__page" >
+        <div className="project__page" style={{ flexDirection: lang === "ar" ?"row" : "row-reverse"}}>
 
       <div className="project__carousel" >
      <Caroussel className="carousel" />
@@ -117,8 +116,8 @@ console.log(e);
       ))}          
       </div>
     </div>
-  </div>
-</div>
+     </div>
+    </div>
       )}
  </section>
   );

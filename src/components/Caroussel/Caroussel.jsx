@@ -45,7 +45,7 @@ if (requete.ok) {
     projects
     .filter((project) => project.id === id)
     .map((project) =>(
-        <Carousel
+        <Carousel className='carousel'
         showControls={false}
         key={project.id}
         infiniteloop
