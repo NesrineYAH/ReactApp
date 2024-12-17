@@ -40,7 +40,7 @@ const MyPortfolio = () => {
           </div>
           <figcaption className="card-face back">
             <h3 style={{textTransform: "uppercase", fontWeight: "bold"}}> {project.title} </h3>
-            <p style={{direction: lang === "ar" ? "rtl" : "ltr", fontSize: lang === "ar" ? "18px" : "initial"}}>{t(project.brief_description)}</p>
+            <p style={{direction: lang === "ar" ? "rtl" : "ltr", fontSize: lang === "ar" ? "16px" : "initial"}}>{t(project.brief_description)}</p>
             <div className="glow-on-hover">
               <Link
                 to={`/Project/${project.id}`} target="_blank"  className="btn_text" key={project.id}>

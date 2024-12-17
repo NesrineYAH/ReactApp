@@ -61,7 +61,7 @@
         font-size: 14px;
         color: var(--skill_color);
         background-color: var(--body_background);
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     .error {
@@ -78,13 +78,14 @@
         border-radius: 20px;
         padding: 6px 20px;
         border: 1px var(--body_color) solid;
-        border: 1px var(--lang_background) solid;
+        background-color: var(--body_color);
         color: navy;
+        font-weight: 600;
+        cursor: pointer;
 
-    }
-
-    .send-text:hover {
-        box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+        &:hover {
+            box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+        }
     }
 
     .contactList__conatiner {
@@ -118,7 +119,6 @@
             &__span {
                 font-size: 14px;
                 font-weight: 600;
-
             }
 
             .phone {
@@ -286,7 +286,6 @@
                 &__span {
                     text-decoration: none;
                     color: var(--link_color);
-                    color: navy;
                     font-weight: 600;
                     font-size: 16px;
                     margin-top: 6px;

@@ -304,16 +304,15 @@
             left: 10%;
 
             &__icon {
+                display: flex;
                 align-items: center;
                 border-radius: 50%;
                 cursor: pointer;
-                font-size: 18px;
                 height: 50px;
-                padding: 20px;
                 transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
                 width: 50px;
                 background-color: transparent;
-
+               
                 &:hover .wrapper__tooltip {
                     top: -45px;
                     opacity: 1;

@@ -156,7 +156,7 @@
             position: fixed;
             top: 4%;
             z-index: 10;
-            width: 92%;
+            width: 100%;
 
             .navbar__links {
                 @include flexCenterRow;
@@ -166,9 +166,7 @@
                 font-weight: 600;
 
                 .navbar__link {
-                    color: navy;
                     color: var(--link_color);
-
                 }
             }
 

@@ -1,5 +1,5 @@
 .socialMedia__Conatiner {
-    width: 400px;
+    width: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: space-between;
@@ -17,6 +17,7 @@
     .X {
         margin-top: 15px;
     }
+
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         width: 400px;
         display: flex;
