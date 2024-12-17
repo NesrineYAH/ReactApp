@@ -41,9 +41,7 @@ const About = () => {
     words: [
       t('world'),
       t('Visiteurs'), 
-      t('Développeurs')
-
-    ],
+      t('Développeurs')],
     loop: 0,
     typeSpeed: 120,
     deleteSpeed: 80
