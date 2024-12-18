@@ -23,6 +23,7 @@
       "react-simple-typewriter": "^5.0.1",
       "react-spinners": "^0.13.8",
       "styled-components": "^6.1.0",
+      "terser-webpack-plugin": "^5.3.11",
       "web-vitals": "^2.1.4"
    },
    "scripts": {
