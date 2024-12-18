@@ -62,7 +62,7 @@
                 align-items: center !important;
                 display: flex;
                 justify-content: flex-end;
-                margin: -70px 10px 10px 0;
+                margin: -78px 14px 10px 0;
 
                 button {
                     background: 0 0;
@@ -107,7 +107,7 @@
             color: inherit;
             cursor: pointer;
             border-radius: 50%;
-            margin: 12px 10px 10px 20px;
+            margin: 20px 10px 10px 20px;
 
             &__img {
                 border-radius: 50px;
@@ -152,9 +152,8 @@
         .navbar_header {
             @include flexCenterRow;
             flex-wrap: wrap;
-            margin-top: 1%2 !important;
             position: fixed;
-            top: 4%;
+            top: 3.5%;
             z-index: 10;
             width: 100%;
 
@@ -208,11 +207,12 @@
             height: 60px;
             background: transparent;
             border: none;
-            color: inherit;
             cursor: pointer;
             border-radius: 50%;
             margin-top: -0.8rem;
             box-shadow: -6px -6px 25px 0px #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+            position: relative;
+            left: 4%;
 
             &__img {
                 border-radius: 50px;
@@ -220,6 +220,7 @@
                 height: 100%;
                 position: relative;
                 width: 100%;
+
             }
         }
     }
