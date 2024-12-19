@@ -250,7 +250,10 @@
            "../assets/projects/GameON/GameOnII.webp",
            "../assets/projects/GameON/GameOnVII.webp",
            "../assets/projects/GameON/GameOnIII.webp",
-           "../assets/projects/GameON/GameONVX.webp"
+           "../assets/projects/GameON/GameONVX-landscape.webp",
+           "../assets/projects/GameON/smartI.webp",
+           "../assets/projects/GameON/smartII.webp",
+           "../assets/projects/GameON/smartIII.webp"
       ],
       "site": "https://nesrineyah.github.io/GameOn-website-FR/",
       "github":"https://github.com/NesrineYAH/GameOn-website-FR.git"
@@ -259,7 +262,7 @@
   },
   {
     "title": "Marathon",
-    "image": "../assets/projects/Marathon/marathonIE7_10_11zon.webp",
+    "image": "../assets/projects/Marathon/marIA_8.webp",
     "alt": "projet Marathon Paris 2024",
     "id": "9",
     "brief_description": "Marathon.brief_description",
@@ -280,15 +283,17 @@
       
     ],
     "pictures": [     
-      "../assets/projects/Marathon/images -imaneKhelif_2_11zon.webp",
-      "../assets/projects/Marathon/img Eveil III_4_11zon.webp",
-      "../assets/projects/Marathon/img Eveil II_3_11zon.webp",
-      "../assets/projects/Marathon/marathonI_7_11zon.webp",
-      "../assets/projects/Marathon/Img kelya nemour_5_11zon.webp",
-      "../assets/projects/Marathon/ben-hand_1_11zon.webp",
-      "../assets/projects/Marathon/marathonIA_8_11zon.webp",
-      "../assets/projects/Marathon/marathonID_9_11zon.webp",
-        "../assets/projects/Marathon/marathonIE7_10_11zon.webp"
+      "../assets/projects/Marathon/MI-front.webp",
+      "../assets/projects/Marathon/MI-landscape.webp",
+      "../assets/projects/Marathon/MI.webp",
+      "../assets/projects/Marathon/MIA.webp",
+      "../assets/projects/Marathon/MID.webp",
+      "../assets/projects/Marathon/MIE-Landscape.webp",
+      "../assets/projects/Marathon/MIE.webp",
+      "../assets/projects/Marathon/MII.webp",
+      "../assets/projects/Marathon/MIK.webp",
+      "../assets/projects/Marathon/MIKII.webp",
+      "../assets/projects/Marathon/MIS.webp"
     ],
     "site": "",
     "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
