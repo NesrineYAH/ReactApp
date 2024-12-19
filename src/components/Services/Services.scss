@@ -43,10 +43,10 @@
         &__title {
             position: absolute;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 30px;
             transition: inset .3s .3s ease-out;
             font-weight: 700;
-            height: 20px;
+            height: 30px;
             font-size: 16px;
             font-weight: 800;
             text-align: center;
@@ -55,15 +55,11 @@
 
         &__prg {
             overflow: hidden;
-            position: absolute;
-            margin-top: 45%;
+            margin-top: -14vh;
             font-size: 14px;
-            inset: -115px 0px 0px 0px;
-            display: flex;
-            align-items: center;
             text-align: center;
             width: 100%;
-            padding: 36px;
+            padding: 26px;
             color: var(--link_color);
             height: 75px;
         }
@@ -74,6 +70,25 @@
 
         .Service__Container {
             width: 90%;
+        }
+
+        .serviceCard {
+            &__title {
+                position: absolute;
+                width: 100%;
+                margin-top: 35px;
+                transition: inset .3s .3s ease-out;
+                font-size: 16px;
+                text-align: center;
+                color: var(--link_color);
+
+                &__prg {
+                    margin-top: -10vh;
+
+                    height: 80px;
+                    z-index: -1;
+                }
+            }
         }
     }
 
