@@ -1,20 +1,28 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Cookies from "js-cookie";
 import './CookieBanner.scss'
 
 const CookieBanner = ({ onAccept, onReject }) => {
+  const [isVisible, setIsVisible] = useState(true);
   const handleAccept = () => {
     Cookies.set("cookiesAccepted", "true", { expires: 365, path: "/" });
     onAccept();  // Appelle la fonction pour cacher le bandeau
+    setIsVisible(false)  // Cache le bandeau après acceptation
   };
 
   const handleReject = () => {
     Cookies.set("cookiesAccepted", "false", { expires: 365, path: "/" });
     onReject();  // Appelle la fonction pour cacher le bandeau
+    setIsVisible(false);  // Cache le bandeau après refus
   };
-
+  const handleClose = () => {
+    setIsVisible(false);
+  }
+  if (!isVisible) return null;
   return (
+    <div className="cookie_modal">
+     <button className="close-button" onClick={handleClose}>X</button>
     <div className="cookie-banner">
         <div className="cookie-div">
       <p>
@@ -29,6 +37,7 @@ const CookieBanner = ({ onAccept, onReject }) => {
         <button className="bouttonCookies" onClick={handleReject}>Refuser</button>
  
       </div>
+    </div>
     </div>
   );
 };
