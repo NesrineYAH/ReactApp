@@ -127,7 +127,7 @@
             flex-wrap: wrap;
             position: fixed;
             top: 2%;
-            width: 100%;
+            z-index: 1;
 
             .navbar__links {
                 font-size: 14px;
@@ -147,7 +147,7 @@
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         height: 100%;
         max-width: 100%;
-        width: 100%;
+        width: 98%;
 
         .navbar_header {
             @include flexCenterRow;
