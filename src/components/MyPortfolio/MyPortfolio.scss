@@ -8,11 +8,7 @@
         height: 260px;
         width: 90%;
         cursor: pointer;
-
         box-shadow: -3px -3px 12px 0 #583e81, 6px 6px 12px 0 rgba(0, 0, 0, .2);
-
-        box-shadow: $box-shadow;
-        box-shadow: var(--box-shadow);
         position: relative;
         transform-style: preserve-3d;
 
