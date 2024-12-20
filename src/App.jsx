@@ -10,6 +10,10 @@ import MentionLegales from './pages/MentionsLegales/MentionsLegales';
 import SiteMap from './pages/SiteMap/SiteMap';
 import { SyncLoader   }  from 'react-spinners'; 
 import { css } from "@emotion/react";
+import Cookies from 'js-cookie';
+import CookieBanner from './components/CookieBanner/CookieBanner.jsx';  
+
+
 
 const home = React.lazy(() => import("./pages/Home/Home"));
 const error = React.lazy(() => import("./pages/PageError/PageError"));
@@ -21,21 +25,40 @@ const siteMap = React.lazy(() => import("./pages/SiteMap/SiteMap"));
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {loading : true}
+    this.state = {
+      loading : true,
+       cookiesAccepted: Cookies.get("cookiesAccepted") === "true",
+      cookiesRejected: Cookies.get("cookiesAccepted") === "false",
+    }
+
   }
   
  handleClick = () => {
     window.location.replace("/");
   };
   componentDidMount() {
+     // Récupérer un cookie si nécessaire (par exemple, un cookie utilisateur)
+     const user = Cookies.get('user');  // Exemple de cookie d'utilisateur
+     if (user) {
+       this.setState({ user });
+     }
+      // Gérer le délai de chargement
     setTimeout(() => {
       this.setState({ loading: false });
     }, 800); 
-      }
+  }
+    handleCookieAccept = () => {
+      this.setState({ cookiesAccepted: true, cookiesRejected: false });
+    };
+  
+    handleCookieReject = () => {
+      this.setState({ cookiesAccepted: false, cookiesRejected: true });
+    };   
+  
+ 
 
  render() {
-   const { loading } = this.state; 
-   const spinTransition = {
+  const { loading, cookiesAccepted, cookiesRejected } = this.state;    const spinTransition = {
     loop: Infinity,
     ease: "linear",
     duration: 1,
@@ -62,7 +85,9 @@ class App extends React.Component {
       </BrowserRouter>  
      <Footer />
       </div>
-      )}       
+      )}   
+ {/* Afficher le bloc de cookies si l'utilisateur n'a pas encore pris de décision */}
+ {!cookiesAccepted && !cookiesRejected && <CookieBanner onAccept={this.handleCookieAccept} onReject={this.handleCookieReject} />} 
      </div>       
   </>
   );
