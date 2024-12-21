@@ -1,44 +1,28 @@
-.cookie_modal {
+@import '../../styles/outils/variable.scss';
+
+.cookieBlock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #433871;
-    z-index: 9999;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    height: 150px;
 
-    .close-button {
-        position: absolute;
-        top: 10%;
-        right: 2%;
-        background: none;
-        border: none;
-        font-size: 22px;
-        font-weight: 500;
-        cursor: pointer;
-        color: #ffff;
-
-    }
-
-    .cookie-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #433871;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 40px;
-        align-items: center;
-        height: 180px;
-        z-index: -1;
-    }
-
-    .cookie-div {
+    &__div {
         background-color: transparent;
-        width: 75%;
+        width: 78%;
         text-align: start;
         line-height: 140%;
+
 
         p {
             background-color: transparent;
@@ -55,7 +39,7 @@
         }
     }
 
-    .cookie-buttons {
+    &__Bouttons {
         background-color: #433871;
         border: none;
         padding: 10px 20px;
@@ -64,11 +48,12 @@
         font-size: 14px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         gap: 20px;
     }
 
-    .bouttonCookies {
+    &__button {
         width: 100px;
         height: 45px;
         background-color: #9356DC;
@@ -82,5 +67,6 @@
         }
     }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {}
 
 }

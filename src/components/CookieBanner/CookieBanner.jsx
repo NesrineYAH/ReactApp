@@ -21,23 +21,22 @@ const CookieBanner = ({ onAccept, onReject }) => {
   }
   if (!isVisible) return null;
   return (
-    <div className="cookie_modal">
-     <button className="close-button" onClick={handleClose}>X</button>
-    <div className="cookie-banner">
-        <div className="cookie-div">
+
+    <div className="cookieBlock">
+        <div className="cookieBlock__div">
       <p>
         Nous utilisons des cookies pour améliorer votre expérience. En
         poursuivant votre navigation, vous acceptez notre utilisation des
         cookies.  
       </p>
       <a href="" rel="noopener noreferrer">Politique de Cookies</a>
+
      </div>
-      <div className="cookie-buttons">
-        <button className="bouttonCookies" onClick={handleAccept}>Accepter</button>
-        <button className="bouttonCookies" onClick={handleReject}>Refuser</button>
+      <div className="cookieBlock__Bouttons">
+        <button className="cookieBlock__button" onClick={handleAccept}>Accepter</button>
+        <button className="cookieBlock__button" onClick={handleReject}>Refuser</button>
  
       </div>
-    </div>
     </div>
   );
 };
