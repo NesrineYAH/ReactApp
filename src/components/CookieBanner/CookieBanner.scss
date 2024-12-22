@@ -8,21 +8,20 @@
     background-color: #433871;
     color: #fff;
     padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
-    height: 150px;
+    height: 220px;
+    opacity: 1;
+    animation-name: collapsecookies 0.5s ease-in-out;
+    -webkit-animation: collapsecookies 0.5s ease-in-out;
+    z-index: 1;
 
     &__div {
         background-color: transparent;
-        width: 78%;
+        width: 90%;
         text-align: start;
         line-height: 140%;
-
+        margin-bottom: 20px;
 
         p {
             background-color: transparent;
@@ -67,6 +66,94 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {}
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$Mmax) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #433871;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        height: 150px;
 
+        &__div {
+            background-color: transparent;
+            width: 78%;
+            text-align: start;
+            line-height: 140%;
+
+
+            p {
+                background-color: transparent;
+                font-size: 14px;
+                color: #ffff;
+            }
+
+            a {
+                background-color: transparent;
+                text-align: start;
+                color: #ffff;
+                font-size: 14px;
+
+            }
+        }
+
+        &__Bouttons {
+            background-color: #433871;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 20px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__button {
+            width: 100px;
+            height: 45px;
+            background-color: #9356DC;
+            border: 1px solid #9356DC;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #7a2a9c;
+            }
+        }
+    }
+
+}
+
+@keyframes collapsecookies {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(150px);
+    }
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(150px);
+    }
 }
