@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import photo from "../../assets/img/bakground/img_NesrineI.webp";
+import photo from "../../assets/img/bakground/img_NesrineI.png";
 import SocialMedia from "../../components/socialMedia/socialMedia";
 
 
