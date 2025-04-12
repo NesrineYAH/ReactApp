@@ -1,6 +1,6 @@
 import react from 'react';
 import { useTranslation } from "react-i18next";
-import  cv from "./CV NESRINE BEKKAR YAHOUM.pdf";
+
 
 const DownloadBtn = () => {
   const { t } = useTranslation();
@@ -8,7 +8,7 @@ const DownloadBtn = () => {
     <button className="glow-on-hover" type="button">
       <a
         className="btn_text"
-        href={cv}
+        href="https://cv.nesrinebekkar.com/"
         target="_blank"
         rel="noreferrer"
         aria-label={t("Download")}
