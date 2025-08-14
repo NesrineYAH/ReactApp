@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { useTranslation } from "react-i18next";
 import MyPortfolio from "../../components/MyPortfolio/MyPortfolio";
 
@@ -9,42 +8,10 @@ const Portfolio = () => {
     const lang = localStorage.getItem("i18nextLang");
 
 
-
-
-export default function ProjectSelector() {
-  const [selectedCategory, setSelectedCategory] = useState('DEV');
-
-  const handleChange = (event) => {
-    setSelectedCategory(event.target.value);
-    console.log("Catégorie sélectionnée :", event.target.value);
-    // Ici tu peux aussi déclencher un filtre sur tes projets
-  };
-
-  return (
-    <label className="Language">
-      <select
-        className="btg_lang"
-        value={selectedCategory}
-        onChange={handleChange}
-      >
-        <option value="DEV">
-          Projets Développement Frontend, Full Stack
-        </option>
-        <option value="DATA">
-          Projets DATA
-        </option>
-      </select>
-    </label>
-  );
-}
-
- 
-
-
   return (
 <section id="Portfolio">
 
-  <label className='Language'>
+  {/* <label className='Language'>
             <select className="btg_lang"
           value={selectedCategory}
                   onChange={handleChange}
@@ -56,7 +23,7 @@ export default function ProjectSelector() {
                         Projets DATA</option>
                   
              </select>
-        </label>
+        </label> */}
   
     <div id={t("portfolio_id")} className="portfoloi">
       <h2 className="titlePortfolio"> {t("portfolio_title")}</h2>

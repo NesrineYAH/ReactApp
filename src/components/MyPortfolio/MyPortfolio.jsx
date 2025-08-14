@@ -26,11 +26,40 @@ const MyPortfolio = () => {
     };
     fetchProjects();
   }, []);
+///////////////////////////15/08/2025
 
-  
+ function ProjectSelector() {
+  const [selectedCategory, setSelectedCategory] = useState('DEV');
+
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+    console.log("Catégorie sélectionnée :", event.target.value);
+    // Ici tu peux aussi déclencher un filtre sur tes projets
+  };
+}
+
 
   return (
+
+    
     <div className="myPortfolio">
+   <label className="Language">
+      <select
+        className="btg_lang"
+        value={selectedCategory}
+        onChange={handleChange}
+      >
+        <option value="DEV">
+          Projets Développement Frontend, Full Stack
+        </option>
+        <option value="DATA">
+          Projets DATA
+        </option>
+      </select>
+    </label>
+
+
+
       {projects.map((project) => (
         <figure
           className="card"
