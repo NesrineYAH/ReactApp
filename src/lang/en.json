@@ -1,7 +1,6 @@
 {
   "title": "Nesrine BEKKAR YAHOUM ",
-  "description": "portfolio Nesrine BEKKAR YAHOUM Front-end and Fullstack web developer.in Ile De France",
-  "photo_alt": "Nesrine BEKKAR YAHOUM",
+"description": "Portfolio Nesrine BEKKAR YAHOUM Full Stack developer DATA Engineer in Ile De France Data analysis Descriptive statistics Data visualization Data cleaning Data Mining Database modeling Data architecture Data infrastructure Flow orchestration Data audit Data security Performance optimization Data storage Data integration Data transformation Data governance Anticipation of energy needs Data systems design Technical documentation Problem solving Critical thinking Curiosity Organization Adaptability Communication Teamwork Agile methodology Analytical mindset Continuous learning, Python SQL Pandas NumPy Matplotlib Seaborn Scikit-learn Spark Kafka Airbyte Kestra MongoDB NoSQL PostgreSQL Data Lake ETL / ELT Data pipeline MLOps data warehousing Supervised machine learning Docker Docker Compose Git / GitHub Poetry (Python environment) Jupyter Notebook REST API Faiss (vector database) String cloud computing (AWS, Azure, GCP) CI/CD Big Data Hadoop (if applicable)",  "photo_alt": "Nesrine BEKKAR YAHOUM",
   "logo_alt": "portfolio's logo",
 
   "home_title": "Home",
@@ -65,7 +64,7 @@
 
   "presentation": {
     "h1Text" : "Nesrine BEKKAR YAHOUM",
-    "h2Text" : "Frontend, Fullstack Web developer"  
+    "h2Text" : "Fullstack developer, Data Engineer"  
     },
 
   "main_heading": {
