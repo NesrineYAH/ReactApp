@@ -7,14 +7,22 @@ const Portfolio = () => {
   const { t } = useTranslation();
     const lang = localStorage.getItem("i18nextLang");
 
+function ProjectSelector() {
+  const [selectedCategory, setSelectedCategory] = useState('DEV');
+
+const handleChnage= (e) => {
+  setSelectedCategory(e.target.value);
+      console.log("Catégorie sélectionnée :", event.target.value);
+
+};
+
+
   return (
 <section id="Portfolio">
 
   <label className='Language'>
-            <select className="btg_lang">
->                     <option value="DEV">
-                     Projets
-                         Développement Frontend, Full Stack
+            <select className="btg_lang">                   <option value="DEV">
+                     Projets Développement Frontend, Full Stack
                     </option>
                       <option value="Data">
                         Projets DATA</option>
