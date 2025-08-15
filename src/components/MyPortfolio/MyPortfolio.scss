@@ -9,7 +9,12 @@
         height: 45px;
         margin: 0 auto;
         border-radius: 10px;
-        background-color: var(--body_color);
+        padding: 20px;
+        /*  background-color: var(--body_color);*/
+    }
+    .btg {
+        height: 30px;
+        width: 240px;
     }
 
     .card {

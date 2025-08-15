@@ -50,23 +50,21 @@ const MyPortfolio = () => {
   }, []);
 
   if (loading) {
-    return <div className="myPortfolio">Chargement des projets…</div>;
-    
+    return <div className="myPortfolio">Chargement des projets…</div>;  
   }
 
   return (
     
 <section className="myPortfolio">
      <div className="selectCategory"> 
-         <label >
+         <label>
           <select className="btg" value={selectedCategory} onChange={handleChange}>
             <option value="ALL">Tous les projets</option>
             <option value="DEV">Projets de Développement, Full Stack</option>
             <option value="DATA">Projets DATA</option>
           </select>
         </label></div>
-<div className="myPortfolio">      
-     
+<div className="myPortfolio">         
       {filteredProjects.length === 0 && (
         <p style={{ marginTop: 16 }}>
           Aucun projet trouvé pour la catégorie <strong>{selectedCategory}</strong>.
