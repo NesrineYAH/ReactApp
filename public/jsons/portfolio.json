@@ -307,27 +307,26 @@
     "site": "",
     "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
 },
-  [
-      {
+{
     "title": "Analyse des données de ventes d'une PME",
     "image": "../assets/projects/data_analysis/data_analysis1.webp",
     "alt": "projet analyse des données de toute les ventes ",
-    "id": "1",
+    "id": "10",
     "category": "DATA",
-    "brief_description": "projectDataAnalysis.brief_description",
-    "description_project": "projectDataAnalysis.description_project",
+    "brief_description": "projetDataI.brief_description",
+    "description_project": "projetDataI.description_project",
     "technologyUsed": [
       {
-        "icon": "../assets/technologyIcons/python-min.webp",
+        "icon": "../assets/technologyIcons/python.png",
         "name": "Python"
       },
       {
-        "icon": "../assets/technologyIcons/pandas-min.webp",
+        "icon": "../assets/technologyIcons/pandas.png",
         "name": "Pandas"
       },
       {
-        "icon": "../assets/technologyIcons/matplotlib-min.webp",
-        "name": "Matplotlib"
+        "icon": "../assets/technologyIcons/pythonflask.png",
+        "name": "Flask-Python"
       }
     ],
     "pictures": [
@@ -338,7 +337,7 @@
     "site": "",
   "github": "https://github.com/NesrineYAH/Sales-flask-app.git" 
   }
-  ]
+  
   ]
   
   

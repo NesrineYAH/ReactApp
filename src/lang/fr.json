@@ -82,6 +82,7 @@
     "message__text": " Nous sommes désolés, la page que vous recherchez n'existe pas.",
     "message__btn": "Retourner sur la page d'accueil"
   },
+  
 
   "projectBooki": {
     "brief_description": "Il s'agit d'un site web qui offre la possibilité de réserver un hôtel tout en permettant aux utilisateurs de découvrir les différentes activités disponibles dans la région",
@@ -119,6 +120,11 @@
 "brief_description":"Ce projet sert à créer une site web pour un évenement soprtif les jeux olympique qui contient les différents évenement sportifs.",
 "description_project": "Créer un site web avec HTML et CSS et javaScript. 🎯 Implémenter des fonctionnalités interactives avec JavaScript pour améliorer l'expérience utilisateur. ✅ Valider les entrées du formulaire et afficher des messages d'erreur appropriés en cas de données incorrectes. ⚙️ Ajouter des interactions avec l'utilisateur, telles que l'ouverture et la fermeture d'une fenêtre modale contient 🔧 les détails de l'implémentation."
 },
+"projetDataI":{
+  "brief_description": "Projet Data est un projet de création d'une application web pour la gestion des données de vente d'une PME.",
+  "description_project": "Dans le cadre de ce projet, j'ai été chargée de créer une application web pour la gestion des données. J'ai utilisé Python et Flask pour le back-end, ainsi que HTML, CSS et JavaScript pour le front-end. L'application permet aux utilisateurs de visualiser, ajouter, modifier et supprimer des données de manière intuitive et efficace."
+},
+
 "service.description": {
   "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes.",
    "Mobile":"Dans une ère dominée par le mobile, une application bien conçue est plus qu'un simple outil.",
