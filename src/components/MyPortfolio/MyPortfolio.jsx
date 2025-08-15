@@ -57,8 +57,8 @@ const MyPortfolio = () => {
   return (
     
 <section className="myPortfolio">
-     <div> 
-         <label className="selectCategory">
+     <div className="selectCategory"> 
+         <label >
           <select className="btg" value={selectedCategory} onChange={handleChange}>
             <option value="ALL">Tous les projets</option>
             <option value="DEV">Projets de Développement, Full Stack</option>
