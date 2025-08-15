@@ -307,25 +307,39 @@
     "site": "",
     "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
 },
-    { 
-      "title": "Analyse des données de ventes d'une PME", 
-      "image":"../assets/projects/data_analysis/data_analysis.webp",
-      "alt": "projet analyse des données de toute les ventes ",
-      "id": "1", 
-      "category": "DATA",
-      "site": "",
-  "github": "https://github.com/NesrineYAH/Sales-flask-app.git"
-    },
-    { 
-      "title": "Pipeline de données Kafka", 
-      "image":"../assets/projects/kafka/kafka.webp",
-      "alt": "projet pipeline de données Kafka",
-      "id": "2", 
-      "category": "DATA",
-      "site": "",
-      "github": ""
+  [
+      {
+    "title": "Analyse des données de ventes d'une PME",
+    "image": "../assets/projects/data_analysis/data_analysis.webp",
+    "alt": "projet analyse des données de toute les ventes ",
+    "id": "1",
+    "category": "DATA",
+    "brief_description": "projectDataAnalysis.brief_description",
+    "description_project": "projectDataAnalysis.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/python-min.webp",
+        "name": "Python"
+      },
+      {
+        "icon": "../assets/technologyIcons/pandas-min.webp",
+        "name": "Pandas"
+      },
+      {
+        "icon": "../assets/technologyIcons/matplotlib-min.webp",
+        "name": "Matplotlib"
+      }
+    ],
+    "pictures": [
+      "../assets/projects/data_analysis/data_analysis1.webp",
+      "../assets/projects/data_analysis/data_analysis2.webp",
+      "../assets/projects/data_analysis/data_analysis3.webp"
+    ],
+    "site": "",
+  "github": "https://github.com/NesrineYAH/Sales-flask-app.git" 
   }
-
-
-];
+  ]
+  ]
+  
+  
 

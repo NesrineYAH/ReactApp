@@ -1,91 +1,105 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 
 const MyPortfolio = () => {
   const { t } = useTranslation();
   const lang = localStorage.getItem("i18nextLang");
   const [projects, setProjects] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('DEV');
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const [loading, setLoading] = useState(true);
 
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
     console.log("Catégorie sélectionnée :", event.target.value);
-    // Ici tu peux aussi déclencher un filtre sur tes projets
   };
 
+  // Filtrage (robuste : gère DATA/DEV en majuscules, et tags éventuels)
+  const filteredProjects = useMemo(() => {
+    if (selectedCategory === "ALL") return projects;
 
-//    function ProjectSelector() {
-// }
+    const target = String(selectedCategory).toUpperCase().trim();
+
+    return projects.filter((project) => {
+      const cat = String(project?.category ?? "").toUpperCase().trim();
+      if (cat === target) return true;
+
+      // Optionnel: si ton JSON a un champ "tags": ["DATA", "DEV", ...]
+      if (Array.isArray(project?.tags)) {
+        const tagsUpper = project.tags.map((x) => String(x).toUpperCase().trim());
+        if (tagsUpper.includes(target)) return true;
+      }
+      return false;
+    });
+  }, [projects, selectedCategory]);
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const requete = await fetch("../../jsons/portfolio.json", {
-          method: "GET",
-        });
-        if (requete.ok) {
-          const response = await requete.json();
-          setProjects(response);
-          console.log(response);
-        }
+        const res = await fetch("../../jsons/portfolio.json", { method: "GET" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setProjects(data);
       } catch (e) {
-        console.log(e);
+        console.error("Erreur de chargement des projets :", e);
+      } finally {
+        setLoading(false);
       }
     };
     fetchProjects();
   }, []);
-///////////////////////////15/08/2025
 
-
+  if (loading) {
+    return <div className="myPortfolio">Chargement des projets…</div>;
+    
+  }
 
   return (
-
- 
-
     
-    <div className="myPortfolio">
-  < div>
-     <label className="slectCategory">
-      <select
-        className="btg"
-        value={selectedCategory}
-        onChange={handleChange}
-      >
-        <option value="DEV">
-          Projets Développement Frontend, Full Stack
-        </option>
-        <option value="DATA">
-          Projets DATA
-        </option>
-      </select>
-    </label>
-   </div>
+<section className="myPortfolio">
+     <div> 
+         <label className="selectCategory">
+          <select className="btg" value={selectedCategory} onChange={handleChange}>
+            <option value="ALL">Tous les projets</option>
+            <option value="DEV">Projets de Développement, Full Stack</option>
+            <option value="DATA">Projets DATA</option>
+          </select>
+        </label></div>
+<div className="myPortfolio">      
+     
+      {filteredProjects.length === 0 && (
+        <p style={{ marginTop: 16 }}>
+          Aucun projet trouvé pour la catégorie <strong>{selectedCategory}</strong>.
+        </p>
+      )}
 
-
-
-      {projects.map((project) => (
-        <figure
-          className="card"
-          key={project.id}>
+      {filteredProjects.map((project) => (
+        <figure className="card" key={project.id}>
           <div className="card-face front">
-            <img src={project.image} alt={project.alt}  loading="lazy" />
+            <img src={project.image} alt={project.alt || project.title} loading="lazy" />
           </div>
           <figcaption className="card-face back">
-            <h3 style={{textTransform: "uppercase", fontWeight: "bold"}}> {project.title} </h3>
-            <p style={{direction: lang === "ar" ? "rtl" : "ltr", fontSize: lang === "ar" ? "16px" : "initial"}}>{t(project.brief_description)}</p>
+            <h3 style={{ textTransform: "uppercase", fontWeight: "bold" }}>
+              {project.title}
+            </h3>
+            <p
+              style={{
+                direction: lang === "ar" ? "rtl" : "ltr",
+                fontSize: lang === "ar" ? "16px" : "initial",
+              }}
+            >
+              {t(project.brief_description)}
+            </p>
             <div className="glow-on-hover">
-              <Link
-                to={`/Project/${project.id}`} target="_blank"  className="btn_text" key={project.id}>
+              <Link to={`/Project/${project.id}`} target="_blank" className="btn_text">
                 {t("Readmore")}
               </Link>
             </div>
           </figcaption>
         </figure>
       ))}
-    </div>
+</div>   
+    </section>
   );
 };
 
