@@ -1,9 +1,10 @@
-[
+  [
   {
     "title": "Booki",
     "image": "../assets/projects/booki/bookiCover-min.webp",
     "alt": "projet booki",
     "id": "1",
+    "category": "DEV",
     "brief_description": "projectBooki.brief_description",
     "description_project": "projectBooki.description_project",
     "technologyUsed": [
@@ -35,6 +36,7 @@
     "image": "../assets/projects/ohmyfood/food-min.webp",
     "alt": "projet Ohmyfood",
     "id": "2",
+    "category": "DEV",
     "brief_description": "projectOhMyFood.brief_description",
     "description_project": "projectOhMyFood.description_project",
     "technologyUsed": [
@@ -66,6 +68,7 @@
     "image": "../assets/projects/La panthere/one.webp",
     "alt": "projet La panthère",
     "id": "3",
+    "category": "DEV",
     "brief_description": "projectLaPantherre.brief_description",
     "description_project": "projectLaPantherre.description_project",
     "technologyUsed": [
@@ -92,6 +95,7 @@
     "image": "../assets/projects/kanap/CartePort.webp",
     "alt": "projet kanap",
     "id": "4",
+    "category": "DEV",
     "brief_description": "projectKanap.brief_description",
     "description_project": "projectKanap.description_project",
     "technologyUsed": [
@@ -123,6 +127,7 @@
     "image": "../assets/projects/picante/picanteI.webp",
     "alt": "projet Picante",
     "id": "5",
+    "category": "DEV",
     "brief_description": "projectPicante.brief_description",
     "description_project": "projectPicante.description_project",
     "technologyUsed": [
@@ -162,6 +167,7 @@
     "image": "../assets/projects/kasa/kasaIcon-min.webp",
     "alt": "projet Kasa",
     "id": "6",
+    "category": "DEV",
     "brief_description": "projectKasa.brief_description",
     "description_project": "projectKasa.description_project",
     "technologyUsed": [
@@ -192,6 +198,7 @@
     "image": "../assets/projects/LesPetitsPlats/Recette03.webp",
     "alt": "projet les petits plats",
     "id": "7",
+    "category": "DEV",
     "brief_description": "projectLesPetitsPlats.brief_description",
     "description_project": "projectLesPetitsPlats.description_project",
     "technologyUsed": [
@@ -228,6 +235,7 @@
       "image": "../assets/projects/GameON/GameonI.webp",
       "alt": "projet Game on",
       "id": "8",
+      "category": "DEV",
       "brief_description": "GameOn.brief_description",
       "description_project": "GameOn.description_project",
       "technologyUsed": [
@@ -265,6 +273,7 @@
     "image": "../assets/projects/Marathon/marIA_8.webp",
     "alt": "projet Marathon Paris 2024",
     "id": "9",
+    "category": "DEV",
     "brief_description": "Marathon.brief_description",
     "description_project": "Marathon.description_project",
     "technologyUsed": [
@@ -297,5 +306,26 @@
     ],
     "site": "",
     "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
-}
-]
+},
+    { 
+      "title": "Analyse des données de ventes d'une PME", 
+      "image":"../assets/projects/data_analysis/data_analysis.webp",
+      "alt": "projet analyse des données de toute les ventes ",
+      "id": "1", 
+      "category": "DATA",
+      "site": "",
+  "github": "https://github.com/NesrineYAH/Sales-flask-app.git"
+    },
+    { 
+      "title": "Pipeline de données Kafka", 
+      "image":"../assets/projects/kafka/kafka.webp",
+      "alt": "projet pipeline de données Kafka",
+      "id": "2", 
+      "category": "DATA",
+      "site": "",
+      "github": ""
+  }
+
+
+];
+

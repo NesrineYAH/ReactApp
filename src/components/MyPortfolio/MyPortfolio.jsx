@@ -8,8 +8,17 @@ const MyPortfolio = () => {
   const { t } = useTranslation();
   const lang = localStorage.getItem("i18nextLang");
   const [projects, setProjects] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState('DEV');
+  const [selectedCategory, setSelectedCategory] = useState('DEV');
 
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+    console.log("Catégorie sélectionnée :", event.target.value);
+    // Ici tu peux aussi déclencher un filtre sur tes projets
+  };
+
+
+//    function ProjectSelector() {
+// }
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -29,23 +38,19 @@ const MyPortfolio = () => {
     fetchProjects();
   }, []);
 ///////////////////////////15/08/2025
- function ProjectSelector() {
 
-  const handleChange = (event) => {
-    setSelectedCategory(event.target.value);
-    console.log("Catégorie sélectionnée :", event.target.value);
-    // Ici tu peux aussi déclencher un filtre sur tes projets
-  };
-}
 
 
   return (
 
+ 
+
     
     <div className="myPortfolio">
-   <label className="slectCategory">
+  < div>
+     <label className="slectCategory">
       <select
-        className="btg_lang"
+        className="btg"
         value={selectedCategory}
         onChange={handleChange}
       >
@@ -57,6 +62,7 @@ const MyPortfolio = () => {
         </option>
       </select>
     </label>
+   </div>
 
 
 
