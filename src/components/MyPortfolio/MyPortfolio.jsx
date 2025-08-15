@@ -26,7 +26,7 @@ const MyPortfolio = () => {
 
       // Optionnel: si ton JSON a un champ "tags": ["DATA", "DEV", ...]
       if (Array.isArray(project?.tags)) {
-        const tagsUpper = project.tags.map((x) => String(x).toUpperCase().trim());
+        const tagsUpper = project.category.map((x) => String(x).toUpperCase().trim());
         if (tagsUpper.includes(target)) return true;
       }
       return false;
