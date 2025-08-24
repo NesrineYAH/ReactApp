@@ -59,11 +59,12 @@ const MyPortfolio = () => {
      <div className="selectCategory"> 
          <label>
           <select className="btg" value={selectedCategory} onChange={handleChange}>
-            <option value="ALL">Tous les projets</option>
-            <option value="DEV">Projets de Développement, Full Stack</option>
-            <option value="DATA">Projets DATA</option>
+            <option value="ALL">{t("select.option")}</option>
+            <option value="DEV">{t("select.optionI")}</option>
+            <option value="DATA">{t("select.optionII")}</option> 
           </select>
-        </label></div>
+        </label>
+        </div>
 <div className="myPortfolio">         
       {filteredProjects.length === 0 && (
         <p style={{ marginTop: 16 }}>

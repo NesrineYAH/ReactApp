@@ -124,6 +124,11 @@
   "brief_description": "Projet Data est un projet de création d'une application web pour la gestion des données de vente d'une PME.",
   "description_project": "Dans le cadre de ce projet, j'ai été chargée de créer une application web pour la gestion des données. J'ai utilisé Python et Flask pour le back-end, ainsi que HTML, CSS et JavaScript pour le front-end. L'application permet aux utilisateurs de visualiser, ajouter, modifier et supprimer des données de manière intuitive et efficace."
 },
+"select":{
+  "option": "Tous Les Projets",
+  "optionI": "Projets de Développement Full Stack",
+  "optionII": "Projets DATA"
+},
 
 "service.description": {
   "web":"Création des site vitrine, site e-commerce, site dynamique Intégration des maquettes.",

@@ -1,8 +1,7 @@
 {
   "title": "Nesrine BEKKAR YAHOUM ",
-"description": "Portfolio Nesrine BEKKAR YAHOUM Full Stack developer DATA Engineer in Ile De France Data analysis Descriptive statistics Data visualization Data cleaning Data Mining Database modeling Data architecture Data infrastructure Flow orchestration Data audit Data security Performance optimization Data storage Data integration Data transformation Data governance Anticipation of energy needs Data systems design Technical documentation Problem solving Critical thinking Curiosity Organization Adaptability Communication Teamwork Agile methodology Analytical mindset Continuous learning, Python SQL Pandas NumPy Matplotlib Seaborn Scikit-learn Spark Kafka Airbyte Kestra MongoDB NoSQL PostgreSQL Data Lake ETL / ELT Data pipeline MLOps data warehousing Supervised machine learning Docker Docker Compose Git / GitHub Poetry (Python environment) Jupyter Notebook REST API Faiss (vector database) String cloud computing (AWS, Azure, GCP) CI/CD Big Data Hadoop (if applicable)",  "photo_alt": "Nesrine BEKKAR YAHOUM",
+  "description": "Portfolio Nesrine BEKKAR YAHOUM Full Stack developer DATA Engineer in Ile De France Data analysis Descriptive statistics Data visualization Data cleaning Data Mining Database modeling Data architecture Data infrastructure Flow orchestration Data audit Data security Performance optimization Data storage Data integration Data transformation Data governance Anticipation of energy needs Data systems design Technical documentation Problem solving Critical thinking Curiosity Organization Adaptability Communication Teamwork Agile methodology Analytical mindset Continuous learning, Python SQL Pandas NumPy Matplotlib Seaborn Scikit-learn Spark Kafka Airbyte Kestra MongoDB NoSQL PostgreSQL Data Lake ETL / ELT Data pipeline MLOps data warehousing Supervised machine learning Docker Docker Compose Git / GitHub Poetry (Python environment) Jupyter Notebook REST API Faiss (vector database) String cloud computing (AWS, Azure, GCP) CI/CD Big Data Hadoop (if applicable)",  "photo_alt": "Nesrine BEKKAR YAHOUM",
   "logo_alt": "portfolio's logo",
-
   "home_title": "Home",
   "home_id": "Home",
   "home_path": "/#home",
@@ -121,8 +120,15 @@
 "brief_description":"This project is used to create a website for a festive event the Olympic Games",
 "description_project": "Create a website with HTML and CSS and JavaScript. 🎯 Implement interactive features with JavaScript to improve the user experience. ✅ Validate the form entries and display appropriate error messages in case of incorrect data. ⚙️ Add user interactions, such as opening and closing a modal window.🔧 Implementation details"
 },
-
-
+"projetDataI":{
+  "brief_description": "Projet Data is a project to create a web application for the management of sales data of an SME.",
+  "description_project": "As part of this project, I was tasked with creating a web application for data management. I used Python and Flask for the back-end, as well as HTML, CSS and JavaScript for the front-end. The application allows users to view, add, modify and delete data in an intuitive and efficient way."
+},
+  "select":{
+  "option": "ALL Projects",
+  "optionI": "Full Stack Development Projects",
+  "optionII": "DATA Projets "
+},
   "service.description":{
     "web": "Creation of showcase sites, e-commerce site, dynamic site Integration of models",
      "Mobile": "In a mobile-dominated era, a well-designed app is more than just a tool. It's your direct connection to your users, wherever you are.",
