@@ -18,7 +18,7 @@
         font-weight: bold;
         border-radius: 12px 12px 0 0;
         text-align: center;
-        margin-top: -26px;
+        margin-top: -52px;
     }
 
     &__messages {
@@ -79,10 +79,11 @@
 
 
     .bpw-floating-button,
-    .bpw-floating-button:hover {
-        background-color: var(body_color);
-        color: var(--body_color);
+    i .bpw-floating-button:hover {
+
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
         background-color: var(--body_background);
+        background-color: var(--body_color);
     }
 
     .bpw-floating-button {
@@ -91,6 +92,9 @@
         justify-content: center;
         margin-right: 3px;
         transition: all .2s;
+        background-color: var(--link_color);
+
+
     }
 
     .bpw-floating-button {
