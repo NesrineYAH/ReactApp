@@ -13,7 +13,7 @@ import { css } from "@emotion/react";
 import Cookies from 'js-cookie';
 import CookieBanner from './components/CookieBanner/CookieBanner.jsx';  
 import ChatBox from "./components/ChatBox/ChatBox.jsx";
-
+import ChatWidget from "./components/ChatWidget/ChatWidget.jsx";
 
 
 
@@ -86,6 +86,8 @@ class App extends React.Component {
         </Suspense>
       </BrowserRouter>  
             <ChatBox />
+                  <ChatWidget />
+
 
      <Footer />
       </div>
