@@ -18,6 +18,7 @@
         font-weight: bold;
         border-radius: 12px 12px 0 0;
         text-align: center;
+        margin-top: -26px;
     }
 
     &__messages {
@@ -79,7 +80,9 @@
 
     .bpw-floating-button,
     .bpw-floating-button:hover {
-        background-color: var(--bubble-widget-background-color);
+        background-color: var(body_color);
+        color: var(--body_color);
+        background-color: var(--body_background);
     }
 
     .bpw-floating-button {
