@@ -1,0 +1,112 @@
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        background: #2563eb;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 12px 12px 0 0;
+        text-align: center;
+    }
+
+    &__messages {
+        flex: 1;
+        padding: 10px;
+        max-height: 250px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__message {
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        max-width: 80%;
+
+        &.bot {
+            background: #f1f1f1;
+            align-self: flex-start;
+        }
+
+        &.user {
+            background: #e0ecff;
+            align-self: flex-end;
+        }
+    }
+
+    &__input {
+        display: flex;
+        border-top: 1px solid #ddd;
+
+        input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 0 0 0 12px;
+            outline: none;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 0 0 12px 0;
+            font-size: 16px;
+
+            &:hover {
+                background: #1d4ed8;
+            }
+        }
+    }
+
+
+
+    .bpw-floating-button,
+    .bpw-floating-button:hover {
+        background-color: var(--bubble-widget-background-color);
+    }
+
+    .bpw-floating-button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 3px;
+        transition: all .2s;
+    }
+
+    .bpw-floating-button {
+        fill: #fff;
+        align-items: center;
+        background-clip: padding-box;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
+        cursor: pointer;
+        display: flex;
+        float: right;
+        height: 52px;
+        justify-content: center;
+        outline: none;
+        overflow: hidden;
+        padding: 0;
+        transition: width 1s, height 1s;
+        width: 52px;
+        z-index: 1;
+    }
+}

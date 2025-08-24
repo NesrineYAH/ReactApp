@@ -12,6 +12,8 @@ import { SyncLoader   }  from 'react-spinners';
 import { css } from "@emotion/react";
 import Cookies from 'js-cookie';
 import CookieBanner from './components/CookieBanner/CookieBanner.jsx';  
+import ChatBox from "./components/ChatBox/ChatBox.jsx";
+
 
 
 
@@ -83,6 +85,8 @@ class App extends React.Component {
         </Routes>
         </Suspense>
       </BrowserRouter>  
+            <ChatBox />
+
      <Footer />
       </div>
       )}   
