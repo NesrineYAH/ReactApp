@@ -1,34 +1,45 @@
 .chatbox {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    width: 320px;
-    background: #fff;
-    border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 80px; // juste au-dessus du bouton flottant
+    right: 20px;
+    width: 320px;
+    height: 500px;
+    background: var(--body_background);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
 
+
+
+
     &__header {
-        background: #2563eb;
+        background: navy;
         color: white;
         padding: 10px;
         font-weight: bold;
         border-radius: 12px 12px 0 0;
         text-align: center;
-        margin-top: -52px;
     }
 
     &__messages {
         flex: 1;
         padding: 10px;
-        max-height: 250px;
+        width: 120%;
+        font-size: 14px;
+        max-height: 370px;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
         gap: 8px;
+        color: (--link_color);
+
     }
 
     &__message {
@@ -37,13 +48,16 @@
         font-size: 14px;
         max-width: 80%;
 
+
         &.bot {
             background: #f1f1f1;
             align-self: flex-start;
+            background: var(--body_background);
+            color: var(--link_color);
         }
 
         &.user {
-            background: #e0ecff;
+            background: var(--body_background);
             align-self: flex-end;
         }
     }
@@ -62,7 +76,7 @@
         }
 
         button {
-            background: #2563eb;
+            background: navy;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -78,8 +92,7 @@
 
 
 
-    .bpw-floating-button,
-    i .bpw-floating-button:hover {
+    .bpw-floating-button .bpw-floating-button:hover {
 
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
         background-color: var(--body_background);

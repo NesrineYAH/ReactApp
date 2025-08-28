@@ -3,8 +3,9 @@ import "./ChatBox.scss";
 
 function ChatBox() {
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Bonjour 👋 Bienvenue sur mon portfolio !" }
-  ]);
+    { from: "bot", text: "Bonjour 👋 Bienvenue sur mon portfolio !" },
+    { from: "bot", text: "Je suis là pour répondre à vos questions et vous guider à travers mes projets. N'hésitez pas à me poser des questions sur mon parcours, mes compétences ou tout autre sujet lié à mon travail. 🚀" }
+]);
   const [input, setInput] = useState("");
 
   const handleSend = () => {
