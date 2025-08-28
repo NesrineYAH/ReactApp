@@ -11,8 +11,7 @@ function ChatWidget() {
       <button
         className="bpw-widget-btn bpw-floating-button"
         aria-label="Ouvrir ou fermer la conversation"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+        onClick={() => setIsOpen(!isOpen)} >
         <i>
           {isOpen ? (
             // Icône quand chat ouvert (croix pour fermer)
