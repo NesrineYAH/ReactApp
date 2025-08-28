@@ -132,7 +132,7 @@
 
 .chatbox {
     width: 350px;
-    height: 500px;
+    height: 590px;
     display: flex;
     flex-direction: column;
     background: #f9f9f9;
@@ -142,7 +142,7 @@
     font-family: Arial, sans-serif;
 
     &__header {
-        background: #333;
+        background: #a343ec;
         color: #fff;
         padding: 12px;
         font-size: 16px;
@@ -158,6 +158,8 @@
         flex-direction: column;
         gap: 8px;
 
+
+
         .chatbox__message {
             max-width: 80%;
             padding: 8px 12px;
@@ -169,6 +171,8 @@
                 background: #ececec;
                 align-self: flex-start;
                 border-bottom-left-radius: 4px;
+                color: var(--link_color);
+                background-color: var(--body_background);
             }
 
             &.user {
@@ -187,16 +191,20 @@
         padding: 8px;
         background: #fff;
         border-top: 1px solid #ddd;
+        color: var(--link_color);
+        background-color: var(--body_background);
 
         button {
             flex: 1 1 45%;
-            background: #f0f0f0;
             border: none;
             border-radius: 8px;
             padding: 8px;
             font-size: 13px;
             cursor: pointer;
             transition: 0.2s ease-in-out;
+            color: var(--link_color);
+            background-color: var(--body_background);
+            border: 1px solid var(--link_color);
 
             &:hover {
                 background: #4a90e2;
@@ -227,8 +235,11 @@
             cursor: pointer;
             transition: 0.2s;
 
+
+
             &:hover {
                 background: #357abd;
+
             }
         }
     }
