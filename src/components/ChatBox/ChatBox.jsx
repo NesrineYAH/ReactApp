@@ -24,17 +24,24 @@ function ChatBox() {
       case "formation":
         reply = "🎓 Formation : diplômé en informatique avec une spécialisation en développement web.";
         break;
-      case "presentation":
-        reply = "🙋‍♂️ Présentation : je suis développeur front-end et back-end avec plusieurs projets à mon actif.";
-        break;
+     case "Expérience":
+  reply = (
+    <span>
+      🙋‍♂️ Expérience: développeuse front-end et back-end avec plusieurs projets à mon actif.  
+      Mes projets au cours des deux formations m'ont offert une expérience précieuse, tout comme mes projets personnels.  
+      Pour en savoir plus sur mon parcours professionnel avant ma reconversion, consulte mon CV 👉{" "}
+      <a href="https://cv.nesrinebekkar.com" target="_blank" rel="noopener noreferrer">
+        ici
+      </a>.
+    </span>
+  );
+  break;
+
       case "competences":
         reply = "🛠️ Compétences : React, Node.js, HTML, CSS, JavaScript, et bien plus encore.";
         break;
       case "services":
         reply = "💼 Autres services : je propose aussi de la formation, du mentoring et du consulting.";
-        break;
-      case "portfolio":
-        reply = "📂 Portfolio : tu peux découvrir mes projets sur la page dédiée.";
         break;
       default:
         reply = "🤔 Je n'ai pas compris.";
@@ -59,10 +66,9 @@ function ChatBox() {
       <div className="chatbox__buttons">
         <button onClick={() => handleButtonClick("profil")}>Profil</button>
         <button onClick={() => handleButtonClick("formation")}>Formation</button>
-        <button onClick={() => handleButtonClick("presentation")}>Présentation</button>
+        <button onClick={() => handleButtonClick("Expérience")}>Expéreience</button>
         <button onClick={() => handleButtonClick("competences")}>Compétences</button>
         <button onClick={() => handleButtonClick("services")}>Autres services</button>
-        <button onClick={() => handleButtonClick("portfolio")}>Portfolio</button>
       </div>
 
       <div className="chatbox__input">
