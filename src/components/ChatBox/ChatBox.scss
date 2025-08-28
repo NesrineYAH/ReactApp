@@ -140,6 +140,8 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     font-family: Arial, sans-serif;
+    background-color: var(--background_icons);
+    box-shadow: var(--box-shadowI);
 
     &__header {
         background: #a343ec;
