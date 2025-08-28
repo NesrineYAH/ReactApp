@@ -1,7 +1,8 @@
 .chat-widget {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
+
 
     .bpw-widget-btn {
         background: #2563eb;
@@ -21,4 +22,25 @@
             background: #670562;
         }
     }
+
+
+
+
+}
+
+
+.chatbox-container {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none; // évite d'interagir quand fermé
+    position: absolute;
+    bottom: 70px; // juste au-dessus du bouton
+    right: 0;
+}
+
+.chatbox-container.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }

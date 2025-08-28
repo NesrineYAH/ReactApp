@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ChatBox from "../ChatBox/ChatBox"; // ton composant ChatBox
+import ChatBox from "../ChatBox/ChatBox"; 
 import "./ChatWidget.scss";
 
 function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false); // chatbox est fermée par défaut
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="chat-widget">
@@ -11,27 +11,29 @@ function ChatWidget() {
       <button
         className="bpw-widget-btn bpw-floating-button"
         aria-label="Ouvrir ou fermer la conversation"
-        onClick={() => setIsOpen(!isOpen)} >
+        onClick={() => setIsOpen(!isOpen)}
+      >
+
         <i>
           {isOpen ? (
-            // Icône quand chat ouvert (croix pour fermer)
-     <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  width="20" 
-  height="20" 
-  viewBox="0 0 24 24" 
-  fill="none" 
-  stroke="white" 
-  stroke-width="2" 
-  stroke-linecap="round" 
-  stroke-linejoin="round"
->
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-</svg>
 
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="20" 
+              height="20" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="white" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+            
           ) : (
-            // Icône quand chat fermé (bulle de chat)
+    
             <svg
               width="20"
               height="20"
@@ -49,7 +51,9 @@ function ChatWidget() {
       </button>
 
       {/* Fenêtre de chat */}
-      {isOpen && <ChatBox />}
+      <div className={`chatbox-container ${isOpen ? "open" : "closed"}`}>
+        <ChatBox />
+      </div>
     </div>
   );
 }
