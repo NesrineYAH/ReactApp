@@ -141,7 +141,7 @@ function ChatBox() {
         />
         <button onClick={handleSend}>➤</button>
       </div>
-      
+
       </div>
 </section>
 

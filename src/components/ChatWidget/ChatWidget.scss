@@ -7,7 +7,8 @@
 
 
     .bpw-widget-btn {
-        background-color: #007bff;
+        background: #a343ec;
+        color: white;
         border: none;
         border-radius: 50%;
         width: 60px;
@@ -25,8 +26,10 @@
         }
 
         svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
+            background: #a343ec;
+            color: white;
         }
     }
 
@@ -34,10 +37,11 @@
 
 .chatbox-container {
     position: fixed;
+    top: 28%;
     bottom: 90px;
     right: 20px;
     width: 350px;
-    height: 500px;
+    height: 550px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -45,11 +49,15 @@
     flex-direction: column;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    box-shadow: var(--box-shadowI);
 
 
     &.open {
         display: flex;
         background-color: #f2e9fdff;
+        height: 500px;
+
+
     }
 
     &.closed {
@@ -59,21 +67,26 @@
     .chatbox-header {
         display: flex;
         align-items: center;
+        width: 100%;
         background: #a343ec;
 
+
         .close-button {
-            background: none;
+            background: transparent;
             border: none;
             cursor: pointer;
             margin-right: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #dde4ec;
 
             svg {
                 stroke: white;
                 width: 25px;
                 height: 25px;
+                background: #a343ec;
+
             }
 
             &:hover {

@@ -131,10 +131,11 @@
 */
 
 .chatbox-section {
+    z-index: 9999;
 
     .chatbox {
         width: 350px;
-        height: 453px;
+        height: 452px;
         display: flex;
         flex-direction: column;
         border-radius: 8px;
@@ -142,10 +143,7 @@
         overflow: hidden;
         font-family: Arial, sans-serif;
         background-color: #f2e9fdff;
-        box-shadow: var(--box-shadowI);
         flex: 1;
-
-
 
         &__header {
             background: #a343ec;
@@ -154,7 +152,6 @@
             font-size: 16px;
             font-weight: bold;
             text-align: center;
-            // flex: 0 0 auto; // hauteur fixe
 
         }
 
@@ -167,6 +164,7 @@
             gap: 8px;
             overflow-y: auto; // ✅ c’est cette partie qui doit scroller
             flex: 1 1 auto; // prend l’espace restant
+            flex: 1;
 
             .chatbox__message {
                 max-width: 98%;
@@ -226,8 +224,7 @@
         &__input {
             display: flex;
             justify-content: center;
-            background-position: 50% 50%;
-            border-top: 1px solid #f2e9fdff;
+
             flex: 0 0 auto; // reste visible
             width: 100%;
 
@@ -239,17 +236,15 @@
                 outline: none;
                 border: 1px solid var(--link_color);
                 border-radius: 8px 0 0 8px;
-
-
             }
 
             button {
-                color: #dde4ec;
                 border: none;
                 padding: 0 16px;
                 font-size: 16px;
                 cursor: pointer;
                 transition: 0.2s;
+                color: #dde4ec;
                 border: 1px solid var(--link_color);
                 background: #a343ec;
                 border-radius: 0 8px 8px 0;
