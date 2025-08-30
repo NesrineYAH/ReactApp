@@ -72,7 +72,6 @@
 
 
         .close-button {
-            background: transparent;
             border: none;
             cursor: pointer;
             margin-right: 10px;
@@ -80,6 +79,7 @@
             align-items: center;
             justify-content: center;
             color: #dde4ec;
+
 
             svg {
                 stroke: white;
@@ -100,6 +100,8 @@
             color: #fff;
             font-size: 15px;
             font-weight: 500;
+            background: #a343ec;
+
         }
     }
 

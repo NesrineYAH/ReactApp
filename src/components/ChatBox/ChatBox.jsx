@@ -81,9 +81,44 @@ function ChatBox() {
         );
         break;
 
-      case "competences":
-        reply =
-          "🛠️ Tu veux voir mes compétences en Développement Web 🌐 ou en Data Engineering 📊 ?";
+     case "competences":
+        reply = (
+          <div>
+            🛠️ Tu veux voir mes compétences en :  
+            <div style={{ marginTop: "8px", display: "flex", gap: "8px" }}  className="chatbox__buttons">
+              <button
+                onClick={() =>
+                  setMessages((prev) => [
+                    ...prev,
+                    { from: "user", text: "Web" },
+                    {
+                      from: "bot",
+                      text:
+                        "🌐 Compétences en Développement Web : HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.",
+                    },
+                  ])
+                }
+              >
+                Web
+              </button>
+              <button
+                onClick={() =>
+                  setMessages((prev) => [
+                    ...prev,
+                    { from: "user", text: "Data" },
+                    {
+                      from: "bot",
+                      text:
+                        "📊 Compétences en Data Engineering : Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).",
+                    },
+                  ])
+                }
+              >
+                Data
+              </button>
+            </div>
+          </div>
+        );
         setConversationStep("choixCompetences");
         break;
 
