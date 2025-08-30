@@ -85,7 +85,7 @@ function ChatBox() {
         reply = (
           <div>
             🛠️ Tu veux voir mes compétences en :  
-            <div style={{ marginTop: "8px", display: "flex", gap: "8px" }}  className="chatbox__buttons">
+            <div  className="chatbox__buttons">
               <button
                 onClick={() =>
                   setMessages((prev) => [

@@ -37,11 +37,11 @@
 
 .chatbox-container {
     position: fixed;
-    top: 28%;
+    top: 14%;
     bottom: 90px;
     right: 20px;
-    width: 350px;
-    height: 550px;
+    width: 380px;
+    height: 600px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -55,8 +55,8 @@
     &.open {
         display: flex;
         background-color: #f2e9fdff;
-        height: 500px;
-
+        min-height: 70vh;
+        z-index: 1;
 
     }
 

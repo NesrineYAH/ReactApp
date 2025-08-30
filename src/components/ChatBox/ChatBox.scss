@@ -132,10 +132,12 @@
 
 .chatbox-section {
     z-index: 9999;
+    background-color: var(--body_background);
+
 
     .chatbox {
-        width: 350px;
-        height: 452px;
+        width: 100%;
+        height: 550px;
         display: flex;
         flex-direction: column;
         border-radius: 8px;
@@ -144,6 +146,7 @@
         font-family: Arial, sans-serif;
         background-color: #f2e9fdff;
         flex: 1;
+
 
         &__header {
             background: #a343ec;
@@ -167,7 +170,7 @@
             flex: 1;
 
             .chatbox__message {
-                max-width: 98%;
+                max-width: 100%;
                 padding: 4px 4px;
                 border-radius: 12px;
                 font-size: 13px;
@@ -223,9 +226,10 @@
         &__input {
             display: flex;
             justify-content: center;
-
             flex: 0 0 auto; // reste visible
-            width: 100%;
+            width: 96%;
+            margin-left: 8px;
+            margin-bottom: 8px;
 
             input {
                 flex: 1;
