@@ -1,46 +1,96 @@
 .chat-widget {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: 20px;
+    z-index: 999;
 
 
     .bpw-widget-btn {
-        background: #2563eb;
+        background-color: #007bff;
         border: none;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s;
 
-
-        svg {
-            margin-top: 2px;
-        }
 
         &:hover {
-            background: #670562;
+            transform: scale(1.1);
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
         }
     }
 
-
-
-
 }
-
 
 .chatbox-container {
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none; // évite d'interagir quand fermé
-    position: absolute;
-    bottom: 70px; // juste au-dessus du bouton
-    right: 0;
-}
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-.chatbox-container.open {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+    &.open {
+        display: flex;
+    }
+
+    &.closed {
+        display: none;
+    }
+
+    .chatbox-header {
+        display: flex;
+        align-items: center;
+        background: #a343ec;
+
+        .close-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                stroke: white;
+                width: 25px;
+                height: 25px;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .chatbox-title {
+            flex-grow: 1; // occupe l’espace restant
+            padding: 14px;
+
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    // Contenu du chat
+    .chatbox-content {
+        flex-grow: 1;
+        padding: 10px;
+        overflow-y: auto;
+    }
 }

@@ -132,16 +132,16 @@
 
 .chatbox {
     width: 350px;
-    height: 590px;
+    height: 850px;
     display: flex;
     flex-direction: column;
-    background: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background-color: var(--background_icons);
+    background-color: #f2e9fdff;
     box-shadow: var(--box-shadowI);
+    z-index: 9999;
 
     &__header {
         background: #a343ec;
@@ -163,10 +163,10 @@
 
 
         .chatbox__message {
-            max-width: 80%;
-            padding: 8px 12px;
+            max-width: 94%;
+            padding: 8px 8px;
             border-radius: 12px;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 1.4;
 
             &.bot {
@@ -217,8 +217,9 @@
 
     &__input {
         display: flex;
-        border-top: 1px solid #ddd;
-        background: #fff;
+        border-top: 1px solid #f2e9fdff;
+
+
 
         input {
             flex: 1;
@@ -236,8 +237,6 @@
             font-size: 16px;
             cursor: pointer;
             transition: 0.2s;
-
-
 
             &:hover {
                 background: #357abd;

@@ -105,7 +105,8 @@ function ChatBox() {
 
   return (
     <div className="chatbox">
-      <div className="chatbox__header">💬 Chat avec Nina</div>
+                  {/* Ton titre du chat 
+      <div className="chatbox__header">💬 Chat avec Nina</div>*/}
 
       <div className="chatbox__messages">
         {messages.map((m, i) => (
