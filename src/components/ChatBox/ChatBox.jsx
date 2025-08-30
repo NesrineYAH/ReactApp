@@ -104,10 +104,8 @@ function ChatBox() {
   };
 
   return (
-    <div className="chatbox">
-                  {/* Ton titre du chat 
-      <div className="chatbox__header">💬 Chat avec Nina</div>*/}
-
+    <section className="chatbox-section">    
+  <div className="chatbox">
       <div className="chatbox__messages">
         {messages.map((m, i) => (
           <div key={i} className={`chatbox__message ${m.from}`}>
@@ -143,7 +141,10 @@ function ChatBox() {
         />
         <button onClick={handleSend}>➤</button>
       </div>
-    </div>
+      
+      </div>
+</section>
+
   );
 }
 

@@ -130,117 +130,135 @@
 }
 */
 
-.chatbox {
-    width: 350px;
-    height: 850px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    background-color: #f2e9fdff;
-    box-shadow: var(--box-shadowI);
-    z-index: 9999;
+.chatbox-section {
 
-    &__header {
-        background: #a343ec;
-        color: #fff;
-        padding: 12px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    &__messages {
-        flex: 1;
-        padding: 10px;
-        overflow-y: auto;
+    .chatbox {
+        width: 350px;
+        height: 453px;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #f2e9fdff;
+        box-shadow: var(--box-shadowI);
+        flex: 1;
 
 
 
-        .chatbox__message {
-            max-width: 94%;
-            padding: 8px 8px;
-            border-radius: 12px;
-            font-size: 13px;
-            line-height: 1.4;
+        &__header {
+            background: #a343ec;
+            color: #fff;
+            padding: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            // flex: 0 0 auto; // hauteur fixe
 
-            &.bot {
-                background: #ececec;
-                align-self: flex-start;
-                border-bottom-left-radius: 4px;
-                color: var(--link_color);
-                background-color: var(--body_background);
-            }
+        }
 
-            &.user {
-                background: #4a90e2;
-                color: #fff;
-                align-self: flex-end;
-                border-bottom-right-radius: 4px;
+        &__messages {
+            /*   flex: 1;*/
+            padding: 10px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            overflow-y: auto; // ✅ c’est cette partie qui doit scroller
+            flex: 1 1 auto; // prend l’espace restant
+
+            .chatbox__message {
+                max-width: 98%;
+                padding: 4px 4px;
+                border-radius: 12px;
+                font-size: 13px;
+                line-height: 1.4;
+                /*   word-wrap: break-word;*/
+
+                &.bot {
+                    background: #ececec;
+                    align-self: flex-start;
+                    border-bottom-left-radius: 4px;
+                    color: var(--link_color);
+                    background-color: var(--body_background);
+                }
+
+                &.user {
+                    background: #4a90e2;
+                    color: #fff;
+                    align-self: flex-end;
+                    border-bottom-right-radius: 4px;
+                }
             }
         }
-    }
 
-    &__buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        padding: 8px;
-        background: #fff;
-        border-top: 1px solid #ddd;
-        color: var(--link_color);
-        background-color: var(--body_background);
-
-        button {
-            flex: 1 1 45%;
-            border: none;
-            border-radius: 8px;
+        &__buttons {
+            flex: 0 0 auto; // reste visible
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 8px;
-            font-size: 13px;
-            cursor: pointer;
-            transition: 0.2s ease-in-out;
+            background: #fff;
+            border-top: 1px solid #ddd;
             color: var(--link_color);
             background-color: var(--body_background);
-            border: 1px solid var(--link_color);
 
-            &:hover {
-                background: #4a90e2;
-                color: white;
+
+            button {
+                flex: 1 1 45%;
+                border-radius: 8px;
+                padding: 8px;
+                font-size: 13px;
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                color: var(--link_color);
+                background-color: var(--body_background);
+                border: 1px solid var(--link_color);
+
+                &:hover {
+                    background: #4a90e2;
+                    color: white;
+                }
             }
         }
-    }
 
-    &__input {
-        display: flex;
-        border-top: 1px solid #f2e9fdff;
+        &__input {
+            display: flex;
+            justify-content: center;
+            background-position: 50% 50%;
+            border-top: 1px solid #f2e9fdff;
+            flex: 0 0 auto; // reste visible
+            width: 100%;
+
+            input {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                font-size: 14px;
+                outline: none;
+                border: 1px solid var(--link_color);
+                border-radius: 8px 0 0 8px;
 
 
+            }
 
-        input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            font-size: 14px;
-            outline: none;
-        }
+            button {
+                color: #dde4ec;
+                border: none;
+                padding: 0 16px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.2s;
+                border: 1px solid var(--link_color);
+                background: #a343ec;
+                border-radius: 0 8px 8px 0;
 
-        button {
-            background: #4a90e2;
-            border: none;
-            color: #fff;
-            padding: 0 16px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.2s;
 
-            &:hover {
-                background: #357abd;
+                &:hover {
+                    background: #357abd;
 
+                }
             }
         }
     }
