@@ -132,7 +132,6 @@
 
 .chatbox-section {
     z-index: 9999;
-    background-color: var(--body_background);
 
 
     .chatbox {
@@ -144,8 +143,8 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         overflow: hidden;
         font-family: Arial, sans-serif;
-        background-color: #f2e9fdff;
         flex: 1;
+        background-color: #f2e9fdff;
 
 
         &__header {
@@ -227,9 +226,9 @@
             display: flex;
             justify-content: center;
             flex: 0 0 auto; // reste visible
-            width: 96%;
-            margin-left: 8px;
-            margin-bottom: 8px;
+            width: 100%;
+
+            padding: 10px;
 
             input {
                 flex: 1;
