@@ -66,8 +66,10 @@
     .chatbox-header {
         display: flex;
         align-items: center;
+        flex-direction: row;
         width: 100%;
         background: #a343ec;
+
 
 
         .close-button,

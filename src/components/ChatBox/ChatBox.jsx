@@ -1,49 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ChatBox.scss";
 
-function ChatBox() {
-  const [messages, setMessages] = useState([
-    {
-      from: "bot",
-      text: "Bonjour 👋 Bienvenue sur mon portfolio ! Clique sur un bouton ci-dessous pour découvrir mon parcours 🚀",
-    },
-  ]);
-
-    // 🚀 Fonction pour vider les conversations
-  const clearConversations = () => {
-    setMessages([]);
-  };
-
-  const [input, setInput] = useState("");
+function ChatBox({ messages = [], setMessages }) {
+  const [input, setInput] = useState([
+  {
+    from: "bot",
+    content: "Bonjour et bienvenue dans mon chatbot ! Je l'ai créé afin de vous permettre d'en savoir plus sur moi. N'hésitez pas à me solliciter pour découvrir davantage ! 🤖"
+  }
+]);
   const [conversationStep, setConversationStep] = useState(null);
+
+  // Si on vide la conversation depuis le parent, on reset aussi l'UI locale
+  useEffect(() => {
+    if (messages.length === 0) {
+      setConversationStep(null);
+      setInput("");
+    }
+  }, [messages]);
 
   const handleSend = () => {
     if (!input.trim()) return;
     const userMessage = input.trim();
-
-    // Ajoute le message utilisateur
-    setMessages((prev) => [...prev, { from: "user", text: userMessage }]);
+    setMessages(prev => [...prev, { from: "user", content: userMessage }]);
 
     if (conversationStep === "choixCompetences") {
       let reply = "";
-
       if (userMessage.toLowerCase().includes("web")) {
-        reply =
-          "🌐 Compétences en Développement Web : HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
+        reply = "🌐 HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
       } else if (userMessage.toLowerCase().includes("data")) {
-        reply =
-          "📊 Compétences en Data Engineering : Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
+        reply = "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
       } else {
-        reply =
-          "🤔 Désolé, je n'ai pas compris. Veux-tu des compétences en Développement Web ou en Data Engineering ?";
-        // On garde la step active tant que l'utilisateur n'a pas répondu correctement
-        setMessages((prev) => [...prev, { from: "bot", text: reply }]);
+        reply = "🤔 Web ou Data ?";
+        setMessages(prev => [...prev, { from: "bot", content: reply }]);
         setInput("");
         return;
       }
-
-      setMessages((prev) => [...prev, { from: "bot", text: reply }]);
-      setConversationStep(null); // on ferme la question
+      setMessages(prev => [...prev, { from: "bot", content: reply }]);
+      setConversationStep(null);
       setInput("");
       return;
     }
@@ -51,140 +44,98 @@ function ChatBox() {
     setInput("");
   };
 
-  // contenu prédéfini pour les boutons
   const handleButtonClick = (section) => {
-    let reply = "";
-
+    let reply;
+    
     switch (section) {
       case "profil":
-        reply =
-          "👤 Voici mon profil : passionné par le développement et la création de solutions innovantes.";
+        reply = "👤 Profil : passion pour le dev et les solutions innovantes.";
         break;
-
       case "formation":
-        reply =
-          "🎓 Formation : diplômé en informatique avec une spécialisation en développement web.";
+        reply = "🎓 Formation : diplôme info, spécialité web.";
         break;
-
       case "Expérience":
         reply = (
           <span>
-            🙋‍♂️ Expérience: développeuse front-end et back-end avec plusieurs
-            projets à mon actif. Mes projets au cours des deux formations m'ont
-            offert une expérience précieuse, tout comme mes projets personnels.{" "}
-            Pour en savoir plus sur mon parcours professionnel avant ma
-            reconversion, consulte mon CV 👉{" "}
-            <a
-              href="https://cv.nesrinebekkar.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ici
-            </a>
-            .
+            🙋‍♂️ Expérience: front/back avec plusieurs projets. CV 👉{" "}
+            <a href="https://cv.nesrinebekkar.com" target="_blank" rel="noopener noreferrer">ici</a>.
           </span>
         );
         break;
-
-     case "competences":
+      case "competences":
         reply = (
           <div>
-            🛠️ Tu veux voir mes compétences en :  
-            <div  className="chatbox__buttons">
-              <button
-                onClick={() =>
-                  setMessages((prev) => [
-                    ...prev,
-                    { from: "user", text: "Web" },
-                    {
-                      from: "bot",
-                      text:
-                        "🌐 Compétences en Développement Web : HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.",
-                    },
-                  ])
-                }
-              >
-                Web
-              </button>
-              <button
-                onClick={() =>
-                  setMessages((prev) => [
-                    ...prev,
-                    { from: "user", text: "Data" },
-                    {
-                      from: "bot",
-                      text:
-                        "📊 Compétences en Data Engineering : Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).",
-                    },
-                  ])
-                }
-              >
-                Data
-              </button>
+            🛠️ Tu veux voir mes compétences en :
+            <div className="chatbox__buttons">
+              <button onClick={() =>
+                setMessages(prev => [
+                  ...prev,
+                  { from: "user", content: "Web" },
+                  { from: "bot", content: "🌐 HTML, CSS, JS, React, Node, Express, MongoDB." }
+                ])
+              }>Web</button>
+              <button onClick={() =>
+                setMessages(prev => [
+                  ...prev,
+                  { from: "user", content: "Data" },
+                  { from: "bot", content: "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud." }
+                ])
+              }>Data</button>
             </div>
           </div>
         );
         setConversationStep("choixCompetences");
         break;
-
       case "services":
-        reply =
-          "💼 Autres services : je propose aussi de la formation, du mentoring et du consulting.";
+        reply = "💼 Services : formation, mentoring, consulting.";
         break;
-
       default:
         reply = "🤔 Je n'ai pas compris.";
     }
 
-    setMessages((prev) => [
+    setMessages(prev => [
       ...prev,
-      { from: "user", text: section },
-      { from: "bot", text: reply },
+      { from: "user", content: section },
+      { from: "bot", content: reply },
     ]);
   };
 
   return (
-    <section className="chatbox-section">    
-  <div className="chatbox">
-      <div className="chatbox__messages">
-        {messages.map((m, i) => (
-          <div key={i} className={`chatbox__message ${m.from}`}>
-            {m.text}
-          </div>
-        ))}
-      </div>
+    <section className="chatbox-section">
+      <div className="chatbox">
+        <div className="chatbox__messages">
+          {messages.length === 0 ? (
+            <p className="empty-chat">Commencez la conversation !
+ </p>
+          ) : (
+            messages.map((m, i) => (
+              <div key={i} className={`chatbox__message ${m.from}`}>
+                {m.content}
+              </div>
+            ))
+          )}
+        </div>
 
-      {/* Boutons d'accès rapide */}
-      <div className="chatbox__buttons">
-        <button onClick={() => handleButtonClick("profil")}>Profil</button>
-        <button onClick={() => handleButtonClick("formation")}>
-          Formation
-        </button>
-        <button onClick={() => handleButtonClick("Expérience")}>
-          Expérience
-        </button>
-        <button onClick={() => handleButtonClick("competences")}>
-          Compétences
-        </button>
-        <button onClick={() => handleButtonClick("services")}>
-          Autres services
-        </button>
-      </div>
+        <div className="chatbox__buttons">
+          <button onClick={() => handleButtonClick("profil")}>Profil</button>
+          <button onClick={() => handleButtonClick("formation")}>Formation</button>
+          <button onClick={() => handleButtonClick("Expérience")}>Expérience</button>
+          <button onClick={() => handleButtonClick("competences")}>Compétences</button>
+          <button onClick={() => handleButtonClick("services")}>Autres services</button>
+        </div>
 
-      <div className="chatbox__input">
-        <input
-          type="text"
-          placeholder="Écrire un message..."
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSend()}
-        />
-        <button onClick={handleSend}>➤</button>
+        <div className="chatbox__input">
+          <input
+            type="text"
+            placeholder="Écrire un message..."
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSend()}
+          />
+          <button onClick={handleSend}>➤</button>
+        </div>
       </div>
-
-      </div>
-</section>
-
+    </section>
   );
 }
 
