@@ -9,6 +9,11 @@ function ChatBox() {
     },
   ]);
 
+    // 🚀 Fonction pour vider les conversations
+  const clearConversations = () => {
+    setMessages([]);
+  };
+
   const [input, setInput] = useState("");
   const [conversationStep, setConversationStep] = useState(null);
 
