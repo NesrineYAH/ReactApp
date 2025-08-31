@@ -6,14 +6,14 @@ function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
 
+  // 🚀 Vider toutes les conversations
   const clearConversations = () => {
     setMessages([]);
   };
 
-  
   return (
     <div className="chat-widget">
-      {/* --- Bouton flottant (seulement si le chat est fermé) --- */}
+      {/* --- Bouton flottant quand le chat est fermé --- */}
       {!isOpen && (
         <button
           className="bpw-widget-btn bpw-floating-button"
@@ -40,55 +40,57 @@ function ChatWidget() {
       {isOpen && (
         <div className="chatbox-container open">
           <div className="chatbox-header">
-      
-
-            {/* Ton titre du chat */}
             <h3 className="chatbox-title">Chat with Nina</h3>
-                  {/* Bouton de fermeture à gauche du titre */}
-                     <button className="close-button" onClick={clearConversations}>
-           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <polyline points="23 4 23 10 17 10" />
-            <polyline points="1 20 1 14 7 14" />
-            <path d="M3.51 9a9 9 0 0114.13-3.36L23 10M1 14l5.36 5.36A9 9 0 0020.49 15" />
-          </svg>
-        </button>
-            <button
-              className="close-button"
-              aria-label="Fermer la conversation"
-              onClick={() => setIsOpen(false)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+
+            <div className="chatbox-actions">
+              {/* Bouton rafraîchir (vider la conversation) */}
+              <button
+                className="refresh-button"
+                onClick={clearConversations}
+                aria-label="Vider la conversation"
               >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-            
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="23 4 23 10 17 10" />
+                  <polyline points="1 20 1 14 7 14" />
+                  <path d="M3.51 9a9 9 0 0114.13-3.36L23 10M1 14l5.36 5.36A9 9 0 0020.49 15" />
+                </svg>
+              </button>
+
+              {/* Bouton fermer */}
+              <button
+                className="close-button"
+                aria-label="Fermer la conversation"
+                onClick={() => setIsOpen(false)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
           </div>
 
-
-      {/* Footer avec actions 
-          <ChatBox />*/}
-                 {/* On passe messages + setMessages à ChatBox */}
+          {/* ChatBox reçoit messages + setMessages */}
           <ChatBox messages={messages} setMessages={setMessages} />
         </div>
       )}
