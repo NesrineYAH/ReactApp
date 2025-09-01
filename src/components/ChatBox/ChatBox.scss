@@ -142,7 +142,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         overflow: hidden;
-        font-family: Arial, sans-serif;
+        /*  font-family: Arial, sans-serif;*/
         flex: 1;
         background-color: #f2e9fdff;
 
@@ -169,10 +169,10 @@
             flex: 1;
 
             .chatbox__message {
-                max-width: 100%;
+                max-width: 94%;
                 padding: 4px 4px;
                 border-radius: 12px;
-                font-size: 13px;
+                font-size: 14px;
                 line-height: 1.4;
                 /*   word-wrap: break-word;*/
 
@@ -182,6 +182,7 @@
                     border-bottom-left-radius: 4px;
                     color: var(--link_color);
                     background-color: var(--body_background);
+
                 }
 
                 &.user {
@@ -258,5 +259,10 @@
                 }
             }
         }
+
+        .empty-chat {
+            font-size: 13px;
+        }
+
     }
 }

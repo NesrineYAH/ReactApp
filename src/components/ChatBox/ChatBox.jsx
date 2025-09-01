@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ChatBox.scss";
 
 function ChatBox({ messages = [], setMessages }) {
-  const [input, setInput] = useState([
-  {
-    from: "bot",
-    content: "Bonjour et bienvenue dans mon chatbot ! Je l'ai créé afin de vous permettre d'en savoir plus sur moi. N'hésitez pas à me solliciter pour découvrir davantage ! 🤖"
-  }
-]);
+  const [input, setInput] = useState("");
   const [conversationStep, setConversationStep] = useState(null);
 
   // Si on vide la conversation depuis le parent, on reset aussi l'UI locale
@@ -103,18 +98,15 @@ function ChatBox({ messages = [], setMessages }) {
   return (
     <section className="chatbox-section">
       <div className="chatbox">
-        <div className="chatbox__messages">
-          {messages.length === 0 ? (
-            <p className="empty-chat">Commencez la conversation !
- </p>
-          ) : (
-            messages.map((m, i) => (
-              <div key={i} className={`chatbox__message ${m.from}`}>
-                {m.content}
-              </div>
-            ))
-          )}
-        </div>
+        <div className="chatbox__messages">      Bonjour et bienvenue dans mon chatbot ! 🤖
+
+  {messages.map((m, i) => (
+    <div key={i} className={`chatbox__message ${m.from}`}>
+      {m.content}
+    </div>
+  ))}
+</div>
+
 
         <div className="chatbox__buttons">
           <button onClick={() => handleButtonClick("profil")}>Profil</button>
