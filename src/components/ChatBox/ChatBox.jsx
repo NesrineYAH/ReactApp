@@ -16,33 +16,30 @@ function ChatBox({ messages = [], setMessages }) {
 
     // Activer l'animation "..." du bot
 
-    setTimeout(() => {
-      let reply = "";
-
       if (conversationStep === "choixCompetences") {
             setIsTyping(true);
 
-        if (userMessage.toLowerCase().includes("web")) {
-          reply = "🌐 HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
-        } else if (userMessage.toLowerCase().includes("data")) {
-          reply = "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
-        } else {
-          reply = "🤔 Web ou Data ?";
-          setMessages(prev => [...prev, { from: "bot", content: reply }]);
-          setIsTyping(false);
-          return;
-        }
-        setConversationStep(null);
+    setTimeout(() => {
+      let reply = "";
+      if (userMessage.toLowerCase().includes("web")) {
+        reply = "🌐 HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
+      } else if (userMessage.toLowerCase().includes("data")) {
+        reply = "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
       } else {
-        reply = "🤖 Je réfléchis à ta demande...";
+        reply = "🤔 Web ou Data ?";
       }
 
-      // Ajouter le message du bot
       setMessages(prev => [...prev, { from: "bot", content: reply }]);
-      setIsTyping(false);
-    }, 1500); // délai avant la réponse
-  };
+      setConversationStep(null);
+      setInput("");
+      setIsTyping(false); // le bot a fini
+    }, 1000); // délai de 1s pour simuler la frappe
 
+    return;
+  }
+
+  setInput("");
+};
   const handleButtonClick = (section) => {
     let reply;
 
@@ -111,7 +108,7 @@ function ChatBox({ messages = [], setMessages }) {
 
           {/* Afficher les 3 points quand le bot "écrit" */}
           {isTyping && (
-            <div className="chatbox__message bot">
+            <div className="chatbox__message bot typing">
               <span className="typing">
                 <span></span><span></span><span></span>
               </span>
