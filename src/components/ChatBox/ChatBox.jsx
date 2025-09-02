@@ -1,50 +1,54 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./ChatBox.scss";
 
 function ChatBox({ messages = [], setMessages }) {
   const [input, setInput] = useState("");
   const [conversationStep, setConversationStep] = useState(null);
-
-  // Si on vide la conversation depuis le parent, on reset aussi l'UI locale
-  useEffect(() => {
-    if (messages.length === 0) {
-      setConversationStep(null);
-      setInput("");
-    }
-  }, [messages]);
+  const [isTyping, setIsTyping] = useState(false);
 
   const handleSend = () => {
     if (!input.trim()) return;
     const userMessage = input.trim();
+
+    // Ajouter le message de l'utilisateur
     setMessages(prev => [...prev, { from: "user", content: userMessage }]);
-
-    if (conversationStep === "choixCompetences") {
-      let reply = "";
-      if (userMessage.toLowerCase().includes("web")) {
-        reply = "🌐 HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
-      } else if (userMessage.toLowerCase().includes("data")) {
-        reply = "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
-      } else {
-        reply = "🤔 Web ou Data ?";
-        setMessages(prev => [...prev, { from: "bot", content: reply }]);
-        setInput("");
-        return;
-      }
-      setMessages(prev => [...prev, { from: "bot", content: reply }]);
-      setConversationStep(null);
-      setInput("");
-      return;
-    }
-
     setInput("");
+
+    // Activer l'animation "..." du bot
+
+    setTimeout(() => {
+      let reply = "";
+
+      if (conversationStep === "choixCompetences") {
+            setIsTyping(true);
+
+        if (userMessage.toLowerCase().includes("web")) {
+          reply = "🌐 HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.";
+        } else if (userMessage.toLowerCase().includes("data")) {
+          reply = "📊 Python, SQL, NoSQL, ETL, Big Data, Cloud (AWS/GCP).";
+        } else {
+          reply = "🤔 Web ou Data ?";
+          setMessages(prev => [...prev, { from: "bot", content: reply }]);
+          setIsTyping(false);
+          return;
+        }
+        setConversationStep(null);
+      } else {
+        reply = "🤖 Je réfléchis à ta demande...";
+      }
+
+      // Ajouter le message du bot
+      setMessages(prev => [...prev, { from: "bot", content: reply }]);
+      setIsTyping(false);
+    }, 1500); // délai avant la réponse
   };
 
   const handleButtonClick = (section) => {
     let reply;
-    
+
     switch (section) {
       case "profil":
-        reply = "👤 Profil : passionnéé par le dev et les solutions innovantes.";
+        reply = "👤 Profil : passionnée par le dev et les solutions innovantes.";
         break;
       case "formation":
         reply = "🎓 Formation : diplôme info, spécialité web.";
@@ -98,15 +102,22 @@ function ChatBox({ messages = [], setMessages }) {
   return (
     <section className="chatbox-section">
       <div className="chatbox">
-        <div className="chatbox__messages">  Bonjour et bienvenue dans mon chatbot ! 🤖
+        <div className="chatbox__messages">
+          {messages.map((m, i) => (
+            <div key={i} className={`chatbox__message ${m.from}`}>
+              {m.content}
+            </div>
+          ))}
 
-  {messages.map((m, i) => (
-    <div key={i} className={`chatbox__message ${m.from}`}>
-      {m.content}
-    </div>
-  ))}
-</div>
-
+          {/* Afficher les 3 points quand le bot "écrit" */}
+          {isTyping && (
+            <div className="chatbox__message bot">
+              <span className="typing">
+                <span></span><span></span><span></span>
+              </span>
+            </div>
+          )}
+        </div>
 
         <div className="chatbox__buttons">
           <button onClick={() => handleButtonClick("profil")}>Profil</button>

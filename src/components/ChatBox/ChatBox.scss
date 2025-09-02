@@ -1,192 +1,51 @@
-/*
-.chatbox {
-    position: fixed;
-    bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    position: fixed;
-    bottom: 80px; // juste au-dessus du bouton flottant
-    right: 20px;
-    width: 320px;
-    height: 500px;
-    background: var(--body_background);
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-
-
-
-
-    &__header {
-        background: navy;
-        color: white;
-        padding: 10px;
-        font-weight: bold;
-        border-radius: 12px 12px 0 0;
-        text-align: center;
-    }
-
-    &__messages {
-        flex: 1;
-        padding: 10px;
-        width: 120%;
-        font-size: 14px;
-        max-height: 420px;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        color: (--link_color);
-    }
-
-    &__message {
-        padding: 8px 12px;
-        border-radius: 8px;
-        font-size: 14px;
-        max-width: 80%;
-
-
-        &.bot {
-            background: #f1f1f1;
-            align-self: flex-start;
-            background: var(--body_background);
-            color: var(--link_color);
-        }
-
-        &.user {
-            background: var(--body_background);
-            align-self: flex-end;
-        }
-    }
-
-    &__input {
-        display: flex;
-        border-top: 1px solid #ddd;
-
-        input {
-            flex: 1;
-            border: none;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 0 0 0 12px;
-            outline: none;
-        }
-
-        button {
-            background: navy;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 0 0 12px 0;
-            font-size: 16px;
-
-            &:hover {
-                background: #1d4ed8;
-            }
-        }
-    }
-
-    .bpw-floating-button .bpw-floating-button:hover {
-
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
-        background-color: var(--body_background);
-        background-color: var(--body_color);
-    }
-
-    .bpw-floating-button {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-right: 3px;
-        transition: all .2s;
-        background-color: var(--link_color);
-
-
-    }
-
-    .bpw-floating-button {
-        fill: #fff;
-        align-items: center;
-        background-clip: padding-box;
-        border: none;
-        border-radius: 50%;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
-        cursor: pointer;
-        display: flex;
-        float: right;
-        height: 52px;
-        justify-content: center;
-        outline: none;
-        overflow: hidden;
-        padding: 0;
-        transition: width 1s, height 1s;
-        width: 52px;
-        z-index: 1;
-    }
-}
-*/
-
 .chatbox-section {
     z-index: 9999;
 
-
     .chatbox {
         width: 100%;
+        max-width: 400px;
         height: 550px;
         display: flex;
         flex-direction: column;
-        border-radius: 8px;
+        border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         overflow: hidden;
-        /*  font-family: Arial, sans-serif;*/
-        flex: 1;
-        background-color: #f2e9fdff;
-
+        background-color: #f2e9fd;
 
         &__header {
             background: #a343ec;
             color: #fff;
-            padding: 30px;
+            padding: 20px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
-
         }
 
         &__messages {
-            /*   flex: 1;*/
+            flex: 1 1 auto;
             padding: 10px;
-            overflow-y: auto;
             display: flex;
             flex-direction: column;
             gap: 8px;
-            overflow-y: auto; // ✅ c’est cette partie qui doit scroller
-            flex: 1 1 auto; // prend l’espace restant
-            flex: 1;
+            overflow-y: auto;
 
             .chatbox__message {
                 max-width: 94%;
-                padding: 4px 4px;
+                padding: 8px 12px;
                 border-radius: 12px;
                 font-size: 14px;
                 line-height: 1.4;
-                /*   word-wrap: break-word;*/
+                word-wrap: break-word;
 
                 &.bot {
-                    background: #ececec;
+                    background-color: var(--body_background, #ececec);
+                    color: var(--link_color, #333);
                     align-self: flex-start;
                     border-bottom-left-radius: 4px;
-                    color: var(--link_color);
-                    background-color: var(--body_background);
-
                 }
 
                 &.user {
-                    background: #4a90e2;
+                    background-color: #4a90e2;
                     color: #fff;
                     align-self: flex-end;
                     border-bottom-right-radius: 4px;
@@ -195,15 +54,12 @@
         }
 
         &__buttons {
-            flex: 0 0 auto; // reste visible
+            flex: 0 0 auto;
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
             padding: 8px;
-            background: #fff;
-            color: var(--link_color);
-            background-color: var(--body_background);
-
+            background-color: var(--body_background, #fff);
 
             button {
                 flex: 1 1 45%;
@@ -212,57 +68,90 @@
                 font-size: 13px;
                 cursor: pointer;
                 transition: 0.2s ease-in-out;
-                color: var(--link_color);
-                background-color: var(--body_background);
-                border: 1px solid var(--link_color);
+                color: var(--link_color, #333);
+                border: 1px solid var(--link_color, #333);
+                background-color: var(--body_background, #fff);
 
                 &:hover {
-                    background: #4a90e2;
-                    color: white;
+                    background-color: #4a90e2;
+                    color: #fff;
                 }
             }
         }
 
         &__input {
+            flex: 0 0 auto;
             display: flex;
-            justify-content: center;
-            flex: 0 0 auto; // reste visible
-            width: 100%;
-
             padding: 10px;
 
             input {
                 flex: 1;
                 padding: 10px;
-                border: none;
                 font-size: 14px;
-                outline: none;
-                border: 1px solid var(--link_color);
+                border: 1px solid var(--link_color, #333);
                 border-radius: 8px 0 0 8px;
+                outline: none;
             }
 
             button {
-                border: none;
                 padding: 0 16px;
                 font-size: 16px;
                 cursor: pointer;
-                transition: 0.2s;
                 color: #dde4ec;
-                border: 1px solid var(--link_color);
-                background: #a343ec;
+                background-color: #a343ec;
+                border: 1px solid var(--link_color, #333);
                 border-radius: 0 8px 8px 0;
-
+                transition: 0.2s;
 
                 &:hover {
-                    background: #357abd;
-
+                    background-color: #357abd;
                 }
             }
         }
 
-        .empty-chat {
-            font-size: 13px;
+        .typing {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            margin-left: 4px;
+
+            span {
+                display: block;
+                width: 6px;
+                height: 6px;
+                background: #999;
+                border-radius: 50%;
+                animation: blink 1.4s infinite both;
+
+                &:nth-child(1) {
+                    animation-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: 0.4s;
+                }
+            }
         }
 
+        @keyframes blink {
+            0% {
+                opacity: 0.2;
+                transform: translateY(0);
+            }
+
+            20% {
+                opacity: 1;
+                transform: translateY(-3px);
+            }
+
+            100% {
+                opacity: 0.2;
+                transform: translateY(0);
+            }
+        }
     }
 }
