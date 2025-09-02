@@ -44,7 +44,7 @@ function ChatBox({ messages = [], setMessages }) {
     
     switch (section) {
       case "profil":
-        reply = "👤 Profil : passion pour le dev et les solutions innovantes.";
+        reply = "👤 Profil : passionnéé par le dev et les solutions innovantes.";
         break;
       case "formation":
         reply = "🎓 Formation : diplôme info, spécialité web.";
@@ -98,7 +98,7 @@ function ChatBox({ messages = [], setMessages }) {
   return (
     <section className="chatbox-section">
       <div className="chatbox">
-        <div className="chatbox__messages">      Bonjour et bienvenue dans mon chatbot ! 🤖
+        <div className="chatbox__messages">  Bonjour et bienvenue dans mon chatbot ! 🤖
 
   {messages.map((m, i) => (
     <div key={i} className={`chatbox__message ${m.from}`}>
