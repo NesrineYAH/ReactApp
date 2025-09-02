@@ -106,7 +106,6 @@ function ChatBox({ messages = [], setMessages }) {
             </div>
           ))}
 
-          {/* Afficher les 3 points quand le bot "écrit" */}
           {isTyping && (
             <div className="chatbox__message bot typing">
               <span className="typing">
