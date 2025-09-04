@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ChatBox.scss";
 
-function ChatBox({ messages = [], setMessages }) {
+function ChatBox({ messages = [], setMessages, typingMessage  }) {
   const [input, setInput] = useState("");
   const [conversationStep, setConversationStep] = useState(null);
   const [isTyping, setIsTyping] = useState(false);
@@ -95,7 +95,7 @@ function ChatBox({ messages = [], setMessages }) {
       { from: "bot", content: reply },
     ]);
   };
-
+  
   return (
     <section className="chatbox-section">
       <div className="chatbox">
@@ -108,9 +108,10 @@ function ChatBox({ messages = [], setMessages }) {
 
           {isTyping && (
             <div className="chatbox__message bot typing">
-              <span className="typing">
+              <span className="typing">{typingMessage}
                 <span></span><span></span><span></span>
               </span>
+              
             </div>
           )}
         </div>
