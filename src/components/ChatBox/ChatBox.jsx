@@ -48,8 +48,7 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
         reply = "👤 Profil : Développeuse web passionnée, curieuse et motivée, j’aime créer des solutions modernes et intuitives. J’accorde beaucoup d’importance à l’expérience utilisateur et à l’innovation dans mes projets.";
         break;
       case "formation":
-        reply = "🎓 Formation : diplôme info, spécialité web.";
-        break;
+    reply = "🎓 Formation : Diplômée en informatique avec une spécialisation en développement web. Maintenant je suis enconversion vers le DATA ENGINNER en Alternance.";        break;
       case "Expérience":
         reply = (
           <span>
@@ -67,7 +66,7 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
                 setMessages(prev => [
                   ...prev,
                   { from: "user", content: "Web" },
-                  { from: "bot", content: "🌐 HTML, CSS, JS, React, Node, Express, MongoDB." }
+                  { from: "bot", content: "🌐 HTML, CSS, SCSS,JS, React, Node, Express, MongoDB. Agluar, Tailwindcss ..etc" }
                 ])
               }>Web</button>
               <button onClick={() =>
@@ -80,12 +79,34 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
             </div>
           </div>
         );
-        setConversationStep("choixCompetences");
-        break;
+       setConversationStep("choixCompetences");
+        break; 
       case "services":
-        reply = "💼 Services : formation, mentoring, consulting.";
-        break;
+ reply =(
+  <div>
+    Tu veux mes service en : 
+    <div className="chatbox__buttons">
+      <button onClick={() =>
+        setMessages(prev => [
+          ...prev, 
+          { from: "user", content: "Web" },
+          { from: "bot", content: "🌐 Création de sites web, applications web, intégration front-end, développement back-end, maintenance et optimisation de sites existants." }
+        ])
+      }>Web</button>
+      <button onClick={() =>
+                setMessages(prev => [
+                  ...prev,
+                  { from: "user", content: "Data" },
+                  { from: "bot", content: "📊 Services en Data :\n- Analyse de données et création de tableaux de bord interactifs\n- Nettoyage, transformation et préparation des données\n- Développement de pipelines ETL\n- Machine Learning & IA (classification, prédiction, NLP)\n- Visualisation des données (Power BI, Tableau, D3.js)\n- Conseil en stratégie Data et valorisation des données" }
+                ])
+              }>Data</button>
+  </div>
+  </div>
+);
+ setConversationStep("choixCompetences");
+ break;
       default:
+        
         reply = "🤔 Je n'ai pas compris.";
     }
 
