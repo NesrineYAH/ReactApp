@@ -44,8 +44,8 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
     let reply;
 
     switch (section) {
-      case "profil":
-        reply = "👤 Profil : passionnée par le dev et les solutions innovantes.";
+      case "Profil":
+        reply = "👤 Profil : Développeuse web passionnée, curieuse et motivée, j’aime créer des solutions modernes et intuitives. J’accorde beaucoup d’importance à l’expérience utilisateur et à l’innovation dans mes projets.";
         break;
       case "formation":
         reply = "🎓 Formation : diplôme info, spécialité web.";
@@ -117,7 +117,7 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
         </div>
 
         <div className="chatbox__buttons">
-          <button onClick={() => handleButtonClick("profil")}>Profil</button>
+          <button onClick={() => handleButtonClick("Profil")}>Profil</button>
           <button onClick={() => handleButtonClick("formation")}>Formation</button>
           <button onClick={() => handleButtonClick("Expérience")}>Expérience</button>
           <button onClick={() => handleButtonClick("competences")}>Compétences</button>
