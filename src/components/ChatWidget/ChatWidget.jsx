@@ -24,7 +24,7 @@ class ChatWidget extends Component {
 
   startWelcomeTyping = () => {
     const fullMessage =
-      "👋 Bienvenue ! Choisis une option ou écris-moi un message.";
+    "👋 Bonjour et Bienvenue dans mon chatbot ! Je l'ai créé afin de vous permettre d'en savoir plus sur moi. N'hésitez pas à me solliciter pour découvrir davantage ! 🤖";
 
     if (this.interval) clearInterval(this.interval);
 
