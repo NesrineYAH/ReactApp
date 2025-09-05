@@ -84,7 +84,6 @@ class App extends React.Component {
         </Routes>
         </Suspense>
       </BrowserRouter>  
-   <ChatWidget /> 
             <CrispChat />
 
      <Footer />
