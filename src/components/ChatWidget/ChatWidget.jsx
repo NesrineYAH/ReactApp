@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import ChatBox from "../ChatBox/ChatBox";
 import "./ChatWidget.scss";
@@ -122,7 +121,6 @@ class ChatWidget extends Component {
             <div className="chatbox-header">
               <h3 className="chatbox-title">Chat with Nina</h3>
 
-              {/* Clear: réinitialise la conversation et relance l’animation */}
               <button className="close-button" onClick={this.handleClear}>
                  <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +139,6 @@ class ChatWidget extends Component {
           </svg>
               </button>
 
-              {/* Close: ferme la fenêtre */}
               <button className="close-button" onClick={this.handleClose}>
                 <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -12,9 +12,8 @@ import { SyncLoader   }  from 'react-spinners';
 import { css } from "@emotion/react";
 import Cookies from 'js-cookie';
 import CookieBanner from './components/CookieBanner/CookieBanner.jsx';  
-import ChatBox from "./components/ChatBox/ChatBox.jsx";
 import ChatWidget from "./components/ChatWidget/ChatWidget.jsx";
-
+import CrispChat from "./components/CrispChat/CrispChat.jsx";
 
 
 const home = React.lazy(() => import("./pages/Home/Home"));
@@ -85,9 +84,8 @@ class App extends React.Component {
         </Routes>
         </Suspense>
       </BrowserRouter>  
-            <ChatBox />
-                  <ChatWidget />
-
+   <ChatWidget /> 
+            <CrispChat />
 
      <Footer />
       </div>

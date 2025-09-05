@@ -34,7 +34,6 @@
 }
 
 .chatbox-container {
-    position: fixed;
     top: 17.4%;
     bottom: 90px;
     right: 20px;
@@ -70,8 +69,6 @@
         width: 100%;
         background: #a343ec;
 
-
-
         .close-button {
             border: none;
             cursor: pointer;
@@ -80,7 +77,6 @@
             align-items: center;
             justify-content: center;
             color: #dde4ec;
-
 
             svg {
                 stroke: white;

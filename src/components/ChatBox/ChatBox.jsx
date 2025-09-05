@@ -84,7 +84,7 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
       case "services":
  reply =(
   <div>
-    Tu veux mes service en : 
+    Tu veux mes services en : 
     <div className="chatbox__buttons">
       <button onClick={() =>
         setMessages(prev => [
@@ -142,7 +142,7 @@ function ChatBox({ messages = [], setMessages, typingMessage  }) {
           <button onClick={() => handleButtonClick("formation")}>Formation</button>
           <button onClick={() => handleButtonClick("Expérience")}>Expérience</button>
           <button onClick={() => handleButtonClick("competences")}>Compétences</button>
-          <button onClick={() => handleButtonClick("services")}>Autres services</button>
+          <button onClick={() => handleButtonClick("services")}>Services</button>
         </div>
 
         <div className="chatbox__input">
