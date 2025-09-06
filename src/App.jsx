@@ -12,7 +12,9 @@ import { SyncLoader   }  from 'react-spinners';
 import { css } from "@emotion/react";
 import Cookies from 'js-cookie';
 import CookieBanner from './components/CookieBanner/CookieBanner.jsx';  
-import FlexChatWidget from "./components/FlexChat/FlexChat.jsx";
+ import FlexChatWidget from "./components/FlexChat/FlexChat.jsx";
+
+
 
 const home = React.lazy(() => import("./pages/Home/Home"));
 const error = React.lazy(() => import("./pages/PageError/PageError"));
@@ -83,7 +85,7 @@ class App extends React.Component {
         </Suspense>
       </BrowserRouter>  
       
-      <FlexChatWidget />
+    <FlexChatWidget /> 
 
      <Footer />
       </div>
