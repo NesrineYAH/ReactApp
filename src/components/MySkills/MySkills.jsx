@@ -156,12 +156,7 @@ const MySkills = () => {
                                 <div className="skillItem__bar__fullfilled node_skill"></div>
                             </div>
                         </div>
-                        <div className="skillItem">
-                            <p className="skillItem__p">MySQL</p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled MySQL_skill"></div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div className="box">
                         <h3 className="box__title">{t("Competence.titleIII")}</h3>
@@ -171,18 +166,19 @@ const MySkills = () => {
                                 <div className="skillItem__bar__fullfilled Figma_skill"></div>
                             </div>
                         </div>
+                         <div className="skillItem">
+                            <p className="skillItem__p">MySQL, SQL</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled MySQL_skill"></div>
+                            </div>
+                        </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Ado</p>
+                            <p className="skillItem__p">Spark (PySpark/Scala)</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
                             </div>
                         </div>
-                        <div className="skillItem">
-                            <p className="skillItem__p">Adobe Illustrator</p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled adobe_IL_skill"></div>
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
 
