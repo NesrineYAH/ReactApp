@@ -63,14 +63,14 @@
 
   "presentation": {
     "h1Text" : "Nesrine BEKKAR YAHOUM",
-    "h2Text" : "Fullstack developer, Data Engineer"  
+    "h2Text" : "Data Engineer, Full Stack developer, "  
     },
 
   "main_heading": {
     "hello": "Hello ",
     "name": "I'm Nesrine",
-    "static_desc": "I'am a frontend and full stack web developer",
-    "dynamic_desc": "Passionate about the world of web development."
+    "static_desc": "I'am a Data Engineer and full stack  developer",
+    "dynamic_desc": "Passionate about the world of web development & Data."
   },
   "description_info": {
     "main": "With a great curiosity and a natural aptitude for new technologies, I am constantly working to enhance my skills. Starting from a modest foundation in web design and web technologies, I have progressively evolved into a web developer. Web and mobile development has become both my source of inspiration, my passion, and my professional calling. To solidify my expertise, I obtained a degree in web development. I am also keen to further deepen my knowledge in backend development, with the aim of expanding my skills and mastering advanced technologies. Always eager to learn, I am continuously seeking new opportunities and challenges in the field of web development."
