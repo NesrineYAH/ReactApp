@@ -129,7 +129,11 @@
   "optionI": "Full Stack Development Projects",
   "optionII": "DATA Projets "
 },
-  "service.description":{
+  "service":{
+    "CardI": "WEB & SEO Natural Referencing",
+   "CardII" :"Mobile",
+   "CardIII": "Data analysis & processing",
+   "CardIIII": "Technological Watch",
     "web": "Creation of showcase sites, e-commerce site, dynamic site Integration of models",
      "Mobile": "In a mobile-dominated era, a well-designed app is more than just a tool. It's your direct connection to your users, wherever you are.",
     "Referencement": " Encompasses all methods and techniques designed to optimize the positioning of your site’s web pages.",
