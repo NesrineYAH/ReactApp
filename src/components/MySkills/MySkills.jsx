@@ -111,17 +111,12 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">CSS / SCSS</p>
+                            <p className="skillItem__p">CSS / SCSS, TailwindCSS</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled css_skill"></div>
                             </div>
                         </div>
-                        <div className="skillItem">
-                            <p className="skillItem__p">Tailwind CSS, Bootstrap</p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled bootstrap_skill"></div>
-                            </div>
-                        </div>
+                        
                         <div className="skillItem">
                             <p className="skillItem__p">Javascript</p>
                             <div className="skillItem__bar">
@@ -135,7 +130,13 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Wordpress</p>
+                            <p className="skillItem__p">Angular</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled bootstrap_skill"></div>
+                            </div>
+                        </div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Figma & Adob Illustrator</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled react_skill"></div>
                             </div>
@@ -165,13 +166,13 @@ const MySkills = () => {
                     <div className="box">
                         <h3 className="box__title">{t("Competence.titleIII")}</h3>
                         <div className="skillItem">
-                            <p className="skillItem__p">Figma</p>
+                            <p className="skillItem__p">PYTHON </p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled Figma_skill"></div>
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">Adobe Photohop</p>
+                            <p className="skillItem__p">Ado</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
                             </div>
