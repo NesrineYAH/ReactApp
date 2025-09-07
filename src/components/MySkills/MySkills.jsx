@@ -102,6 +102,28 @@ const MySkills = () => {
             </div>
             <div className="SkillsContainer">
                 <div className="SkillsContainer__box">
+                     <div className="box">
+                        <h3 className="box__title">{t("Competence.titleIII")}</h3>
+                        <div className="skillItem">
+                            <p className="skillItem__p">PYTHON </p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled Figma_skill"></div>
+                            </div>
+                        </div>
+                         <div className="skillItem">
+                            <p className="skillItem__p">MySQL, SQL</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled MySQL_skill"></div>
+                            </div>
+                        </div>
+                        <div className="skillItem">
+                            <p className="skillItem__p">Spark (PySpark/Scala)</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
+                            </div>
+                        </div>
+                     
+                    </div>
                     <div className="box">
                         <h3 className="box__title">{t("Competence.titleI")}</h3>
                         <div className="skillItem">
@@ -111,7 +133,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="skillItem">
-                            <p className="skillItem__p">CSS / SCSS, TailwindCSS</p>
+                            <p className="skillItem__p">CSS, SCSS, TailwindCSS</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled css_skill"></div>
                             </div>
@@ -158,28 +180,7 @@ const MySkills = () => {
                         </div>
                        
                     </div>
-                    <div className="box">
-                        <h3 className="box__title">{t("Competence.titleIII")}</h3>
-                        <div className="skillItem">
-                            <p className="skillItem__p">PYTHON </p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled Figma_skill"></div>
-                            </div>
-                        </div>
-                         <div className="skillItem">
-                            <p className="skillItem__p">MySQL, SQL</p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled MySQL_skill"></div>
-                            </div>
-                        </div>
-                        <div className="skillItem">
-                            <p className="skillItem__p">Spark (PySpark/Scala)</p>
-                            <div className="skillItem__bar">
-                                <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
-                            </div>
-                        </div>
-                     
-                    </div>
+                   
                 </div>
 
                 <div className="SkillsContainer__blob" >
