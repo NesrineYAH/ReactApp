@@ -198,8 +198,13 @@ const MySkills = () => {
                         </h3>
                         <p className='SoftsSkills__p'  style={{
                                 direction: lang === "ar" ? "rtl" : "ltr",  
-                                fontSize: lang === "ar" ? "17px" : "initial" 
-                              }}>{t("Competence.prgI")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsI")} </strong> {t("Competence.prgII")} <strong className='SoftsSkills__IntroP'>{t("Competence.strongWordsII")} </strong> {t("Competence.prgIII")} 
+                                fontSize: lang === "ar" ? "16px" : "initial" 
+                              }}> 
+                              {t("Competence.prg")}
+                               <strong style={{fontWeight:700}}> {t("Competence.prgI")} </strong> {t("Competence.prgII")}
+                               <strong style={{fontWeight:700}}> {t("Competence.strongWordsI")} </strong> 
+                                {t("Competence.prgIIF")} <strong>{t("Competence.strongWordsII")} </strong> 
+                                {t("Competence.prgIII")} 
                         </p>
                     </div>
 
