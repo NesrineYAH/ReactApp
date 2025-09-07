@@ -122,7 +122,7 @@
 },
 "projetDataI":{
   "brief_description": "Projet Data est un projet de création d'une application web pour la gestion des données de vente d'une PME.",
-  "description_project": "Dans le cadre de ce projet, j'ai été chargée de créer une application web pour la gestion des données. J'ai utilisé Python et Flask pour le back-end, ainsi que HTML, CSS et JavaScript pour le front-end. L'application permet aux utilisateurs de visualiser, ajouter, modifier et supprimer des données de manière intuitive et efficace."
+  "description_project": "Dans le cadre de ce projet, j'ai été chargée de créer une application web pour la gestion et l'analyse des données d'une PME. J'ai utilisé Docker pour conteneuriser une application, aussi Python avec NumPY et Pandas et Flask,  ainsi que HTML, CSS et JavaScript pour le front-end. L'application permet aux utilisateurs de visualiser, ajouter, modifier et supprimer des données de manière intuitive et efficace."
 },
 "select":{
   "option": "Tous Les Projets",

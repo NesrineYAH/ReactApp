@@ -327,6 +327,10 @@
       {
         "icon": "../assets/technologyIcons/pythonflask.png",
         "name": "Flask-Python"
+      }, 
+      {
+        "icon": "../assets/technologyIcons/docker.png",
+        "name": "Docker"
       }
     ],
     "pictures": [
@@ -334,7 +338,7 @@
       "../assets/projects/data_analysis/data_analysis2.webp",
       "../assets/projects/data_analysis/data_analysis3.webp"
     ],
-    "site": "",
+    "site": "https://nesrineyah.github.io/Sales-flask-app/",
   "github": "https://github.com/NesrineYAH/Sales-flask-app.git" 
   }
   
