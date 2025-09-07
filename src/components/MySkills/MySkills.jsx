@@ -122,6 +122,12 @@ const MySkills = () => {
                                 <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
                             </div>
                         </div>
+                         <div className="skillItem">
+                            <p className="skillItem__p">Docker, Kubernetes</p>
+                            <div className="skillItem__bar">
+                                <div className="skillItem__bar__fullfilled adobe_PS_skill"></div>
+                            </div>
+                        </div>
                      
                     </div>
                     <div className="box">
