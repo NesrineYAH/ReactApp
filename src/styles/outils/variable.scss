@@ -30,8 +30,9 @@ $breakpoint-desktop: 769px;
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
+        max-width: 100%;
         width: 100%;
-
+        margin: 0 auto;
     }
 }
 

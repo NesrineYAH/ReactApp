@@ -8,9 +8,14 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
     flex: 1;
-    opacity: 100;
+    opacity: 1;
+    width: 100%;
+    /*  max-width: 100%;*/
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* pour éviter que ça colle aux bords */
+
 }
 
 .TailSpin {

@@ -79,16 +79,15 @@ body {
 }
 
 body {
-    @include body-position;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     color: var(--body_color);
     background-color: var(--body_background);
-    margin: 0 auto;
     color: var(--link_color);
-    height: 100%;
     font-family: "Open Sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
