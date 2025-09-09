@@ -20,8 +20,8 @@ $breakpoint-desktop: 769px;
 .titlePortfolio {
     width: 100%;
     text-align: center;
-    margin-top: 6rem;
     font-weight: 600;
+    margin: 1rem;
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         width: 100%;

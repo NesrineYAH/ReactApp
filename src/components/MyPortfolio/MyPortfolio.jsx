@@ -55,7 +55,7 @@ const MyPortfolio = () => {
 
   return (
     
-<section className="myPortfolio">
+<section className="Portfolio_section">
      <div className="selectCategory"> 
          <label>
           <select className="btg" value={selectedCategory} onChange={handleChange}>

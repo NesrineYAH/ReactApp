@@ -224,4 +224,30 @@
             }
         }
     }
+
+    @media screen and (min-width: 1600px) {
+
+        .navbar_header {
+            @include flexCenterRow;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 3.2%;
+            z-index: 10;
+            width: 100%;
+
+            .navbar__links {
+                @include flexCenterRow;
+                flex-wrap: wrap;
+                text-transform: uppercase;
+                gap: 15px;
+                font-weight: 600;
+
+                .navbar__link {
+                    color: var(--link_color);
+                }
+            }
+
+
+        }
+    }
 }

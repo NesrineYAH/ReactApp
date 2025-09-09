@@ -55,7 +55,6 @@ class App extends React.Component {
       this.setState({ cookiesAccepted: false, cookiesRejected: true });
     };   
   
- 
 
  render() {
   const { loading, cookiesAccepted, cookiesRejected } = this.state;    const spinTransition = {
@@ -84,8 +83,6 @@ class App extends React.Component {
         </Suspense>
       </BrowserRouter>  
       
-
-
      <Footer />
       </div>
       )}   
