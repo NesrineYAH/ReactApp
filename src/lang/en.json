@@ -26,7 +26,7 @@
   "contact_id": "Contact",
   "contact_path": "/#Contact",
   "txtInfo":"More informations",
-  "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM  ",
+  "footer": "Copyright © 2023 - Nesrine BEKKAR YAHOUM",
   "Mentions": "Legal Notice",
   "plan": "Sitemap",
 
@@ -63,7 +63,7 @@
 
   "presentation": {
     "h1Text" : "Nesrine BEKKAR YAHOUM",
-    "h2Text" : "Data Engineer, Full Stack developer, "  
+    "h2Text" : "Data Engineer, Full Stack developer"  
     },
 
   "main_heading": {
