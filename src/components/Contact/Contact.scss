@@ -314,4 +314,156 @@
             }
         }
     }
+
+    @media screen and (min-width: 1600px) {
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        margin-top: -8rem;
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 90%;
+            grid-gap: 20%;
+            width: 90%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            border-radius: 17px;
+            transition: .2s linear;
+            box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 rgba(0, 0, 0, .2);
+        }
+
+        .form-horizontal {
+            width: 437px;
+            min-width: 437px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            grid-gap: 14px;
+            padding: 20px;
+            box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+            border-radius: 17px;
+        }
+
+        .form-control,
+        textarea {
+            max-width: 470px;
+            letter-spacing: 1px;
+            background-color: var(--body_color);
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: -0.5px -0.5px 4px 0 #ceb1ff, -0.5px -0.5px 4px 0 #ceb1ff;
+            border: 2px solid var(--link_color);
+        }
+
+        .form-control {
+            background-color: var(--body_background);
+            color: var(--skill_color);
+
+        }
+
+        .form-horizontal label {
+            color: var(--skill_color);
+        }
+
+        input {
+            color: var(--skill_color);
+            width: 100%;
+            background-color: var(--body_background);
+        }
+
+        .form-control::placeholder {
+            font-size: 14px;
+            color: var(--skill_color);
+            background-color: var(--body_background);
+        }
+
+        .error {
+            font-size: 13px;
+            font-weight: 500;
+            color: red;
+            margin-top: -7px;
+        }
+
+        .send-text {
+            display: block;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            background-color: var(--body_background);
+            border-radius: 20px;
+            padding: 6px 20px;
+            border: 1px var(--body_color) solid;
+            border: 1px var(--lang_background) solid;
+            background-color: var(--body_color);
+            color: navy;
+        }
+
+        .send-text:hover {
+            box-shadow: -6px -6px 25px 0 #ceb1ff, 6px 6px 25px 0 #ceb1ff;
+        }
+
+        .contactList__conatiner {
+            max-width: 420px;
+
+            .contactList {
+                @include ItemColumn;
+                grid-gap: 19px;
+                list-style-type: none;
+                padding-left: 0;
+
+                &__item {
+                    display: flex;
+                    flex-direction: row;
+                    grid-gap: 19px;
+                }
+
+                &__i {
+                    color: var(--link_color);
+                    color: navy;
+                    width: 28px;
+                    height: 25px;
+                    cursor: pointer;
+                }
+
+                .loc {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &__span {
+                    text-decoration: none;
+                    color: var(--link_color);
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-top: 6px;
+                }
+
+                &__a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: var(--link_color);
+                    font-weight: 600;
+                }
+
+                .phone {
+                    text-align: left;
+                    direction: ltr;
+                    text-decoration: none;
+                }
+
+                .phone .contactList__phone {
+                    direction: ltr;
+                    text-align: left;
+                    text-decoration: none;
+                    color: var(--link_color);
+                }
+
+            }
+        }
+    }
 }
