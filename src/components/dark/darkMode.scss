@@ -9,6 +9,11 @@
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         margin-top: -35px;
     }
+
+    @media screen and (min-width: 1600px) {
+        margin-top: -35px;
+
+    }
 }
 
 .dark_mode_label {
