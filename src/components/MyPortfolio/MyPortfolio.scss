@@ -108,7 +108,7 @@
         @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
             grid-gap: 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, 500px);
+            grid-template-columns: repeat(auto-fill, 400px);
             height: auto;
             justify-content: center;
             margin: 30px auto;
@@ -116,7 +116,8 @@
 
             .card {
                 height: 320px;
-                width: 380px;
+                /*  width: 380px;*/
+                width: 100%;
                 box-shadow: $box-shadow;
                 box-shadow: var(--box-shadow);
                 box-shadow: -3px -3px 12px 0 #583e81, 6px 6px 12px 0 rgba(0, 0, 0, .2);
@@ -125,29 +126,32 @@
 
         @media screen and (min-width: 1171px) and (max-width:$Mmax) {
 
-            /*
 
+            /*
             max-width: 100%;
             height: auto;
-            margin: 30px auto;
             @include flexCenterRow;
             flex-wrap: wrap;
             gap: 30px;
-            padding: 0 60px 0 60px;
+            padding: 50px;
 */
+
+
             grid-gap: 70px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, 400px);
+            grid-template-columns: repeat(3, 1fr);
             height: auto;
             justify-content: center;
-            max-width: 100%;
-
+            padding: 60px;
             width: 100%;
+            margin: 0 auto;
+            /* centre horizontalement */
+
 
             .card {
                 border-radius: 15px;
                 height: 320px;
-                width: 420px;
+                width: 380px;
                 position: relative;
                 transform-style: preserve-3d;
                 background: 0 0;
@@ -226,14 +230,22 @@
             }
         }
 
-        @media screen and (min-width: 1601px) {
+        @media screen and (min-width: 1600px) {
+
+
             grid-gap: 70px;
             display: grid;
+            /*  grid-template-columns: repeat(3, 1fr, 400px);*/
             grid-template-columns: repeat(auto-fill, 400px);
+
             height: auto;
             justify-content: center;
+            padding: 60px;
+            width: 1600px;
+            max-width: 100%;
+            margin: 0 auto;
 
-
+            /*
             min-width: 100%;
             height: auto;
             margin: 30px auto;
@@ -241,12 +253,11 @@
             flex-wrap: wrap;
             gap: 30px;
             padding: 0 60px 0 40px;
-
+*/
             .card {
                 border-radius: 15px;
                 height: 320px;
-                max-width: 400px;
-                width: 80%;
+                width: 400px;
                 position: relative;
                 transform-style: preserve-3d;
                 background: 0 0;
