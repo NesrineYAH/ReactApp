@@ -124,6 +124,10 @@
   "brief_description": "Projet Data is a project to create a web application for the management of sales data of an SME.",
   "description_project": "As part of this project, I was tasked with creating a web application for data management. I used Python and Flask for the back-end, as well as HTML, CSS and JavaScript for the front-end. The application allows users to view, add, modify and delete data in an intuitive and efficient way."
 },
+"projetDataII": {
+"brief_description": "Realistic data generation with Faker Data cleaning and transformation Calculation of business metrics (RFM, conversion, etc.) Export CSV format for later analysis",
+ "description_project": "simulate a complete data engineering pipeline for Numberly, a Data Marketing specialist, by implementing: Privacy-friendly synthetic data generation, robust ETL (Extract, Transform, Load) pipeline, Interactive dashboard for marketing analysis Docker containerization for reproducibility"
+},
   "select":{
   "option": "ALL Projects",
   "optionI": "Full Stack Development Projects",
