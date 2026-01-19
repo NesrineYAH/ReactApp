@@ -166,8 +166,7 @@
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
         display: flex;
         flex-direction: column;
-        height: 120vh;
-        margin-top: -8rem;
+
 
         .contact-wrapper {
             display: flex;
@@ -177,7 +176,7 @@
             max-width: 90%;
             grid-gap: 20%;
             width: 90%;
-            height: 100%;
+
             align-items: center;
             justify-content: center;
             margin: 20px auto;
@@ -318,18 +317,17 @@
     @media screen and (min-width: 1600px) {
         display: flex;
         flex-direction: column;
-        height: 120vh;
-        margin-top: -8rem;
+        position: relative;
+        top: 6.5rem;
 
         .contact-wrapper {
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             padding: 20px;
-            max-width: 90%;
             grid-gap: 20%;
             width: 90%;
-            height: 100%;
+            height: 850px;
             align-items: center;
             justify-content: center;
             margin: 20px auto;

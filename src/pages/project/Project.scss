@@ -213,6 +213,7 @@
         height: 100vh;
         top: 20px;
         flex-basis: 1;
+        padding: 30px;
 
         &__header {
             width: 100%;
@@ -312,7 +313,7 @@
                 transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
                 width: 50px;
                 background-color: transparent;
-               
+
                 &:hover .wrapper__tooltip {
                     top: -45px;
                     opacity: 1;
@@ -375,4 +376,174 @@
 
     }
 
+    @media screen and (min-width: 1600px) {
+        width: 90%;
+        padding: 20px;
+        margin: 100px auto;
+        @include flex-center;
+        position: relative;
+        height: 100vh;
+        top: 20px;
+        flex-basis: 1;
+
+        &__header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            position: relative;
+            top: 11%;
+        }
+
+        &__iconeBack {
+            cursor: pointer;
+            font-size: 2.5vw;
+            color: var(--body_color);
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: 800;
+            font-size: 2vw;
+        }
+
+        &__page {
+            padding-top: 80px;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &__carousel {
+            list-style-type: none;
+            width: 55%;
+        }
+
+        &__descreption {
+            padding-top: 80px;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            p {
+                color: var(--link_color);
+                display: flex;
+                justify-content: center;
+                height: auto;
+                padding: 10px;
+                width: 80%;
+                overflow: hidden;
+                font-size: 16px;
+                margin-top: 8%;
+            }
+        }
+
+        &__boutton {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 2%;
+        }
+
+        .Technologies {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+
+        .hh6 {
+            width: 100%;
+            font-weight: 600;
+            display: flex;
+            text-decoration: underline;
+        }
+
+        .technologyUsed_icons {
+            margin: 0 0 0 -50px;
+        }
+
+        .wrapper {
+            display: inline-flex;
+            list-style: none;
+            gap: 55px;
+            position: relative;
+            left: 10%;
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+                height: 50px;
+                transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
+                width: 50px;
+                background-color: transparent;
+
+                &:hover .wrapper__tooltip {
+                    top: -45px;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    box-shadow: 6px -6px 25px 0 #ceb1ff,
+                        6px 6px 25px 0 #ceb1ff;
+
+                    span {
+                        text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
+                        color: #ceb1ff;
+                    }
+
+                    ::before {
+                        color: var(--body_color)
+                    }
+                }
+            }
+
+            &__tooltip {
+                position: absolute;
+                top: 0;
+                font-size: 14px;
+                background: var(--box_background);
+                color: var(--link_color);
+                padding: 5px 8px;
+                border-radius: 5px;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+                opacity: 0;
+                pointer-events: none;
+                font-weight: 600;
+                transition: all .3s cubic-bezier(.68, -.55, .265, 1.55);
+
+                ::before {
+                    position: absolute;
+                    content: "";
+                    height: 8px;
+                    width: 8px;
+                    background: var(--box_background);
+                    bottom: -3px;
+                    left: 50%;
+                    transform: translate(-50%) rotate(45deg);
+                    transition: all .3s cubic-bezier(.68, -.55, .265, 1.55)
+                }
+            }
+
+            img {
+                height: 35px;
+                width: 35px;
+                border-radius: 8px;
+                background: transparent;
+            }
+        }
+
+        .Boutton {
+            border: 1px, solid, var(--background_icons);
+            display: flex;
+            gap: 4%;
+        }
+
+    }
 }

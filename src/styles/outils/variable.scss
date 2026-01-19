@@ -37,6 +37,12 @@ $breakpoint-desktop: 769px;
         padding-bottom: 40px;
 
     }
+
+    @media screen and (min-width: 1600px) {
+        width: 100%;
+        margin-top: 4.4rem;
+
+    }
 }
 
 $small: 480px;

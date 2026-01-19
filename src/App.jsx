@@ -37,12 +37,10 @@ class App extends React.Component {
     window.location.replace("/");
   };
   componentDidMount() {
-     // Récupérer un cookie si nécessaire (par exemple, un cookie utilisateur)
-     const user = Cookies.get('user');  // Exemple de cookie d'utilisateur
+     const user = Cookies.get('user');  
      if (user) {
        this.setState({ user });
      }
-      // Gérer le délai de chargement
     setTimeout(() => {
       this.setState({ loading: false });
     }, 800); 

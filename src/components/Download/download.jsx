@@ -1,6 +1,6 @@
 import react from 'react';
 import { useTranslation } from "react-i18next";
-import CV from "./Cv_Bekkar_ NESRINE_DATA_ENGINEER_ Alternance 09-25.pdf";
+import CV from "./CV_ BEKKAR_NESRINE_YAHOUM_Développeuse Full Stack .pdf";
 
 
 const DownloadBtn = () => {
