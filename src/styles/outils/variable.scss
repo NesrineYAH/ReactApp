@@ -26,7 +26,6 @@ $breakpoint-desktop: 769px;
     @media screen and (min-width: $breakpoint-desktop) and (max-width:1170px) {
         width: 100%;
         text-align: center;
-
     }
 
     @media screen and (min-width: 1171px) and (max-width:$Mmax) {
@@ -35,12 +34,11 @@ $breakpoint-desktop: 769px;
         margin: 0 auto;
         padding-top: 120px;
         padding-bottom: 40px;
-
     }
-
     @media screen and (min-width: 1600px) {
         width: 100%;
         margin-top: 4.4rem;
+        padding: 60px;
 
     }
 }

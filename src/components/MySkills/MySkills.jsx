@@ -111,7 +111,7 @@ const MySkills = () => {
                             </div>
                         </div>
                          <div className="skillItem">
-                            <p className="skillItem__p">MySQL, SQL</p>
+                            <p className="skillItem__p">SQL</p>
                             <div className="skillItem__bar">
                                 <div className="skillItem__bar__fullfilled MySQL_skill"></div>
                             </div>
