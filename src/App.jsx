@@ -68,7 +68,9 @@ class App extends React.Component {
            animate={{ rotate: 360 }} transition={spinTransition} />   
       ) :(
        <div className="main">
-      <BrowserRouter>
+     {/* <BrowserRouter>  A supprimer après basename="/ReactApp" */}
+      <BrowserRouter basename="/ReactApp">
+
        <Header handleClick={this.handleClick} />
        <Suspense fallback={<div>Chargement en cours...</div>}>
         <Routes>
