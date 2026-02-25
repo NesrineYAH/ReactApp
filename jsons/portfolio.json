@@ -1,9 +1,10 @@
-[
+  [
   {
     "title": "Booki",
     "image": "../assets/projects/booki/bookiCover-min.webp",
     "alt": "projet booki",
     "id": "1",
+    "category": "DEV",
     "brief_description": "projectBooki.brief_description",
     "description_project": "projectBooki.description_project",
     "technologyUsed": [
@@ -18,7 +19,7 @@
     ],
 
     "pictures": [
-      "../assets/projects/booki/booki1-min.webp",
+      "../assets/projects/booki/booki-min.webp",
       "../assets/projects/booki/booki2-min.webp",
       "../assets/projects/booki/booki3-min.webp",
       "../assets/projects/booki/booki4-min.webp",
@@ -35,6 +36,7 @@
     "image": "../assets/projects/ohmyfood/food-min.webp",
     "alt": "projet Ohmyfood",
     "id": "2",
+    "category": "DEV",
     "brief_description": "projectOhMyFood.brief_description",
     "description_project": "projectOhMyFood.description_project",
     "technologyUsed": [
@@ -63,9 +65,10 @@
   },
   {
     "title": "La Panthère",
-    "image": "../assets/projects/La panthere/Prj La panthère.webp",
+    "image": "../assets/projects/La panthere/one.webp",
     "alt": "projet La panthère",
     "id": "3",
+    "category": "DEV",
     "brief_description": "projectLaPantherre.brief_description",
     "description_project": "projectLaPantherre.description_project",
     "technologyUsed": [
@@ -75,19 +78,24 @@
       }
       ], 
      "pictures": [
-      "../assets/projects/La panthere/Cover.webp",
-      "../assets/projects/La panthere/la panthère 1.jpg",
-      "../assets/projects/La panthere/lapanthereCover..webp",
-      "../assets/projects/La panthere/lapanthere-OC.jpg",
-      "../assets/projects/La panthere/img_panthere.jpg"
-
+    
+      "../assets/projects/La panthere/two.webp",
+      "../assets/projects/La panthere/Coverr..webp",
+      "../assets/projects/La panthere//CoverI..webp",
+      "../assets/projects/La panthere/three.webp",  
+      "../assets/projects/La panthere/four.webp",
+      "../assets/projects/La panthere/five.webp",
+      "../assets/projects/La panthere/six.webp",
+      "../assets/projects/La panthere/seven.webp",
+      "../assets/projects/la panthere/eight.webp"
       ]
   },
   { 
     "title": "Kanap",
-    "image": "../assets/projects/Kanap/Kanpa_img_Carte.png",
+    "image": "../assets/projects/kanap/CartePort.webp",
     "alt": "projet kanap",
     "id": "4",
+    "category": "DEV",
     "brief_description": "projectKanap.brief_description",
     "description_project": "projectKanap.description_project",
     "technologyUsed": [
@@ -101,19 +109,25 @@
     }
   ],
   "pictures": [
-    "../assets/projects/kanap/kanap.mo-min.webp",
-    "../assets/projects/kanap/kanap.mo.webp",
-    "../assets/projects/kanap/kanapCover.79eddcbad30795e23406.webp",
-    "../assets/projects/kanap/Mockup Kanap.jpg",
-    "../assets/projects/kanap/kanapEtap1.20d232f0cabac0dd1a83.webp"
+    "../assets/projects/kanap/kanap1.webp",
+    "../assets/projects/kanap/kanap2.webp",
+    "../assets/projects/kanap/kanap3.webp",
+    "../assets/projects/kanap/kanap4.webp",
+    "../assets/projects/kanap/kanap5.webp",
+    "../assets/projects/kanap/Kanap6.webp",
+    "../assets/projects/kanap/kanap7.webp",
+    "../assets/projects/kanap/kanap8.webp",
+    "../assets/projects/kanap/kanap9.webp",
+    "../assets/projects/kanap/kanap10.webp"
   ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
   {
     "title": "Picante",
-    "image": "../assets/projects/picante/Piquante_IMG.png",
+    "image": "../assets/projects/picante/picanteI.webp",
     "alt": "projet Picante",
     "id": "5",
+    "category": "DEV",
     "brief_description": "projectPicante.brief_description",
     "description_project": "projectPicante.description_project",
     "technologyUsed": [
@@ -135,10 +149,16 @@
     } 
   ],
     "pictures": [
-      "../assets/projects/picante/hottakesCover.b8.webp",
-      "../assets/projects/picante/hottakesEtap1.7.webp",
-      "../assets/projects/picante/hottakesEtap1.7.webp",
-      "../assets/projects/picante/Picante_img.webp"
+      "../assets/projects/picante/picante1.webp",
+      "../assets/projects/picante/picante2.webp",
+      "../assets/projects/picante/picante3.webp",
+      "../assets/projects/picante/picante4.webp",
+      "../assets/projects/picante/picante5RB.webp",
+      "../assets/projects/picante/picante6.webp",
+      "../assets/projects/picante/picante7.webp",
+      "../assets/projects/picante/picante8.webp",
+      "../assets/projects/picante/picante9.webp"
+
     ],
     "github": "https://github.com/NesrineYAH/Construisez-une-API-securise-pour-une-appliccation-d-avis-gastronomique-YAHOUM-Nesrine-06-2023.git"
   },
@@ -147,6 +167,7 @@
     "image": "../assets/projects/kasa/kasaIcon-min.webp",
     "alt": "projet Kasa",
     "id": "6",
+    "category": "DEV",
     "brief_description": "projectKasa.brief_description",
     "description_project": "projectKasa.description_project",
     "technologyUsed": [
@@ -171,5 +192,193 @@
     ],
     "site": "https://nesrineyah.github.io/Kasa-app-YAHOUM/",
     "github":"https://github.com/NesrineYAH/Ohmyfood-YAHOUM-NESRINE.git"
+  },
+  {
+    "title": "Les petits plats",
+    "image": "../assets/projects/LesPetitsPlats/Recette03.webp",
+    "alt": "projet les petits plats",
+    "id": "7",
+    "category": "DEV",
+    "brief_description": "projectLesPetitsPlats.brief_description",
+    "description_project": "projectLesPetitsPlats.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/html-min.webp",
+        "name": "HTML"
+      },
+      {
+        "icon": "../assets/technologyIcons/css-3-min.webp",
+        "name": "css"
+      },
+      {
+        "icon": "../assets/technologyIcons/js-min.webp",
+        "name": "JavaScript"
+      }
+      
+    ],
+    "pictures": [
+      "../assets/projects/LesPetitsPlats/Recette01.webp",
+      "../assets/projects/lesPetitsPlats/Recette02.webp",
+      "../assets/projects/lesPetitsPlats/Recette03.webp",
+      "../assets/projects/lesPetitsPlats/Recette04.webp",
+      "../assets/projects/lesPetitsPlats/Recette05.webp",
+      "../assets/projects/lesPetitsPlats/Recette06.webp",
+      "../assets/projects/lesPetitsPlats/Recette07.webp",
+      "../assets/projects/lesPetitsPlats/Recette08.webp",
+      "../assets/projects/lesPetitsPlats/Recette09.webp"
+    ],
+    "site": " https://superb-sfogliatella-83d6ff.netlify.app",
+    "github":"https://github.com/NesrineYAH/les_petits_plats.git"
+  }, 
+  {
+      "title": "Game on",
+      "image": "../assets/projects/GameON/GameonI.webp",
+      "alt": "projet Game on",
+      "id": "8",
+      "category": "DEV",
+      "brief_description": "GameOn.brief_description",
+      "description_project": "GameOn.description_project",
+      "technologyUsed": [
+        {
+          "icon": "../assets/technologyIcons/html-min.webp",
+          "name": "HTML"
+        },
+        {
+          "icon": "../assets/technologyIcons/css-3-min.webp",
+          "name": "css"
+        },
+        {
+          "icon": "../assets/technologyIcons/js-min.webp",
+          "name": "JavaScript"
+        }
+        
+      ],
+      "pictures": [  
+           "../assets/projects/GameON/GameonI.webp",
+           "../assets/projects/GameON/GameOnII.webp",
+           "../assets/projects/GameON/GameOnVII.webp",
+           "../assets/projects/GameON/GameOnIII.webp",
+           "../assets/projects/GameON/GameONVX-landscape.webp",
+           "../assets/projects/GameON/smartI.webp",
+           "../assets/projects/GameON/smartII.webp",
+           "../assets/projects/GameON/smartIII.webp"
+      ],
+      "site": "https://nesrineyah.github.io/GameOn-website-FR/",
+      "github":"https://github.com/NesrineYAH/GameOn-website-FR.git"
+    
+
+  },
+  {
+    "title": "Marathon",
+    "image": "../assets/projects/Marathon/marIA_8.webp",
+    "alt": "projet Marathon Paris 2024",
+    "id": "9",
+    "category": "DEV",
+    "brief_description": "Marathon.brief_description",
+    "description_project": "Marathon.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/html-min.webp",
+        "name": "HTML"
+      },
+      {
+        "icon": "../assets/technologyIcons/css-3-min.webp",
+        "name": "css"
+      },
+      {
+        "icon": "../assets/technologyIcons/js-min.webp",
+        "name": "JavaScript"
+      }
+      
+    ],
+    "pictures": [     
+      "../assets/projects/Marathon/MI-front.webp",
+      "../assets/projects/Marathon/MI-landscape.webp",
+      "../assets/projects/Marathon/MI.webp",
+      "../assets/projects/Marathon/MIA.webp",
+      "../assets/projects/Marathon/MID.webp",
+      "../assets/projects/Marathon/MIE-Landscape.webp",
+      "../assets/projects/Marathon/MIE.webp",
+      "../assets/projects/Marathon/MII.webp",
+      "../assets/projects/Marathon/MIK.webp",
+      "../assets/projects/Marathon/MIKII.webp",
+      "../assets/projects/Marathon/MIS.webp"
+    ],
+    "site": "https://nesrineyah.github.io/Marathon__Projet_perso/",
+    "github":"https://github.com/NesrineYAH/Marathon__Projet_perso.git"
+},
+{
+    "title": "Analyse des données de ventes d'une PME",
+    "image": "../assets/projects/data_analysis/data_analysis1.webp",
+    "alt": "projet analyse des données de toute les ventes ",
+    "id": "10",
+    "category": "DATA",
+    "brief_description": "projetDataI.brief_description",
+    "description_project": "projetDataI.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/python.png",
+        "name": "Python"
+      },
+      {
+        "icon": "../assets/technologyIcons/pandas.png",
+        "name": "Pandas"
+      },
+      {
+        "icon": "../assets/technologyIcons/pythonflask.png",
+        "name": "Flask-Python"
+      }, 
+      {
+        "icon": "../assets/technologyIcons/docker.png",
+        "name": "Docker"
+      }
+    ],
+    "pictures": [
+      "../assets/projects/data_analysis/data_analysis1.webp",
+      "../assets/projects/data_analysis/data_analysis2.webp",
+      "../assets/projects/data_analysis/data_analysis3.webp"
+    ],
+    "site": "https://nesrineyah.github.io/Sales-flask-app/",
+  "github": "https://github.com/NesrineYAH/Sales-flask-app.git" 
+  }, {
+    "title": "DATA ",
+    "image": "../assets/projects/data_analysis/Capture 1.png",
+    "alt": "Analyse et réalisation d'un pipeline de données ",
+    "id": "11",
+    "category": "DATA",
+    "brief_description": "projetDataII.brief_description",
+    "description_project": "projetDataII.description_project",
+    "technologyUsed": [
+      {
+        "icon": "../assets/technologyIcons/python.png",
+        "name": "Python"
+      },
+      {
+        "icon": "../assets/technologyIcons/pandas.png",
+        "name": "Pandas"
+      },
+      {
+        "icon": "../assets/technologyIcons/pythonflask.png",
+        "name": "Flask-Python"
+      }, 
+      {
+        "icon": "../assets/technologyIcons/docker.png",
+        "name": "Docker"
+      }
+    ],
+    "pictures": [
+      "../assets/projects/data_analysis/Capture 1.png",
+      "../assets/projects/data_analysis/Capture 2.png",
+      "../assets/projects/data_analysis/Capture 3.png",
+       "../assets/projects/data_analysis/Capture 4.png",
+      "../assets/projects/data_analysis/Capture 5.png"
+    ],
+    "site": "https://pipelinedatamarketingresponsable-jjxgqtunfdqy4byzksd3ze.streamlit.app/",
+  "github": "https://github.com/NesrineYAH/Pipeline_Data_Marketing_Responsable" 
   }
-]
+  
+  
+  ]
+  
+  
+
