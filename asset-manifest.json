@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactApp/static/css/main.2dbef6fd.css",
-    "main.js": "/ReactApp/static/js/main.1d7be38f.js",
+    "main.js": "/ReactApp/static/js/main.22308850.js",
     "static/media/CV_ BEKKAR_NESRINE_YAHOUM_Développeuse Full Stack .pdf": "/ReactApp/static/media/CV_ BEKKAR_NESRINE_YAHOUM_Développeuse Full Stack .ff0f2c804b41cee85d30.pdf",
     "static/media/img_NesrineI.webp": "/ReactApp/static/media/img_NesrineI.93aa7d03b77e59efe7b8.webp",
     "static/media/NBYy2.webp": "/ReactApp/static/media/NBYy2.16814192e241cbd503b2.webp",
@@ -9,10 +9,10 @@
     "static/media/Sun.svg": "/ReactApp/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/ReactApp/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "main.2dbef6fd.css.map": "/ReactApp/static/css/main.2dbef6fd.css.map",
-    "main.1d7be38f.js.map": "/ReactApp/static/js/main.1d7be38f.js.map"
+    "main.22308850.js.map": "/ReactApp/static/js/main.22308850.js.map"
   },
   "entrypoints": [
     "static/css/main.2dbef6fd.css",
-    "static/js/main.1d7be38f.js"
+    "static/js/main.22308850.js"
   ]
 }
