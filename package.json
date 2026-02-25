@@ -1,6 +1,6 @@
 {
    "name": "React-App",
-   "homepages": "https://www.nesrinebekkar.com/",
+  "homepage": "https://nesrineyah.github.io/ReactApp",
    "version": "0.1.0",
    "private": true,
    "dependencies": {
@@ -59,6 +59,7 @@
    },
    "devDependencies": {
       "eslint-config-react-app": "^7.0.1",
+      "gh-pages": "^6.3.0",
       "webpack-bundle-analyzer": "^4.10.2"
    }
 }
