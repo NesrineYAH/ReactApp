@@ -96,9 +96,3 @@ class App extends React.Component {
 
 export default App;
   
-
-{/*   // "homepages": "https://www.nesrinebekkar.com/", 
-A supprimer  dans le package.json  
-      "predeploy": "npm run build", 
-       "deploy": "gh-pages -d build"
-*/}
