@@ -95,4 +95,27 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+
+{/*
+  <IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+
+# Activer la réécriture d'URL
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécrire toutes les autres URL vers index.html
+RewriteRule ^index.html [L]
+RewriteRule . /index.html [L]
+  */}
   

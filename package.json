@@ -1,6 +1,6 @@
 {
    "name": "React-App",
-   "homepages": "https://www.nesrinebekkar.com/",
+   "homepage": ".",
    "version": "0.1.0",
    "private": true,
    "dependencies": {
