@@ -69,7 +69,7 @@ class App extends React.Component {
       ) :(
        <div className="main">
      {/* <BrowserRouter>  A supprimer après basename="/ReactApp" */}
-      <BrowserRouter basename="/ReactApp">
+      <BrowserRouter>
 
        <Header handleClick={this.handleClick} />
        <Suspense fallback={<div>Chargement en cours...</div>}>
