@@ -1,9 +1,9 @@
+//webpack.config.js
 const path = require("path");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = {
   mode: "production",
   devtool: "source-map",
